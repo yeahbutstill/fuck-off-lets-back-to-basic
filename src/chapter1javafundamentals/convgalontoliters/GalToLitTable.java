@@ -12,7 +12,7 @@ public class GalToLitTable {
 
             counter++;
             // every 10th line print a blank line
-            if(counter == 10) {
+            if (counter == 10) {
                 System.out.println();
                 counter = 0; // reset the line counter
             }

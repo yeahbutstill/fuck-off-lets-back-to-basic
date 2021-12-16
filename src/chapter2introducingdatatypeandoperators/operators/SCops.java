@@ -12,7 +12,7 @@ public class SCops {
         d = 0; // now, set d to zero
 
         // since d is zero the second operan is not evaluated
-        if (d != 0 && (n % d) == 0){
+        if (d != 0 && (n % d) == 0) {
             System.out.println(d + " is a factor of " + n);
         }
 

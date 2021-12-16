@@ -15,8 +15,7 @@ public class NestedIfs {
             Object c = new Object();
             if (k > 100) c = d;
             else a = c; // this else refers to if(k > 100)
-        }
-        else a = d; // this else refers to if(i == 10)
+        } else a = d; // this else refers to if(i == 10)
     }
 
 }

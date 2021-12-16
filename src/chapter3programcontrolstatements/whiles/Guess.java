@@ -25,6 +25,6 @@ public class Guess {
                 else System.out.println("to high");
                 System.out.println("Try again!\n");
             }
-        }while (answer != ch);
+        } while (answer != ch);
     }
 }

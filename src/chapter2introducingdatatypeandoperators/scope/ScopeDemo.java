@@ -5,7 +5,7 @@ public class ScopeDemo {
         int x; // known to all code within main
 
         x = 10;
-        if(x == 10) { // start new scope
+        if (x == 10) { // start new scope
             int y = 20; // known only to this block
 
             // x and y both known here.

@@ -5,18 +5,18 @@ public class BilanganPrima {
         int i, j;
         boolean isprime;
 
-        for(i=2; i < 100; i++) {
+        for (i = 2; i < 100; i++) {
             isprime = true;
 
             // see if the number is evenly divisible
-            for(j=2; j <= i/j; j++) {
+            for (j = 2; j <= i / j; j++) {
                 // if it is, then its not prime
-                if((i%j) == 0) {
+                if ((i % j) == 0) {
                     isprime = false;
                 }
             }
 
-            if(isprime) {
+            if (isprime) {
                 System.out.println(i + " is prime.");
             }
         }

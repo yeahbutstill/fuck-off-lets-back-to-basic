@@ -8,12 +8,12 @@ public class Test4 {
         for (int z = 0; z < 3; z++) {
             switch (z) {
                 case x:
-          System.out.print("0 ");
-                case x-1:
-          System.out.print("1 ");
-                case x-2:
-          System.out.print("2 ");
-      }
+                    System.out.print("0 ");
+                case x - 1:
+                    System.out.print("1 ");
+                case x - 2:
+                    System.out.print("2 ");
+            }
         }
-  }
+    }
 }

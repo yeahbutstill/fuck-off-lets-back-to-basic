@@ -5,7 +5,7 @@ public class Ladder {
         int x;
 
         for (x = 0; x < 6; x++) {
-            if (x == 1){
+            if (x == 1) {
                 System.out.println("x is one");
             } else if (x == 2) {
                 System.out.println("x is two");

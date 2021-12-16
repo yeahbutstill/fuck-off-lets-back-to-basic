@@ -8,7 +8,7 @@ public class BlockDemo {
         j = 10;
 
         // the target of this if is a block
-        if(i != 0) {
+        if (i != 0) {
             System.out.println("i does not equal zerp");
             d = j / i;
             System.out.println("j / i is " + d);

@@ -13,9 +13,9 @@ public class LogicOpTable {
     private static void printTable(final boolean p, final boolean q) {
         System.out.printf("%s\t\t", p ? "1" : "0");
         System.out.printf("%s\t\t", q ? "1" : "0");
-        System.out.printf("%s\t\t", p&&q ? "1" : "0");
-        System.out.printf("%s\t\t", p||q ? "1" : "0");
-        System.out.printf("%s\t\t", p^q ? "1" : "0");
+        System.out.printf("%s\t\t", p && q ? "1" : "0");
+        System.out.printf("%s\t\t", p || q ? "1" : "0");
+        System.out.printf("%s\t\t", p ^ q ? "1" : "0");
         System.out.printf("%s\t\t", !p ? "1" : "0");
         System.out.printf("\n");
     }

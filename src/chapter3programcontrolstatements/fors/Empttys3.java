@@ -6,7 +6,7 @@ public class Empttys3 {
         int sum = 0;
 
         // sum the numbers through 5
-        for (i = 1; i <= 5; sum += i++);
-            System.out.println("Sum is " + sum);
+        for (i = 1; i <= 5; sum += i++) ;
+        System.out.println("Sum is " + sum);
     }
 }
