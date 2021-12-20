@@ -79,5 +79,73 @@ Appendix A Answers to Self Tests
     - Kesalahan sintaks.
 12. Apakah penting di bagian mana Anda meletakkan pernyataan?
     - Tidak, Java adalah bahasa bentuk bebas.
-    
 
+## Chapter 2: Introducing Data Types and Operators
+
+1. Mengapa Java secara ketat menentukan rentang dan perilaku tipe primitifnya?
+   - Java secara ketat menentukan rentang dan perilaku tipe primitifnya untuk memastikan portabilitas lintas platform.
+2. Apa itu tipe karakter Java, dan apa bedanya dengan tipe karakter yang digunakan oleh beberapa bahasa pemrograman lain?
+   - Tipe karakter Java adalah char. Karakter Java adalah Unicode daripada ASCII, yang digunakan oleh beberapa bahasa komputer lain.
+3. Nilai boolean dapat memiliki nilai apa pun yang Anda suka karena nilai bukan nol adalah benar. Benar atau salah?
+   - Palsu. Nilai boolean harus benar atau salah.
+4. Given this output
+   ```text
+   One
+   Two
+   Three
+   ```
+   gunakan satu string untuk menampilkan pernyataan println() yang menghasilkannya.
+   ```java
+   System.out.println("One\nTwo\nThree");
+   ```
+   
+5. Apa yang salah dengan fragmen ini?
+   ```java
+    for(i = 0; i < 10; i++) {
+        int sum;
+        sum = sum + i;
+    }
+    System.out.println("Sum is: " + sum);
+   ```
+   Ada dua kelemahan mendasar dalam fragmen. Pertama, sum dibuat setiap kali blok yang ditentukan oleh loop for dimasukkan dan dihancurkan saat keluar. Dengan demikian, itu tidak akan mempertahankan nilainya di antara iterasi. Mencoba menggunakan sum untuk menahan jumlah iterasi yang berjalan tidak ada gunanya. Kedua, jumlah tidak akan diketahui di luar blok yang dideklarasikan. Dengan demikian, referensi ke dalam pernyataan println() tidak valid.
+6. Jelaskan perbedaan antara bentuk prefix dan postfix dari operator increment.
+   - Ketika operator kenaikan mendahului operan, Java akan melakukan kenaikan sebelum mendapatkan nilai operan untuk digunakan oleh sisa ekspresi. Jika operator mengikuti operandnya, maka Java akan mendapatkan nilai operand sebelum diincrement.
+   
+7. Tunjukkan bagaimana hubungan pendek AND dapat digunakan untuk mencegah kesalahan bagi-oleh-nol.
+   ```java
+   if((b != 0) && (val / b)) ...
+   ```
+   
+8. Dalam sebuah ekspresi, jenis apa yang dipromosikan byte dan short?
+   - Dalam sebuah ekspresi, byte dan short dipromosikan menjadi int.
+
+9. Secara umum, kapan gips dibutuhkan?
+   - Gips diperlukan saat mengonversi antara tipe yang tidak kompatibel atau saat terjadi konversi yang menyempit.
+   
+10. Buatlah program yang mencari semua bilangan prima antara 2 dan 100.
+   ```java
+    // Find prime numbers between 2 and 100
+    public class Prime {
+        public static void main(String[] args) {
+            int i, j;
+            boolean isprime;
+
+            for (i = 2; i < 100; i++) {
+                isprime = true;
+
+            // see if the number is evenly divisible
+            for (j = 2; j <= i/j; j++)
+                // if it is, then it's not prime
+                if ((i%j) == 0) isprime = false;
+
+            if (isprime)
+                System.out.println(i + " is prime.");
+            }
+        }
+    }
+   ```
+
+11. Apakah penggunaan tanda kurung yang berlebihan mempengaruhi kinerja program?
+    - Tidak
+12. Apakah blok mendefinisikan ruang lingkup?
+    - Iya
