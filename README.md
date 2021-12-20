@@ -83,11 +83,13 @@ Appendix A Answers to Self Tests
 ## Chapter 2: Introducing Data Types and Operators
 
 1. Mengapa Java secara ketat menentukan rentang dan perilaku tipe primitifnya?
-   - Java secara ketat menentukan rentang dan perilaku tipe primitifnya untuk memastikan portabilitas lintas platform.
-2. Apa itu tipe karakter Java, dan apa bedanya dengan tipe karakter yang digunakan oleh beberapa bahasa pemrograman lain?
-   - Tipe karakter Java adalah char. Karakter Java adalah Unicode daripada ASCII, yang digunakan oleh beberapa bahasa komputer lain.
+    - Java secara ketat menentukan rentang dan perilaku tipe primitifnya untuk memastikan portabilitas lintas platform.
+2. Apa itu tipe karakter Java, dan apa bedanya dengan tipe karakter yang digunakan oleh beberapa bahasa pemrograman
+   lain?
+    - Tipe karakter Java adalah char. Karakter Java adalah Unicode daripada ASCII, yang digunakan oleh beberapa bahasa
+      komputer lain.
 3. Nilai boolean dapat memiliki nilai apa pun yang Anda suka karena nilai bukan nol adalah benar. Benar atau salah?
-   - Palsu. Nilai boolean harus benar atau salah.
+    - Palsu. Nilai boolean harus benar atau salah.
 4. Given this output
    ```text
    One
@@ -98,7 +100,7 @@ Appendix A Answers to Self Tests
    ```java
    System.out.println("One\nTwo\nThree");
    ```
-   
+
 5. Apa yang salah dengan fragmen ini?
    ```java
     for(i = 0; i < 10; i++) {
@@ -107,21 +109,26 @@ Appendix A Answers to Self Tests
     }
     System.out.println("Sum is: " + sum);
    ```
-   Ada dua kelemahan mendasar dalam fragmen. Pertama, sum dibuat setiap kali blok yang ditentukan oleh loop for dimasukkan dan dihancurkan saat keluar. Dengan demikian, itu tidak akan mempertahankan nilainya di antara iterasi. Mencoba menggunakan sum untuk menahan jumlah iterasi yang berjalan tidak ada gunanya. Kedua, jumlah tidak akan diketahui di luar blok yang dideklarasikan. Dengan demikian, referensi ke dalam pernyataan println() tidak valid.
+   Ada dua kelemahan mendasar dalam fragmen. Pertama, sum dibuat setiap kali blok yang ditentukan oleh loop for
+   dimasukkan dan dihancurkan saat keluar. Dengan demikian, itu tidak akan mempertahankan nilainya di antara iterasi.
+   Mencoba menggunakan sum untuk menahan jumlah iterasi yang berjalan tidak ada gunanya. Kedua, jumlah tidak akan
+   diketahui di luar blok yang dideklarasikan. Dengan demikian, referensi ke dalam pernyataan println() tidak valid.
 6. Jelaskan perbedaan antara bentuk prefix dan postfix dari operator increment.
-   - Ketika operator kenaikan mendahului operan, Java akan melakukan kenaikan sebelum mendapatkan nilai operan untuk digunakan oleh sisa ekspresi. Jika operator mengikuti operandnya, maka Java akan mendapatkan nilai operand sebelum diincrement.
-   
+    - Ketika operator kenaikan mendahului operan, Java akan melakukan kenaikan sebelum mendapatkan nilai operan untuk
+      digunakan oleh sisa ekspresi. Jika operator mengikuti operandnya, maka Java akan mendapatkan nilai operand sebelum
+      diincrement.
+
 7. Tunjukkan bagaimana hubungan pendek AND dapat digunakan untuk mencegah kesalahan bagi-oleh-nol.
    ```java
    if((b != 0) && (val / b)) ...
    ```
-   
+
 8. Dalam sebuah ekspresi, jenis apa yang dipromosikan byte dan short?
-   - Dalam sebuah ekspresi, byte dan short dipromosikan menjadi int.
+    - Dalam sebuah ekspresi, byte dan short dipromosikan menjadi int.
 
 9. Secara umum, kapan gips dibutuhkan?
-   - Gips diperlukan saat mengonversi antara tipe yang tidak kompatibel atau saat terjadi konversi yang menyempit.
-   
+    - Gips diperlukan saat mengonversi antara tipe yang tidak kompatibel atau saat terjadi konversi yang menyempit.
+
 10. Buatlah program yang mencari semua bilangan prima antara 2 dan 100.
    ```java
     // Find prime numbers between 2 and 100
@@ -149,3 +156,221 @@ Appendix A Answers to Self Tests
     - Tidak
 12. Apakah blok mendefinisikan ruang lingkup?
     - Iya
+
+## Chapter 3: Program Control Statements
+
+1. Tulis program yang membaca karakter dari keyboard sampai tanda titik diterima. Minta program menghitung jumlah spasi.
+   Laporkan totalnya di akhir program.
+
+```java
+// Count space.
+public class Space {
+    public static void main(String[] args) throws IOException {
+        char ch;
+        int spaces = 0;
+
+        System.out.println("Enter a period to stop.");
+        do {
+            ch = (char) System.in.read();
+            if (ch == ' ') spaces++;
+        } while (ch != '.');
+
+        System.out.println("Spaces: " + spaces);
+    }
+}
+```
+
+2. Tunjukkan bentuk umum tangga if-else-if.
+
+```text
+if(condition)
+
+statement;
+
+else if(condition)
+
+statement;
+
+else if(condition)
+
+statement;
+
+.
+
+.
+
+.
+
+else
+
+statement;
+```
+
+3. Given
+
+```java
+if(x< 10)
+        if(y>100){
+        if(!done)x=z;
+        else y=z;
+        }
+        else System.out.println("error"); // what if?
+```
+
+bagaimana jika yang terakhir diasosiasikan?
+
+Yang lain terakhir diasosiasikan dengan if(y > 100).
+
+4. Tunjukkan pernyataan for untuk loop yang dihitung dari 1000 hingga 0 dengan –2.
+
+```java
+for(int i=10000;i>=0;i-=2) //...
+```
+
+5. Apakah fragmen berikut valid?
+
+```java
+for(int i=0;i<num; i++)
+        sum+=i;
+        count=i;
+```
+
+Tidak; i tidak dikenal di luar for loop di mana ia dideklarasikan.
+
+6. Jelaskan apa yang dilakukan istirahat. Pastikan untuk menjelaskan kedua bentuknya.
+    - Pemutusan tanpa label menyebabkan penghentian pernyataan loop atau switch yang langsung terlampir. Sebuah
+      istirahat dengan label menyebabkan kontrol untuk mentransfer ke ujung blok berlabel.
+
+7. Pada fragmen berikut, setelah pernyataan break dijalankan, apa yang ditampilkan?
+
+```java
+for(i=0;i< 10;i++){
+        while(running){
+        if(x<y)break;
+        // ...
+        }
+        System.out.println("after while");
+        }
+        System.out.println("after for");
+```
+
+Setelah break dijalankan, “after while” ditampilkan.
+
+8. Apa yang dicetak oleh fragmen berikut?
+
+```java
+for(int i=0;i< 10;i++){
+        System.out.println(i+" ");
+        if((i%2)==0)continue;
+        System.out.println();
+        }
+```
+
+Inilah jawabannya:
+
+```text
+0 1 
+2 3 
+4 5 
+6 7 
+8 9 
+```
+
+9. Ekspresi iterasi dalam for loop tidak perlu selalu mengubah variabel kontrol loop dengan jumlah yang tetap.
+   Sebaliknya, variabel kontrol loop dapat berubah dengan cara yang sewenang-wenang. Dengan menggunakan konsep ini,
+   buatlah program yang menggunakan perulangan for untuk menghasilkan dan menampilkan progresi 1, 2, 4, 8, 16, 32, dan
+   seterusnya.
+
+```java
+/**
+ * Use a for loop to generate the progreesion
+ * 1 2 4 8 16, ...
+ */
+public class Progress {
+    public static void main(String[] args) {
+        for (int i = 1; i < 100; i += i) {
+            System.out.println(i + " ");
+        }
+    }
+}
+```
+
+10. Huruf kecil ASCII dipisahkan dari huruf besar dengan 32. Jadi, untuk mengubah huruf kecil menjadi huruf besar,
+    kurangi 32 darinya. Gunakan informasi ini untuk menulis program yang membaca karakter dari keyboard. Mintalah untuk
+    mengubah semua huruf kecil menjadi huruf besar, dan semua huruf besar menjadi huruf kecil, menampilkan hasilnya.
+    Tidak ada perubahan pada karakter lain. Suruh program berhenti ketika pengguna memasuki periode. Pada akhirnya,
+    mintalah program menampilkan jumlah perubahan kasus yang telah terjadi.
+
+```java
+// Change case.
+public class CaseChg {
+    public static void main(String[] args) throws IOException {
+        char ch;
+        int changes = 0;
+
+        System.out.println("Enter period to stop");
+
+        do {
+            ch = (char) System.in.read();
+            if (ch >= 'a' & ch <= 'z') {
+                ch -= 32;
+                changes++;
+                System.out.println(ch);
+            } else if (ch >= 'A' & ch <= 'Z') {
+                ch += 32;
+                changes++;
+                System.out.println(ch);
+            }
+        } while (ch != '.');
+        System.out.println("Case changes: " + changes);
+    }
+}
+```
+
+11. Apa itu loop tak terbatas?
+    - Loop tak terbatas adalah loop yang berjalan tanpa batas.
+
+12. Saat menggunakan break dengan label, haruskah label berada di blok yang berisi break?
+    - Iya
+
+## Chapter 4: Introducing Classes, Objects, and Methods
+
+1. Apa perbedaan antara kelas dan objek?
+    - Kelas adalah abstraksi logis yang menggambarkan bentuk dan perilaku suatu objek. Objek adalah instance fisik dari
+      kelas.
+2. Bagaimana sebuah kelas didefinisikan?
+    - Sebuah kelas didefinisikan dengan menggunakan kata kunci kelas. Di dalam pernyataan kelas, Anda menentukan kode
+      dan data yang terdiri dari kelas.
+3. Apa yang setiap objek memiliki salinannya sendiri?
+    - Setiap objek kelas memiliki salinan sendiri dari variabel instan kelas.
+4. Menggunakan dua pernyataan terpisah, tunjukkan cara mendeklarasikan objek yang disebut penghitung dari kelas yang
+   disebut MyCounter.
+   ```java
+   MyCounter counter;
+   counter = new MyCounter();
+   ```
+
+5. Tunjukkan bagaimana metode yang disebut myMeth() dideklarasikan jika memiliki tipe pengembalian ganda dan memiliki
+   dua parameter int yang disebut a dan b.
+   ```java
+   double myMeth(int a, int b) { //...
+   ```
+
+6. Bagaimana metode harus kembali jika mengembalikan nilai?
+    - Sebuah metode yang mengembalikan nilai harus kembali melalui pernyataan kembali, meneruskan kembali nilai kembali
+      dalam proses.
+7. Apa nama yang dimiliki konstruktor?
+    - Sebuah konstruktor memiliki nama yang sama dengan kelasnya.
+8. Apa yang baru lakukan?
+    - Operator baru mengalokasikan memori untuk suatu objek dan menginisialisasinya menggunakan konstruktor objek.
+
+9. Apa itu pengumpulan sampah dan bagaimana cara kerjanya?
+    - Pengumpulan sampah adalah mekanisme yang mendaur ulang benda-benda yang tidak terpakai sehingga memori mereka
+      dapat digunakan kembali.
+10. Apa ini?
+    - Kata kunci this adalah referensi ke objek tempat metode dipanggil. Itu secara otomatis diteruskan ke suatu metode.
+11. Bisakah konstruktor memiliki satu atau lebih parameter?
+    - Iya
+
+12. Jika suatu metode tidak mengembalikan nilai, apa jenis pengembaliannya?
+    - void
