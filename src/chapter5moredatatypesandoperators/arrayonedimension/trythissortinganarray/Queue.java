@@ -57,6 +57,7 @@ class QDemo {
         System.out.println("\n");
 
         System.out.println("Using smallQ to generate errors.");
+        System.out.println();
         // Now, use smallQ to generate some errors
         for (i = 0; i < 5; i++) {
             System.out.print("Attempting to store " + (char) ('Z' - i));
