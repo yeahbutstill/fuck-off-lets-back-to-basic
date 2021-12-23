@@ -32,7 +32,7 @@ public class StrOps {
         result = str1.compareTo(str3);
         if (result == 0) {
             System.out.println("str1 and str3 are equal");
-        } else if (result < 0){
+        } else if (result < 0) {
             System.out.println("str1 is less than str3");
         } else {
             System.out.println("str1 is greater than str3");
@@ -45,6 +45,6 @@ public class StrOps {
         System.out.println("Index first occurrence of One: " + idx);
         idx = str2.lastIndexOf("One");
         System.out.println("Index last occurrence of One: " + idx);
-        
+
     }
 }

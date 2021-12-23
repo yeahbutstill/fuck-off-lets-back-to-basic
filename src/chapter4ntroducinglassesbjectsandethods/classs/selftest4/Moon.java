@@ -2,7 +2,7 @@ package chapter4ntroducinglassesbjectsandethods.classs.selftest4;
 
 /**
  * Compute your weight on the moon.
- *
+ * <p>
  * Call this file Moon.java
  */
 

@@ -17,7 +17,7 @@ public class Encode {
         for (int i = 0; i < msg.length(); i++) {
             encmsg = encmsg + (char) (msg.charAt(i) ^ key.charAt(j));
             j++;
-            if (j==8) j = 0;
+            if (j == 8) j = 0;
         }
 
         System.out.print("Encoded message: ");
@@ -28,7 +28,7 @@ public class Encode {
         for (int i = 0; i < msg.length(); i++) {
             decmsg = decmsg + (char) (encmsg.charAt(i) ^ key.charAt(j));
             j++;
-            if (j==8) j = 0;
+            if (j == 8) j = 0;
         }
 
         System.out.print("Decoded message: ");

@@ -23,7 +23,7 @@ public class StrBubble {
 
         // this is the bubble sort for strings.
         for (a = 1; a < size; a++) {
-            for (b = size -1; b >= a; b--) {
+            for (b = size - 1; b >= a; b--) {
                 if (strs[b - 1].compareTo(strs[b]) > 0) { // if out of order
                     // exchange elements
                     t = strs[b - 1];

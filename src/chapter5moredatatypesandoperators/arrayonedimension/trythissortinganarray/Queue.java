@@ -14,7 +14,7 @@ public class Queue {
     }
 
     // put a character into the queue
-    public void put(char ch){
+    public void put(char ch) {
         if (putloc == q.length) {
             System.out.println(" - Queue is full.");
             return;

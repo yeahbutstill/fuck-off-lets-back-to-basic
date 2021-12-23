@@ -3,7 +3,7 @@ package chapter4ntroducinglassesbjectsandethods.classs.selftest4;
 /**
  * This program displays a conversion
  * table of inches to meters
- *
+ * <p>
  * Call this program InchToMeterTable.java
  */
 public class IncToMeterTable {

@@ -5,11 +5,11 @@ public enum TestFor {
     BB("B"),
     CC("C");
 
+    private final String shortCode;
+
     TestFor(String shortCode) {
         this.shortCode = shortCode;
     }
-
-    private final String shortCode;
 
     public String getShortCode() {
         return shortCode;

@@ -456,18 +456,21 @@ public class StrBubble {
 ```
 
 5. Apa perbedaan antara metode String indexOf() dan lastIndexOf()?
-    - Metode indexOf() menemukan kemunculan pertama dari substring yang ditentukan. 
-    - lastIndexOf() menemukan kejadian
-      terakhir
+    - Metode indexOf() menemukan kemunculan pertama dari substring yang ditentukan.
+    - lastIndexOf() menemukan kejadian terakhir
 
-6. Karena semua string adalah objek bertipe String, tunjukkan bagaimana Anda dapat memanggil metode length() dan charAt() pada literal string ini: "I like Java".
-   - Meski terlihat aneh, ini adalah panggilan yang valid ke length():
+6. Karena semua string adalah objek bertipe String, tunjukkan bagaimana Anda dapat memanggil metode length() dan
+   charAt() pada literal string ini: "I like Java".
+    - Meski terlihat aneh, ini adalah panggilan yang valid ke length():
+
 ```java
 System.out.println("I like Java".length());
 ```
-   -Output yang ditampilkan adalah 11. charAt() dipanggil dengan cara yang sama.
+
+-Output yang ditampilkan adalah 11. charAt() dipanggil dengan cara yang sama.
 
 7. Memperluas kelas Encode cipher, memodifikasinya sehingga menggunakan string delapan karakter sebagai kuncinya.
+
 ```java
 // An improved XOR cipher.
 public class Encode {
@@ -507,36 +510,44 @@ public class Encode {
 ```
 
 8. Bisakah operator bitwise diterapkan pada tipe ganda?
-   - Tidak
+    - Tidak
 
 9. Tunjukkan bagaimana urutan ini dapat ditulis ulang menggunakan ? operator.
+
 ```java
 if (x < 0) y = 10;
 else y = 20;
 ```
+
 here is the answer:
+
 ```java
 y = x < 0 ? 10 : 20;
 ```
 
 10. Pada fragmen berikut, apakah & merupakan operator bitwise atau logika? Mengapa?
+
 ```java
 boolean a, b;
 //...
 if(a & b) ..
 ```
+
 Ini adalah operator logis karena operan bertipe boolean.
 
 11. Apakah merupakan kesalahan untuk melewati akhir array?
-   - Iya 
-   - Apakah kesalahan mengindeks array dengan nilai negatif?
-     Ya. Semua indeks array dimulai dari nol.
+
+- Iya
+- Apakah kesalahan mengindeks array dengan nilai negatif? Ya. Semua indeks array dimulai dari nol.
 
 12. Apa itu operator shift kanan yang tidak bertanda tangan?
+
 ```text
 >>>
 ```
+
 13. Tulis ulang kelas MinMax yang ditunjukkan sebelumnya di bab ini sehingga menggunakan gaya for-each for loop.
+
 ```java
 // Find the minimum and maximum values in an array
 public class MinMax {
@@ -564,35 +575,55 @@ public class MinMax {
     }
 }
 ```
-14. Dapatkah perulangan for yang melakukan pengurutan pada kelas Bubble yang ditunjukkan pada Try This 5-1 dapat diubah menjadi perulangan gaya untuk setiap? Jika tidak, mengapa tidak?
-   - Tidak, perulangan for di kelas Bubble yang melakukan pengurutan tidak dapat diubah menjadi perulangan gaya untuk setiap. Dalam kasus loop luar, nilai arus counter loop-nya dibutuhkan oleh loop dalam. Dalam kasus loop dalam, nilai out-of-order harus dipertukarkan, yang menyiratkan penugasan. Penugasan ke larik yang mendasarinya tidak dapat dilakukan saat menggunakan perulangan gaya untuk masing-masing.
-   
+
+14. Dapatkah perulangan for yang melakukan pengurutan pada kelas Bubble yang ditunjukkan pada Try This 5-1 dapat diubah
+    menjadi perulangan gaya untuk setiap? Jika tidak, mengapa tidak?
+
+- Tidak, perulangan for di kelas Bubble yang melakukan pengurutan tidak dapat diubah menjadi perulangan gaya untuk
+  setiap. Dalam kasus loop luar, nilai arus counter loop-nya dibutuhkan oleh loop dalam. Dalam kasus loop dalam, nilai
+  out-of-order harus dipertukarkan, yang menyiratkan penugasan. Penugasan ke larik yang mendasarinya tidak dapat
+  dilakukan saat menggunakan perulangan gaya untuk masing-masing.
+
 15. Bisakah String mengontrol pernyataan sakelar?
     - Dimulai dengan JDK 7, jawabannya adalah Ya.
 16. Nama tipe apa yang dicadangkan untuk digunakan dengan inferensi tipe variabel lokal?
     - Nama var dicadangkan untuk digunakan dengan inferensi tipe variabel lokal.
-17. Tunjukkan bagaimana menggunakan inferensi tipe variabel lokal untuk mendeklarasikan variabel boolean yang disebut done yang memiliki nilai awal salah.
+17. Tunjukkan bagaimana menggunakan inferensi tipe variabel lokal untuk mendeklarasikan variabel boolean yang disebut
+    done yang memiliki nilai awal salah.
+
 ```java
 var done = false;
 ```
+
 18. Bisakah var menjadi nama variabel? Bisakah var menjadi nama kelas?
     - Ya, var bisa menjadi nama variabel. Tidak, var tidak boleh nama kelas.
 19. Apakah pernyataan berikut ini valid? Jika tidak, mengapa tidak.
+
 ```java
 var[] avgTemps = new double[7];
 ```
-- Tidak, ini tidak valid karena tanda kurung array tidak diperbolehkan setelah var. Ingat, tipe lengkap disimpulkan dari penginisialisasi.
+
+- Tidak, ini tidak valid karena tanda kurung array tidak diperbolehkan setelah var. Ingat, tipe lengkap disimpulkan dari
+  penginisialisasi.
 
 20. Apakah pernyataan berikut ini valid? Jika tidak, mengapa tidak?
+
 ```java
 var alpha = 10, beta = 20;
 ```
+
 - Tidak, hanya satu variabel pada satu waktu yang dapat dideklarasikan ketika inferensi tipe digunakan.
-21. Dalam metode show() dari kelas ShowBits yang dikembangkan di Try This 5-3, topeng variabel lokal dideklarasikan seperti yang ditunjukkan di sini:
+
+21. Dalam metode show() dari kelas ShowBits yang dikembangkan di Try This 5-3, topeng variabel lokal dideklarasikan
+    seperti yang ditunjukkan di sini:
+
 ```java
 long mask = 1;
 ```
-Ubah deklarasi ini sehingga menggunakan inferensi tipe variabel lokal. Saat melakukannya, pastikan bahwa topeng bertipe panjang (seperti yang ada di sini), dan bukan bertipe int.
+
+Ubah deklarasi ini sehingga menggunakan inferensi tipe variabel lokal. Saat melakukannya, pastikan bahwa topeng bertipe
+panjang (seperti yang ada di sini), dan bukan bertipe int.
+
 ```java
 var mask = 1L; // Notice that the initial value is exlicitly specified as long so that mask will be inferred to be long
 ```

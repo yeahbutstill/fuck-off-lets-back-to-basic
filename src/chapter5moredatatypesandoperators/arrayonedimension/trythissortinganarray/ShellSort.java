@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class ShellSort {
     /**
      * Shell sort - sort with diminishing increment (descending)
+     *
      * @param array to be sorted
      * @return sorted array
      */
@@ -30,7 +31,7 @@ public class ShellSort {
     }
 
     public static void main(String[] args) {
-        int[] data = { 99, -10, 100123, 18, -978,
+        int[] data = {99, -10, 100123, 18, -978,
                 5623, 463, -9, 287, 29
         };
 

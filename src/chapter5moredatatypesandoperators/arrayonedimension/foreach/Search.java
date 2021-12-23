@@ -3,7 +3,7 @@ package chapter5moredatatypesandoperators.arrayonedimension.foreach;
 // Search an array using for-each style for.
 public class Search {
     public static void main(String[] args) {
-        int nums[] = {6,8,3,7,5,6,1,4};
+        int nums[] = {6, 8, 3, 7, 5, 6, 1, 4};
         int val = 5;
         boolean found = false;
 

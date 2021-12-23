@@ -11,7 +11,7 @@ public class Segitiga {
                 System.out.println("***");
             } else if (i == 4) {
                 System.out.println("**");
-            } else if (i == 5){
+            } else if (i == 5) {
                 System.out.println("*");
             }
         }

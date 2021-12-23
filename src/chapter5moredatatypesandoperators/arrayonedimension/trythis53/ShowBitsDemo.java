@@ -12,11 +12,11 @@ class ShowBits {
         numbits = n;
     }
 
-    void show (long val) {
+    void show(long val) {
         long mask = 1;
 
         // left-shift a 1 into the proper position
-        mask <<= numbits-1;
+        mask <<= numbits - 1;
 
         int spacer = 0;
         for (; mask != 0; mask >>>= 1) {

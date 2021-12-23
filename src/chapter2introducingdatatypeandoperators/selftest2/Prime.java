@@ -10,9 +10,9 @@ public class Prime {
             isprime = true;
 
             // see if the number is evenly divisible
-            for (j = 2; j <= i/j; j++)
+            for (j = 2; j <= i / j; j++)
                 // if it is, then it's not prime
-                if ((i%j) == 0) isprime = false;
+                if ((i % j) == 0) isprime = false;
 
             if (isprime)
                 System.out.println(i + " is prime.");

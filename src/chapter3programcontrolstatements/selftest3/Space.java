@@ -12,7 +12,7 @@ public class Space {
         do {
             ch = (char) System.in.read();
             if (ch == ' ') spaces++;
-        }while (ch != '.');
+        } while (ch != '.');
 
         System.out.println("Spaces: " + spaces);
     }

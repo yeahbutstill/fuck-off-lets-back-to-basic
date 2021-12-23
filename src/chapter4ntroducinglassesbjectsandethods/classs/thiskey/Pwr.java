@@ -11,7 +11,7 @@ public class Pwr {
 
         this.val = 1;
         if (exp == 0) return;
-        for (; exp>0; exp--) this.val = this.val * base;
+        for (; exp > 0; exp--) this.val = this.val * base;
     }
 
     double get_pwr() {

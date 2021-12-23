@@ -3,7 +3,7 @@ package chapter5moredatatypesandoperators.arrayonedimension.stringsss;
 // Demonstrate String arrays
 public class StringArrays {
     public static void main(String[] args) {
-        String strs[] = { "This", "is", "a", "test."};
+        String strs[] = {"This", "is", "a", "test."};
 
         System.out.println("Original array: ");
         for (String s : strs) {

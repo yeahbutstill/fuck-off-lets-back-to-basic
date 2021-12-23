@@ -9,7 +9,7 @@ public class ArrayDemo {
         for (i = 0; i < 10; i++) // Arrays are index from zero.
             sample[i] = i;
 
-        for (i = 0; i < 10; i = i+1) // Arrays are index from zero.
+        for (i = 0; i < 10; i = i + 1) // Arrays are index from zero.
             System.out.println("This is sample [" + i + "] : " + sample[i]);
     }
 }

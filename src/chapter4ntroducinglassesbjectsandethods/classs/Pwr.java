@@ -11,7 +11,7 @@ public class Pwr {
 
         val = 1;
         if (exp == 0) return;
-        for (; exp>0; exp--) val = val * base;
+        for (; exp > 0; exp--) val = val * base;
     }
 
     double get_pwr() {
