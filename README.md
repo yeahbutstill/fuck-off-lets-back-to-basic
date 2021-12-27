@@ -489,7 +489,7 @@ public class Encode {
         for (int i = 0; i < msg.length(); i++) {
             encmsg = encmsg + (char) (msg.charAt(i) ^ key.charAt(j));
             j++;
-            if (j==8) j = 0;
+            if (j == 8) j = 0;
         }
 
         System.out.print("Encoded message: ");
@@ -500,7 +500,7 @@ public class Encode {
         for (int i = 0; i < msg.length(); i++) {
             decmsg = decmsg + (char) (encmsg.charAt(i) ^ key.charAt(j));
             j++;
-            if (j==8) j = 0;
+            if (j == 8) j = 0;
         }
 
         System.out.print("Decoded message: ");
@@ -515,22 +515,22 @@ public class Encode {
 9. Tunjukkan bagaimana urutan ini dapat ditulis ulang menggunakan ? operator.
 
 ```java
-if (x < 0) y = 10;
-else y = 20;
+if(x< 0)y=10;
+        else y=20;
 ```
 
 here is the answer:
 
 ```java
-y = x < 0 ? 10 : 20;
+y=x< 0?10:20;
 ```
 
 10. Pada fragmen berikut, apakah & merupakan operator bitwise atau logika? Mengapa?
 
 ```java
-boolean a, b;
+boolean a,b;
 //...
-if(a & b) ..
+        if(a&b)..
 ```
 
 Ini adalah operator logis karena operan bertipe boolean.
@@ -592,7 +592,7 @@ public class MinMax {
     done yang memiliki nilai awal salah.
 
 ```java
-var done = false;
+var done=false;
 ```
 
 18. Bisakah var menjadi nama variabel? Bisakah var menjadi nama kelas?
@@ -600,7 +600,7 @@ var done = false;
 19. Apakah pernyataan berikut ini valid? Jika tidak, mengapa tidak.
 
 ```java
-var[] avgTemps = new double[7];
+var[]avgTemps=new double[7];
 ```
 
 - Tidak, ini tidak valid karena tanda kurung array tidak diperbolehkan setelah var. Ingat, tipe lengkap disimpulkan dari
@@ -609,7 +609,7 @@ var[] avgTemps = new double[7];
 20. Apakah pernyataan berikut ini valid? Jika tidak, mengapa tidak?
 
 ```java
-var alpha = 10, beta = 20;
+var alpha=10,beta=20;
 ```
 
 - Tidak, hanya satu variabel pada satu waktu yang dapat dideklarasikan ketika inferensi tipe digunakan.
@@ -618,14 +618,14 @@ var alpha = 10, beta = 20;
     seperti yang ditunjukkan di sini:
 
 ```java
-long mask = 1;
+long mask=1;
 ```
 
 Ubah deklarasi ini sehingga menggunakan inferensi tipe variabel lokal. Saat melakukannya, pastikan bahwa topeng bertipe
 panjang (seperti yang ada di sini), dan bukan bertipe int.
 
 ```java
-var mask = 1L; // Notice that the initial value is exlicitly specified as long so that mask will be inferred to be long
+var mask=1L; // Notice that the initial value is exlicitly specified as long so that mask will be inferred to be long
 ```
 
 ## Chapter 6: A Closer Look at Methods and Classes
