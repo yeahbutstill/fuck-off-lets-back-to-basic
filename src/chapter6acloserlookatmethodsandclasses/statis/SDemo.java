@@ -2,8 +2,8 @@ package chapter6acloserlookatmethodsandclasses.statis;
 
 // Use a static variable
 class StaticDemo {
-    int x; // a normal instance variable
     static int y; // a static variable. There is one copy of y for all object to share
+    int x; // a normal instance variable
 
     // Return the sum of the instance variable x
     // and the static variable y

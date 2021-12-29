@@ -19,7 +19,7 @@ public class MyClass {
 
 class VarDemo2 {
     public static void main(String[] args) {
-        var mc = new MyClass(10); // Notice the use of var here.
+        MyClass mc = new MyClass(10); // Notice the use of var here.
 
         System.out.println("Value of i in mc is " + mc.geti());
         mc.seti(19);
