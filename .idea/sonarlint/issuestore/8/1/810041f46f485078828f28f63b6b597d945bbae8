@@ -1,0 +1,10 @@
+
+m
+java:S1450"WRemove the "atributA" field and declare it as a local variable in the relevant methods.(ÞÆ§¤
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ßøŸÞûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ëÂ€êùÿÿÿÿ
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(‹ÑÒÛûÿÿÿÿ8÷·”‡æ/
+B
+java:S1068",Remove this unused "atributA" private field.(ÞÆ§¤
+B
+java:S1068"",Remove this unused "atributB" private field.(ðä‡è
