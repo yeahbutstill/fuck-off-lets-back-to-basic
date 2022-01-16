@@ -630,3 +630,27 @@ var mask=1L; // Notice that the initial value is exlicitly specified as long so 
 
 ## Chapter 6: A Closer Look at Methods and Classes
 
+1. Mengingat fragmen ini,
+```java
+class X {
+    private int count;
+}
+```
+apakah penggalan berikut ini benar?
+```java
+class Y {
+    public static void main(String args[]) {
+        X ob = new X();
+        
+        ob.count = 10;
+    }
+}
+```
+
+Tidak; anggota pribadi tidak dapat diakses di luar kelasnya.
+
+2. Pengubah akses harus __________ deklarasi anggota.
+
+mendahului
+
+3. Komplemen antrian adalah stack. Ini menggunakan akses masuk pertama, terakhir keluar dan sering disamakan dengan tumpukan piring. Piring pertama yang diletakkan di atas meja adalah piring terakhir yang digunakan. Buat kelas tumpukan yang disebut Stack yang dapat menampung karakter. Panggil metode yang mengakses tumpukan Push() dan pop(). Izinkan pengguna untuk menentukan ukuran tumpukan saat dibuat. Jaga kerahasiaan semua anggota kelas Stack lainnya. (Petunjuk: Anda dapat menggunakan kelas Antrian sebagai model; cukup ubah cara data diakses.)
