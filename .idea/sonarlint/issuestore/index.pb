@@ -35,3 +35,7 @@ B
 src/Rel/OpRel.java,4/2/429b43ed5bac34cb1d417c352fafd15465cec699
 Q
 !src/comp/CompareWrapperClass.java,e/6/e68c5ba8f4a02483f8d8ee2fadfa935de3403286
+H
+src/inhrtnce/KelasA.java,8/1/810041f46f485078828f28f63b6b597d945bbae8
+E
+src/cls/Segitiga.java,7/8/78a4ff9d6b1171644de71dda45556265b29ca2fd
