@@ -5,6 +5,10 @@ public class Segitiga { // class
     private int tinggi = 5;
     private int lebar = 5;
 
+    // default constructor
+    public Segitiga() {
+    }
+
     // constructor
     public Segitiga(int panjang, int tinggi, int lebar) {
         this.panjang = panjang;
