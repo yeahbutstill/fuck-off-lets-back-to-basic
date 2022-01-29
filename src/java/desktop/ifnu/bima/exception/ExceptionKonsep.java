@@ -25,5 +25,19 @@ public class ExceptionKonsep {
         } catch (IOException e) {
             // tampilkanErrorDiLogDanConsole
         }
+
+
+        // melepaskan resource, membersihkan variable yang sudah tidak dipake lagi
+        try {
+            // kode yang ada exception
+        } catch (ExceptionPertama e) {
+            // handle exception dengan tipe ExceptionPertama
+        } catch (ExceptionKedua e) {
+            // handle exception dengan tipe ExceptionKedua
+        } finally {
+            // bersihkan resource yang dipakai, baik terjadi exception ataupun tidak
+        }
+
+        
     }
 }
