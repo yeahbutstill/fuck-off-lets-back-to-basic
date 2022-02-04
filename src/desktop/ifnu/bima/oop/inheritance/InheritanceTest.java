@@ -1,4 +1,4 @@
-package desktop.ifnu.bima.oop;
+package desktop.ifnu.bima.oop.inheritance;
 
 /**
  * Inheritance (turunan) ada di mana-mana dalam Java. Sangat tidak mungkin membuat aplikasi tanpa
@@ -19,3 +19,9 @@ public class InheritanceTest {
     }
   }
 }
+
+/**
+ * Terbukti bahwa walaupun tidak secara eksplisit kita defnisikan InheritanceTest sebagai turunan
+ * dari Object, faktanya InheritaceTest adalah turunan dari Object karena operator instanceof
+ * mengembalikan nilai true ketika object dari InhertanceTest dioperasikan dengan class Object.
+ */
