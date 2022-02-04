@@ -1,14 +1,14 @@
 package chapter3programcontrolstatements.whiles;
 
 public class ContDemo {
-    public static void main(String[] args) {
-        // Use continue
-        int i;
+  public static void main(String[] args) {
+    // Use continue
+    int i;
 
-        // print even numbers between 0 and 100
-        for (i = 0; i <= 100; i++) {
-            if ((i % 2) != 0) continue; // iterate
-            System.out.println(i);
-        }
+    // print even numbers between 0 and 100
+    for (i = 0; i <= 100; i++) {
+      if ((i % 2) != 0) continue; // iterate
+      System.out.println(i);
     }
+  }
 }
