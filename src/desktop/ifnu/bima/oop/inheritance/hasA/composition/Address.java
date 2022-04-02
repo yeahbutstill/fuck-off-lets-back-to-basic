@@ -1,4 +1,4 @@
-package desktop.ifnu.bima.oop.inheritance;
+package desktop.ifnu.bima.oop.inheritance.hasA.composition;
 
 /**
  * Hubungan HAS-A lebih sederhana penjelasanya dibanding hubungan IS-A. Hubungan HAS-A atau biasa
@@ -8,7 +8,7 @@ package desktop.ifnu.bima.oop.inheritance;
  * Customer untuk mendefnisikan alamat Customer. Kodenya seperti di bawah ini :
  */
 public class Address {
-  private String street;
-  private String city;
-  private String postCode;
+    private String street;
+    private String city;
+    private String postCode;
 }

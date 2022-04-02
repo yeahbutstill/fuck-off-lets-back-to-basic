@@ -1,4 +1,4 @@
-package desktop.ifnu.bima.oop.inheritance;
+package desktop.ifnu.bima.oop.inheritance.hasA.composition;
 
 /**
  * Class MemberCustomer dalam hal ini mempunyai hubungan IS-A dengan class Customer. Kalimat
@@ -11,4 +11,5 @@ package desktop.ifnu.bima.oop.inheritance;
  * (kode) dari class Customer. Misalnya kita ubah sedikit kode di atas, kita tambahkan property dan
  * method di dalam class Customer :
  */
-public class MemberCustomer extends Customer {}
+public class MemberCustomer extends Customer {
+}

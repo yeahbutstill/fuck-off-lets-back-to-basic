@@ -1,6 +1,6 @@
 package desktop.ifnu.bima.oop.overridingdanoverloading;
 
-import desktop.ifnu.bima.oop.inheritance.Customer;
+import desktop.ifnu.bima.oop.inheritance.hasA.composition.Customer;
 
 /**
  * Apa yang terjadi kalau misalnya kita mendeklarasikan sebuah variabel dengan tipe Customer tetapi
@@ -11,18 +11,18 @@ import desktop.ifnu.bima.oop.inheritance.Customer;
  * dari class Customer.
  */
 public class OverridingTest {
-  public static void main(String[] args) {
-    Customer c = new Customer();
-    Customer mc = new MemberCustomer();
-    Long id = null;
-    // method setId yang dipanggil adalah yang dari class Customer karena c
-    // dideklarasikan dengan tipe Customer dan diinstansiasi dengan class
-    // Customer
-    c.setId(id);
-    // method setId yang dipanggil adalah yang dari class MemberCustomer
-    // walaupun mc dideklarasikan dengan tipe Customer
-    mc.setId(id);
-  }
+    public static void main(String[] args) {
+        Customer c = new Customer();
+        Customer mc = new MemberCustomer();
+        Long id = null;
+        // method setId yang dipanggil adalah yang dari class Customer karena c
+        // dideklarasikan dengan tipe Customer dan diinstansiasi dengan class
+        // Customer
+        c.setId(id);
+        // method setId yang dipanggil adalah yang dari class MemberCustomer
+        // walaupun mc dideklarasikan dengan tipe Customer
+        mc.setId(id);
+    }
 }
 
 /**

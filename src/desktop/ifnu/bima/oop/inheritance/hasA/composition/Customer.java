@@ -1,4 +1,4 @@
-package desktop.ifnu.bima.oop.inheritance;
+package desktop.ifnu.bima.oop.inheritance.hasA.composition;
 
 /**
  * Hubungan antara Customer dan Address adalah HAS-A, diimplementasikan dengan membuat property di
@@ -6,24 +6,24 @@ package desktop.ifnu.bima.oop.inheritance;
  * menjadi seperti di bawah ini :
  */
 public class Customer {
-  private Long id;
-  private Address address;
+    private Long id;
+    private Address address;
 
-  public Long getId() {
-    return id;
-  }
+    public Long getId() {
+        return id;
+    }
 
-  public void setId(Long id) {
-    this.id = id;
-  }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-  public Address getAddress() {
-    return address;
-  }
+    public Address getAddress() {
+        return address;
+    }
 
-  public void setAddress(Address address) {
-    this.address = address;
-  }
+    public void setAddress(Address address) {
+        this.address = address;
+    }
 }
 
 // Kode di atas memperlihatkan hubungan Customer HAS-A Address.

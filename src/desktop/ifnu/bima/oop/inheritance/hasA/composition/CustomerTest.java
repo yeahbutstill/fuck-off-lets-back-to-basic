@@ -1,11 +1,11 @@
-package desktop.ifnu.bima.oop.inheritance;
+package desktop.ifnu.bima.oop.inheritance.hasA.composition;
 
 public class CustomerTest {
-  public static void main(String[] args) {
-    MemberCustomer member = new MemberCustomer();
-    member.setId(100L);
-    System.out.println("id customer : " + member.getId());
-  }
+    public static void main(String[] args) {
+        MemberCustomer member = new MemberCustomer();
+        member.setId(100L);
+        System.out.println("id customer : " + member.getId());
+    }
 }
 
 /**
