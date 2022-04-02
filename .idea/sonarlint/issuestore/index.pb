@@ -29,3 +29,11 @@ o
 ?src/desktop/ifnu/bima/oop/javacollectionframework/ListTest.java,f/3/f30ffa6d38bc2de63c51be33c999748d473c025e
 n
 >src/desktop/ifnu/bima/oop/javacollectionframework/MapTest.java,c/f/cf722db32b39a737584762c797f8b368e877904f
+
+Osrc/desktop/ifnu/bima/oop/javacollectionframework/sortings/CustomerGeneric.java,7/6/764ecd51dd1d87e9c331977b4e4c2b4a5423f790
+x
+Hsrc/desktop/ifnu/bima/oop/javacollectionframework/sortings/Customer.java,3/5/353bf97ef4ca6318781ee1c1c1be6ea82284b836
+ƒ
+Ssrc/desktop/ifnu/bima/oop/javacollectionframework/sortings/CustomerTreeSetTest.java,c/3/c36e8888e820b7b6301f1cd5e3ba9db0b46bd603
+‚
+Rsrc/desktop/ifnu/bima/oop/javacollectionframework/sortings/CustomerComparator.java,2/1/21330975e64aa7ffe6b048feb0fe45b0c6bbe061
