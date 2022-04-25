@@ -42,6 +42,15 @@ package desktop.ifnu.bima.callstack;
  * sebuah lantai dalam gedung runtuh, runtuhan lantai tersebut berharap ada yang menahan (menangkap)
  * di lantai bawahnya, kalau tidak ada satupun lantai yang menangkap runtuhan ini maka secara
  * keseluruhan gedung akan kolaps, atau aplikasi akan berhenti bekerja.
+ * <p>
+ * Bayangkan call stack itu layaknya sebuah gedung bertingkat, fondasi gedung bertingkat tersebut
+ * adalah method main. Setiap lantai di atasnya adalah method lain yang dipanggil oleh method main
+ * dan seterusnya sampai ke atas. Uncaught exception menyebabkan sebuah method keluar dari
+ * eksekusinya untuk dilanjutkan ke method berikutnya sambil berharap bahwa ada kode untuk menangkap
+ * exception itu. Dalam ilustrasi gedung bertingkat, uncaught exception adalah kejadian dimana
+ * sebuah lantai dalam gedung runtuh, runtuhan lantai tersebut berharap ada yang menahan (menangkap)
+ * di lantai bawahnya, kalau tidak ada satupun lantai yang menangkap runtuhan ini maka secara
+ * keseluruhan gedung akan kolaps, atau aplikasi akan berhenti bekerja.
  */
 
 /**
@@ -66,47 +75,47 @@ package desktop.ifnu.bima.callstack;
  * mempercepat pencarian kesalahan dalam aplikasi.
  */
 public class StackTraceRootCause {
-  public static void main(String[] args) {
-    StackTraceRootCause strc = new StackTraceRootCause();
-    strc.methodPertama();
-    System.out.println(
-        "kode ini tidak akan dieksekusi "
-            + "karena program sudah keluar"
-            + "ketika exception di methodKelima tidak ditangkap");
-  }
+    public static void main(String[] args) {
+        StackTraceRootCause strc = new StackTraceRootCause();
+        strc.methodPertama();
+        System.out.println(
+                "kode ini tidak akan dieksekusi "
+                        + "karena program sudah keluar"
+                        + "ketika exception di methodKelima tidak ditangkap");
+    }
 
-  public void methodPertama() {
-    System.out.println("method pertama dipanggil");
-    methodKedua();
-  }
+    public void methodPertama() {
+        System.out.println("method pertama dipanggil");
+        methodKedua();
+    }
 
-  public void methodKedua() {
-    System.out.println("method kedua dipanggil");
-    methoKetiga();
-  }
+    public void methodKedua() {
+        System.out.println("method kedua dipanggil");
+        methoKetiga();
+    }
 
-  public void methoKetiga() {
-    System.out.println("method ketiga dipanggil");
-    methodKeempat();
-  }
+    public void methoKetiga() {
+        System.out.println("method ketiga dipanggil");
+        methodKeempat();
+    }
 
-  public void methodKeempat() {
-    System.out.println("method keempat dipanggil");
-    methodKelima();
-  }
+    public void methodKeempat() {
+        System.out.println("method keempat dipanggil");
+        methodKelima();
+    }
 
-  public void methodKelima() {
-    System.out.println("method kelima dipanggil");
-    String abc = null;
-    abc.toString(); // kode ini akan menyebabkan NullPointerException
-  }
+    public void methodKelima() {
+        System.out.println("method kelima dipanggil");
+        String abc = null;
+        abc.toString(); // kode ini akan menyebabkan NullPointerException
+    }
 
-  /**
-   * Ada pepatah kuno developer bilang: “kemampuan developer junior dan senior dalam menulis program
-   * tidak akan jauh berbeda karena dibatasi kemampuan manusia mengetik yang terbatas, tetapi
-   * kemampuan junior developer dan senior dalam menganalisa kesalahan plus mencari solusi kesalahan
-   * itu bisa berbeda hingga puluhan ribu kali. Junior developer bisa berhari hari tidak bisa
-   * menemukan kesalahan dan solusinya, sedangkan senior developer bisa hanya dengan sekali lihat
-   * langsung tahu dimana salahnya dan bagaimana mengatasi kesalahan tersebut”.
-   */
+    /**
+     * Ada pepatah kuno developer bilang: “kemampuan developer junior dan senior dalam menulis program
+     * tidak akan jauh berbeda karena dibatasi kemampuan manusia mengetik yang terbatas, tetapi
+     * kemampuan junior developer dan senior dalam menganalisa kesalahan plus mencari solusi kesalahan
+     * itu bisa berbeda hingga puluhan ribu kali. Junior developer bisa berhari hari tidak bisa
+     * menemukan kesalahan dan solusinya, sedangkan senior developer bisa hanya dengan sekali lihat
+     * langsung tahu dimana salahnya dan bagaimana mengatasi kesalahan tersebut”.
+     */
 }

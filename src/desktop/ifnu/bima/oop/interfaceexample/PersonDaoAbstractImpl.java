@@ -7,13 +7,13 @@ package desktop.ifnu.bima.oop.interfaceexample;
  * dalam kode PersonDaoImpl yang sedikit dimodifkasi di bawah ini :
  */
 public abstract class PersonDaoAbstractImpl implements PersonDao {
-  public void save(Person p) {
-    System.out.println("menyimpan Person");
-  }
+    public void save(Person p) {
+        System.out.println("menyimpan Person");
+    }
 
-  public void delete(Person p) {
-    System.out.println("menghapus Person");
-  }
+    public void delete(Person p) {
+        System.out.println("menghapus Person");
+    }
 
-  public abstract Person getById(Long id);
+    public abstract Person getById(Long id);
 }

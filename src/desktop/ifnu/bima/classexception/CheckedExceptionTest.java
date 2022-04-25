@@ -11,12 +11,12 @@ import java.io.IOException;
  * akan menyebabkan adanya kompilasi error :
  */
 public class CheckedExceptionTest {
-  public static void main(String[] args) {
-    try {
-      FileInputStream fileInputStream = new FileInputStream("buka-file.txt");
-    } catch (IOException e) {
-      e.printStackTrace();
+    public static void main(String[] args) {
+        try {
+            FileInputStream fileInputStream = new FileInputStream("buka-file.txt");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println("kode setalh buka file");
     }
-    System.out.println("kode setalh buka file");
-  }
 }

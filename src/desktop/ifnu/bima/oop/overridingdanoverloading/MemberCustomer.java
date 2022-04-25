@@ -34,6 +34,12 @@ public class MemberCustomer extends Customer implements Serializable {
  * tipenya atau urutan dari parameternya. Berikut ini adalah method yang berbeda walaupun namanya
  * sama : public void setId(Long aId) {} public void setId(Integer aId) {} public void setId(Long
  * aId, boolean checkNull) {} public void setId(boolean checkNull,Long aId) {}
+ * <p>
+ * Method overloading adalah salah satu feature dalam bahasa pemrograman Java, dimana dua buah
+ * method bisa dideklarasikan dengan nama yang sama asal argumenya berbeda, baik dari jumlahnya,
+ * tipenya atau urutan dari parameternya. Berikut ini adalah method yang berbeda walaupun namanya
+ * sama : public void setId(Long aId) {} public void setId(Integer aId) {} public void setId(Long
+ * aId, boolean checkNull) {} public void setId(boolean checkNull,Long aId) {}
  */
 
 /**

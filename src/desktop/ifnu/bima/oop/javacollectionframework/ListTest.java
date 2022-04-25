@@ -4,21 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListTest {
-  public static void main(String[] args) {
-    List<String> list = new ArrayList<>();
-    list.add("a");
-    list.add("B");
-    list.add("C");
-    list.add("d");
-    list.add("M");
-    list.add("A");
-    list.add("Y");
-    list.add("A");
-    System.out.println("isi dari list : ");
-    for (int i = 0; i < list.size(); i++) {
-      System.out.println("index ke-" + i + ":" + list.get(i));
+    public static void main(String[] args) {
+        List<String> list = new ArrayList<>();
+        list.add("a");
+        list.add("B");
+        list.add("C");
+        list.add("d");
+        list.add("M");
+        list.add("A");
+        list.add("Y");
+        list.add("A");
+        System.out.println("isi dari list : ");
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println("index ke-" + i + ":" + list.get(i));
+        }
     }
-  }
 }
 
 /**

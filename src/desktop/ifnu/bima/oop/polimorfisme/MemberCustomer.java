@@ -13,6 +13,12 @@ public class MemberCustomer extends Customer implements Serializable {
         } else {
             System.out.println("bukan object");
         }
+
+        Object o = new MemberCustomer();
+        Customer c = new MemberCustomer();
+        MemberCustomer mc = new MemberCustomer();
+        Object object = mc;
+        Customer cust = mc;
     }
 }
 

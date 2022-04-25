@@ -8,14 +8,14 @@ package desktop.ifnu.bima.oop.collectiondangeneric.tostring;
  */
 public class ToStringTest {
 
-  public static void main(String[] args) {
-    ToStringTest test = new ToStringTest();
-    System.out.println("implementasi toString dari class Object " + "menghasilkan : " + test);
-  }
+    public static void main(String[] args) {
+        ToStringTest test = new ToStringTest();
+        System.out.println("implementasi toString dari class Object " + "menghasilkan : " + test);
+    }
 
-  public String toString() {
-    return "ini toString dari class ToString test";
-  }
+    public String toString() {
+        return "ini toString dari class ToString test";
+    }
 }
 
 /**

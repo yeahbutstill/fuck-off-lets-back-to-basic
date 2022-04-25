@@ -10,9 +10,10 @@ package desktop.ifnu.bima.classexception;
  * exception untuk aplikasi kita sendiri :
  */
 public class ExceptionPertama extends Exception {
-  public ExceptionPertama() {}
+    public ExceptionPertama() {
+    }
 
-  public ExceptionPertama(String pesan) {
-    super(pesan);
-  }
+    public ExceptionPertama(String pesan) {
+        super(pesan);
+    }
 }

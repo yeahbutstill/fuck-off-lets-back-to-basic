@@ -9,11 +9,11 @@ package desktop.ifnu.bima.example;
  * parameter3) { }
  */
 public class ForTest {
-  public static void main(String[] args) {
-    for (int i = 0; i < 10; i++) {
-      System.out.println("Iterasi ke-" + i);
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Iterasi ke-" + i);
+        }
     }
-  }
 }
 
 /**

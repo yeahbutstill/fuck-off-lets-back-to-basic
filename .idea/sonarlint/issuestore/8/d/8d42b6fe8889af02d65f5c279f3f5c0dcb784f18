@@ -1,0 +1,8 @@
+
+@
+java:S1068"*Remove this unused "street" private field.(›¸
+>
+java:S1068"(Remove this unused "city" private field.(“øÌà
+B
+java:S1068",Remove this unused "postCode" private field.(ÏÀÕ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Üå›Úøÿÿÿÿ

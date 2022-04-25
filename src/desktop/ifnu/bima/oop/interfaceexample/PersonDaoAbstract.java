@@ -6,11 +6,11 @@ package desktop.ifnu.bima.oop.interfaceexample;
  * PersonDao di bawah ini :
  */
 public abstract class PersonDaoAbstract {
-  public abstract void save(Person p);
+    public abstract void save(Person p);
 
-  public abstract void delete(Person p);
+    public abstract void delete(Person p);
 
-  public abstract Person getById(Long id);
+    public abstract Person getById(Long id);
 }
 
 /**

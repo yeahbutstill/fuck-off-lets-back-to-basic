@@ -2,27 +2,27 @@ package chapter5moredatatypesandoperators.arrayonedimension.typeinference;
 
 // Local variable type inference with a user-defined class type.
 public class MyClass {
-  private int i;
+    private int i;
 
-  MyClass(int k) {
-    i = k;
-  }
+    MyClass(int k) {
+        i = k;
+    }
 
-  int geti() {
-    return i;
-  }
+    int geti() {
+        return i;
+    }
 
-  void seti(int k) {
-    if (k >= 0) i = k;
-  }
+    void seti(int k) {
+        if (k >= 0) i = k;
+    }
 }
 
 class VarDemo2 {
-  public static void main(String[] args) {
-    MyClass mc = new MyClass(10); // Notice the use of var here.
+    public static void main(String[] args) {
+        MyClass mc = new MyClass(10); // Notice the use of var here.
 
-    System.out.println("Value of i in mc is " + mc.geti());
-    mc.seti(19);
-    System.out.println("Value of i in mc is now " + mc.geti());
-  }
+        System.out.println("Value of i in mc is " + mc.geti());
+        mc.seti(19);
+        System.out.println("Value of i in mc is now " + mc.geti());
+    }
 }

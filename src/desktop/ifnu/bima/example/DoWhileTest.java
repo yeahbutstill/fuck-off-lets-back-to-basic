@@ -8,11 +8,11 @@ package desktop.ifnu.bima.example;
  * kode di atas dengan menggunakan bentuk iterasi do-while, seperti di bawah ini :
  */
 public class DoWhileTest {
-  public static void main(String[] args) {
-    do {
-      System.out.println("waktu sekarang dibagi 3 masih ada sisanya");
-    } while (System.currentTimeMillis() % 3 != 0);
-  }
+    public static void main(String[] args) {
+        do {
+            System.out.println("waktu sekarang dibagi 3 masih ada sisanya");
+        } while (System.currentTimeMillis() % 3 != 0);
+    }
 }
 
 /**

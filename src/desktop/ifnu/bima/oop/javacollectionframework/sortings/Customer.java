@@ -13,55 +13,56 @@ import java.util.Objects;
  * Comparable tanpa menggunakan generics :
  */
 public class Customer implements Comparable {
-  private Long id;
-  private String name;
+    private Long id;
+    private String name;
 
-  public Customer(Long id, String name) {
-    this.id = id;
-    this.name = name;
-  }
+    public Customer(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 
-  public Customer() {}
+    public Customer() {
+    }
 
-  public Long getId() {
-    return id;
-  }
+    public Long getId() {
+        return id;
+    }
 
-  public void setId(Long id) {
-    this.id = id;
-  }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-  public String getName() {
-    return name;
-  }
+    public String getName() {
+        return name;
+    }
 
-  public void setName(String name) {
-    this.name = name;
-  }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-  @Override
-  public boolean equals(Object o) {
-    if (this == o) return true;
-    if (o == null || getClass() != o.getClass()) return false;
-    Customer customer = (Customer) o;
-    return Objects.equals(id, customer.id) && Objects.equals(name, customer.name);
-  }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Customer customer = (Customer) o;
+        return Objects.equals(id, customer.id) && Objects.equals(name, customer.name);
+    }
 
-  @Override
-  public int hashCode() {
-    int hash = 7;
-    hash = 53 * hash + (this.id != null ? this.id.hashCode() : 0);
-    return hash;
-  }
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 53 * hash + (this.id != null ? this.id.hashCode() : 0);
+        return hash;
+    }
 
-  @Override
-  public String toString() {
-    return "Customer{" + "id=" + id + ", name='" + name + '\'' + '}';
-  }
+    @Override
+    public String toString() {
+        return "Customer{" + "id=" + id + ", name='" + name + '\'' + '}';
+    }
 
-  @Override
-  public int compareTo(Object o) {
-    Customer c = (Customer) o;
-    return getId().compareTo(c.getId());
-  }
+    @Override
+    public int compareTo(Object o) {
+        Customer c = (Customer) o;
+        return getId().compareTo(c.getId());
+    }
 }

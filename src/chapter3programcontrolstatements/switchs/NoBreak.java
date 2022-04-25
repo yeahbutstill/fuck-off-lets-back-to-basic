@@ -1,23 +1,23 @@
 package chapter3programcontrolstatements.switchs;
 
 public class NoBreak {
-  public static void main(String[] args) {
-    int i;
+    public static void main(String[] args) {
+        int i;
 
-    for (i = 0; i <= 5; i++) {
-      switch (i) {
-        case 0:
-          System.out.println("i is less than one");
-        case 1:
-          System.out.println("i is less than two");
-        case 3:
-          System.out.println("i is less than three");
-        case 4:
-          System.out.println("i is less than four");
-        case 5:
-          System.out.println("i is less than five");
-      }
-      System.out.println();
+        for (i = 0; i <= 5; i++) {
+            switch (i) {
+                case 0:
+                    System.out.println("i is less than one");
+                case 1:
+                    System.out.println("i is less than two");
+                case 3:
+                    System.out.println("i is less than three");
+                case 4:
+                    System.out.println("i is less than four");
+                case 5:
+                    System.out.println("i is less than five");
+            }
+            System.out.println();
+        }
     }
-  }
 }

@@ -15,14 +15,14 @@ package desktop.ifnu.bima.oop.collectiondangeneric.tostring;
  * bagaimana penjelasan di atas kalau dilihat dalam kode. Perhatikan kode berikut ini :
  */
 public class EqualsTest {
-  public static void main(String[] args) {
-    String abc = new String("abc");
-    String abc1 = new String("abc");
-    Boolean equalsOperator = (abc == abc1);
-    System.out.println("abc == abc ? " + equalsOperator);
-    Boolean equalsMethod = abc.equals(abc1);
-    System.out.println("abc.equals(abc) ? " + equalsMethod);
-  }
+    public static void main(String[] args) {
+        String abc = new String("abc");
+        String abc1 = new String("abc");
+        Boolean equalsOperator = (abc == abc1);
+        System.out.println("abc == abc ? " + equalsOperator);
+        Boolean equalsMethod = abc.equals(abc1);
+        System.out.println("abc.equals(abc) ? " + equalsMethod);
+    }
 }
 
 /**
