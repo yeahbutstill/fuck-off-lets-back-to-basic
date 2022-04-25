@@ -19,8 +19,6 @@ o
 ?src/desktop/ifnu/bima/oop/javacollectionframework/ListTest.java,f/3/f30ffa6d38bc2de63c51be33c999748d473c025e
 n
 >src/desktop/ifnu/bima/oop/javacollectionframework/MapTest.java,c/f/cf722db32b39a737584762c797f8b368e877904f
-ƒ
-Ssrc/desktop/ifnu/bima/oop/javacollectionframework/sortings/CustomerTreeSetTest.java,c/3/c36e8888e820b7b6301f1cd5e3ba9db0b46bd603
 `
 0src/desktop/ifnu/bima/oop/enkapsulasi/Istri.java,c/e/cedbc1131cd668eb96e12a4ee69e4a23491cf692
 j
