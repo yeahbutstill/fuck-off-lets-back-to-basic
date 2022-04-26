@@ -43,3 +43,26 @@ public class BinarySearchTest {
     }
 
 }
+
+/**
+ * Untuk mengacak isi dari sebuah list, ada method shufe. Method shufe ada dua overload, yang
+ * pertama hanya mempunyai satu parameter berupa List, yang kedua mempunyai dua buah
+ * parameter: List dan object dari class Random. Object Random digunakan untuk menentukan jenis
+ * randomisasi yang ingin digunakan untuk mengacak isi dari List.
+ * <p>
+ * Method reverse digunakan untuk membalik isi dari List, dimana yang depan menjadi di belakang
+ * dan sebaliknya. Penggunaan method ini perlu hati-hati karena kecepatanya linier, semakin banyak
+ * isi dari List waktu eksekusinya membesar secara linier.
+ * <p>
+ * Method copy digunakan untuk mengcopy isi dari satu List ke List lain, method ini cukup praktis
+ * dibanding harus melakukan copy manual yang memerlukan proses iterasi, jadi hemat kira-kira
+ * empat sampai lima baris kode.
+ * Method fll digunakan untuk mengganti isi dari sebuah list dengan sebuah object yang sama.
+ * Parameter method fll ada dua : List dan object item yang akan digunakan untuk menimpa semua
+ * item yang ada dalam List.
+ * Method min dan max digunakan untuk mendapatkan nilai maximum dan minimum dari sebuah
+ * List. Method ini menyaratkan semua item di dalam List harus mengimplementasikan interface
+ * Comparable. Seperti biasa, kalau item di dalam List tidak mengimplementasikan interface
+ * Comparable maka kita harus menambahkan instance dari class yang mengimplementasikan
+ * interface Comparator ke dalam method min dan max.
+ */
