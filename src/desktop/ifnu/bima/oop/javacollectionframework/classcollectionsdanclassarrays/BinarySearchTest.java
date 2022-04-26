@@ -57,9 +57,11 @@ public class BinarySearchTest {
  * Method copy digunakan untuk mengcopy isi dari satu List ke List lain, method ini cukup praktis
  * dibanding harus melakukan copy manual yang memerlukan proses iterasi, jadi hemat kira-kira
  * empat sampai lima baris kode.
- * Method fll digunakan untuk mengganti isi dari sebuah list dengan sebuah object yang sama.
+ * <p>
+ * Method fill digunakan untuk mengganti isi dari sebuah list dengan sebuah object yang sama.
  * Parameter method fll ada dua : List dan object item yang akan digunakan untuk menimpa semua
  * item yang ada dalam List.
+ * <p>
  * Method min dan max digunakan untuk mendapatkan nilai maximum dan minimum dari sebuah
  * List. Method ini menyaratkan semua item di dalam List harus mengimplementasikan interface
  * Comparable. Seperti biasa, kalau item di dalam List tidak mengimplementasikan interface
