@@ -59,3 +59,10 @@ Calendar calendar=Calendar.getInstance(); //secara default penanggalan yang
         calendar.set(2000,Calendar.JANUARY,1,0,0,0);
         Date d=calendar.getTime();
 ```
+
+DateFormat adalah class yang digunakan untuk memformat tanggal menjadi string. Class
+turunan dari DateFormat yang sering digunakan adalah SimpleDateFormat. Class
+SimpleDateFormat bisa digunakan untuk mengubah string menjadi tanggal dan sebaliknya dari
+tanggal menjadi String. Class ini sebaiknya dibuat setiap kali akan digunakan, hal ini
+dikarenakan class SimpleDateFormat tidak thread-safe, artinya kalau diinstansiasi sekali dan
+digunakan dalam lingkungan multithreading maka hasilnya tidak konsisten.
