@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="backtobasic:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/backtobasic_jar</output-path>
+    <root id="archive" name="backtobasic.jar">
+      <element id="module-output" name="backtobasic" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/commons-lang3-3.12.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/joda-time-2.10.14.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
