@@ -1,0 +1,23 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¦°Üçøÿÿÿÿ
+J
+java:S1874"/Remove this use of "getYear"; it is deprecated.(À·ÛØûÿÿÿÿ
+E
+java:S1874"0Remove this use of "getMonth"; it is deprecated.(­Á*
+E
+java:S1874"/Remove this use of "getDate"; it is deprecated.(ÒáÂò
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¯ù¦üÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¸ıÇŸüÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÃŠ˜Õ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(ÏÓ€^
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¤¸û™
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‚ôòıÿÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¯ô¢ô
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(ûÛÏçùÿÿÿÿ
+N	java:S106("9Replace this use of System.out or System.err by a logger.(ÊÎÃÉ
+Z	java:S106*"9Replace this use of System.out or System.err by a logger.(ôÆõÍúÿÿÿÿ8±ç‡ŒŠ0
+U	java:S106+"9Replace this use of System.out or System.err by a logger.(àãÜÍ8«“‰ŒŠ0
+Z	java:S1067"9Replace this use of System.out or System.err by a logger.(É÷ÌŒşÿÿÿÿ8«“‰ŒŠ0
+Z	java:S106;"9Replace this use of System.out or System.err by a logger.(íõšÿÿÿÿÿ8›º‰ŒŠ0
+Z	java:S106<"9Replace this use of System.out or System.err by a logger.(ùÀ¹úÿÿÿÿ8îí‰ŒŠ0
+Z	java:S106="9Replace this use of System.out or System.err by a logger.(ÖŸ¡Âúÿÿÿÿ8ÜöŠŒŠ0

@@ -51,6 +51,42 @@ package desktop.ifnu.bima.callstack;
  * sebuah lantai dalam gedung runtuh, runtuhan lantai tersebut berharap ada yang menahan (menangkap)
  * di lantai bawahnya, kalau tidak ada satupun lantai yang menangkap runtuhan ini maka secara
  * keseluruhan gedung akan kolaps, atau aplikasi akan berhenti bekerja.
+ * <p>
+ * Bayangkan call stack itu layaknya sebuah gedung bertingkat, fondasi gedung bertingkat tersebut
+ * adalah method main. Setiap lantai di atasnya adalah method lain yang dipanggil oleh method main
+ * dan seterusnya sampai ke atas. Uncaught exception menyebabkan sebuah method keluar dari
+ * eksekusinya untuk dilanjutkan ke method berikutnya sambil berharap bahwa ada kode untuk menangkap
+ * exception itu. Dalam ilustrasi gedung bertingkat, uncaught exception adalah kejadian dimana
+ * sebuah lantai dalam gedung runtuh, runtuhan lantai tersebut berharap ada yang menahan (menangkap)
+ * di lantai bawahnya, kalau tidak ada satupun lantai yang menangkap runtuhan ini maka secara
+ * keseluruhan gedung akan kolaps, atau aplikasi akan berhenti bekerja.
+ * <p>
+ * Bayangkan call stack itu layaknya sebuah gedung bertingkat, fondasi gedung bertingkat tersebut
+ * adalah method main. Setiap lantai di atasnya adalah method lain yang dipanggil oleh method main
+ * dan seterusnya sampai ke atas. Uncaught exception menyebabkan sebuah method keluar dari
+ * eksekusinya untuk dilanjutkan ke method berikutnya sambil berharap bahwa ada kode untuk menangkap
+ * exception itu. Dalam ilustrasi gedung bertingkat, uncaught exception adalah kejadian dimana
+ * sebuah lantai dalam gedung runtuh, runtuhan lantai tersebut berharap ada yang menahan (menangkap)
+ * di lantai bawahnya, kalau tidak ada satupun lantai yang menangkap runtuhan ini maka secara
+ * keseluruhan gedung akan kolaps, atau aplikasi akan berhenti bekerja.
+ * <p>
+ * Bayangkan call stack itu layaknya sebuah gedung bertingkat, fondasi gedung bertingkat tersebut
+ * adalah method main. Setiap lantai di atasnya adalah method lain yang dipanggil oleh method main
+ * dan seterusnya sampai ke atas. Uncaught exception menyebabkan sebuah method keluar dari
+ * eksekusinya untuk dilanjutkan ke method berikutnya sambil berharap bahwa ada kode untuk menangkap
+ * exception itu. Dalam ilustrasi gedung bertingkat, uncaught exception adalah kejadian dimana
+ * sebuah lantai dalam gedung runtuh, runtuhan lantai tersebut berharap ada yang menahan (menangkap)
+ * di lantai bawahnya, kalau tidak ada satupun lantai yang menangkap runtuhan ini maka secara
+ * keseluruhan gedung akan kolaps, atau aplikasi akan berhenti bekerja.
+ * <p>
+ * Bayangkan call stack itu layaknya sebuah gedung bertingkat, fondasi gedung bertingkat tersebut
+ * adalah method main. Setiap lantai di atasnya adalah method lain yang dipanggil oleh method main
+ * dan seterusnya sampai ke atas. Uncaught exception menyebabkan sebuah method keluar dari
+ * eksekusinya untuk dilanjutkan ke method berikutnya sambil berharap bahwa ada kode untuk menangkap
+ * exception itu. Dalam ilustrasi gedung bertingkat, uncaught exception adalah kejadian dimana
+ * sebuah lantai dalam gedung runtuh, runtuhan lantai tersebut berharap ada yang menahan (menangkap)
+ * di lantai bawahnya, kalau tidak ada satupun lantai yang menangkap runtuhan ini maka secara
+ * keseluruhan gedung akan kolaps, atau aplikasi akan berhenti bekerja.
  */
 
 /**

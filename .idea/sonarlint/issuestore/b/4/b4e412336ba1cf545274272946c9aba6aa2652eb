@@ -1,0 +1,10 @@
+
+[
+java:S1854+"@Remove this useless assignment to local variable "hoursBetween".(‰ ã©şÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÇÇ§ùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÇÇ§ùÿÿÿÿ
+N	java:S106""9Replace this use of System.out or System.err by a logger.(¤ÀÀ
+L
+java:S1481+"1Remove this unused "hoursBetween" local variable.(‰ ã©şÿÿÿÿ
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(Œãˆéùÿÿÿÿ
+U	java:S106/"9Replace this use of System.out or System.err by a logger.(¼¹‚8Š…ï²Š0
