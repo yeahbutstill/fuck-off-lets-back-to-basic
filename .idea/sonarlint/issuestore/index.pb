@@ -92,8 +92,6 @@ Isrc/com/dicoding/javafundamental/basic/strukturdasar/kendaraan/Motor.java,2/e/
 z
 Jsrc/com/dicoding/javafundamental/basic/strukturdasar/kendaraan/Kereta.java,c/8/c82a551a78aafc15e99b48cfa8213332e03af43b
 n
->src/com/dicoding/javafundamental/basic/strukturdasar/README.md,4/1/417ede1a851b0f3eb24d8a4f08a7a4ddfe09ad43
-n
 >src/com/dicoding/javafundamental/basic/strukturdasar/Main.java,7/e/7e84baaa85eb8f01b5889149386251f6e434056d
 d
 4src/desktop/ifnu/bima/oop/joda/time/InstantTest.java,b/e/beab878c133ce5d34b6cc986bcc4e3668d5e5f52
