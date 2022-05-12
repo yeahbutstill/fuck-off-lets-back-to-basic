@@ -88,4 +88,55 @@ System.out.print("Angka : "+value);
 Perulangan yang mempunyai fungsi yang sama dengan While, tetapi pengecekan kondisinya dilakukan di akhir. Pada
 perulangan ini minimal melaksanakan perintah sekali, kemudian mengecek kondisi.
 
+# Bedah Code Perulangan Do-While
+
+Bagaimana bisa menghasilkan output seperti di atas? Mari kita bahas bersama-sama:
+
+1. Kita mendeklarasikan variabel nilai dengan angka 1.
+
+```java
+int value=1;
+```
+
+2. Melakukan sebuah perintah terlebih dahulu.
+
+```java
+System.out.println("Angka : "+value);
+        value++;
+```
+
+3. Pengecekan suatu kondisi terhadap variabel. Apabila terpenuhi maka perintah dilanjutkan.
+
+```java
+while(value<=10)
+```
+
+Penggunaan metode perulangan tergantung pada kasus dan mengaplikasiannya. Bisa jadi salah satu metode, paling cocok
+diimplementasikan pada kasus tertentu. Metode mana yang paling kamu suka?
+
+# Pengantar Collection Type
+
+Collection adalah kumpulan interface yang digunakan sebagai wadah untuk mengumpulkan beberapa elemen menjadi satu
+kesatuan. Dari definisi tersebut bisa ditafsirkan Collection mirip dengan Array karena keduanya merepresentasikan
+struktur data. Java Collections Framework terdiri dari tiga komponen, yaitu:
+
+1. Interface: Tipe abstrak dari Collection yang membentuk suatu hierarki.
+2. Implementation: Tipe konkrit yang mengimplementasikan Interface dari Collection serta dan merupakan suatu struktur
+   data yang bisa langsung digunakan.
+3. Algorithm: Ini adalah method yang melakukan komputasi berguna, misal sorting atau searching.
+
+Dari komponen pembentuk Java Collections Framework bisa kita lihat salah satu perbedaan Collection dengan Array.
+Misalnya Array tidak mempunyai method untuk sorting atau jumlah elemen di Array tidak bisa dinamis. Sementara Collection
+bisa dinamis.
+
+Dapat disimpulkan bahwa Collection adalah struktur data yang lebih kompleks dan lebih canggih dibanding Array. Untuk itu
+setiap programmer wajib menguasai Java Collections Framework. Sebabnya, kita akan selalu berurusan dengan data saat
+membuat aplikasi.
+
+Core Collection Interface dapat dirangkum pada gambar di bawah ini.
+Gambar diambil dari https://docs.oracle.com/javase/tutorial/collections/interfaces/index.html
+
+Dalam materi ini kita hanya akan membahas Java Collections Framework yang paling sering digunakan yaitu List, Set, dan
+Map. Sebagian Implementasi dari ketiga interface tersebut bisa kita lihat di tabel di bawah ini.
+
 
