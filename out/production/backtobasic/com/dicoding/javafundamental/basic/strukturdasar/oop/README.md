@@ -148,3 +148,6 @@ obyekNama.cetakNama("Elang");
 Sampai di sini, kita telah mengerti bagaimana membuat obyek secara sederhana. Tahap selanjutnya kita akan mencoba
 membuat obyek pada sebuah kelas yang lebih kompleks.
 
+Kini kita telah memahami cara membuat kelas dan menginstansiasinya pada Java. Ada yang perlu kita tekankan dalam bab ini
+. Dalam sebuah kelas kita bisa menciptakan beberapa obyek. Dengan menggunakan obyek kita dapat mengeksekusi baik metode
+maupun fungsi yang beraneka ragam, yang dipakai dalam sebuah kelas.
