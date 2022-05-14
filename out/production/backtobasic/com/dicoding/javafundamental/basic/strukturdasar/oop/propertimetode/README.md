@@ -174,3 +174,105 @@ Variabel yang berdiri sendiri tanpa perlu instance dari kelas.
 # Static Methods
 
 Metode yang berdiri sendiri tanpa perlu instance dari kelas.
+
+# Final
+
+Non access modifier kedua adalah final. Ada 3 macam penggunaan non access modifier final yaitu final variabel, final
+methods dan final class.
+
+# Final Variable
+
+Final variabel hanya bisa diinisiasi sekali. Ini menandakan bahwa variabel yang sudah dideklarasikan final tidak dapat
+diganti dengan objek lainnya.
+
+Perhatikan contoh kode di bawah ini:
+
+```java
+package com.dicoding.javafundamental.accessmodifier.package4;
+
+public class Perhitungan {
+    final int nilai = 5;
+
+    void ubahNilai() {
+        // Kode di bawah akan menampilkan error
+        nilai = 10;
+    }
+}
+```
+
+Biasanya final digunakan bersamaan dengan static untuk membuat suatu konstanta. Misalnya contoh kode konstanta nilai PI
+dari lingkaran, seperti di bawah ini.
+
+```java
+package com.dicoding.javafundamental.accessmodifier.package4;
+
+public class Lingkaran {
+    static final double PI = 3.141;
+}
+
+```
+
+# Final Methods
+
+Metode yang dideklarasikan final maka tidak dapat di override oleh anak kelas. Ini akan berguna jika kita ingin membuat
+metode yang tidak dapat diubah. Contoh kodenya adalah seperti ini.
+
+```java
+package com.dicoding.javafundamental.accessmodifier.package4;
+
+public class Lingkaran {
+    static final double PI = 3.141;
+
+    int jari = 7;
+
+    final double getLuas() {
+        return PI * (jari * jari);
+    }
+}
+```
+
+# Final Class
+
+Kelas yang dideklarasikan sebagai final maka tidak bisa dijadikan sebagai induk kelas.
+
+```java
+final class Lingkaran {
+
+}
+
+```
+
+# Transient
+
+Transient memiliki hubungan dengan proses serialisasi (serializing). Serialisasi adalah proses konversi suatu objek
+menjadi byte agar dapat ditransmisikan.
+
+Variabel yang dideklarasikan sebagai transient maka akan tidak dijaga nilainya di dalam proses serialisasi. Contoh
+penggunaannya adalah seperti ini.
+
+```java
+class Test implements Serializable {
+
+    // Variabel ini tidak akan dijaga nilainya
+    transient int nilaiA;
+
+    // Variabel ini akan dijaga nilainya
+    double nilaiB;
+    String nilaiC;
+
+}
+```
+
+# Synchronized
+
+Synchronized modifier digunakan untuk membatasi akses ke suatu variable/methods yang hanya boleh dilakukan oleh satu
+thread. Ketika ada 2 thread yang ingin mengakses synchronized variable/methods, maka prosesnya akan dilakukan secara
+serial (bergantian).
+
+Contoh penggunaanya adalah seperti ini.
+
+```java
+public synchronized void showData(){
+
+        }
+```
