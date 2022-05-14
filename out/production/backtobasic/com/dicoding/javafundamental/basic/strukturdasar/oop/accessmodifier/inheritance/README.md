@@ -109,5 +109,41 @@ public class Kucing extends Hewan {
 # Polymorphism
 
 Polymorphism artinya banyak bentuk. Contohnya, kucing adalah seekor Hewan, kucing juga adalah sebuah objek. Artinya
-kucing bisa dikenali dalam banyak bentuk. Lalu apa maknanya bagi pemrograman khususnya Java? 
+kucing bisa dikenali dalam banyak bentuk. Lalu apa maknanya bagi pemrograman khususnya Java?
 
+# Perbedaan Antara Inheritance Dengan Interface
+
+Sekilas penggunaan Inheritance dan interface mirip-mirip. Keduanya sama-sama akan menurunkan field/method. Lalu apa
+bedanya antara Inheritance dan interface? Hal ini sering ditanyakan dalam interview programmer Java :) Jawaban yang
+sering dilontarkan adalah “interface menggunakan Implements sedangkan Inheritance menggunakan extends.”
+
+Sebenarnya, jawaban tersebut tidak cocok. Alih-alih, jawaban tersebut cocok untuk pertanyaan bagaimana cara menggunakan
+interface dan menggunakan Inheritance.
+
+Konsep inheritance digunakan untuk abstraksi dari yang paling umum ke yang lebih spesifik. Misalnya class Hewan adalah
+bentuk yang umum, lalu class Kucing adalah turunannya yang lebih spesifik.
+
+Sedangkan interface digunakan sebagai kontrak atau aturan. Class yang menerapkan suatu interface wajib override semua
+method dari interface tersebut. Artinya class tersebut harus mengikuti aturan atau spesifikasi yang ada di interface.
+
+Sampai sini, Anda sudah paham perbedaan Inheritance dan Interface? Ingat saja kata kuncinya inheritance adalah abstraksi
+sedangkan interface adalah kontrak. Happy coding :)
+
+Pengantar Common Class
+Bahasa pemograman Java dibangun dengan banyak library. Ini akan membantu programmer dalam memecahkan masalah saat proses
+development. Common class sendiri merupakan kelas yang sering atau umum digunakan dari pustaka standar Java tersebut.
+
+Berikut Common Class yang akan kita pelajari:
+
+1. Generic
+   Generics pada Java memperbolehkan tipe (String, Integer, dll, serta user defined) bisa menjadi suatu parameter untuk
+   metode, class dan interface. Generics juga berfungsi untuk type casting dan compile time safety.
+2. Exception
+   Eror adalah hal yang perlu kita tangani. Nah, di sini kita bisa menggunakan exception.
+3. Input Output
+   Di Java sudah tersedia library untuk membaca input dari suatu berkas dan juga menuliskan data ke suatu berkas.
+4. Date Time
+   Di Java sudah tersedia library yang khusus berurusan dengan waktu.
+5. Casting
+   Mengubah suatu tipe data atau objek menjadi tipe data atau objek lainnya, akan menjadi mudah dengan menggunakan
+   casting yang sudah tersedia di dalam Java.
