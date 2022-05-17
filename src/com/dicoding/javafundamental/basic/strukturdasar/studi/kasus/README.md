@@ -15,3 +15,9 @@ Program ini cukup sederhana. Kita harus menentukan wujud air apakah beku, cair a
 akan diproses dengan menggunakan kondisional IF untuk tiga kasus karena kita kan menentukan tiga wujud air. Untuk tahap
 awalnya, masih sama dengan modul first java project, yang bisa dilihat di modul First Java Project.
 
+# Studi Kasus : Implementasi Perulangan For, Pernyataan If, dan Function dalam OOP
+
+Pada program ini kita akan membuat program yang menghitung jumlah huruf vokal dan konsonan dari masukan user yang
+bertipe data String. Untuk membuatnya kita bisa menggunakan perulangan. Dengan perulangan kita dapat mengakses karakter
+yang terdapat pada String melalui setiap indeksnya.
+
