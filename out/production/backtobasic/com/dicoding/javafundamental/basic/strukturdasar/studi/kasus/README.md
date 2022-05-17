@@ -21,3 +21,9 @@ Pada program ini kita akan membuat program yang menghitung jumlah huruf vokal da
 bertipe data String. Untuk membuatnya kita bisa menggunakan perulangan. Dengan perulangan kita dapat mengakses karakter
 yang terdapat pada String melalui setiap indeksnya.
 
+# Studi Kasus : Implementasi Pernyataan Switch, Operator Aritmatika, dan OOP
+
+Program yang terakhir adalah menghitung luas dan keliling dari bangun datar. Kali ini kita akan mencoba menggunakan
+konsep atau paradigma OOP agar lebih mudah dalam proses pemrogramannya. Anda membuat interface bangun datar agar dapat
+mengmplementasikannya pada setiap kelas bangun datar yang akan dibuat.
+
