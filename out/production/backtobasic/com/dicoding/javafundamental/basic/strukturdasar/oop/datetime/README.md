@@ -35,3 +35,25 @@ diperhatikan tentang mengapa kita menggunakan kelas Calendar ini:
    util Calendar
 2. Kelas ini juga dapat menentukan dan mengukur waktu sesuai yang diinginkan
 
+Calendar memiliki banyak sekali method yang mempermudah untuk mengelola waktu dan tanggal. Contoh di bawah ini
+memperlihatkan bagaimana Anda dapat mengambil waktu / tanggal spesifik yang dinginkan untuk diolah. Misalnya Anda hanya
+ingin menampilkan tahun, bulan atau hari saja.
+
+Calendar memiliki kemampuan untuk menampilkan waktu/tanggal secara spesifik. Method get(Calendar.DATE) milik Calendar
+membutuhkan parameter untuk penggunaannya. Seluruh field dapat Anda cek
+di https://docs.oracle.com/javase/7/docs/api/java/util/Calendar.html.
+
+Salah satu metode yang juga tersedia pada Calendar adalah add() yang memiliki 2 parameter yaitu calendar field dan
+banyaknya waktu yang ingin ditambahkan. Seperti pada kode di atas untuk melihat waktu 15 hari yang lalu, kita bisa
+gunakan calendar.add(Calendar.DATE, -15) di mana -15 adalah 15 hari yang lalu dari waktu saat ini. Begitu juga untuk
+waktu bulan dan tahun.
+
+# SimpleDateFormat
+
+Dalam menampilkan suatu tanggal dan waktu, biasanya format tampilan di setiap kebutuhan akan berbeda-beda. Kalau hanya
+untuk sekedar menampilkan waktu dan tanggal , kita dapat menggunakan date atau calendar.
+
+Bagaimana bila menampilkan format yang tidak biasa? Atau Anda ingin parsing data dari sebuah String waktu dan tanggal
+dengan format yang tidak biasa? Di sini SimpleDateFormat memang berfokus pada memformat dan parsing data tanggal dan
+waktu serta normalisasi waktu.
+
