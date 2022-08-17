@@ -1,8 +1,0 @@
-
-c
-java:S1192"GDefine a constant instead of duplicating this literal ".35 = " 3 times.(É¿p8•Ìƒ¸Š0
-<
-java:S2111"!Use "BigDecimal.valueOf" instead.(°½Õ¿üÿÿÿÿ
-M	java:S106"9Replace this use of System.out or System.err by a logger.(É¿p
-N	java:S106"9Replace this use of System.out or System.err by a logger.(§«÷§
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ßªøÿÿÿÿ
