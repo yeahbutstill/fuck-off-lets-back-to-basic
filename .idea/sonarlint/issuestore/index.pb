@@ -21,3 +21,5 @@ Nsrc/data/structuresandalgorithms/deepdive/using/java/sortalog/bubble/Main.java
 Usrc/data/structuresandalgorithms/deepdive/using/java/sortalog/selectionsort/Main.java,9/7/97dabd1e88e5f268e8d93abf86a15d0b79e541b5
 Ö
 Usrc/data/structuresandalgorithms/deepdive/using/java/sortalog/insertionsort/Main.java,3/0/30426ee4fdb41a1fbe6528ae5b9447d90677a660
+Å
+Qsrc/data/structuresandalgorithms/deepdive/using/java/sortalog/shellsort/Main.java,0/f/0fcca7df660e24cf604941d78c220644556a360b
