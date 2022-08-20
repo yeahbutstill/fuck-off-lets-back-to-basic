@@ -1,4 +1,4 @@
-package data.structuresandalgorithms.deepdive.using.java.sortalog.recursion;
+package data.structuresandalgorithms.deepdive.using.java.sortalgo.recursion;
 
 public class Main {
 

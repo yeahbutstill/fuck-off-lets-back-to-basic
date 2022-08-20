@@ -1,4 +1,4 @@
-package data.structuresandalgorithms.deepdive.using.java.sortalog.shellsort;
+package data.structuresandalgorithms.deepdive.using.java.sortalgo.shellsort;
 
 public class Main {
 

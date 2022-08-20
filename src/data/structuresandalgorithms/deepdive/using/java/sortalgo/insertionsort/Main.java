@@ -1,4 +1,4 @@
-package data.structuresandalgorithms.deepdive.using.java.sortalog.insertionsort;
+package data.structuresandalgorithms.deepdive.using.java.sortalgo.insertionsort;
 
 public class Main {
 
