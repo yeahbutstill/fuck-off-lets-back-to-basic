@@ -19,3 +19,11 @@ Msrc/data/structuresandalgorithms/deepdive/using/java/sortalgo/merge/Main.java,
 Qsrc/data/structuresandalgorithms/deepdive/using/java/sortalgo/recursion/Main.java,c/e/cec2b72fc538fb8e60328190edb99aae7fe91d34
 Å
 Qsrc/data/structuresandalgorithms/deepdive/using/java/sortalgo/quicksort/Main.java,c/0/c0a992574e1f31d408841e9d96acf5dc5ada3f93
+w
+Gsrc/data/structuresandalgorithms/deepdive/using/java/queues/Produk.java,9/7/97f4162bf80174f0c077cf81bbb26b935d464bda
+{
+Ksrc/data/structuresandalgorithms/deepdive/using/java/queues/ArrayQueue.java,d/b/db04973976160bac31945e45e9be10aea3ca5686
+u
+Esrc/data/structuresandalgorithms/deepdive/using/java/queues/Main.java,d/5/d521ac3fb4c12a9d48dc2b8f01fe01e80080fbf5
+
+Osrc/data/structuresandalgorithms/deepdive/using/java/queues/challange/Main.java,6/0/60f79cd5cc3c28158a8540757198e11763a9073a
