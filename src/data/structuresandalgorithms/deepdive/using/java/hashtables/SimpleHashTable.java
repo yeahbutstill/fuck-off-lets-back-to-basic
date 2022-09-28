@@ -8,27 +8,27 @@ public class SimpleHashTable {
         hashtable = new StoredBinatang[10];
     }
 
-    public Binatang remove(String key) {
+    public Employee remove(String key) {
         int hashedKey = findKey(key);
         if (hashedKey == -1) {
             return null;
         }
 
-        Binatang binatang = hashtable[hashedKey].binatang;
+        Employee employee = hashtable[hashedKey].employee;
         hashtable[hashedKey] = null;
 
         StoredBinatang[] oldHashtable = hashtable;
         hashtable = new StoredBinatang[oldHashtable.length];
         for (int i = 0; i < oldHashtable.length; i++) {
             if (oldHashtable[i] != null) {
-                put(oldHashtable[i].key, oldHashtable[i].binatang);
+                put(oldHashtable[i].key, oldHashtable[i].employee);
             }
         }
 
-        return binatang;
+        return employee;
     }
 
-    public void put(String key, Binatang binatang) {
+    public void put(String key, Employee employee) {
         int hashedKey = hashKey(key);
         if (occupied(hashedKey)) {
             int stopIndex = hashedKey;
@@ -43,18 +43,18 @@ public class SimpleHashTable {
             }
         }
         if (occupied(hashedKey)) {
-            System.out.println("Sorry, there's already an binatang at position " + hashedKey);
+            System.out.println("Sorry, there's already an employee at position " + hashedKey);
         } else {
-            hashtable[hashedKey] = new StoredBinatang(key, binatang);
+            hashtable[hashedKey] = new StoredBinatang(key, employee);
         }
     }
 
-    public Binatang get(String key) {
+    public Employee get(String key) {
         int hashedKey = findKey(key);
         if (hashedKey == -1) {
             return null;
         }
-        return hashtable[hashedKey].binatang;
+        return hashtable[hashedKey].employee;
     }
 
     private boolean occupied(int index) {
@@ -95,7 +95,7 @@ public class SimpleHashTable {
             if (hashtable[i] == null) {
                 System.out.println("empty");
             } else {
-                System.out.println("Position " + i + ": " + hashtable[i].binatang);
+                System.out.println("Position " + i + ": " + hashtable[i].employee);
             }
         }
     }

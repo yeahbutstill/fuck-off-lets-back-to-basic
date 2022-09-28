@@ -1,18 +1,18 @@
 package data.structuresandalgorithms.deepdive.using.java.hashtables;
 
-public class Binatang {
+public class Employee {
 
     private Integer id;
-    private String name;
-    private String age;
+    private String firstName;
+    private String lastName;
 
-    public Binatang(Integer id, String name, String age) {
+    public Employee(Integer id, String firstName, String lastName) {
         this.id = id;
-        this.name = name;
-        this.age = age;
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
-    public Binatang() {
+    public Employee() {
     }
 
     public Integer getId() {
@@ -23,28 +23,28 @@ public class Binatang {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getAge() {
-        return age;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setAge(String age) {
-        this.age = age;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     @Override
     public String toString() {
-        return "Binatang{" +
+        return "Employee{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
-                ", age='" + age + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 '}';
     }
 }

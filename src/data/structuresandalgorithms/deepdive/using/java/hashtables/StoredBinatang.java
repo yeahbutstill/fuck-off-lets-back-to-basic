@@ -3,11 +3,11 @@ package data.structuresandalgorithms.deepdive.using.java.hashtables;
 public class StoredBinatang {
 
     public String key;
-    public Binatang binatang;
+    public Employee employee;
 
-    public StoredBinatang(String key, Binatang binatang) {
+    public StoredBinatang(String key, Employee employee) {
         this.key = key;
-        this.binatang = binatang;
+        this.employee = employee;
     }
 
     public StoredBinatang() {
