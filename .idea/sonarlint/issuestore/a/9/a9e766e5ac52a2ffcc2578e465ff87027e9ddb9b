@@ -1,0 +1,9 @@
+
+n	java:S135I"YReduce the total number of break and continue statements in this loop to use at most one.(”ø¡ç
+.
+java:S1700"Rename field "heap"(Ÿ„œªşÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ô˜­Ñşÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ø–ªùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+g
+java:S3776G"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(“…Á[
