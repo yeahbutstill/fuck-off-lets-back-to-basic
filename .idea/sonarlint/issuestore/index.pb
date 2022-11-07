@@ -7,8 +7,6 @@ Y
 )src/hackerrank/java/loops/JavaLoops2.java,d/3/d3a267762c087adc6b4ac91efa076bdb61f96add
 d
 4src/hackerrank/java/javadatatypes/JavaDataTypes.java,b/0/b0257b25834dd3d1fa0e25569fb994908b7b78d7
-\
-,src/hackerrank/java/endoffile/EndOfFIle.java,0/4/047db2e55f732705346233a1cde77ca66d381cd2
 n
 >src/data/structuresandalgorithms/deepdive/using/java/Main.java,0/5/059fd5eb104878326ac01930dedaed9d226ba509
 w
