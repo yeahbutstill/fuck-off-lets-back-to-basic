@@ -113,3 +113,7 @@ Usrc/hackerrank/java/artivisi/programming/challenge/questions/question15/Ap0010e
 Usrc/hackerrank/java/artivisi/programming/challenge/questions/question16/Ap0010f1.java,9/c/9cafd9727dbbca04b8cf73b2750e8ab37a1792b8
 Ö
 Usrc/hackerrank/java/artivisi/programming/challenge/questions/question17/Ap0010g1.java,f/2/f2275691d6c0a4b8c3994c3dab314511b1fa4a32
+Ö
+Usrc/hackerrank/java/artivisi/programming/challenge/questions/question18/Ap0010h1.java,0/e/0ecec8a942c365cd8b4a35bcf4bcc5c491c4a8a5
+Å
+Qsrc/hackerrank/java/artivisi/programming/challenge/questions/question1/Ap010.java,9/2/92b6c2d4e42b3fcfa8b34dbbf641c19b7728cc06
