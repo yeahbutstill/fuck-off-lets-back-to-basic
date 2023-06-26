@@ -1,4 +1,7 @@
 package com.mazeeko.dasar;
+
+import java.util.Date;
+
 public class OperasiMTK {
     public static void main(String[] args){
         Integer a = 100;
@@ -43,18 +46,25 @@ public class OperasiMTK {
         // + // positive (Optional)
         // ! // boolean kebalikan
 
+        // assignment statement
         Integer d1 = 100;
         Integer d2 = 200;
         boolean salah = true;
 
+        // increment statement
         d1++;
         ++d2;
+
+        // method invocation statement
         System.out.println(d1);
         System.out.println(d2);
 
         d1--;
         System.out.println(d1);
         System.out.println(!salah);
+
+        // object creation statement
+        Date date = new Date();
 
     }
 }
