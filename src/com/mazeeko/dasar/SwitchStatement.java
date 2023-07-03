@@ -1,6 +1,5 @@
 package com.mazeeko.dasar;
 
-import java.util.Locale;
 
 public class SwitchStatement {
     public static void main(String[] args){

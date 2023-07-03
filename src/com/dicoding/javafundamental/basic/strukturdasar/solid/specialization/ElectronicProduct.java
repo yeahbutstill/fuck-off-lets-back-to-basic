@@ -1,8 +1,7 @@
 package com.dicoding.javafundamental.basic.strukturdasar.solid.specialization;
 
-import org.joda.time.DateTime;
-
 import java.util.Objects;
+import org.joda.time.DateTime;
 
 public class ElectronicProduct extends Product {
     private String id;

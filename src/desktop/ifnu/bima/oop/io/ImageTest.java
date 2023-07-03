@@ -1,10 +1,10 @@
 package desktop.ifnu.bima.oop.io;
 
-import javax.imageio.ImageIO;
-import javax.swing.*;
 import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
+import javax.imageio.ImageIO;
+import javax.swing.*;
 
 public class ImageTest {
     public static void main(String[] args) {

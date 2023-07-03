@@ -4,9 +4,8 @@ import com.dicoding.javafundamental.basic.strukturdasar.kendaraan.Kereta;
 import com.dicoding.javafundamental.basic.strukturdasar.kendaraan.Mobil;
 import com.dicoding.javafundamental.basic.strukturdasar.kendaraan.Motor;
 import com.dicoding.javafundamental.basic.strukturdasar.musik.Gitar;
-import org.apache.commons.lang3.time.DateUtils;
-
 import java.util.Date;
+import org.apache.commons.lang3.time.DateUtils;
 
 public class Main {
     public static void main(String[] args) {

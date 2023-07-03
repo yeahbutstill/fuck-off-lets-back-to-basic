@@ -2,22 +2,21 @@ package com.dicoding.javafundamental.basic.strukturdasar.solid.openclose;
 
 public abstract class Cinema {
 
-    public Double price;
+  public Double price;
 
-    public Cinema(Double price) {
-        this.price = price;
-    }
+  public Cinema(Double price) {
+    this.price = price;
+  }
 
-    public Cinema() {
-    }
+  public Cinema() {}
 
-    public Double getPrice() {
-        return price;
-    }
+  public Double getPrice() {
+    return price;
+  }
 
-    public void setPrice(Double price) {
-        this.price = price;
-    }
+  public void setPrice(Double price) {
+    this.price = price;
+  }
 
-    abstract double calculateAdminFee();
+  abstract double calculateAdminFee();
 }

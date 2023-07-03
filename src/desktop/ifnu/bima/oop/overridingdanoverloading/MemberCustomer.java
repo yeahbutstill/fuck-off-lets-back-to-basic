@@ -1,7 +1,6 @@
 package desktop.ifnu.bima.oop.overridingdanoverloading;
 
 import desktop.ifnu.bima.oop.inheritance.hasA.composition.Customer;
-
 import java.io.Serializable;
 
 /**
