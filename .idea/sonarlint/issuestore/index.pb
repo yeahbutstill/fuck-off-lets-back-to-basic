@@ -375,13 +375,17 @@ Hsrc/com/dicoding/javafundamental/basic/strukturdasar/solid/dip/Main.java,0/5/0
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 Y
 )src/com/mazeeko/dasar/BukanPrimitive.java,b/6/b699985a817eb06349dff9adcfc693d2dbb934ee
-R
-"src/com/mazeeko/dasar/Forloop.java,c/2/c27bcaec1c92e27fb271d663486c3c8ca7f8e7e1
 \
 ,src/com/mazeeko/dasar/MethodOverloading.java,7/0/700011cf5e66a496a1d05f4068cc443e2f1d7ce8
 Q
 !src/com/mazeeko/dasar/Method.java,f/6/f6e7f77facc735d6df5f3f160c4f2ef4615eedab
-R
-"src/com/mazeeko/dasar/ForEach.java,3/6/3658978a10cdcbdb1df5de2d7c280342f17e1754
 T
 $src/com/mazeeko/dasar/WhileLoop.java,4/6/463cfd91465455e3515cbe4627da3b35f8a72d56
+Y
+)src/com/mazeeko/dasar/OperasiBoolean.java,6/6/664edd703bc731b12df6390966e1f2a07d45eab3
+Z
+*src/com/mazeeko/dasar/RecursiveMethod.java,1/e/1eb3ef8bbd5c48a75547aa3356c31ded6b606bd7
+P
+ src/com/mazeeko/dasar/Scope.java,b/1/b1bb8db8fe65ef49fa2a17d1b9abf7c79e924b5c
+S
+#src/com/mazeeko/dasar/Komentar.java,3/a/3a2760cd9e9b15b4b29824cca14553fb3704558a

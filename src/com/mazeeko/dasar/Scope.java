@@ -1,7 +1,10 @@
 package com.mazeeko.dasar;
 
 public class Scope {
-  public static void main(String[] args) {}
+  public static void main(String[] args) {
+    sayHello("Dani");
+    sayHello("");
+  }
 
   public static void sayHello(String name) {
     String hello = "Hello " + name;
