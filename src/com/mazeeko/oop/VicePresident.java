@@ -2,6 +2,13 @@ package com.mazeeko.oop;
 
 /** inheritance parent Manager child VicePresident */
 public class VicePresident extends Manager {
+  public VicePresident() {
+  }
+
+  public VicePresident(String name, String age) {
+    super(name, age);
+  }
+
   @Override // method override adalah kemampuan mendefisikan ulang method di child class, yang sudah ada di parent class
   // saat kita melakukan proses override tersebut, secara otomatis ketika kita membuat object dari class child
   // method yang di class parent tidak bisa diakses lagi

@@ -6,6 +6,10 @@ public class Manager {
 
   public Manager() {}
 
+  public Manager(String name) {
+    this.name = name;
+  }
+
   public Manager(String name, String age) {
     this.name = name;
     this.age = age;
