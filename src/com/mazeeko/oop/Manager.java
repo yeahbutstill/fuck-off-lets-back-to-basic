@@ -7,8 +7,7 @@ public class Manager extends Employee {
     super(name);
   }
 
-  public Manager() {
-  }
+  public Manager() {}
 
   public Manager(String name, String company) {
     super(name);
@@ -23,6 +22,7 @@ public class Manager extends Employee {
     this.company = company;
   }
 
+  @Override
   public void sayHello(String name) {
     System.out.println("Hello " + name + ", My name is " + this.name + " As Manager");
   }
