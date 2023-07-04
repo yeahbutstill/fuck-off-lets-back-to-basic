@@ -5,8 +5,12 @@ public class VicePresident extends Manager {
   public VicePresident() {
   }
 
-  public VicePresident(String name, String age) {
-    super(name, age);
+  public VicePresident(String name, String company) {
+    super(name, company);
+  }
+
+  public VicePresident(String name) {
+    super(name);
   }
 
   @Override // method override adalah kemampuan mendefisikan ulang method di child class, yang sudah ada di parent class

@@ -1,55 +1,26 @@
 package com.mazeeko.oop;
 
-public class Manager {
-  private String name;
-  private String age;
-
-  public Manager() {}
+public class Manager extends Employee {
+  private String company;
 
   public Manager(String name) {
-    this.name = name;
+    super(name);
   }
 
-  public Manager(String name, String age) {
-    this.name = name;
-    this.age = age;
+  public Manager() {
   }
 
-  public String getName() {
-    return name;
+  public Manager(String name, String company) {
+    super(name);
+    this.company = company;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public String getCompany() {
+    return company;
   }
 
-  public String getAge() {
-    return age;
-  }
-
-  public void setAge(String age) {
-    this.age = age;
-  }
-
-  @Override
-  public boolean equals(Object o) {
-    if (this == o) return true;
-    if (!(o instanceof Manager manager)) return false;
-
-    if (!getName().equals(manager.getName())) return false;
-    return getAge().equals(manager.getAge());
-  }
-
-  @Override
-  public int hashCode() {
-    int result = getName().hashCode();
-    result = 31 * result + getAge().hashCode();
-    return result;
-  }
-
-  @Override
-  public String toString() {
-    return "Manager{" + "name='" + name + '\'' + ", age='" + age + '\'' + '}';
+  public void setCompany(String company) {
+    this.company = company;
   }
 
   public void sayHello(String name) {

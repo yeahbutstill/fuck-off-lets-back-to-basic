@@ -4,12 +4,15 @@ public class InheritanceApp {
   public static void main(String[] args) {
     Manager manager = new Manager();
     manager.setName("Maya");
-    manager.setAge("30");
+    manager.setCompany("NTT");
     manager.sayHello("Sasuke");
 
     VicePresident vicePresident = new VicePresident();
     vicePresident.setName("Winda");
-    vicePresident.setAge("20");
+    vicePresident.setCompany("Netflix");
     vicePresident.sayHello("Naruto");
+
+    System.out.println(manager);
+    System.out.println(vicePresident);
   }
 }
