@@ -1,4 +1,7 @@
-package com.mazeeko.oop;
+package com.mazeeko.oop.yeahbutstill.app;
+
+import com.mazeeko.oop.yeahbutstill.data.Child;
+import com.mazeeko.oop.yeahbutstill.data.Parent;
 
 // Variable Hiding vs Method Overriding
 public class VariableHidingApp {
