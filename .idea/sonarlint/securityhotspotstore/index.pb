@@ -37,3 +37,17 @@ O
 src/com/mazeeko/oop/Person.java,e/9/e9e14aef6f7fc0065288e08c51823bf4127b2f12
 W
 'src/com/mazeeko/oop/InheritanceApp.java,c/d/cdeb6a401800ffa80e5eb82637dc1323a67b5113
+V
+&src/com/mazeeko/oop/VicePresident.java,d/8/d847c72e9f12d0751957fc02a83a9218e48ac465
+P
+ src/com/mazeeko/oop/Manager.java,9/6/964198e467f25371a24daa926e771c5e29c626f7
+Q
+!src/com/mazeeko/oop/Employee.java,5/6/56f27bcad3c15d14e4089d66d7bfebb90e7af4a3
+X
+(src/com/mazeeko/oop/PolymorphismApp.java,2/4/242dcab84436d520c23351c797348abc8669d3a7
+k
+;src/com/mazeeko/oop/yeahbutstill/app/VariableHidingApp.java,d/7/d7bde5bfe19c0d533447fb407dd9c0f78960d076
+`
+0src/com/mazeeko/oop/yeahbutstill/data/Child.java,b/2/b210c7b27e4f532d6f4b0d108abaca75ede3a34c
+a
+1src/com/mazeeko/oop/yeahbutstill/data/Parent.java,3/d/3dc85e1778a2bfb624e7d61bb33fbd8d2a700532
