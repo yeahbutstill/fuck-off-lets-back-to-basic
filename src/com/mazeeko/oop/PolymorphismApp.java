@@ -22,6 +22,13 @@ public class PolymorphismApp {
 
   // method polymorphism, yang penting class paling atasnya dipanggil atau parentnya
   public static void sayHello(Employee employee) {
-    System.out.println("Hello " + employee.getName());
+    // type and casts
+    if (employee instanceof VicePresident vp) {
+      System.out.println("Hello VP " + vp.getName());
+    } else if (employee instanceof Manager mg) {
+      System.out.println("Hello Manager " + mg.getName());
+    } else {
+      System.out.println("Hello " + employee.getName());
+    }
   }
 }
