@@ -13,4 +13,14 @@ public class Avanza implements Car {
   public Integer getTire() {
     return 6;
   }
+
+  @Override
+  public String getBrand() {
+    return "Toyota";
+  }
+
+  @Override
+  public boolean isMaintenance() {
+    return false;
+  }
 }
