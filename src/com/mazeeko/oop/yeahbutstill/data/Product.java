@@ -26,4 +26,25 @@ public class Product {
   public void setPrice(Integer price) {
     this.price = price;
   }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (!(o instanceof Product product)) return false;
+
+    if (!getName().equals(product.getName())) return false;
+    return getPrice().equals(product.getPrice());
+  }
+
+  @Override
+  public int hashCode() {
+    int result = getName().hashCode();
+    result = 31 * result + getPrice().hashCode();
+    return result;
+  }
+
+  @Override
+  public String toString() {
+    return "Product{" + "name='" + name + '\'' + ", price=" + price + '}';
+  }
 }
