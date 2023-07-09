@@ -54,6 +54,10 @@ public class Company {
       this.name = name;
     }
 
+    public String getCompanyThisname() {
+      return Company.this.name;
+    }
+
     @Override
     public boolean equals(Object o) {
       if (this == o) return true;
