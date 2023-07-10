@@ -1,0 +1,14 @@
+
+h
+java:S1192"MDefine a constant instead of duplicating this literal "Mac Book Pro" 3 times.(ïşŞñşÿÿÿÿ
+R
+java:S4973"<Strings and Boxed types should be compared using "equals()".(¿ÛÔÎ
+X
+java:S1854"=Remove this useless assignment to local variable "firstName".(”®²ûúÿÿÿÿ
+I
+java:S1481".Remove this unused "firstName" local variable.(”®²ûúÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(¨Åü
+M	java:S106"9Replace this use of System.out or System.err by a logger.(˜–£V
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÛŸÀ‚
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ˆªš¢
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¿ÛÔÎ
