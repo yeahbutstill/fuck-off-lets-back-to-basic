@@ -1,4 +1,4 @@
-package com.mazeeko.oop.exception;
+package com.mazeeko.oop.exception.cheked;
 
 public class ValidateException extends Exception {
   public ValidateException() {}

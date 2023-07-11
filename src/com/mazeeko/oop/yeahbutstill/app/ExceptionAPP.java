@@ -1,6 +1,6 @@
 package com.mazeeko.oop.yeahbutstill.app;
 
-import com.mazeeko.oop.exception.ValidateException;
+import com.mazeeko.oop.exception.cheked.ValidateException;
 import com.mazeeko.oop.recordclass.LoginRequest;
 import com.mazeeko.oop.util.ValidationUtil;
 

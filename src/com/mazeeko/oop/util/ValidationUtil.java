@@ -1,6 +1,7 @@
 package com.mazeeko.oop.util;
 
-import com.mazeeko.oop.exception.ValidateException;
+import com.mazeeko.oop.exception.cheked.ValidateException;
+import com.mazeeko.oop.exception.error.DatabaseError;
 import com.mazeeko.oop.exception.runtimeexception.BlankException;
 import com.mazeeko.oop.recordclass.LoginRequest;
 
@@ -16,7 +17,8 @@ public class ValidationUtil {
    * lebih dari 1 class exception. inti dari ini adalah buat memberitau ke orang yang akan
    * menggunakan method tersebut, kalau method tersebut bisa terjadi error(exception)
    */
-  public static void validate(LoginRequest loginRequest) throws ValidateException { // checked exception
+  public static void validate(LoginRequest loginRequest)
+      throws ValidateException { // checked exception
     if (loginRequest.username() == null) {
       throw new NullPointerException("username is null");
     } else if (loginRequest.password() == null) {
@@ -41,6 +43,12 @@ public class ValidationUtil {
       throw new BlankException("username is blank");
     } else {
       System.out.println("Success");
+    }
+  }
+
+  public static void connectDatabase(String user, String password) { // error exception biasakan ini digunakan validation kenoksi database
+    if (user == null || password == null) {
+      throw new DatabaseError("Tidak bisa konek ke database");
     }
   }
 }
