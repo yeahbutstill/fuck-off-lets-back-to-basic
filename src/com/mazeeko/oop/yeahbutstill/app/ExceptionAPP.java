@@ -15,6 +15,7 @@ public class ExceptionAPP {
       ValidationUtil.validate(sasuke);
     } catch (ValidateException | NullPointerException e) {
       System.out.println("Terjadi error dengan pesan: " + e.getMessage());
+      e.printStackTrace();
     } finally { // error gak error, tetap di panggil
       System.out.println("Terimakasih");
     }
