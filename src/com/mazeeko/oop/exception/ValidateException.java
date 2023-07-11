@@ -1,6 +1,6 @@
 package com.mazeeko.oop.exception;
 
-public class ValidateException extends Throwable {
+public class ValidateException extends Exception {
   public ValidateException() {}
 
   public ValidateException(String message) {
