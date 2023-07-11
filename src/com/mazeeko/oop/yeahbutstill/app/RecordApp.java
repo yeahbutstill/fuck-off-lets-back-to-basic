@@ -11,7 +11,7 @@ public class RecordApp {
     loginRequest.sayHello();
     loginRequest.sayHello(loginRequest.username());
 
-    System.out.println(new LoginRequest());
+    System.out.println(new LoginRequest("", ""));
     System.out.println(new LoginRequest("maya"));
     System.out.println(new LoginRequest("dani", "rahasia"));
   }
