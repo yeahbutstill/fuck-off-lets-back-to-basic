@@ -476,8 +476,6 @@ a
 1src/com/mazeeko/oop/yeahbutstill/app/EnumApp.java,4/1/417a1d27413f2ad399385a74bd2adfd102c7e558
 c
 3src/com/mazeeko/oop/yeahbutstill/data/Customer.java,e/a/eac1887174e5cca3aa3f30971872e1880067afdb
-d
-4src/com/mazeeko/oop/yeahbutstill/enumrate/Level.java,f/e/fe9a41827ba4aa0065dd6b7a4b1a6ba6058dddc4
 a
 1src/com/mazeeko/oop/recordclass/LoginRequest.java,0/5/05b764dbccc581565a38b9f7c37480ae9697c0a5
 r
