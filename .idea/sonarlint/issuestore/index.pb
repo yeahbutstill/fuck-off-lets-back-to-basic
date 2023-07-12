@@ -478,14 +478,8 @@ c
 3src/com/mazeeko/oop/yeahbutstill/data/Customer.java,e/a/eac1887174e5cca3aa3f30971872e1880067afdb
 a
 1src/com/mazeeko/oop/recordclass/LoginRequest.java,0/5/05b764dbccc581565a38b9f7c37480ae9697c0a5
-r
-Bsrc/com/mazeeko/oop/exception/runtimeexception/BlankException.java,d/4/d4c454125bc72c81a9aea92fe07f1059956b36a3
-f
-6src/com/mazeeko/oop/exception/error/DatabaseError.java,b/c/bc654f2c0b2cbde4827de9ba6b7eb779a9b0946b
 c
 3src/com/mazeeko/oop/yeahbutstill/app/RecordApp.java,f/f/ff4ed75e397ef05adb00b272edd90277e48e6bac
-k
-;src/com/mazeeko/oop/exception/cheked/ValidateException.java,e/e/ee105b99dfcd7bffc931506e23887f8f02564e9f
 \
 ,src/com/mazeeko/oop/util/ValidationUtil.java,d/7/d77e4b7beef1a34efb8165635adc5025f1738ccb
 e
