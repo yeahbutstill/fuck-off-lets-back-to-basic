@@ -480,7 +480,5 @@ a
 1src/com/mazeeko/oop/recordclass/LoginRequest.java,0/5/05b764dbccc581565a38b9f7c37480ae9697c0a5
 c
 3src/com/mazeeko/oop/yeahbutstill/app/RecordApp.java,f/f/ff4ed75e397ef05adb00b272edd90277e48e6bac
-\
-,src/com/mazeeko/oop/util/ValidationUtil.java,d/7/d77e4b7beef1a34efb8165635adc5025f1738ccb
 e
 5src/com/mazeeko/oop/yeahbutstill/app/DatabaseApp.java,6/b/6bc5351154c3b2baa11c102e7cc5beb1bb3d1cf0

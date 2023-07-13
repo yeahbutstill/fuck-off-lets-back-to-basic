@@ -110,5 +110,3 @@ c
 3src/com/mazeeko/oop/yeahbutstill/app/RecordApp.java,f/f/ff4ed75e397ef05adb00b272edd90277e48e6bac
 e
 5src/com/mazeeko/oop/yeahbutstill/app/DatabaseApp.java,6/b/6bc5351154c3b2baa11c102e7cc5beb1bb3d1cf0
-\
-,src/com/mazeeko/oop/util/ValidationUtil.java,d/7/d77e4b7beef1a34efb8165635adc5025f1738ccb
