@@ -403,8 +403,6 @@ P
  src/com/mazeeko/oop/ThisApp.java,0/3/0379f20991335bc175021d02fe8b176c4c34dd84
 R
 "src/com/mazeeko/oop/Rectangle.java,e/7/e7a2c56d431ce2a57e11582c7703c19d27db07bc
-O
-src/com/mazeeko/oop/Person.java,e/9/e9e14aef6f7fc0065288e08c51823bf4127b2f12
 V
 &src/com/mazeeko/oop/VicePresident.java,d/8/d847c72e9f12d0751957fc02a83a9218e48ac465
 X
@@ -482,3 +480,23 @@ c
 3src/com/mazeeko/oop/yeahbutstill/app/RecordApp.java,f/f/ff4ed75e397ef05adb00b272edd90277e48e6bac
 e
 5src/com/mazeeko/oop/yeahbutstill/app/DatabaseApp.java,6/b/6bc5351154c3b2baa11c102e7cc5beb1bb3d1cf0
+g
+7src/com/mazeeko/oop/yeahbutstill/app/StactTraceApp.java,c/2/c2a3e8e627c7ec2f4d002e9b7dbbe6404087a5d8
+Y
+)src/com/mazeeko/oop/annotation/Fancy.java,b/d/bd816a8336f3673a73304c625b54cf8a50233ce7
+}
+Msrc/com/mazeeko/oop/exception/trywithresource/ReadAppWithTryWithResource.java,6/6/662389025a7d6207865d245024ed32cd12bb27ab
+f
+6src/com/mazeeko/oop/yeahbutstill/app/ExceptionAPP.java,4/1/417a8fe848024ef89ed8edad59ef91042b6814cf
+_
+/src/com/mazeeko/oop/annotation/Application.java,c/3/c3c8e691c39622409a14ea78f8320666be1ea2f9
+k
+;src/com/mazeeko/oop/exception/cheked/ValidateException.java,e/e/ee105b99dfcd7bffc931506e23887f8f02564e9f
+f
+6src/com/mazeeko/oop/reflections/CreateUserRequest.java,a/6/a6956d3fd636881a9f92c808c03eb1e7c8bee023
+\
+,src/com/mazeeko/oop/util/ValidationUtil.java,d/7/d77e4b7beef1a34efb8165635adc5025f1738ccb
+k
+;src/com/mazeeko/oop/yeahbutstill/app/TestReflectionApp.java,3/0/3091f7dcd8581e4fef1175bb9aed132e98acbac2
+\
+,src/com/mazeeko/oop/annotation/NotBlank.java,0/0/003fee9dbe1fac8d5edbc869e1870c699e519ca7
