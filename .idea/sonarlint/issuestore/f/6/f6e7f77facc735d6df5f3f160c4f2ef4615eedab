@@ -1,0 +1,14 @@
+
+x
+java:S1488"]Immediately return this expression instead of assigning it to the temporary variable "hasil".(ø¿ËÌüÿÿÿÿ
+}
+java:S4144<"bUpdate this method so that its implementation is not identical to "sayCongratulations" on line 45.(‚¾í×ÿÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Áß‡Ü
+M	java:S106"9Replace this use of System.out or System.err by a logger.(Ëã 
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‘õ¼©ùÿÿÿÿ
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(‰¿ øÿÿÿÿÿ
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(¡Û×İøÿÿÿÿ
+S	java:S106D"9Replace this use of System.out or System.err by a logger.(‰¿ øÿÿÿÿÿ
+S	java:S106F"9Replace this use of System.out or System.err by a logger.(¡Û×İøÿÿÿÿ
+S	java:S106K"9Replace this use of System.out or System.err by a logger.(Ç€ı£ıÿÿÿÿ
+S	java:S106P"9Replace this use of System.out or System.err by a logger.(ùÄûšşÿÿÿÿ
