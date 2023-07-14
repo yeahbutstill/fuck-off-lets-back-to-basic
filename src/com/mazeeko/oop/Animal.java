@@ -49,11 +49,11 @@ public class Animal {
     return "Animal{" + "name='" + name + '\'' + ", type='" + type + '\'' + '}';
   }
 
-  public void sayHello(String name) {
-    System.out.println("Hello " + name);
+  public void sayHello(String paramName) {
+    System.out.println("Hello " + paramName + ", My name is " + name);
   }
 
-  public void sayGoodBye(String name) {
-    System.out.println("Goodbye " + name);
+  public void sayGoodBye(String paramname) {
+    System.out.println("Goodbye " + paramname);
   }
 }

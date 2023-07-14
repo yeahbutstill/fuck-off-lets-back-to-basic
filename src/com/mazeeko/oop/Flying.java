@@ -3,22 +3,28 @@ package com.mazeeko.oop;
 import java.util.ArrayList;
 
 public class Flying extends Animal {
+  // propertie atau field
   private ArrayList<Object> food;
   private String activity;
 
+  // Di dalam class Java, kita bisa membuat constructor,
+  // constructor adalah method yang akan dipanggil saat pertama kali Object dibuat
   public Flying() {}
 
+  // Mirip seperti di method, kita bisa memberikan parameter pada constructor
   public Flying(ArrayList<Object> food, String activity) {
     this.food = food;
     this.activity = activity;
   }
 
+  // Nama constructor harus sama dengan nama class, dan tidak membutuhkan kata kunci void atau return value
   public Flying(String name, String type, ArrayList<Object> food, String activity) {
     super(name, type);
     this.food = food;
     this.activity = activity;
   }
 
+  // method
   public ArrayList<Object> getFood() {
     return food;
   }

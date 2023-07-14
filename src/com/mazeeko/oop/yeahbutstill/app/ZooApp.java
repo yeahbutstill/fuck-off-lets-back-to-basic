@@ -2,7 +2,6 @@ package com.mazeeko.oop.yeahbutstill.app;
 
 import com.mazeeko.oop.Flying;
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class ZooApp {
   public static void main(String[] args) {
@@ -15,8 +14,8 @@ public class ZooApp {
     diamakan.add("Buah");
     burungKakaTua.setActivity("Pagi");
     burungKakaTua.setFood(diamakan);
-    burungKakaTua.sayHello(burungKakaTua.getName());
-    burungKakaTua.sayGoodBye(burungKakaTua.getName());
+    burungKakaTua.sayHello("Dani");
+    burungKakaTua.sayGoodBye("Dani");
 
     System.out.println(burungKakaTua);
   }

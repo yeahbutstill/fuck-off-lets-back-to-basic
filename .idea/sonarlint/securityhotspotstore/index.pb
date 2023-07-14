@@ -3,10 +3,6 @@ Y
 )src/com/mazeeko/dasar/BukanPrimitive.java,b/6/b699985a817eb06349dff9adcfc693d2dbb934ee
 T
 $src/com/mazeeko/dasar/WhileLoop.java,4/6/463cfd91465455e3515cbe4627da3b35f8a72d56
-Q
-!src/com/mazeeko/dasar/Method.java,f/6/f6e7f77facc735d6df5f3f160c4f2ef4615eedab
-\
-,src/com/mazeeko/dasar/MethodOverloading.java,7/0/700011cf5e66a496a1d05f4068cc443e2f1d7ce8
 Z
 *src/com/mazeeko/dasar/RecursiveMethod.java,1/e/1eb3ef8bbd5c48a75547aa3356c31ded6b606bd7
 Y
