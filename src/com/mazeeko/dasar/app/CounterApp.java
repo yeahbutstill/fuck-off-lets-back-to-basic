@@ -2,10 +2,14 @@ package com.mazeeko.dasar.app;
 
 public class CounterApp {
     public static void main(String[] args) {
-        var hitung = new CounterSatu();
-        System.out.println(hitung.getCount());
-        hitung.decrementCount();
-        hitung.incrementCount();
+        CounterSatu c;
+        var d = new CounterSatu();
+        c = new CounterSatu();
+        d = c;
 
+        var e = new CounterSatu();
+
+        System.out.println(d.equals(c));
+        System.out.println(e.equals(d));
     }
 }
