@@ -2,7 +2,6 @@ package com.mazeeko.standardclasses;
 
 import java.util.Arrays;
 
-import java.util.Arrays;
 
 public class StringApp {
     public static void main(String[] args) {
@@ -41,6 +40,6 @@ public class StringApp {
         System.out.println("".isEmpty());
         System.out.println(" ".isBlank());
 
-        
+
     }
 }
