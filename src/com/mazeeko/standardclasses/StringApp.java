@@ -34,7 +34,7 @@ public class StringApp {
         System.out.println(nameLowerCase.startsWith("yeah"));
         System.out.println(nameUpperCase.startsWith("YEAH"));
 
-        String[] names = Arrays.toString(data).split(" ");
+        String[] names = Arrays.toString(data).split(" "); // lemot
         System.out.println(Arrays.toString(names));
 
         System.out.println("".isEmpty());
