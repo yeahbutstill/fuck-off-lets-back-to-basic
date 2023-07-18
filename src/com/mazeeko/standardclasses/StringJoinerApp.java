@@ -13,7 +13,7 @@ public class StringJoinerApp {
     public static void main(String[] args) {
         var names = new String[]{"Yeah", "But", "Still"};
         StringJoiner joiner = new StringJoiner(
-                "||-", "[", "]"
+                "||", "[", "]"
         );
 
         for (var name : names) {
