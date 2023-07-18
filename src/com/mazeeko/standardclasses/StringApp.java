@@ -37,5 +37,10 @@ public class StringApp {
 
         String[] names = Arrays.toString(data).split(" ");
         System.out.println(Arrays.toString(names));
+
+        System.out.println("".isEmpty());
+        System.out.println(" ".isBlank());
+
+        
     }
 }
