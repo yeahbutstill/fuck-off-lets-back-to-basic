@@ -10,6 +10,7 @@ import java.util.StringTokenizer;
 public class StringTokenizerApp {
     public static void main(String[] args) {
         String name = "Yeah but still";
+        // pastikan delimternya ada
         StringTokenizer tokenizer = new StringTokenizer(name, " ");
 
         while (tokenizer.hasMoreTokens()) {
