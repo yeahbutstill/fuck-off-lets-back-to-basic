@@ -29,6 +29,5 @@ public class Array {
         int[] arrInt = new int[]{1, 2, 3, 4, 5, 6};
         long[] arrLong = {1, 2, 3, 4, 5, 6};
 
-
     }
 }
