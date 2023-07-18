@@ -1,4 +1,4 @@
-package com.leetcode.problems;
+package com.leetcode.problems.string;
 
 public class GoalParserInterpretation {
     public static void main(String[] args) {

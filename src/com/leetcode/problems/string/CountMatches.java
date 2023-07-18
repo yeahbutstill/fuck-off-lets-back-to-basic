@@ -1,4 +1,4 @@
-package com.leetcode.problems;
+package com.leetcode.problems.string;
 
 import java.util.ArrayList;
 import java.util.List;

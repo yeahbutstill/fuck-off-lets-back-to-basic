@@ -1,4 +1,4 @@
-package com.leetcode.problems;
+package com.leetcode.problems.string;
 
 public class NumJewelsInStones {
     public static void main(String[] args) {
