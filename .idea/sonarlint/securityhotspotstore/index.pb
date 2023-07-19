@@ -170,3 +170,5 @@ d
 4src/com/mazeeko/standardclasses/StringJoinerApp.java,6/5/6565543f501a3dfe4c78ea7d4d68b15c2a93a347
 a
 1src/com/leetcode/problems/string/ToLowerCase.java,c/d/cd321373dd87b071391eec5a4bf678dc4e6b0956
+g
+7src/com/mazeeko/standardclasses/example/CreditCard.java,f/2/f21a5d6878143c65535a7784a3d2c160c44fe647

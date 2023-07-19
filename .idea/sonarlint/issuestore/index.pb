@@ -542,3 +542,5 @@ a
 1src/com/leetcode/problems/string/ToLowerCase.java,c/d/cd321373dd87b071391eec5a4bf678dc4e6b0956
 d
 4src/com/leetcode/problems/string/CheckIfPangram.java,d/d/dde1ad4a8ddaca4d7bf603a72516ab61f038b22e
+g
+7src/com/mazeeko/standardclasses/example/CreditCard.java,f/2/f21a5d6878143c65535a7784a3d2c160c44fe647
