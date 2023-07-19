@@ -1,6 +1,7 @@
 package desktop.ifnu.bima.oop.polimorfisme;
 
 import desktop.ifnu.bima.oop.inheritance.hasA.composition.Customer;
+
 import java.io.Serializable;
 
 public class MemberCustomer extends Customer implements Serializable {

@@ -1,4 +1,4 @@
-package com.mazeeko.standardclasses.example;
+package com.leetcode.ch1;
 
 public class CreditCard {
     // Instance variable

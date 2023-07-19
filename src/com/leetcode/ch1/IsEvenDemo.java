@@ -1,4 +1,4 @@
-package com.mazeeko.standardclasses.example.ch1;
+package com.leetcode.ch1;
 /**
  * R-1.4 Tulis metode Java pendek, isEven, yang mengambil int i dan mengembalikan true jika dan hanya jika i genap. Metode Anda
  * tidak dapat menggunakan operator perkalian, modulus, atau pembagian.

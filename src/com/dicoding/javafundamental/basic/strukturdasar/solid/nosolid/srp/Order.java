@@ -1,7 +1,8 @@
 package com.dicoding.javafundamental.basic.strukturdasar.solid.nosolid.srp;
 
-import java.util.List;
 import org.joda.time.DateTime;
+
+import java.util.List;
 
 public class Order {
     private String id;

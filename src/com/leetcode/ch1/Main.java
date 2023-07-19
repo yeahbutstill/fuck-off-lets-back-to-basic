@@ -1,4 +1,4 @@
-package com.mazeeko.standardclasses.example.ch1;
+package com.leetcode.ch1;
 
 import java.util.ArrayList;
 import java.util.List;

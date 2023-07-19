@@ -1,7 +1,8 @@
 package com.dicoding.javafundamental.basic.strukturdasar.solid.specialization;
 
-import java.util.Objects;
 import org.joda.time.DateTime;
+
+import java.util.Objects;
 
 public class ConsumableProduct extends Product {
     private String id;

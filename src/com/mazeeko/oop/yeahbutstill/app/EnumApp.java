@@ -2,6 +2,7 @@ package com.mazeeko.oop.yeahbutstill.app;
 
 import com.mazeeko.oop.yeahbutstill.data.Customer;
 import com.mazeeko.oop.yeahbutstill.enumrate.Level;
+
 import java.util.Arrays;
 
 public class EnumApp {

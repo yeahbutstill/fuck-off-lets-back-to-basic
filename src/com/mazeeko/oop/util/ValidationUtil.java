@@ -5,10 +5,8 @@ import com.mazeeko.oop.exception.cheked.ValidateException;
 import com.mazeeko.oop.exception.error.DatabaseError;
 import com.mazeeko.oop.exception.runtimeexception.BlankException;
 import com.mazeeko.oop.recordclass.LoginRequest;
-import com.mazeeko.oop.reflections.CreateUserRequest;
 
 import java.lang.reflect.Field;
-import java.util.Objects;
 
 public class ValidationUtil {
   private ValidationUtil() {
