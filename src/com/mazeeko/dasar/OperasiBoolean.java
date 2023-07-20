@@ -18,5 +18,6 @@ public class OperasiBoolean {
 
     boolean dapetIzasah = false;
     System.out.println(!dapetIzasah);
+
   }
 }
