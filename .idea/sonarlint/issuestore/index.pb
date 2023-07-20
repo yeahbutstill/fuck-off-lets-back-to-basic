@@ -371,8 +371,6 @@ Psrc/com/dicoding/javafundamental/basic/strukturdasar/solid/dip/PetrolEngine.jav
 Psrc/com/dicoding/javafundamental/basic/strukturdasar/solid/dip/HybridEngine.java,a/a/aa467394d154cba383459bd08c1d8333b6059fdb
 x
 Hsrc/com/dicoding/javafundamental/basic/strukturdasar/solid/dip/Main.java,0/5/0571a3e2c7d9a17a076cd771ed3e6621d89966cc
-Y
-)src/com/mazeeko/dasar/BukanPrimitive.java,b/6/b699985a817eb06349dff9adcfc693d2dbb934ee
 T
 $src/com/mazeeko/dasar/WhileLoop.java,4/6/463cfd91465455e3515cbe4627da3b35f8a72d56
 Y
@@ -502,24 +500,8 @@ Q
 !src/com/mazeeko/dasar/Method.java,f/6/f6e7f77facc735d6df5f3f160c4f2ef4615eedab
 \
 ,src/com/mazeeko/dasar/MethodOverloading.java,7/0/700011cf5e66a496a1d05f4068cc443e2f1d7ce8
-Z
-*src/com/mazeeko/dasar/app/CounterSatu.java,1/3/13fff59d6046c686e76f01df7532cafc0fc491c1
-S
-#src/com/mazeeko/dasar/app/Base.java,1/e/1e47d0dbb71ecd2695aee030ef0d5a4303271db8
-Y
-)src/com/mazeeko/dasar/app/CounterApp.java,0/5/0575e33bb16cebc70ac2f528606d76a209820de9
-S
-#src/com/mazeeko/dasar/app/Oven.java,5/e/5e609b38f3154a3cae937216b42419d471b05af0
-^
-.src/com/mazeeko/dasar/app/SistemOperasion.java,c/d/cd21b3db7e9a32b8f778a06fad63b0367c53bac7
-Y
-)src/com/mazeeko/dasar/app/DayTripper.java,2/9/2905c41a3bfcfecf7b545a41329be4ce4fece3b1
 P
  src/com/mazeeko/dasar/Gnome.java,0/8/088f8e895664a8f0a4c9f83b7fe37d1391ec2866
-V
-&src/com/mazeeko/dasar/app/TestApp.java,e/5/e5d8fa3e1f78b558e2bd4d6f278aa7ae5bb1ab42
-P
- src/com/mazeeko/dasar/Array.java,3/a/3a409a182625f8aeae20be01a63947298525a02b
 c
 3src/com/leetcode/problems/string/DecodeMessage.java,b/a/ba830733eea9d7e770108fa3bdc2d1aebcb4b24f
 b
