@@ -1,0 +1,35 @@
+
+^
+java:S1854
+"<Remove this useless assignment to local variable "iniFloat".(²É®èøÿÿÿÿ8ºû£‡—1
+_
+java:S1854	"=Remove this useless assignment to local variable "iniDouble".(ìå¬Üùÿÿÿÿ8»û£‡—1
+Z
+java:S1854"=Remove this useless assignment to local variable "iniString".(ç¦‹Û8»û£‡—1
+b
+java:S1854"@Remove this useless assignment to local variable "iniCharacter".(ö¦Ñùıÿÿÿÿ8»û£‡—1
+X
+java:S1854";Remove this useless assignment to local variable "iniLong".(ğ…ğ8»û£‡—1
+[
+java:S1854">Remove this useless assignment to local variable "iniInteger".(£æØŞ8»û£‡—1
+L
+java:S1481"/Remove this unused "iniInteger" local variable.(£æØŞ8Çû£‡—1
+I
+java:S1481",Remove this unused "iniLong" local variable.(ğ…ğ8Çû£‡—1
+Q
+java:S1481"/Remove this unused "iniBoolean" local variable.(’şÿ¶şÿÿÿÿ8Èû£‡—1
+S
+java:S1481"1Remove this unused "iniCharacter" local variable.(ö¦Ñùıÿÿÿÿ8Éû£‡—1
+K
+java:S1481".Remove this unused "iniString" local variable.(ç¦‹Û8Éû£‡—1
+P
+java:S1481	".Remove this unused "iniDouble" local variable.(ìå¬Üùÿÿÿÿ8Éû£‡—1
+O
+java:S1481
+"-Remove this unused "iniFloat" local variable.(²É®èøÿÿÿÿ8Êû£‡—1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ì“ˆ„ıÿÿÿÿ8Ìû£‡—1
+T	java:S106"9Replace this use of System.out or System.err by a logger.(é®ÓG8Ïû£‡—1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ğ¸½Ôÿÿÿÿÿ8Òû£‡—1
+U	java:S106$"9Replace this use of System.out or System.err by a logger.(İà ¬8Óû£‡—1
+Z	java:S106%"9Replace this use of System.out or System.err by a logger.(Ï‹ÖÔúÿÿÿÿ8Ôû£‡—1
+Z	java:S106&"9Replace this use of System.out or System.err by a logger.(Ç’àÅúÿÿÿÿ8¢Ş¨‡—1

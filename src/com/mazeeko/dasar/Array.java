@@ -19,7 +19,7 @@ public class Array {
         System.out.println(stringArray2.length); // panjang max array
         System.out.println(stringArray.length); // panjang max array
 
-        // menghapus data di array, kalau di java itu tidak ada istilah menghapus data array
+        // menghapus data array, kalau di java itu tidak ada istilah menghapus data array
         // kenapa? karena kalau menghapus kan yang tadinya panjangnya 10 jadi 9. yang ada itu mungkin
         // memasukan data kosong
         stringArray2[0] = null;
