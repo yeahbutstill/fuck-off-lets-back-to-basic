@@ -15,7 +15,7 @@ public class SwitchStatement {
             case "D":
                 System.out.println("Anda tidak lulus nilai anda " + nilaiKomputer);
                 break;
-            default:
+            default: // ini mirip dengan else di if statment
                 System.out.println("Mungkin anda salah jurusan nilai anda " + nilaiKomputer);
         }
 
