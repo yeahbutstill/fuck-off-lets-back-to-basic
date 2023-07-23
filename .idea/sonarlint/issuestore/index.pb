@@ -381,8 +381,6 @@ S
 #src/com/mazeeko/dasar/Komentar.java,3/a/3a2760cd9e9b15b4b29824cca14553fb3704558a
 X
 (src/com/mazeeko/oop/SuperKeywordApp.java,9/9/99a3dba84f98e49d0f24b75e10caa61874a3ee9c
-N
-src/com/mazeeko/oop/Shape.java,8/2/82a070305c0e233fca95b8c32182a3d9ade5d972
 R
 "src/com/mazeeko/oop/PersonApp.java,3/e/3e30ac28258d51e2ced3c4045d43851481f17580
 \

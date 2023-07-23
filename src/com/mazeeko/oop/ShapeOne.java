@@ -6,6 +6,16 @@ public class ShapeOne {
 
     public ShapeOne() {}
 
+    public void doSomething(ShapeOne shapeOne) {
+        shapeOne.erase();
+        shapeOne.draw();
+        
+        Circle circle = new Circle();
+        Triangle triangle = new Triangle();
+        doSomething(circle);
+        doSomething(triangle);
+    }
+
     public static void draw() {
         System.out.println("Draw");
     }

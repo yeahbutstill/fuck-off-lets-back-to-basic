@@ -7,8 +7,6 @@ P
  src/com/mazeeko/dasar/Scope.java,b/1/b1bb8db8fe65ef49fa2a17d1b9abf7c79e924b5c
 S
 #src/com/mazeeko/dasar/Komentar.java,3/a/3a2760cd9e9b15b4b29824cca14553fb3704558a
-N
-src/com/mazeeko/oop/Shape.java,8/2/82a070305c0e233fca95b8c32182a3d9ade5d972
 X
 (src/com/mazeeko/oop/SuperKeywordApp.java,9/9/99a3dba84f98e49d0f24b75e10caa61874a3ee9c
 R
