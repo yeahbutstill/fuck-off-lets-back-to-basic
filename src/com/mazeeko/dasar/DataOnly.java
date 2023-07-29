@@ -12,6 +12,25 @@ public class DataOnly {
         return 0;
     }
 
+    int storage(String s) {
+        return s.length() * 2;
+    }
+
+    boolean flag() {
+        return true;
+    }
+
+    double naturalLogBase() {
+        return 2.718;
+    }
+
+    void nothing() {
+        return;
+    }
+
+    void nothing2() {
+    }
+
 }
 
 class Main {
@@ -25,5 +44,6 @@ class Main {
         DataOnly a = new DataOnly();
         int x = a.f();
         System.out.println(x + 100);
+
     }
 }
