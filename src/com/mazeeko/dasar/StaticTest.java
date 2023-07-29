@@ -6,6 +6,8 @@ public class StaticTest {
 
 class Main1 {
     public static void main(String[] args) {
+        StaticTest.i++;
+
         StaticTest st1 = new StaticTest();
         int i = st1.i;
         System.out.println(i);
