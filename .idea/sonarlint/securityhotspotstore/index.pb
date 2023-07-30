@@ -166,8 +166,6 @@ N
 src/com/leetcode/ch1/Sum3.java,4/0/40f9e173fb471c401d86404cf7dbb3bfdcdaf344
 Z
 *src/com/leetcode/ch1/PolindromeNumber.java,2/e/2ebc120983db659cc4f072b2138618efff6da97d
-T
-$src/com/mazeeko/dasar/HelloDate.java,6/3/6386257eb7962cf242deebe09f79cf8baa8e251f
 V
 &src/com/mazeeko/dasar/IfStatement.java,8/8/884603ec802386d7534a850c18527c4c4d1b0f40
 Z
