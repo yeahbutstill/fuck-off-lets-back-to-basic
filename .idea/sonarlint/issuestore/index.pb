@@ -544,3 +544,13 @@ Z
 *src/com/mazeeko/dasar/SwitchStatement.java,c/6/c6cfb212866368a8a7021321db98cffe03b2522b
 V
 &src/com/mazeeko/dasar/IfStatement.java,8/8/884603ec802386d7534a850c18527c4c4d1b0f40
+U
+%src/com/tij/exercises1/Solution2.java,7/0/708ac10549901fff05e57caccb5dcb0c32fb4b89
+U
+%src/com/tij/exercises1/Solution1.java,3/d/3dee558346ae6a732d81bb284dc7d3f761b6b341
+T
+$src/com/mazeeko/dasar/HelloDate.java,6/3/6386257eb7962cf242deebe09f79cf8baa8e251f
+\
+,src/com/tij/exercises1/Solution3ATNTest.java,9/f/9f5c9e8b2675ab6c15bbd77849e87760d33f2cc3
+a
+1src/com/tij/exercises1/Solution4DataOnlyTest.java,1/d/1d170fd8c6eabd39b385362d6f188af6cf08286f
