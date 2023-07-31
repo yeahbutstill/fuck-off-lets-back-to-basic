@@ -182,3 +182,31 @@ U
 ,src/com/tij/exercises1/Solution3ATNTest.java,9/f/9f5c9e8b2675ab6c15bbd77849e87760d33f2cc3
 a
 1src/com/tij/exercises1/Solution4DataOnlyTest.java,1/d/1d170fd8c6eabd39b385362d6f188af6cf08286f
+K
+src/com/tij/Precedence.java,2/2/22215ea254071b09ca796340690a87b8036a987d
+K
+src/com/tij/Assignment.java,9/4/9447963714bf57448c65e1e95fe66dfedc97ddb8
+H
+src/com/tij/AutoInc.java,0/b/0bcfa3a72749cb6778bee7cd52aa13f150767668
+L
+src/com/tij/Equivalence.java,d/9/d93ff6f1d82409c8d0bb54a1462a8f9ef1ffad97
+M
+src/com/tij/EqualsMethod.java,d/2/d2187f0150ed0e98f178cfdb646547dcce1633e7
+N
+src/com/tij/EqualsMehtod2.java,9/f/9fce754f5adcbd100516dc9d548e3a74793dc166
+E
+src/com/tij/Bool.java,6/3/639f31f114d6a1a08c3dcd24501994e2abaf8c01
+M
+src/com/tij/ShortCircuit.java,a/0/a0d81b935a16f83a83c6bf4b1f5f2b9746252981
+I
+src/com/tij/Literals.java,0/c/0ce63157932bd8f8e6f48d35d380214795f0e709
+H
+src/com/tij/URShift.java,5/c/5ceffacbac25ecb99044b67e8d64fd93cb71378e
+P
+ src/com/tij/BitManipulation.java,a/8/a8d4bdee391c8892bfe6b57574d10dd46411ec3a
+N
+src/com/tij/TernaryIfElse.java,1/2/129ebedc3a93459e986930396a45d700f401f561
+P
+ src/com/tij/StringOperators.java,e/b/ebe89cded50041818d5a6ac1f9efacbdce3c39d7
+H
+src/com/tij/Casting.java,6/8/6801239c5c6afb978f346bf1802396edb1f9f2e7
