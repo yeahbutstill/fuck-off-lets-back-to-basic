@@ -2,7 +2,8 @@ package com.tij.util;
 //: net/mindview/util/Print.java
 // Print methods that can be used without
 // qualifiers, using Java SE5 static imports:
-import java.io.*;
+
+import java.io.PrintStream;
 
 public class Print {
     // Print with a newline:
