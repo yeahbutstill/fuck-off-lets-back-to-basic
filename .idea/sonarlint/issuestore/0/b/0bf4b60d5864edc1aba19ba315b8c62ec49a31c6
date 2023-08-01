@@ -1,0 +1,12 @@
+
+^
+java:S4973"<Strings and Boxed types should be compared using "equals()".(ß‘¯Áùÿÿÿÿ8Çÿªäš1
+Y
+java:S4973"<Strings and Boxed types should be compared using "equals()".(óÒßÛ8Çÿªäš1
+d
+java:S1126"BReplace this if-then-else statement by a single method invocation.(‡¸¨¡ûÿÿÿÿ8Òÿªäš1
+I
+java:S1125"'Remove the unnecessary boolean literal.(‡¸¨¡ûÿÿÿÿ8Òÿªäš1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(‡¸¨¡ûÿÿÿÿ8Óÿªäš1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(úöÁãøÿÿÿÿ8Óÿªäš1
+]	java:S125"<This block of commented-out lines of code should be removed.(âêª›ûÿÿÿÿ8Õÿªäš1
