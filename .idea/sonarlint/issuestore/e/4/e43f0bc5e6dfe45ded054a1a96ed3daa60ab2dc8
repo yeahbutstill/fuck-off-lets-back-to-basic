@@ -1,0 +1,13 @@
+
+S
+java:S1854"6Remove this useless assignment to local variable "b3".(­´Ôî8Ÿ¯»¹›1
+X
+java:S1854"6Remove this useless assignment to local variable "b2".(²ş×Çúÿÿÿÿ8Ÿ¯»¹›1
+I
+java:S1481"'Remove this unused "b2" local variable.(²ş×Çúÿÿÿÿ8£¯»¹›1
+D
+java:S1481"'Remove this unused "b3" local variable.(­´Ôî8ÎÙ»¹›1
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Äªö”ÿÿÿÿÿ8¥¯»¹›1
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(·Å8¥¯»¹›1

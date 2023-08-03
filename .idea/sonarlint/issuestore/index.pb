@@ -638,3 +638,13 @@ s
 Csrc/com/tij/exercises/controllingexecution/Solution8SwitchTest.java,2/5/257c2b217eb2b56269ed94033d0d019cabcc79b0
 x
 Hsrc/com/tij/exercises/controllingexecution/Solution10VampireNumbers.java,0/4/040501492509ad5dc515a7b1192cf992b3342efa
+k
+;src/com/tij/initializationileanup/PrimitiveOverloading.java,d/7/d749c9076fc0056207f696cb0c67c093ac08ca6a
+b
+2src/com/tij/initializationileanup/NoSynthesis.java,e/4/e43f0bc5e6dfe45ded054a1a96ed3daa60ab2dc8
+i
+9src/com/tij/initializationileanup/DefaultConstructor.java,d/a/dab3197544d69e287e196794e1015f41609a4a4d
+g
+7src/com/tij/initializationileanup/OverloadingOrder.java,1/0/10da9ffa860f681fd2211730c3da586229bfec04
+b
+2src/com/tij/initializationileanup/Overloading.java,a/a/aa59645da3997f388512d6f5c06fd68dfe036398
