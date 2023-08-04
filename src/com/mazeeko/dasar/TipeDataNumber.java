@@ -7,7 +7,7 @@ public class TipeDataNumber {
         short iniShort = 1000;
         int iniInt = 100_000;
         long iniLong = 1_000_000_000;
-        long iniLong2 = 1_000_000_000_000L;
+        long iniLong2 = 1_000_000_000_000L; // underscore ini biasanya cuman untuk pemisah diangka biar engga bingung baca angkanya
 
         // konversi automatis
         byte iniByte2 = 10;
@@ -38,6 +38,7 @@ public class TipeDataNumber {
         int decimalInt = 25;
         int hexadecimalInt = 0xA132B;
         int binaryInt = 0b01010101;
+        //! int binaryInt = 0b010101014; // ini error karena 4 bukan angka binary
 
 
     }

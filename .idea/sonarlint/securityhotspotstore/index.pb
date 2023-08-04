@@ -43,9 +43,6 @@ f
 6src/com/mazeeko/oop/yeahbutstill/app/InterfaceApp.java,c/a/cae1c07d4dc8b4d6080ff1fc321c8320b792d091
 d
 4src/com/mazeeko/oop/yeahbutstill/app/ProductApp.java,9/2/92c1623c23e8869e0d5373be2c2950f154f66a6b
-:
-
-.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 b
 2src/com/mazeeko/oop/yeahbutstill/app/InnerApp.java,5/1/519f7357b229db9decaa3b524cdfc6a3635df956
 ^

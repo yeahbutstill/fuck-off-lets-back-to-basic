@@ -415,9 +415,6 @@ f
 6src/com/mazeeko/oop/yeahbutstill/app/InterfaceApp.java,c/a/cae1c07d4dc8b4d6080ff1fc321c8320b792d091
 d
 4src/com/mazeeko/oop/yeahbutstill/app/ProductApp.java,9/2/92c1623c23e8869e0d5373be2c2950f154f66a6b
-:
-
-.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 ^
 .src/com/mazeeko/oop/yeahbutstill/repo/Car.java,f/0/f0d75939e1e84aa5491affa84dfda2eee1b6e412
 a
