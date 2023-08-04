@@ -21,5 +21,25 @@ public class TipeDataString {
         String r = "R";
         String s = "S";
         String t = "T";
+
+
+        String test = "TEST";
+        String makan = "Makan";
+
+        char data[] = {'s', 'a', 'y', 'a'};
+        String str = new String(data);
+
+        System.out.println("abc");
+        String kl = "KudaLaut";
+        System.out.println("abc" + kl);
+
+        String c1 = "maya TRIYANTI".substring(8, 13);
+        String d2 = kl.substring(1, 2);
+
+        System.out.println(test.length());
+        System.out.println(makan.toCharArray());
+        System.out.println(str);
+        System.out.println(c1);
+        System.out.println(d2);
     }
 }
