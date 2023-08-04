@@ -1,4 +1,4 @@
-package com.tij.exercises.controllingexecution;
+package com.tij.exercises3.controllingexecution;
 
 // control/VampireNumbers.java
 // TIJ4 Chapter Control, Exercise 10, page 154

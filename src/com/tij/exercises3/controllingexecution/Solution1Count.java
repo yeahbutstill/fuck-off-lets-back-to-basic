@@ -1,4 +1,4 @@
-package com.tij.exercises.controllingexecution;
+package com.tij.exercises3.controllingexecution;
 
 // control/Count.java
 // TIJ4 Chapter Control, Exercise 1, page 139

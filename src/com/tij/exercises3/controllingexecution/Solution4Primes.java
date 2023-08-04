@@ -1,4 +1,4 @@
-package com.tij.exercises.controllingexecution;
+package com.tij.exercises3.controllingexecution;
 
 // control/Primes.java
 // TIJ4 Chapter Control, Exercise 4, page 139

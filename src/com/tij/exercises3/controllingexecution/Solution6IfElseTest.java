@@ -1,4 +1,4 @@
-package com.tij.exercises.controllingexecution;
+package com.tij.exercises3.controllingexecution;
 
 // control/IfEsleTest.java
 // TIJ4 Chapter Control, Exercise 6, page 144

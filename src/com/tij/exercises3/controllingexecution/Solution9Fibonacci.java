@@ -1,4 +1,4 @@
-package com.tij.exercises.controllingexecution;
+package com.tij.exercises3.controllingexecution;
 
 // control/Fibonacci.java
 // TIJ4 Chapter Control, Exercise 9, page 153
