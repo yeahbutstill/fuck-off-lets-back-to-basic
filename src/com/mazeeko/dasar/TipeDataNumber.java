@@ -9,7 +9,7 @@ public class TipeDataNumber {
         long iniLong = 1_000_000_000;
         long iniLong2 = 1_000_000_000_000L; // underscore ini biasanya cuman untuk pemisah diangka biar engga bingung baca angkanya
 
-        // konversi automatis
+        // konversi automatis AKA Widening Casting: byte->short->int->long->float->double
         byte iniByte2 = 10;
         short iniShort2 = iniByte2;
         int iniInt2 = iniShort2;
@@ -17,7 +17,7 @@ public class TipeDataNumber {
         float iniFloat2 = iniLong3;
         double iniDouble2 = iniFloat2;
 
-        // konversi manual
+        // konversi manual AKA Narrowing Casting: double->float->long->int->char->short->byte
         float iniFloat3 = (float) iniDouble2;
         long iniLong4 = (long) iniFloat3;
         int iniInt3 = (int) iniLong4;
