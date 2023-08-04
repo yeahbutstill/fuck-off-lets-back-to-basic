@@ -1,4 +1,8 @@
 package com.mazeeko.dasar;
+
+import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
+
 public class TipeDataString {
     public static void main(String[] args){
         String a = "A";
@@ -37,9 +41,10 @@ public class TipeDataString {
         String d2 = kl.substring(1, 2);
 
         System.out.println(test.length());
-        System.out.println(makan.toCharArray());
+        System.out.println(Arrays.toString(makan.getBytes(StandardCharsets.UTF_8)));
         System.out.println(str);
         System.out.println(c1);
         System.out.println(d2);
+        System.out.println(makan.charAt(2));
     }
 }
