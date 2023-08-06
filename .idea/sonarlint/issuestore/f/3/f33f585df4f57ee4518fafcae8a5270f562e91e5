@@ -1,0 +1,9 @@
+
+Q
+java:S1854"5Remove this useless assignment to local variable "b".(ÿÊ…O8 “‹Ýœ1
+B
+java:S1481"&Remove this unused "b" local variable.(ÿÊ…O8¢“‹Ýœ1
+C
+java:S1068"&Remove this unused "x2" private field.(÷øê‡8É¨‰Ýœ1
+C
+java:S1068"&Remove this unused "x1" private field.(Ú¹‰±8É¨‰Ýœ1

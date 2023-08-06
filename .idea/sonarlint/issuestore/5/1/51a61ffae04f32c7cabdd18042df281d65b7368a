@@ -1,0 +1,44 @@
+
+[	java:S112>"FDefine and throw a dedicated exception instead of using a generic one.(êşùÕ
+`	java:S112G"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¾“ÛÓúÿÿÿÿ
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Â½â¦úÿÿÿÿ
+Y
+java:S6208*"CMerge the previous cases into this one using comma-separated label.(ƒ…íá
+^
+java:S6208:"CMerge the previous cases into this one using comma-separated label.(¥·µĞøÿÿÿÿ
+m	java:S127,"XRefactor the code in order to not assign to this loop counter from within the loop body.(ËŒ£®
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß“¦¤
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒ”û¥
+f	java:S117A"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕË‹
+k	java:S117B"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”¥î«ùÿÿÿÿ
+k	java:S117C"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßˆµÿÿÿÿÿ
+T
+java:S1854"9Remove this useless assignment to local variable "magic".(¯¥ºáúÿÿÿÿ
+b
+java:S1854"@Remove this useless assignment to local variable "minorVersion".(ÏŠÒ‹ùÿÿÿÿ8Èµ“Şœ1
+V
+java:S1854"@Remove this useless assignment to local variable "majorVersion".(ÈÔÜƒ
+^
+java:S1854"ARemove this useless assignment to local variable "constant_pool".(ƒ”û¥8Éµ“Şœ1
+V
+java:S1854A"@Remove this useless assignment to local variable "access_flags".(ÕË‹
+a
+java:S1854C"?Remove this useless assignment to local variable "super_class".(ßˆµÿÿÿÿÿ8Éµ“Şœ1
+E
+java:S1481"*Remove this unused "magic" local variable.(¯¥ºáúÿÿÿÿ
+S
+java:S1481"1Remove this unused "minorVersion" local variable.(ÏŠÒ‹ùÿÿÿÿ8Ïµ“Şœ1
+G
+java:S1481"1Remove this unused "majorVersion" local variable.(ÈÔÜƒ
+O
+java:S1481"2Remove this unused "constant_pool" local variable.(ƒ”û¥8Ğµ“Şœ1
+K
+java:S1481".Remove this unused "tableSize" local variable.(¾âÌß8Ñµ“Şœ1
+X	java:S125;"<This block of commented-out lines of code should be removed.(ıİ€8Öµ“Şœ1
+G
+java:S1481A"1Remove this unused "access_flags" local variable.(ÕË‹
+R
+java:S1481C"0Remove this unused "super_class" local variable.(ßˆµÿÿÿÿÿ8Øµ“Şœ1

@@ -1,0 +1,8 @@
+
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ãºà˜ùÿÿÿÿ8ÔÎõÏœ1
+R
+java:S1854	"5Remove this useless assignment to local variable "x".(˜¥¼Â8ÕÎõÏœ1
+C
+java:S1481	"&Remove this unused "x" local variable.(˜¥¼Â8ÛÎõÏœ1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ËÄ‘8İÎõÏœ1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¼ÁÄ¿ùÿÿÿÿ8ßÎõÏœ1

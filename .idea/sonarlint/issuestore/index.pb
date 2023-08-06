@@ -661,8 +661,6 @@ N
 src/com/tij/simple/Vector.java,c/4/c4be1e5af81091157ff42517baa62993b2c46a7f
 L
 src/com/tij/simple/List.java,0/6/06010b69d6c26422d00e5b6d7482866fc9b2aa6d
-K
-src/com/tij/util/Print.java,0/5/05559e45a8523a9f30ef063a36dd25b6a4624f7c
 Q
 !src/com/tij/access/PrintTest.java,3/8/388697d54638a15e563d3f3f5590d1848cbc4123
 L
@@ -715,3 +713,57 @@ Y
 )src/com/tij/access/ConnectionManager.java,9/f/9f3e92cc2e24c781b17d41ea4e292add174ed58a
 X
 (src/com/tij/reusing/SprinklerSystem.java,c/1/c1ce805fffb8de896490eb053183c4df39514617
+R
+"src/com/tij/reusing/Detergent.java,a/d/adaca60332fd0d4d54a0347aff7baae62331176f
+R
+"src/com/tij/reusing/SpaceShip.java,5/6/569cae170f5a86656fc4df2d7d6a790f6f06cd68
+N
+src/com/tij/reusing/Chess.java,d/2/d26e90a29982dddf55d913253d8231e9f33fdab0
+\
+,src/com/tij/reusing/SpaceShipDelegation.java,1/c/1c25524c10a78b6cb55ccd61bd498a261029f129
+M
+src/com/tij/reusing/Hide.java,5/7/571f740cee4f3c21b3dcd9e377d6bcf98a2e30e3
+Z
+*src/com/tij/reusing/SpaceShipControls.java,7/2/727b9006c979a4e2669f99ad58a267372100f8f1
+U
+%src/com/tij/reusing/PlaceSetting.java,b/1/b1ba34b4e19662def735edc79ce396c31757364a
+M
+src/com/tij/reusing/Lisa.java,9/5/953eef1810a82d7fa75b116b7e3537f6b583b16a
+L
+src/com/tij/reusing/Car.java,f/2/f257fd952223233fb62d614d19dcadbe2c6d1d4e
+L
+src/com/tij/reusing/Orc.java,6/3/634c9db1c99aca9fb836858905c02b75167af97f
+M
+src/com/tij/reusing/Wind.java,a/a/aa0341a0e6a1dc810fa3cf9955658615b81daf53
+R
+"src/com/tij/reusing/FinalData.java,e/f/ef9c85afae80378035d9e9034a38ffbd6e13de24
+P
+ src/com/tij/reusing/Cartoon.java,2/4/24486f3edb4155900b62b5b77594c0ccc183a63d
+S
+#src/com/tij/reusing/BlankFinal.java,b/e/beee4c53cc7798ca9878c85307e900b8c2f4f9a6
+W
+'src/com/tij/reusing/FinalArguments.java,f/b/fbce289600c75a803c2309f911ea89a85e654c8e
+`
+0src/com/tij/reusing/FinalOverridingIllusion.java,6/5/6596a49ce5ac209d48a2faeee0119f6588238304
+R
+"src/com/tij/reusing/CADSystem.java,b/a/ba73fcba80cffc3b0ab86833065f8e34541471eb
+Q
+!src/com/tij/reusing/Jurassic.java,4/5/45030be9cb3d6e665fcbc4be83892a61e68361f1
+M
+src/com/tij/reusing/Bath.java,0/a/0a2b629967b09a0a7a7a7900f63e2f44b6c9aab7
+O
+src/com/tij/reusing/Beetle.java,f/3/f33f585df4f57ee4518fafcae8a5270f562e91e5
+l
+<src/com/tij/exercises4/initializationcleanup/InitTest17.java,9/a/9aee941eda2f67ddd1b0446b88b4119116ea9464
+d
+4src/com/tij/exercises/reusingclasses/Sterilizer.java,7/1/719d54ca15a2a0919c3a5f1b8987d8cc727455ff
+b
+2src/com/tij/exercises/reusingclasses/Airplane.java,9/5/957c077d766f42997f0783041e317e585bc2c0c8
+O
+src/com/tij/util/Generated.java,8/0/80783da37d6a85deef02437d38864403ab775ea3
+O
+src/com/tij/util/Countries.java,c/e/ceaf2a815ba5b6b0811ca356641109bf2c445c5f
+W
+'src/com/tij/atunit/ClassNameFinder.java,5/1/51a61ffae04f32c7cabdd18042df281d65b7368a
+U
+%src/com/tij/atunit/AtUnitRemover.java,0/e/0ed468572147829015cb9beba4daa6f2b80d7af8

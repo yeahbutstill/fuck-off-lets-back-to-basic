@@ -30,7 +30,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" exported="" name="jpos" level="project" />
-    <orderEntry type="library" exported="" name="slf4j-api-2.0.7" level="project" />
   </component>
   <component name="SonarLintModuleSettings">
     <option name="uniqueId" value="3018f1a9-2d8c-43da-b05a-e1206e8b427e" />

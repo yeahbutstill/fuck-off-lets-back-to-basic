@@ -1,0 +1,27 @@
+
+X
+java:S1854"6Remove this useless assignment to local variable "wf".(„¼ªüøÿÿÿÿ8ª–ñÛœ1
+X
+java:S1854"6Remove this useless assignment to local variable "op".(—¸£üÿÿÿÿ8ïÒñÛœ1
+I
+java:S1481"'Remove this unused "op" local variable.(—¸£üÿÿÿÿ8¬–ñÛœ1
+X	java:S125"<This block of commented-out lines of code should be removed.(±›ÅÈ8¬–ñÛœ1
+I
+java:S1481"'Remove this unused "wf" local variable.(„¼ªüøÿÿÿÿ8ñÒñÛœ1
+X	java:S125"<This block of commented-out lines of code should be removed.(èı½Ú8ñÒñÛœ1
+t
+java:S2177("WRename this method; there is a "private" method in the parent class with the same name.(ˆ¶¤Ğ8®–ñÛœ1
+y
+java:S2177,"WRename this method; there is a "private" method in the parent class with the same name.(šÎ‰Ùıÿÿÿÿ8¯–ñÛœ1
+y
+java:S21771"WRename this method; there is a "private" method in the parent class with the same name.(Ú…ŠÁıÿÿÿÿ8°–ñÛœ1
+t
+java:S21775"WRename this method; there is a "private" method in the parent class with the same name.(Š©š8±–ñÛœ1
+C
+java:S1144"&Remove this unused private "f" method.(ˆ¶¤Ğ8±–ñÛœ1
+H
+java:S1144""&Remove this unused private "g" method.(šÎ‰Ùıÿÿÿÿ8±–ñÛœ1
+C
+java:S1144("&Remove this unused private "f" method.(ˆ¶¤Ğ8öÒñÛœ1
+H
+java:S1144,"&Remove this unused private "g" method.(šÎ‰Ùıÿÿÿÿ8öÒñÛœ1
