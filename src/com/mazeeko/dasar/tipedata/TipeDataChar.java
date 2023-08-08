@@ -1,4 +1,4 @@
-package com.mazeeko.dasar;
+package com.mazeeko.dasar.tipedata;
 public class TipeDataChar {
     public static void main(String[] args){
         char a = 'A';

@@ -1,4 +1,4 @@
-package com.mazeeko.dasar;
+package com.mazeeko.dasar.tipedata;
 public class TipeDataNumber {
     public static void main(String[] args){
 

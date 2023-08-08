@@ -1,4 +1,4 @@
-package com.mazeeko.dasar;
+package com.mazeeko.dasar.tipedata.array;
 
 public class Array {
     public static void main(String[] args) {

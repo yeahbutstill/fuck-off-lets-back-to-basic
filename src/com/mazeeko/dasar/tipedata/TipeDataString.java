@@ -1,4 +1,4 @@
-package com.mazeeko.dasar;
+package com.mazeeko.dasar.tipedata;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
