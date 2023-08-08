@@ -393,7 +393,3 @@ O
 src/com/tij/util/Generated.java,8/0/80783da37d6a85deef02437d38864403ab775ea3
 O
 src/com/tij/util/Countries.java,c/e/ceaf2a815ba5b6b0811ca356641109bf2c445c5f
-W
-'src/com/tij/atunit/ClassNameFinder.java,5/1/51a61ffae04f32c7cabdd18042df281d65b7368a
-U
-%src/com/tij/atunit/AtUnitRemover.java,0/e/0ed468572147829015cb9beba4daa6f2b80d7af8
