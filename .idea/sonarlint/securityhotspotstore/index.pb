@@ -137,8 +137,6 @@ e
 5src/com/mazeeko/standardclasses/StringBuilderApp.java,a/3/a36f878b9e8d0ddd9d81630a2507bf24dd6190ca
 d
 4src/com/leetcode/problems/string/CheckIfPangram.java,d/d/dde1ad4a8ddaca4d7bf603a72516ab61f038b22e
-a
-1src/com/leetcode/problems/string/ToLowerCase.java,c/d/cd321373dd87b071391eec5a4bf678dc4e6b0956
 ^
 .src/com/mazeeko/dasar/AugmentedAssigments.java,6/b/6b6b43d05ac7accc4286e2c608f1c25d69dcbc4c
 X
