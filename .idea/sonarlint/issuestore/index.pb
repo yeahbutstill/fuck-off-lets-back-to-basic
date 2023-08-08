@@ -757,8 +757,6 @@ l
 <src/com/tij/exercises4/initializationcleanup/InitTest17.java,9/a/9aee941eda2f67ddd1b0446b88b4119116ea9464
 d
 4src/com/tij/exercises/reusingclasses/Sterilizer.java,7/1/719d54ca15a2a0919c3a5f1b8987d8cc727455ff
-b
-2src/com/tij/exercises/reusingclasses/Airplane.java,9/5/957c077d766f42997f0783041e317e585bc2c0c8
 O
 src/com/tij/util/Generated.java,8/0/80783da37d6a85deef02437d38864403ab775ea3
 O
