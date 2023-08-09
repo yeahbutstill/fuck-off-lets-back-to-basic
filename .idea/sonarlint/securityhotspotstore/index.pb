@@ -247,8 +247,6 @@ i
 9src/com/tij/initializationileanup/DefaultConstructor.java,d/a/dab3197544d69e287e196794e1015f41609a4a4d
 b
 2src/com/tij/initializationileanup/NoSynthesis.java,e/4/e43f0bc5e6dfe45ded054a1a96ed3daa60ab2dc8
-Y
-)src/com/mazeeko/dasar/TipeDataString.java,a/5/a54522f1269cd3f63d2c00b074d5969905a95fb9
 |
 Lsrc/desktop/ifnu/bima/oop/date/calendar/dateformat/SimpleDateFormatTest.java,4/8/48a61cae1277ab066f3a0ba49fb8551ecfd06649
 ?

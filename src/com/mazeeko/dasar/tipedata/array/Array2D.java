@@ -4,10 +4,12 @@ import java.util.Arrays;
 
 public class Array2D {
     public static void main(String[] args) {
-        String[][] arr2D = {
-                // box array 1 = index 0
-                {"Dani", "Setiawan", "Winda"},
-                // box array 2 = index 0
+        String[][] arr2D = { // box array yang pertama [0]
+                { // box array yang pertama [0]
+                    "Dani",
+                        "Setiawan",
+                        "Winda"
+                },
                 {"Mazeeko", "Maulana"},
                 {"Triyanti", "Maya"},
                 {"Yasmin", "Piki", "Nay"}
