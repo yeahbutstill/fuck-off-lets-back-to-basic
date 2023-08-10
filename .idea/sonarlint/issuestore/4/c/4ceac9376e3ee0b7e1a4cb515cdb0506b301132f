@@ -1,11 +1,0 @@
-
-R
-java:S1854"5Remove this useless assignment to local variable "e".(ƒÔéŸ8éÖ¬—1
-C
-java:S1481"&Remove this unused "e" local variable.(ƒÔéŸ8ëÖ¬—1
-U	java:S106	"9Replace this use of System.out or System.err by a logger.(¯ô¢ô8ìÖ¬—1
-U	java:S106"9Replace this use of System.out or System.err by a logger.(¯ô¢ô8íÖ¬—1
-U	java:S106"9Replace this use of System.out or System.err by a logger.(¯ô¢ô8íÖ¬—1
-T	java:S106"9Replace this use of System.out or System.err by a logger.(»áÎD8îÖ¬—1
-C
-java:S1125"'Remove the unnecessary boolean literal.(»áÎD8îÖ¬—1
