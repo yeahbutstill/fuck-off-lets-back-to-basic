@@ -1,6 +1,6 @@
 package com.mazeeko.dasar;
 
-
+// switch statement adalah percabangan yang sama dengan if namun lebih sederhana cara pembuatannya, seperti hanya menggunakan perbandingan ==
 public class SwitchStatement {
     public static void main(String[] args){
         String nilaiKomputer = "A";
