@@ -127,8 +127,6 @@ b
 2src/com/leetcode/problems/string/CellsInRange.java,0/9/0943c39cfbaa964fa836eef344acdda346e5bb24
 c
 3src/com/leetcode/problems/string/DecodeMessage.java,b/a/ba830733eea9d7e770108fa3bdc2d1aebcb4b24f
-j
-:src/com/leetcode/problems/string/ArrayStringsAreEqual.java,c/8/c8b572a3da5eb24af0d213418b2d21469973eb49
 f
 6src/com/leetcode/problems/string/TruncateSentence.java,c/a/cae5031e80a22f5a64045e05aec97d26c3a5ffe4
 h

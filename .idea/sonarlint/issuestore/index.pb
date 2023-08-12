@@ -501,8 +501,6 @@ h
 8src/com/leetcode/problems/string/SortingTheSentence.java,9/2/92a79eeb205ebf8dfd285a44152a5e84ba4a199d
 f
 6src/com/leetcode/problems/string/TruncateSentence.java,c/a/cae5031e80a22f5a64045e05aec97d26c3a5ffe4
-j
-:src/com/leetcode/problems/string/ArrayStringsAreEqual.java,c/8/c8b572a3da5eb24af0d213418b2d21469973eb49
 e
 5src/com/mazeeko/standardclasses/StringBuilderApp.java,a/3/a36f878b9e8d0ddd9d81630a2507bf24dd6190ca
 d
