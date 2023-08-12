@@ -19,7 +19,8 @@ public class SwitchStatement {
                 System.out.println("Mungkin anda salah jurusan nilai anda " + nilaiKomputer);
         }
 
-        // dengan lambda
+        // di java 14 diperkenalkan switch expression dengan lambda( -> {} )
+        // ini lebih mempermudah saat penggunaan switch expression karena tidak perlu lagi menggunakan kata kunci break
         String nilaiMtk = "C";
         switch (nilaiMtk) {
             case "A" -> System.out.println("Wow anda lulus dengan baik nilai anda " + nilaiMtk);
@@ -39,7 +40,8 @@ public class SwitchStatement {
         }
         System.out.println(ucapan);
 
-        // switch dengan yield
+        // switch dengan yield, dimana kita menggunakan kata kunci yield untuk mengembalikan nilai pada switch statement
+        // ini sangat mempermudah kita ketika butuh membuat data berdasarkan kondisi switch statement
         String member = "DIAMON";
         String ucapan1 = switch (member) {
             case "DIAMON":
