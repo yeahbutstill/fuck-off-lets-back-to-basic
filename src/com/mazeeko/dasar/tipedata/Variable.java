@@ -7,6 +7,7 @@ public class Variable {
         var age = 30; // ini secara pintar si java akan menyesuaikan tipe data dari value yang sudah di set
         var address = "Jakarta";
 
+        // constant value
         final var name = "Mazeeko";
         // name = "Dani"; // error karena name sudah constant
 

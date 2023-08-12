@@ -1,0 +1,12 @@
+
+^
+java:S4973"<Strings and Boxed types should be compared using "equals()".(†Á¸ÿÿÿÿÿ8°Îâ»1
+Y
+java:S4973"<Strings and Boxed types should be compared using "equals()".(öÿ‚8°Îâ»1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(»„Á8ÁÎâ»1
+Z	java:S106	"9Replace this use of System.out or System.err by a logger.(Ë®ïüÿÿÿÿ8ÃÎâ»1
+Z	java:S106
+"9Replace this use of System.out or System.err by a logger.(İ¹æüÿÿÿÿ8ÅÎâ»1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ñò§†úÿÿÿÿ8ÆÎâ»1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(†Á¸ÿÿÿÿÿ8ÇÎâ»1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(öÿ‚8ÈÎâ»1

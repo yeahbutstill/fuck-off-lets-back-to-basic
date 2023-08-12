@@ -529,8 +529,6 @@ Y
 )src/com/mazeeko/dasar/ShowProperties.java,a/8/a8824e6229c6524137ab413a35cda5e96d9e8973
 Z
 *src/com/mazeeko/dasar/SwitchStatement.java,c/6/c6cfb212866368a8a7021321db98cffe03b2522b
-V
-&src/com/mazeeko/dasar/IfStatement.java,8/8/884603ec802386d7534a850c18527c4c4d1b0f40
 U
 %src/com/tij/exercises1/Solution2.java,7/0/708ac10549901fff05e57caccb5dcb0c32fb4b89
 U
@@ -751,3 +749,5 @@ O
 src/com/tij/util/Generated.java,8/0/80783da37d6a85deef02437d38864403ab775ea3
 O
 src/com/tij/util/Countries.java,c/e/ceaf2a815ba5b6b0811ca356641109bf2c445c5f
+^
+.src/com/mazeeko/dasar/OperasiPerbandingan.java,2/1/21f3b6f52bd50a4f8550bff65f71bedfb7076473

@@ -27,7 +27,7 @@ public class ContohStatement { // block adalah kumpulan statement yang terdiri d
         // increment statement
         aValue++;
 
-        // method invocation statement, artinya yang memanggil method atau function
+        // method invocation statement (System.out.println) , artinya yang memanggil method atau function
         System.out.println("Hello");
 
         // object creation statement, artinya pembuatan object baru

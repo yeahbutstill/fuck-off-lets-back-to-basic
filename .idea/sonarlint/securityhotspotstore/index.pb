@@ -155,8 +155,6 @@ N
 src/com/leetcode/ch1/Sum3.java,4/0/40f9e173fb471c401d86404cf7dbb3bfdcdaf344
 Z
 *src/com/leetcode/ch1/PolindromeNumber.java,2/e/2ebc120983db659cc4f072b2138618efff6da97d
-V
-&src/com/mazeeko/dasar/IfStatement.java,8/8/884603ec802386d7534a850c18527c4c4d1b0f40
 Z
 *src/com/mazeeko/dasar/SwitchStatement.java,c/6/c6cfb212866368a8a7021321db98cffe03b2522b
 Y
@@ -381,3 +379,5 @@ O
 src/com/tij/util/Generated.java,8/0/80783da37d6a85deef02437d38864403ab775ea3
 O
 src/com/tij/util/Countries.java,c/e/ceaf2a815ba5b6b0811ca356641109bf2c445c5f
+^
+.src/com/mazeeko/dasar/OperasiPerbandingan.java,2/1/21f3b6f52bd50a4f8550bff65f71bedfb7076473
