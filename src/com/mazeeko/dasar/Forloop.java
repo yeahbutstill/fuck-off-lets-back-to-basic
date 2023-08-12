@@ -8,6 +8,8 @@ public class Forloop {
 
     // Prulangan dengan kondisi
     Integer counter = 1;
+    // for adalah salah satu kata kunci yang bisa digunakan untuk melakukan perulangan
+    // block kode yang terdapat didalam for akan selalu diulangi selama kondisi for terpenuhin
     for (; counter <= 5; ) {
       System.out.println("Perulangan ke - " + counter);
       counter++;
