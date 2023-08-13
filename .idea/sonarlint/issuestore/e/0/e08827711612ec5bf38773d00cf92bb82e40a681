@@ -1,15 +1,0 @@
-
-W
-java:S1854"5Remove this useless assignment to local variable "s".(„¦ä¢úÿÿÿÿ8þ™¡‚ÿ/
-R
-java:S1854"5Remove this useless assignment to local variable "c".(©´ô¾8ÕÆ¤‚ÿ/
-X
-java:S1854
-"6Remove this useless assignment to local variable "mc".(¢¬ÁÛøÿÿÿÿ8©»œ‚ÿ/
-I
-java:S1481
-"'Remove this unused "mc" local variable.(¢¬ÁÛøÿÿÿÿ8­»œ‚ÿ/
-]	java:S125"<This block of commented-out lines of code should be removed.(Ãî½¯ýÿÿÿÿ8ÞÆ¤‚ÿ/
-H
-java:S1481"&Remove this unused "s" local variable.(„¦ä¢úÿÿÿÿ8…š¡‚ÿ/
-W	java:S125"<This block of commented-out lines of code should be removed.(’Îç8†š¡‚ÿ/
