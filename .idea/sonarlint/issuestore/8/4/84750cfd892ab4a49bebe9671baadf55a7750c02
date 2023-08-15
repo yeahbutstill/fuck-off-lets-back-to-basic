@@ -1,0 +1,24 @@
+
+K
+java:S1940")Use the opposite operator ("!=") instead.(œý¥âúÿÿÿÿ8àŸ÷¹Ÿ1
+G
+java:S3457"%String contains no format specifiers.(Ï½‡€üÿÿÿÿ8ü‘‚ºŸ1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ï½‡€üÿÿÿÿ8âŸ÷¹Ÿ1
+B
+java:S3457	"%String contains no format specifiers.(Òð´´8ÿ‘‚ºŸ1
+U	java:S106	"9Replace this use of System.out or System.err by a logger.(Òð´´8ìªù¹Ÿ1
+n
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(ãÄÖÉ8«­ü¹Ÿ1
+B
+java:S3457"%String contains no format specifiers.(ãÄÖÉ8—Îû¹Ÿ1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ãÄÖÉ8Èôú¹Ÿ1
+s
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(š¾¼Óþÿÿÿÿ8’€ÿ¹Ÿ1
+G
+java:S3457"%String contains no format specifiers.(š¾¼Óþÿÿÿÿ8©Ëþ¹Ÿ1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(š¾¼Óþÿÿÿÿ8®¢ý¹Ÿ1
+s
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(—ä´Ýúÿÿÿÿ8´š€ºŸ1
+G
+java:S3457"%String contains no format specifiers.(—ä´Ýúÿÿÿÿ8µš€ºŸ1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(—ä´Ýúÿÿÿÿ8µš€ºŸ1
