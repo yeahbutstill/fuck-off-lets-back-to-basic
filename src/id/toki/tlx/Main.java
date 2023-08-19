@@ -1,5 +1,8 @@
 package id.toki.tlx;
 
+import id.toki.tlx.interfaces.Light;
+import id.toki.tlx.interfaces.impl.LightImpl;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Halo, dunia!");
@@ -80,5 +83,9 @@ public class Main {
         double ddd;
         ddd = 10.10;
         System.out.println(((aaa+bbb) % ccc) * ddd/eee * (fff/ggg));
+        System.out.println("==========================================");
+
+        LightImpl lt = new LightImpl();
+        System.out.println(lt.on());
     }
 }
