@@ -1,4 +1,4 @@
 ini file 1
-baris 2, file 1
-baris 3, file 1
-tambah baris
+Baris 2, file 1
+Baris 3, file 1
+Tambah baris
