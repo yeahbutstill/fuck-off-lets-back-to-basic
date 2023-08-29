@@ -737,3 +737,17 @@ a
 0src/id/toki/tlx/problem/QuadtreeIPengkodean.java,1/a/1adb22be6396718585f7f86941dc0353da44ae63
 c
 3src/id/toki/tlx/problem/QuadtreeIIPenerjemahan.java,d/5/d556cacece650601db4f1b3b5194518e226393b9
+Q
+!src/id/toki/tlx/latihan/file1.txt,9/c/9cb0a49de57ccfb5116310f7306149a92d08627e
+Q
+!src/id/toki/tlx/latihan/file2.txt,0/d/0d1be9bf1bcf285869571d78703a9eab2095be3c
+P
+ src/id/toki/tlx/algo/Ganjil.java,c/a/caadbec264f6003c19b446c3f0287e27e3cfae92
+`
+0src/id/toki/tlx/algo/ProgramPositifNegative.java,9/e/9e6d6c4f1244eefaf44a65c09e9e5ab924824342
+P
+ src/id/toki/tlx/algo/Logika.java,3/d/3d3a8aba7eb4ca6530dae77dc412dbc9583aa04d
+V
+&src/id/toki/tlx/algo/ProgramNilai.java,0/7/078f684883d39926b9d7a64a311160cdc36f3b66
+Q
+!src/id/toki/tlx/latihan/file3.txt,8/5/85df22c6897db87fbb51bfb109781bb14b2f21c1
