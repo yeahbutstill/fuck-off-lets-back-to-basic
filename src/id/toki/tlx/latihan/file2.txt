@@ -2,3 +2,4 @@ ini file 2
 baris 2, file 2
 baris 3, file 2
 melanjutkan devlopment
+Devlop lagi
