@@ -1,4 +1,4 @@
 ini file 3
-baris 2, file 3
-baris 3, file 3
-baris 4, file 3
+Baris 2, file 3
+Baris 3, file 3
+Baris 4, file 3
