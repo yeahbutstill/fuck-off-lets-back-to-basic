@@ -1,4 +1,5 @@
 ini file 2
+Tambahan fitur
 baris 2, file 2
 baris 3, file 2
 melanjutkan devlopment

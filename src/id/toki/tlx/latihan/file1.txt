@@ -1,4 +1,5 @@
 ini file 1
+ini file 1
 Baris 2, file 1
 Baris 3, file 1
 Tambah baris
