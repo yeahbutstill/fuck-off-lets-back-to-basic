@@ -10,3 +10,4 @@ Tambah baris
 Tambah baris lagi
 Tambah baris
 Tambah baris lagi
+skema db
