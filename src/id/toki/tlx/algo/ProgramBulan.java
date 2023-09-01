@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class ProgramBulan {
     public static void main(String[] args) {
         int bulan;
-        int tahun;
         Scanner inp = new Scanner(System.in);
         System.out.println("Program menampilkan Bulan ");
         System.out.println("Berdasarkan input Angka ");
