@@ -15,13 +15,13 @@ public class PerulanganForDua {
          * menampilkan karakter “*”.
          */
         for (i = 1; i <= 9; i++) {
+            System.out.println();
             for (j = 9; j > i; j--) {
                 System.out.print(" ");
             }
             for (k = 1; k < (2*i); k++) {
                 System.out.print("*");
             }
-            System.out.println();
         }
     }
 }

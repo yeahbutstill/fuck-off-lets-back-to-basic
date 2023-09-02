@@ -479,3 +479,13 @@ P
  src/id/toki/tlx/algo/Logika.java,3/d/3d3a8aba7eb4ca6530dae77dc412dbc9583aa04d
 V
 &src/id/toki/tlx/algo/ProgramNilai.java,0/7/078f684883d39926b9d7a64a311160cdc36f3b66
+V
+&src/id/toki/tlx/algo/ProgramBulan.java,c/9/c97b096eff7b445308706d86caecb7ac8e0191b3
+[
++src/id/toki/tlx/algo/PerulanganForSatu.java,4/6/461f5fbe841a27a833d9b6c8922e8bbbd14a708f
+Z
+*src/id/toki/tlx/algo/PerulanganForDua.java,f/9/f941cf4ad915ca428b334d74b61b96c6d617f931
+]
+-src/id/toki/tlx/algo/PerulanganWhileSatu.java,c/4/c4644ad29c15b2cee0b541703cc7cd304f160b0d
+\
+,src/id/toki/tlx/algo/PerulanganWhileDua.java,0/a/0a8672cd0c41ff26640cbdfd49b25b08f407628d
