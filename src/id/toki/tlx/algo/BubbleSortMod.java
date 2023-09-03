@@ -1,5 +1,24 @@
 package id.toki.tlx.algo;
 
+/**
+ * Berdasarkan cara kerjanya Bubble Sort merupakan algoritma sorting
+ * yang sangat sederhana untuk dipahami dan diimplementasikan, akan
+ * tetapi jika diperhatikan secara seksama perbandingan data terdapat kemungkinan elemen yang sudah
+ * dibandingkan dan sudah benar posisinya akan terus ikut dibandingkan,
+ * hal ini menyebabkan inefisiensi ketika bubble sort digunakan untuk
+ * mengurutkan array dengan elemen data yang banyak. Modifikasi
+ * algoritma bubble sort untuk mengurangi inefisiensi dapat dilakukan dengan memberikan penanda status
+ * pada saat perbandingan dan pertukaran elemen data sehingga dengan adanya penanda tersebut perulangan
+ * dapat membedakan elemen yang sudah benar posisinya dengan elemen yang masih perlu untuk dilakukan perbandingan.
+ * Penanda status dilakukan dengan menggunakan variabel boolean status=true;
+ * Selama status==true perulangan akan terus dilakukan.
+ * Perubahan status==true menjadi status==false dilakukan sebelum
+ * program menjalankan perbandingan elemen perubahan
+ * kembali dari status==false menjadi status==true terjadi jika kondisi
+ * terpenuhi namun apabila kondisi (baris 17) tidak terpenuhi status akan
+ * tetap false yang artinya elemen sudah berada diposisi yang tepat dan
+ * perulangan tidak dilakukan.
+ */
 public class BubbleSortMod {
     public static void main(String[] args) {
         int[] data = {5,4,1,2,3}; // data aray acak
