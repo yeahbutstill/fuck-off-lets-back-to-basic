@@ -1,7 +1,17 @@
 package id.toki.tlx.algo;
 
-public class MergeSort {
+public class MergeSortLagi {
     static int counter = 0;
+
+    public static void main(String[] args) {
+        int[] data = {6,5,12,10,9,1};
+        System.out.print("Data acak: ");
+        cetak(data);
+        System.out.println();
+        split(data);
+        System.out.print("\n\nData urut: ");
+        cetak(data);
+    }
 
     public static void split(int[] data) {
         if (data.length > 1) {
