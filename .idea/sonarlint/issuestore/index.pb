@@ -777,3 +777,5 @@ Y
 )src/id/toki/tlx/algo/MergeSortString.java,1/c/1c586df5c0fcd45d6c72ca77c768927d92024667
 \
 ,src/id/toki/tlx/algo/BinarySearchString.java,f/7/f73e29b69050c25c69ee13285d9bef072adbe4bb
+]
+-src/id/toki/tlx/algo/BinarySearchString2.java,e/9/e91abf253ab02363f9581a6ae375d95eeb57f102
