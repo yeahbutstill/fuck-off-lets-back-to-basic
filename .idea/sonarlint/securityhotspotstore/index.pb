@@ -507,3 +507,19 @@ Y
 )src/id/toki/tlx/algo/MergeSortString.java,1/c/1c586df5c0fcd45d6c72ca77c768927d92024667
 ]
 -src/id/toki/tlx/algo/BinarySearchString2.java,e/9/e91abf253ab02363f9581a6ae375d95eeb57f102
+W
+'src/id/toki/tlx/algo/DemoPewarisan.java,8/d/8d6be62d0b28a1e442101ddfe1609db46129d4d8
+O
+src/id/toki/tlx/algo/Kotak.java,e/b/ebb54d401ab0b8aaa580f828dc0037329e954613
+P
+ src/id/toki/tlx/algo/Kotak1.java,e/f/efe488f812c2d9f515f0ce8b085d6f627b88d3e0
+T
+$src/id/toki/tlx/algo/KotakPejal.java,4/7/474d70d7be2328dc48267c70520f7267cf0dea86
+R
+"src/id/toki/tlx/algo/MusikPop.java,c/4/c4a1d1251d1b4b209113243245b6743cecfafc27
+S
+#src/id/toki/tlx/algo/MusikJazz.java,3/a/3a4ed151e2ed2e8818d5ff6c20ca95c91ecb23f7
+S
+#src/id/toki/tlx/algo/MusikJPop.java,b/d/bd2b737525b01bd86bd0089284af60ac9ee8f74c
+Y
+)src/id/toki/tlx/algo/DemoEnkapsulasi.java,3/e/3e696874acb85525339f796631eb67482bbcfc0d
