@@ -523,3 +523,19 @@ S
 #src/id/toki/tlx/algo/MusikJPop.java,b/d/bd2b737525b01bd86bd0089284af60ac9ee8f74c
 Y
 )src/id/toki/tlx/algo/DemoEnkapsulasi.java,3/e/3e696874acb85525339f796631eb67482bbcfc0d
+N
+src/id/toki/tlx/algo/Luar.java,4/2/42efc79acd15713232d2c39353587c64e36b7cde
+X
+(src/id/toki/tlx/algo/DemoInnerClass.java,0/2/02a1dbdb0fc0a3c73ce8cef4673ebfd9b0086835
+O
+src/id/toki/tlx/algo/Induk.java,c/2/c2b090dd040c9821df1bc86d51a1861ee13bda53
+N
+src/id/toki/tlx/algo/Anak.java,b/4/b4603951089252aac65d62cdd25e353c068a2921
+V
+&src/id/toki/tlx/algo/DemoOverride.java,1/4/14a42085c940fceaac61ef5532a09a7b11ace4c3
+R
+"src/id/toki/tlx/algo/HewanAbs.java,0/4/049db5bfd2bd5bdf2111f41a1e7c46a046e53abb
+N
+src/id/toki/tlx/algo/Sapi.java,1/0/100444ddd1fa6c3fa641a133789403d715e04c35
+R
+"src/id/toki/tlx/algo/Perkutut.java,3/b/3b7416a05009e12eab171298921aee2b98c8309f
