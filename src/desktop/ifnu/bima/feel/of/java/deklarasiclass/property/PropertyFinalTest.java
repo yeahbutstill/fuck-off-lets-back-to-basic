@@ -27,5 +27,5 @@ public class PropertyFinalTest {
  * adalah proses mengubah object ke dalam bentuk yang bisa ditransfer lewat media I/O, misalnya
  * object ini disimpan ke hardisk atau dikirim ke komputer lain lewat jaringan. Proses sebaliknya
  * adalah deserialize dimana dari bentuk ini diubah lagi menjadi bentuk object di dalam JVM.
- * Topikserialize dan deserialize akan sedikit kita bahas nanti pada waktu membahas arsitektur three tier.
+ * Topik serialize dan deserialize akan sedikit kita bahas nanti pada waktu membahas arsitektur three tier.
  */
