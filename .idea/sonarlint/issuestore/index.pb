@@ -811,3 +811,21 @@ N
 src/id/toki/tlx/algo/Sapi.java,1/0/100444ddd1fa6c3fa641a133789403d715e04c35
 R
 "src/id/toki/tlx/algo/Perkutut.java,3/b/3b7416a05009e12eab171298921aee2b98c8309f
+y
+Isrc/desktop/ifnu/bima/feel/of/java/deklarasiclass/classvsobject/Main.java,2/7/2773e3c77f1724c1d9f58a55c2755aae3ac8b8e1
+x
+Hsrc/desktop/ifnu/bima/feel/of/java/deklarasiclass/method/TestMethod.java,0/3/03ee54009b139caf648a9d1df40ad098b61b859b
+w
+Gsrc/desktop/ifnu/bima/feel/of/java/deklarasiclass/constructor/README.md,f/c/fc8a552dcb83b2c1cbc51abb5749692e3a09c6d3
+~
+Nsrc/desktop/ifnu/bima/feel/of/java/deklarasiclass/method/MethodStaticTest.java,7/0/7027e0de5b3b294b6fe1cb6e4651058a56705fb5
+‚
+Rsrc/desktop/ifnu/bima/feel/of/java/deklarasiclass/constructor/ConstructorTest.java,5/c/5cb9db408dae4d775d9144710b501d706a79fa62
+Œ
+\src/desktop/ifnu/bima/feel/of/java/deklarasiclass/constructor/ConstructorNonDefaultTest.java,d/8/d80408f5f5857130ab90ec31dfe7c5a6ad637190
+‘
+asrc/desktop/ifnu/bima/feel/of/java/deklarasiclass/constructor/ConstructorCallConstructorTest.java,c/4/c461ec8f0892000cf0bb4c0dbb12dbd1c42566e9
+m
+=src/desktop/ifnu/bima/feel/of/java/deklarasiclass/Person.java,8/6/863fc861f38c8b72c7dd64b73778ac4d4aaa8a35
+‚
+Rsrc/desktop/ifnu/bima/feel/of/java/deklarasiclass/property/PropertyStaticTest.java,b/5/b5484ee8ca69554c050d4af90703322864e2e68d

@@ -1,0 +1,7 @@
+
+F	java:S106	"+Replace this use of System.out by a logger.(¸â³e8øâ¨“§1
+V
+java:S1854"9Remove this useless assignment to local variable "test1".(½Ý‚Ž8¨¨«“§1
+]	java:S125"<This block of commented-out lines of code should be removed.(Ó½Ïðýÿÿÿÿ8Êó¬“§1
+G
+java:S1481"*Remove this unused "test1" local variable.(½Ý‚Ž8ª¨«“§1
