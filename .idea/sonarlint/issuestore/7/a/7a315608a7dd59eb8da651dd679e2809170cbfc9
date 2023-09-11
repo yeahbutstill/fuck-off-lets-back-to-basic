@@ -1,0 +1,5 @@
+
+q	java:S116	"URename this field "NILAIFINAL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒÐÎÞ8Šˆ÷—§1
+>
+java:S1170	"!Make this final field static too.(ÒÐÎÞ8Šˆ÷—§1
+G	java:S106"+Replace this use of System.out by a logger.(Èð¢¢8Žˆ÷—§1
