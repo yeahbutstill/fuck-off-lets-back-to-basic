@@ -1,4 +1,4 @@
-package desktop.ifnu.bima.feel.of.java.stackorheap;
+package desktop.ifnu.bima.feel.of.java.deklarasiclass.stackorheap;
 
 /**
  * Program java akan berada dalam stack atau heap
