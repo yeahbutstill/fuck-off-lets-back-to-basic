@@ -1,0 +1,29 @@
+
+f
+java:S1854="IRemove this useless assignment to local variable "dataAnonDuaDimensiStr".(ù’á±8±º–Æ¨1
+h
+java:S1854<"FRemove this useless assignment to local variable "dataAnonDuaDimensi".(•„·Ëüÿÿÿÿ8±º–Æ¨1
+c
+java:S1854;"ARemove this useless assignment to local variable "dataAnonArray".(Û´¥âýÿÿÿÿ8±º–Æ¨1
+g
+java:S18544"JRemove this useless assignment to local variable "dataTigaDimensiPraktis".(¹ûŠÀ8áœ–Æ¨1
+e
+java:S18543"CRemove this useless assignment to local variable "arrayDuaDimensi".(«Öç²üÿÿÿÿ8áœ–Æ¨1
+f
+java:S18542"IRemove this useless assignment to local variable "dataDuaDimensiPraktis".(Ñ°¹Ï8áœ–Æ¨1
+l
+java:S18541"JRemove this useless assignment to local variable "dataSatuDimensiPraktis".(ëçŠÚýÿÿÿÿ8áœ–Æ¨1
+]
+java:S14811";Remove this unused "dataSatuDimensiPraktis" local variable.(ëçŠÚýÿÿÿÿ8âœ–Æ¨1
+W
+java:S14812":Remove this unused "dataDuaDimensiPraktis" local variable.(Ñ°¹Ï8ãœ–Æ¨1
+V
+java:S14813"4Remove this unused "arrayDuaDimensi" local variable.(«Öç²üÿÿÿÿ8ãœ–Æ¨1
+X
+java:S14814";Remove this unused "dataTigaDimensiPraktis" local variable.(¹ûŠÀ8ãœ–Æ¨1
+T
+java:S1481;"2Remove this unused "dataAnonArray" local variable.(Û´¥âýÿÿÿÿ8´º–Æ¨1
+Y
+java:S1481<"7Remove this unused "dataAnonDuaDimensi" local variable.(•„·Ëüÿÿÿÿ8´º–Æ¨1
+W
+java:S1481=":Remove this unused "dataAnonDuaDimensiStr" local variable.(ù’á±8´º–Æ¨1
