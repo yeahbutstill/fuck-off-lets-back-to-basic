@@ -883,3 +883,13 @@ o
 ?src/desktop/ifnu/bima/feel/of/java/operator/relasi/Example.java,6/3/633760a3c3b3ccabdeba60785b679a2eb94e0b27
 {
 Ksrc/desktop/ifnu/bima/feel/of/java/operator/relasi/CompareWrapperClass.java,0/3/03821b70075c8e0e5d7bdf5d3052ead2d6bcbc08
+x
+Hsrc/desktop/ifnu/bima/feel/of/java/operator/operatorinstanceof/README.md,4/d/4dc6740a6ad4a8893b0c46c90579851478c768b1
+{
+Ksrc/desktop/ifnu/bima/feel/of/java/operator/operatorinstanceof/Example.java,d/3/d35e6a550548acffd257e9ffea701591433a9ea7
+y
+Isrc/desktop/ifnu/bima/feel/of/java/operator/aritmatika/IncrementTest.java,2/1/21b53c16e437d884bbf67280759df0ba4bda1570
+s
+Csrc/desktop/ifnu/bima/feel/of/java/operator/aritmatika/Example.java,5/5/5513d603602b991f411edcbbaa54b7bb33107bf4
+y
+Isrc/desktop/ifnu/bima/feel/of/java/operator/aritmatika/DecrementTest.java,8/f/8f250783285bc0c68f231d99d5e5b4caf7f3aed4
