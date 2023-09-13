@@ -621,3 +621,5 @@ y
 Isrc/desktop/ifnu/bima/feel/of/java/operator/aritmatika/IncrementTest.java,2/1/21b53c16e437d884bbf67280759df0ba4bda1570
 y
 Isrc/desktop/ifnu/bima/feel/of/java/operator/aritmatika/DecrementTest.java,8/f/8f250783285bc0c68f231d99d5e5b4caf7f3aed4
+p
+@src/desktop/ifnu/bima/feel/of/java/operator/kondisi/Example.java,0/f/0fc0cc57519692d9f277096f4c6880d27732eb37
