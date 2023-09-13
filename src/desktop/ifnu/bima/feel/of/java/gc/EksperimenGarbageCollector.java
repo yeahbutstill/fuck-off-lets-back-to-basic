@@ -54,5 +54,5 @@ public class EksperimenGarbageCollector {
    * yang cukup terpaksa maka kita bisa mencoba memilih algoritma apa yang cocok digunakan.
    */
 
-  
+
 }

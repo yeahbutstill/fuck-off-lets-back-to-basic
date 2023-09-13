@@ -13,7 +13,7 @@ public class CastingEksplisit {
   // Contoh di atas tidak terjadi pemotongan nilai karena 100 masih di dalam jangkauan byte, kalau
   // contoh di bawah ini akan terjadi pemotongan nilai :
   int i1 = 1000;
-  byte b1 = (byte) i;
+  byte b1 = (byte) i1;
 
   // nilai variabel b2 tidak akan 1000, karena jangkauan byte hanya sampai 127 saja. Silahkan
   // mencoba menjalankan operasi di atas untuk mengetahui berapa nilai akhir dari variabel b2
@@ -21,6 +21,12 @@ public class CastingEksplisit {
 
   public static void main(String[] args) {
     CastingEksplisit castingEksplisit = new CastingEksplisit();
+    System.out.println(castingEksplisit.i);
+    System.out.println("tidak terpotong karena byte max value nya 127");
+    System.out.println(castingEksplisit.b);
+
+    System.out.println();
+
     System.out.println(castingEksplisit.i1);
     System.out.println("terpotong karena byte max nya 127");
     System.out.println(castingEksplisit.b1);
