@@ -1,0 +1,16 @@
+
+Y
+java:S4973"<Strings and Boxed types should be compared using "equals()".(ÛøÔ›8Úî‡ç¨1
+Y
+java:S4973"<Strings and Boxed types should be compared using "equals()".(’«“‡8ôé”ç¨1
+C
+java:S2129"!Remove this "Integer" constructor(öÍÃµşÿÿÿÿ8ˆú†ç¨1
+j
+java:S5738"HRemove this call to a deprecated method, it has been marked for removal.(öÍÃµşÿÿÿÿ8‰ú†ç¨1
+C
+java:S2129"!Remove this "Integer" constructor(ìÌÖäøÿÿÿÿ8”ıç¨1
+j
+java:S5738"HRemove this call to a deprecated method, it has been marked for removal.(ìÌÖäøÿÿÿÿ8”ıç¨1
+G	java:S106"+Replace this use of System.out by a logger.(ÛøÔ›8Šú†ç¨1
+G	java:S106"+Replace this use of System.out by a logger.(ğ—¸´8şëˆç¨1
+G	java:S106"+Replace this use of System.out by a logger.(’«“‡8˜¨“ç¨1

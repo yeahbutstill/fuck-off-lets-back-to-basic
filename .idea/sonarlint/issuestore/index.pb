@@ -869,3 +869,17 @@ l
 <src/desktop/ifnu/bima/feel/of/java/array/AnonymousArray.java,0/e/0e084a264f89da32f4c181299aa464bda9e114af
 c
 3src/desktop/ifnu/bima/feel/of/java/gc/CobaMati.java,b/2/b23f195b6230a40b94ccd382b43cec9f8db25284
+k
+;src/desktop/ifnu/bima/feel/of/java/gc/GarbageCollector.java,1/7/17ead7df63b4a39607bb249b3524425dc9bfcfc1
+u
+Esrc/desktop/ifnu/bima/feel/of/java/gc/EksperimenGarbageCollector.java,3/8/3832f3bf3079ed463db5746e679f6127e76cfbf7
+e
+5src/desktop/ifnu/bima/feel/of/java/operator/README.md,b/7/b76527c81e3f34e0e2bd0cabbc2f2661bab6ad6c
+x
+Hsrc/desktop/ifnu/bima/feel/of/java/operator/operatorassignment/README.md,4/a/4abd32ffef3d69d54463eae2d4b0ca33cf77a166
+{
+Ksrc/desktop/ifnu/bima/feel/of/java/operator/operatorassignment/Example.java,2/d/2d00d7957dff5214f4aa5276c9aa249bf4a9b29c
+o
+?src/desktop/ifnu/bima/feel/of/java/operator/relasi/Example.java,6/3/633760a3c3b3ccabdeba60785b679a2eb94e0b27
+{
+Ksrc/desktop/ifnu/bima/feel/of/java/operator/relasi/CompareWrapperClass.java,0/3/03821b70075c8e0e5d7bdf5d3052ead2d6bcbc08
