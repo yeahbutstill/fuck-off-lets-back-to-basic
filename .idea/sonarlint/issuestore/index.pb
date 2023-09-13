@@ -867,3 +867,5 @@ i
 9src/desktop/ifnu/bima/feel/of/java/array/ContohArray.java,9/d/9df6ee03e369c7e0c12cdbdc07c265fcb948f87b
 l
 <src/desktop/ifnu/bima/feel/of/java/array/AnonymousArray.java,0/e/0e084a264f89da32f4c181299aa464bda9e114af
+c
+3src/desktop/ifnu/bima/feel/of/java/gc/CobaMati.java,b/2/b23f195b6230a40b94ccd382b43cec9f8db25284
