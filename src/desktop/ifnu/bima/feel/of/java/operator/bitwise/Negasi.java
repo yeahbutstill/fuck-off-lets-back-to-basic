@@ -10,7 +10,10 @@ public class Negasi {
      * negatif dan positif.
      */
     System.out.println(Integer.toBinaryString(x));
+    System.out.println("Setelah proses negasi, dimana nilai 0 menjadi 1 dan sebaliknya, maka representasi binarynya " +
+            "menjadi :");
     System.out.println(Integer.toBinaryString(z));
+    System.out.println("proses 2's complement ini adalah menambahkan 1 ke binari hasil negasi");
     System.out.println(z);
 
     /**
@@ -28,6 +31,50 @@ public class Negasi {
      * panjang datanya adalah 32 bit, seperti di bawah ini :
      */
 
-    
+    // 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1
+
+    // Setelah proses negasi, dimana nilai 0 menjadi 1 dan sebaliknya, maka representasi binarynya
+    // menjadi :
+    // 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0
+
+    // Langkah terakhir dari proses 2's complement ini adalah menambahkan 1 ke binari hasil negasi,
+    // sehingga hasil akhir representasi binari dari –11 adalah :
+    // 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1
+
+    /**
+     * Satu hal yang pasti, kalau angka digit sebelah paling kiri 0 maka angkanya pasti positif,
+     * sebaliknya jika digit paling kiri bernilai 1 maka angkanya adalah negatif. Kalua kita mendapatkan
+     * representasi binari dari sebuah angka negatif, maka untuk mengetahui berapa nilainya perlu
+     * dilakukan operasi kebalikan dari 2's complement : kurangi satu kemudian negasikan menjadi
+     * angka positifnya. Nah, kita coba kembalikan bentuk -11 di atas menjadi bentuk positifnya :
+     */
+
+    /**
+     * 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1
+     * --------------------------------------------------------------- -1
+     * 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0
+     * --------------------------------------------------------------- ~
+     * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1
+     * => 11 positif
+     */
+
+    /**
+     * Kembali lagi ke operasi negasi dari integer di atas, sekarang kita bisa menjawab kenapa negasi
+     * 11 hasilnya adalah -12. Nah kita lihat Operasi berikut ini :
+     */
+    // 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1
+    // => 11
+    // --------------------------------------------------------------- ~
+    // 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0
+
+    /**
+     * kita kembalikan ke bentuk positifnya :
+     * 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 0
+     * --------------------------------------------------------------- -1
+     * 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 1 0
+     * --------------------------------------------------------------- ~
+     * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1
+     * => 12
+     */
   }
 }
