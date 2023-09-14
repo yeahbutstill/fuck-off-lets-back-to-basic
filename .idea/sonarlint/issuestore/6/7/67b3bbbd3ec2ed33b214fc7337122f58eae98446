@@ -1,0 +1,7 @@
+
+¤
+java:S2681"†This line will not be executed conditionally; only the first line of this 2-line block will be. The rest will execute unconditionally.(†Ù¶8øçÚ¢©1
+Y
+java:S2589"7Remove this expression which always evaluates to "true"(ÁŒÿìúÿÿÿÿ8ÃˆØ¢©1
+L	java:S106"+Replace this use of System.out by a logger.(ƒ“»ıÿÿÿÿ8ÍˆØ¢©1
+G	java:S106"+Replace this use of System.out by a logger.(†Ù¶8ŞşØ¢©1
