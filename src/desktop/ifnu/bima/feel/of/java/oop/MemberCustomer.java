@@ -1,5 +1,7 @@
 package desktop.ifnu.bima.feel.of.java.oop;
 
+import java.io.Serializable;
+
 /**
  * Implementasi inheritance dalam kode menggunakan keyword extends. Kalau kita ingin
  * membuat sebuah class turunan dari class yang lain, kita gunakan keyword extends setelah
@@ -14,4 +16,4 @@ package desktop.ifnu.bima.feel.of.java.oop;
  * hewan. Kucing adalah turunan dari hewan, maka kucing adalah hewan. Sama juga seperti
  * MemberCustomer adalah turunan dari Customer, maka MemberCustomer adalah Customer.
  */
-public class MemberCustomer extends Customer {}
+public class MemberCustomer extends Customer implements Serializable {}
