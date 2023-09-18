@@ -3,7 +3,7 @@ package desktop.ifnu.bima.feel.of.java.flow.perulanganiterasi;
 public class ExampleDoWhile {
   /**
    * Kalau kita ingin agar iterasi terjadi setidaknya sekali saja maka kita bisa menggunakan
-   * do-while yang akan kita bahas di bab berikutnya.
+   * do-while
    */
   public static void main(String[] args) {
     do{
