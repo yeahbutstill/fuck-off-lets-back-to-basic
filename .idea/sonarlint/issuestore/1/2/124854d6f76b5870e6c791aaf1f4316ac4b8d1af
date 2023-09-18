@@ -1,0 +1,13 @@
+
+\
+java:S2259("AA "NullPointerException" could be thrown; "abc" is nullable here.(›Ã¸÷ûÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(©õ–äúÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(É§üûÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(ıòÄÏ
+E	java:S106"+Replace this use of System.out by a logger.(µÄ†ûÿÿÿÿ
+@	java:S106!"+Replace this use of System.out by a logger.(ğÖÑˆ
+@	java:S106&"+Replace this use of System.out by a logger.(÷œÊØ
+G
+java:S2201(",The return value of "toString" must be used.(›Ã¸÷ûÿÿÿÿ
+a
+java:S1858("F"abc" is already a string, there's no need to call "toString()" on it.(›Ã¸÷ûÿÿÿÿ
