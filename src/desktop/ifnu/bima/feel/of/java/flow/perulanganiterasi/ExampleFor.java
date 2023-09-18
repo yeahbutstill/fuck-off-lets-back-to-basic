@@ -1,6 +1,6 @@
 package desktop.ifnu.bima.feel.of.java.flow.perulanganiterasi;
 
-public class Example {
+public class ExampleFor {
   public static void main(String[] args) {
     /**
      * Keyword for digunakan untuk melakukan iterasi kalau jumlah iterasinya tertentu, misalnya kita
