@@ -1,5 +1,6 @@
 package desktop.ifnu.bima.feel.of.java.oop;
 
+import java.io.Serializable;
 import java.util.UUID;
 
 public class TestInheriDanComp {
@@ -56,5 +57,21 @@ public class TestInheriDanComp {
     Keluarga kelua = betawi;
     kelua.setId(UUID.randomUUID());
     System.out.println(kelua);
+    System.out.println();
+
+    /**
+     * Sekarang kita bisa mendeklarasikan variabel dengan tipe Serializable dan mengassign
+     * instance dari MemberCustomer ke dalam variabel tersebut. Atau dengan kata lain
+     * MemberCustomer IS-A Serialiable, seperti contoh di bawah ini :
+     */
+    Serializable betawiSerialize = new Betawi();
+    System.out.println(betawiSerialize);
   }
 }
+
+/**
+ * Jadi Class Betawi mempunyai banyak bentuk (polimorfsme). Kita akan sering melihat
+ * kode dengan pola seperti ini, variabel akan dideklarasikan dengan tipe interface tetapi
+ * diinstansiasi dengan class yang mengimplementasikan interface tersebut. Praktek seperti ini
+ * dikategorikan sebagai praktek yang baik sehingga banyak diikuti oleh developer Java.
+ */

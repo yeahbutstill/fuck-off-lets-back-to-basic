@@ -1,6 +1,8 @@
 package desktop.ifnu.bima.feel.of.java.oop;
 
-public class Betawi extends Keluarga { // inheritance Betawi IS-A Keluarga
+import java.io.Serializable;
+
+public class Betawi extends Keluarga implements Serializable { // inheritance Betawi IS-A Keluarga
     private String namaIstri;
     private String namaSuami;
     private int punyaAnak;
