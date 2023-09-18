@@ -24,6 +24,14 @@ public class TestInheriDanComp {
 
     System.out.println("==============================");
 
+    /**
+     * Polimorfisme (Polymorphism)
+     * Arti polimorfsme secara harfah (makna kata) adalah banyak bentuk. Sebuah object bisa diassign
+     * ke dalam tipe yang berbeda-beda. Contohnya class Betawi IS-A
+     * Object, karena semua class pasti extends Object
+     * Keluarga, karena Class Betawi extends Class Keluarga
+     * Betawi
+     */
     Object betawiObject = new Betawi();
     System.out.println(betawiObject.getClass());
 
