@@ -1,5 +1,0 @@
-
-G	java:S106"+Replace this use of System.out by a logger.(ô•›ÿ8¨ê‹â©1
-X	java:S125"<This block of commented-out lines of code should be removed.(ûæ”ü8êƒâ©1
-Q
-java:S1128"4Remove this unused import 'java.io.FileInputStream'.(˜³ÉÓ8¡Ï¤â©1
