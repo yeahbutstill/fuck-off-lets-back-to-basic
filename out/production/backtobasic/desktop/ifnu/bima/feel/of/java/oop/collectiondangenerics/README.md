@@ -48,3 +48,22 @@ dengan operator == walaupun string yang ada di dalamnya sama. Tetapi method equa
 mengembalikan nilai true walaupun objectnya berada di memory berbeda asalkan nilai
 stringnya sama.
 
+Terlihat mengoverride method equals bukan pekerjaan yang gampang, cukup banyak kode yang
+harus diketik, nantinya menggunakan NetBeans proses pembuatan method equals bisa digenerate
+secara otomatis, sehingga meminimalisasi kode yang harus diketik manual.
+
+Method hashCode akan mengembalikan nilai integer unik untuk setiap object yang berbeda.
+Aturanya adalah :
+- Method hashCode dari sebuah object harus mengembalikan nilai yang sama walaupun
+dieksekusi berkali kali selama nilai property dalam object tidak berubah.
+- Kalau dua buah object dioperasikan dengan method equals mengembalikan nilai true maka
+method hashCode dari kedua object harus mengembalikan nilai integer yang sama.
+Sebaliknya, kalau dua buah object mengembalikan nilai false maka hashCode untuk kedua
+object akan mengembalikan nilai integer yang berbeda.
+- Kalau dua buah object dioperasikan dengan method equals mengembalikan nilai false maka
+method hashCode tidak harus mengembalikan nilai yang berbeda. Mengembalikan nilai yang
+sama pun tidak masalah.
+
+Topik bagaimana menghitung nilai hashCode yang baik bisa menjadi topik PhD, tetapi tidak perlu
+bingung, menggunakan NetBeans kita bisa mengenerate method hashCode ini agar mematuhi
+aturan di atas.
