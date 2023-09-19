@@ -1027,3 +1027,9 @@ Lsrc/desktop/ifnu/bima/feel/of/java/oop/castingvariabelreference/Example.java,0
 Nsrc/desktop/ifnu/bima/feel/of/java/oop/castingvariabelreference/PersonDao.java,1/0/10ed7e0cd78bc73a8baf94ef32017437c96c9112
 ‚
 Rsrc/desktop/ifnu/bima/feel/of/java/oop/castingvariabelreference/PersonDaoImpl.java,d/c/dc786806fde96b1e19a1a56d5f3ce631460788a2
+v
+Fsrc/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/README.md,d/a/dabd0636f147a3b042f151f821c675a90deb7c8d
+|
+Lsrc/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/EqualsTest.java,7/b/7bbf6c1149f2f372498c9e284216644b3ca0e205
+~
+Nsrc/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/ToStringTest.java,5/f/5f030574be8e6ba1b7e4de98e63e463706d282e8
