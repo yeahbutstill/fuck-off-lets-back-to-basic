@@ -9,6 +9,7 @@ public class Keluarga {
     private int umur;
     private Alamat alamat; // composition Keluarga HAS-A Alamat
 
+    // Enkapsulasi karena sebuah property diset akses modifiernya private dan untuk mengaksesnya menggunakan get dan set method
     public UUID getId() {
         return id;
     }
