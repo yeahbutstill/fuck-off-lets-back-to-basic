@@ -747,3 +747,11 @@ Ssrc/desktop/ifnu/bima/feel/of/java/oop/overridingdanoverloading/MemberCustomer.
 Ssrc/desktop/ifnu/bima/feel/of/java/oop/overridingdanoverloading/OverridingTest.java,f/1/f115034e74c9bec688467db0185519d7b110b93f
 y
 Isrc/desktop/ifnu/bima/feel/of/java/oop/overridingdanoverloading/README.md,0/8/08915fa51c59004c8587e8d2aa5ea8c8325f2c47
+y
+Isrc/desktop/ifnu/bima/feel/of/java/oop/castingvariabelreference/README.md,8/e/8e4b7ade242ea0f41f4dcfd95b870f3841b73b02
+|
+Lsrc/desktop/ifnu/bima/feel/of/java/oop/castingvariabelreference/Example.java,0/b/0bebc726ff64599da8afe5df042bba7c9adc5e91
+~
+Nsrc/desktop/ifnu/bima/feel/of/java/oop/castingvariabelreference/PersonDao.java,1/0/10ed7e0cd78bc73a8baf94ef32017437c96c9112
+‚
+Rsrc/desktop/ifnu/bima/feel/of/java/oop/castingvariabelreference/PersonDaoImpl.java,d/c/dc786806fde96b1e19a1a56d5f3ce631460788a2
