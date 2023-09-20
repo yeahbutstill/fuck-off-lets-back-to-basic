@@ -51,11 +51,10 @@ public class ListTest {
     for (int i = 0; i < namaBuah.size(); i++) {
       System.out.println("index ke - " + i + " : " + namaBuah.get(i));
     }
+    /**
+     * terlihat bahwa index adalah bagian terpenting dari List, sedangkan item dalam List sendiri bisa
+     * dobel, tidak unik. Selain itu item di dalam List juga tidak terurut, terlihat dari huruf “a” yang
+     * diletakkan setelah huruf “c”.
+     */
   }
 }
-
-/**
- * terlihat bahwa index adalah bagian terpenting dari List, sedangkan item dalam List sendiri bisa
- * dobel, tidak unik. Selain itu item di dalam List juga tidak terurut, terlihat dari huruf “a” yang
- * diletakkan setelah huruf “c”.
- */
