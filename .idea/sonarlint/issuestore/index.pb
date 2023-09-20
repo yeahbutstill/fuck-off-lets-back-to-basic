@@ -1033,3 +1033,7 @@ Fsrc/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/README.md,d/a/dab
 Lsrc/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/EqualsTest.java,7/b/7bbf6c1149f2f372498c9e284216644b3ca0e205
 ~
 Nsrc/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/ToStringTest.java,5/f/5f030574be8e6ba1b7e4de98e63e463706d282e8
+Ž
+^src/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/javacollectionframework/README.md,a/1/a1a562560e571649855af69eba3954e5a93c2f55
+’
+bsrc/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/javacollectionframework/ListTest.java,3/6/363f4e7a86ca9a27a2f8a683fc2600fccf7c822a

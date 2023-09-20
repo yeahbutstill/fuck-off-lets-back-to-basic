@@ -761,3 +761,7 @@ v
 Fsrc/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/README.md,d/a/dabd0636f147a3b042f151f821c675a90deb7c8d
 |
 Lsrc/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/EqualsTest.java,7/b/7bbf6c1149f2f372498c9e284216644b3ca0e205
+’
+bsrc/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/javacollectionframework/ListTest.java,3/6/363f4e7a86ca9a27a2f8a683fc2600fccf7c822a
+Ž
+^src/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/javacollectionframework/README.md,a/1/a1a562560e571649855af69eba3954e5a93c2f55
