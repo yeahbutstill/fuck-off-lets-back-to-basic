@@ -75,3 +75,17 @@ LinkedList adalah implementasi dari List yang menambahkan method baru untuk mena
 atau menghapus isi dari List dari depan atau dari belakang. Class ini cocok digunakan untuk
 membuat tumpukan (stack) atau antrian (queue).
 
+terlihat bahwa index adalah bagian terpenting dari List, sedangkan item dalam List sendiri bisa
+dobel, tidak unik. Selain itu item di dalam List juga tidak terurut, terlihat dari huruf “a” yang
+diletakkan setelah huruf “c”.
+
+Set
+
+Set adalah collection yang bersifat unik. Set digunakan kalau anda memerlukan collection yang
+isinya harus unik. Defnisi unik diimplementasikan dengan mengoverride method equals dan
+hashCode dari class yang akan dimasukkan ke dalam Set. Semua class wrapper seperti String
+telah mengoverride method equals dan hashCode sehingga dua buah object String dianggap sama
+kalau string yang ada di dalamnya sama. Untuk class yang kita buat sendiri, seperti classCustomer, maka method equals dan hashCode harus dioverride dahulu sebelum dimasukkan ke
+dalam Set. Kalau method equals dan hashCode tidak dioverride maka dua buah object
+dianggap sama kalau keduanya merefer ke object yang sama di dalam memory, tidak seperti
+yang kita harapkan.
