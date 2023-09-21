@@ -90,3 +90,32 @@ dalam Set. Kalau method equals dan hashCode tidak dioverride maka dua buah objec
 dianggap sama kalau keduanya merefer ke object yang sama di dalam memory, tidak seperti
 yang kita harapkan.
 
+Map
+
+Map adalah bentuk struktur data yang berpasangan antara key-value. Key bersifat unik karena
+implementasinya menggunakan Set. Key dan value adalah object, bisa object apa saja, tipe data
+primitif tidak bisa dimasukkan ke dalam Map, juga tidak bisa dimasukkan ke semua jenis
+collection.
+Implementasi Map memberikan kemampuan untuk mencari value berdasarkan key, setiap kali
+kita dihadapkan pada permasalahan bagaimana caranya melakukan pencarian berdasarkan value
+kita bisa menggunakan Map ini. Map bergantung pada method equals dan hashCode untuk
+menentukan apakah dua buah key sama atau tidak, jadi kalau kita ingin menggunakan object dari
+class yang kita buat sendiri sebagai key, maka kedua method itu harus dioverride untuk
+menentukan bagaimana dua buah object dianggap sama atau tidak.
+HashMap adalah class yang mengimplementasikan interface Map, sifatnya adalah tidak terurut
+dan tidak teratur. Implementasi HashMap adalah yang paling efsien, implementasi Map lainya
+yang membutuhkan keterurutan atau keteraturan akan menambahkan komputasi tambahan
+sehingga kurang efsien dibanding dengan HashMap. HashMap memperbolehkan satu buah key
+dengan nilai null dan banyak key bukan null yang valuenya adalah null.
+
+Method penting yang dimiliki oleh Map antara lain :
+- put(Object key, Object value); method yang digunakan untuk meletakkan pasangan key dan
+value
+- get(Object key); method digunakan untuk mendapatkan value dari key yang dimasukkan
+sebagai parameter 
+- keySet(); digunakan untuk mendapatkan Set yang berisi semua key, biasanya kita ingin
+mendapatkan Set dari key ini kalau ingin mengambil nilai dalam Map satu per satu
+
+Mari kita lihat contoh kode penggunaan Map. Kita akan membuat sebuah map dimana key
+adalah kota dan value adalah kumpulan Customer yang tinggal di kota tersebut. Tipe data key
+adalah String dan tipe data valuenya adalah List of Customer:
