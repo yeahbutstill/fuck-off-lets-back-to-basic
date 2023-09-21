@@ -1,11 +1,10 @@
 package desktop.ifnu.bima.feel.of.java.oop;
 
-import java.util.UUID;
 
 public class CustomerTest {
   public static void main(String[] args) {
     MemberCustomer member = new MemberCustomer();
-    member.setId(UUID.randomUUID());
+    member.setId(1L);
     member.setNama("Catalino");
     System.out.println("UUID Customer: " + member.getId());
     System.out.println("Nama Customer: " + member.getNama());

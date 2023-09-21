@@ -67,3 +67,23 @@ sama pun tidak masalah.
 Topik bagaimana menghitung nilai hashCode yang baik bisa menjadi topik PhD, tetapi tidak perlu
 bingung, menggunakan NetBeans kita bisa mengenerate method hashCode ini agar mematuhi
 aturan di atas.
+
+
+Sorting
+
+Sorting adalah cara untuk membuat sebuah collection terurut (sorted). Agar collection terurut
+kita perlu membuat item yang akan dimasukkan ke dalam Set mengimplementasikan interface
+Comparable. Interface ini digunakan untuk melakukan perbandingan antara dua buah object,
+mana yang lebih besar atau lebih kecil atau kah sama persis.
+
+Interface Comparable hanya mempunyai satu buah method, yaitu compareTo: method ini
+mempunyai sebuah parameter yang bertipe Object kalau tidak menggunakan generics, dan
+bertipe sama dengan class yang mengimplement interface Comparable kalau menggunakan
+generics. Method compareTo mengembalikan integer, nilai kembalianya positif berarti object yang
+dipanggil method comparenya lebih besar dari object yang dimasukkan ke parameter, nilai
+kembalianya negatif berarti sebaliknya dan kalau nilainya nol berarti kedua object sama besar.
+Kita lihat contoh implementasi interface Comparable di class Customer. Pertama, kita akan
+mengimplementasikan interface Comparable tanpa menggunakan generics :
+
+Kalau menggunakan generics maka method compareTo tipe parameternya adalah Customer,
+

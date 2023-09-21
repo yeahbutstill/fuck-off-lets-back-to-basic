@@ -8,22 +8,22 @@ public class MapTest {
     Map<String, List<Customer>> customerByCityMap = new HashMap<>();
     List<Customer> jakartaCust = new ArrayList<>();
     Customer a = new Customer();
-    a.setId(UUID.randomUUID());
+    a.setId(1L);
     jakartaCust.add(a);
 
     Customer b = new Customer();
-    b.setId(UUID.randomUUID());
+    b.setId(2L);
     jakartaCust.add(b);
 
     customerByCityMap.put("jakarta", jakartaCust);
 
     List<Customer> surabayaCust = new ArrayList<>();
     Customer c = new Customer();
-    c.setId(UUID.randomUUID());
+    c.setId(3L);
     surabayaCust.add(c);
 
     Customer d = new Customer();
-    d.setId(UUID.randomUUID());
+    d.setId(4L);
     surabayaCust.add(d);
 
     customerByCityMap.put("surabaya", surabayaCust);

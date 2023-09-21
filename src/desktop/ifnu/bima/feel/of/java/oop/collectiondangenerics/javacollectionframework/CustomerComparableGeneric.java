@@ -1,4 +1,7 @@
-package desktop.ifnu.bima.feel.of.java.oop;
+package desktop.ifnu.bima.feel.of.java.oop.collectiondangenerics.javacollectionframework;
+
+import desktop.ifnu.bima.feel.of.java.oop.Address;
+import desktop.ifnu.bima.feel.of.java.oop.Customer;
 
 /**
  * Apa tujuan dari inheritance dilihat dari sisi kode? Yang pertama adalah mempromosikan code reuse,
@@ -6,9 +9,11 @@ package desktop.ifnu.bima.feel.of.java.oop;
  * Customer, MemberCustomer akan mempunyai semua sifat-sifat (kode) dari class Customer. Misalnya
  * kita tambahkan property dan method di dalam class Customer :
  */
-public class Customer
-    implements Comparable<Customer> { // interface ini digunakan untuk melakukan perbandingan antara dua buah
-  // object, mana yang lebih besar atau lebih kecil ataukah sama persis.
+public class CustomerComparableGeneric
+    implements Comparable<
+        Customer> { // interface ini digunakan untuk melakukan perbandingan antara dua buah
+  // object,
+  // mana yang lebih besar atau lebih kecil ataukah sama persis.
 
   private Long id;
   private String nama;
@@ -96,40 +101,11 @@ public class Customer
    * collection ini berantakan. Kita akan kembali lagi ke topik hashCode ketika membahas kedua
    * collection tersebut di bab berikutnya.
    */
-
-  /**
-   * method ini mempunyai sebuah parameter yang bertipe Object kalau tidak menggunakan generics, dan
-   * bertipe sama dengan class yang mengimplement interface Comparable kalau menggunakan generics.
-   * Method compareTo mengembalikan integer, nilai kembalianya positif berarti object yang dipanggil
-   * method comparenya lebih besar dari object yang dimasukkan ke parameter, nilai kembalianya
-   * negatif berarti sebaliknya dan kalau nilainya nol berarti kedua object sama besar.
-   *
-   * @param o the object to be compared.
-   * @return
-   */
-  //  @Override
-  //  public int compareTo(Object o) {
-  //    Customer c = (Customer) o;
-  //    return getId().compareTo(c.getId());
-  //  }
-  /*
-   Perbandingan dalam method compareTo di atas akan menyebabkan Customer diurutkan
-   berdasarkan idnya dari yang kecil ke besar. Kalau ingin diurutkan dari besar ke kecil, maka
-   perbandinganya tinggal dibalik seperti di bawah ini :
-  */
   @Override
+  // Kalau menggunakan generics maka method compareTo tipe parameternya adalah Customer, bukan
+  // Object. Contohnya :
   public int compareTo(Customer c) {
-    // besar ke kecil
-    return c.getId().compareTo(getId());
+    // kecil ke besar
+    return getId().compareTo(c.getId());
   }
-
-  /**
-   * Interface Comparable bisa digunakan kalau source code dari class Customer tersedia dan kita
-   * bisa melakukan modifkasi terhadap class Customer. Kalau misalnya class yang ingin diurutkan
-   * tidak tersedia source codenya, kita bisa membuat class baru kemudian mengextends class tersebut
-   * sekaligus mengimplementasikan interface Comparable, sehingga kita bisa membuat collection
-   * terurut dari class baru ini. Nah, bagaimana kalau classnya ditandai dengan fnal? Kita tidak
-   * mungkin mengextends class tersebut, ada cara kedua, yaitu dengan membuat class baru yang
-   * mengimplementasikan interface Comparator.
-   */
 }

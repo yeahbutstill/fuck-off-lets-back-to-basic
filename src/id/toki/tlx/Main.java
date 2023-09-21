@@ -1,6 +1,5 @@
 package id.toki.tlx;
 
-import id.toki.tlx.interfaces.Light;
 import id.toki.tlx.interfaces.impl.LightImpl;
 
 public class Main {

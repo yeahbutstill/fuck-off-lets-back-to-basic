@@ -1,14 +1,0 @@
-
-?
-java:S1659"$Declare "result" on a separate line.(»ûéõşÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(ÃÓ¾Ö
-N	java:S106"9Replace this use of System.out or System.err by a logger.(æĞØ¯
-N	java:S106"9Replace this use of System.out or System.err by a logger.(¿µ¶ˆ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(¦±‹Ã
-S	java:S106 "9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
-S	java:S106""9Replace this use of System.out or System.err by a logger.(ËÇÆÉùÿÿÿÿ
-N	java:S106#"9Replace this use of System.out or System.err by a logger.(¢²ø¾
-N	java:S106$"9Replace this use of System.out or System.err by a logger.(‡âèĞ
-S	java:S106%"9Replace this use of System.out or System.err by a logger.(ÕÌöïøÿÿÿÿ
-S	java:S106&"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ôàãõüÿÿÿÿ

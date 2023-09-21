@@ -1,12 +1,0 @@
-
-=
-java:S1170"!Make this final field static too.(¿ş=8Ï¯ş×œ1
-]	java:S125."<This block of commented-out lines of code should be removed.(ºÎøÿÿÿÿ8ù†‚Øœ1
-H
-java:S1068",Remove this unused "valueOne" private field.(¿ş=8à¯ş×œ1
-I
-java:S1068"-Remove this unused "VALUE_TWO" private field.(½™P8à¯ş×œ1
-C
-java:S1068"&Remove this unused "v1" private field.(ÚŸ¶Á8à¯ş×œ1
-F
-java:S1068")Remove this unused "VAL_3" private field.(Øæ‡Ú8á¯ş×œ1

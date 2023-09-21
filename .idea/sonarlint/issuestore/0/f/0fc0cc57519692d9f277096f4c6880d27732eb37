@@ -1,15 +1,0 @@
-
-S
-java:S1854"6Remove this useless assignment to local variable "x1".(èø’ë8¦ôå©1
-W
-java:S1854"5Remove this useless assignment to local variable "s".(¢Œùßøÿÿÿÿ8ªôå©1
-X
-java:S1854"6Remove this useless assignment to local variable "s2".(¨úÈÊùÿÿÿÿ8«ôå©1
-H
-java:S1481"&Remove this unused "s" local variable.(¢Œùßøÿÿÿÿ8äôå©1
-D
-java:S1481"'Remove this unused "x1" local variable.(èø’ë8æôå©1
-a
-java:S3358"DExtract this nested ternary operation into an independent statement.(®Äø‰8èôå©1
-I
-java:S1481"'Remove this unused "s2" local variable.(¨úÈÊùÿÿÿÿ8ëôå©1

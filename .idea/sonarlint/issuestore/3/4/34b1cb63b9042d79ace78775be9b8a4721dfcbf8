@@ -1,12 +1,0 @@
-
-R
-java:S1854"5Remove this useless assignment to local variable "i".(Ä¥‘±8ÁÄ¿»¨1
-R
-java:S1854"5Remove this useless assignment to local variable "y".(‚¾ùú8ÃÄ¿»¨1
-]	java:S125"<This block of commented-out lines of code should be removed.(õ¿•Áùÿÿÿÿ8ıØÍ»¨1
-c
-java:S2153"FRemove the boxing to "Long"; The argument is already of the same type.(‚¾ùú8ÌÄ¿»¨1
-C
-java:S1481"&Remove this unused "y" local variable.(‚¾ùú8ÎÄ¿»¨1
-C
-java:S1481"&Remove this unused "i" local variable.(Ä¥‘±8ĞÄ¿»¨1
