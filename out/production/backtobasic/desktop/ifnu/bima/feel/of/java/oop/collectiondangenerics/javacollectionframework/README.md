@@ -89,3 +89,4 @@ kalau string yang ada di dalamnya sama. Untuk class yang kita buat sendiri, sepe
 dalam Set. Kalau method equals dan hashCode tidak dioverride maka dua buah object
 dianggap sama kalau keduanya merefer ke object yang sama di dalam memory, tidak seperti
 yang kita harapkan.
+

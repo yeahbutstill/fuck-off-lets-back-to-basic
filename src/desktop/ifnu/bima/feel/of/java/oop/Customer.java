@@ -94,4 +94,13 @@ public class Customer {
    * jenis collection ini berantakan. Kita akan kembali lagi ke topik hashCode ketika membahas
    * kedua collection tersebut di bab berikutnya.
    */
+
+  @Override
+  public String toString() {
+    return "Customer{" +
+            "id=" + id +
+            ", nama='" + nama + '\'' +
+            ", address=" + address +
+            '}';
+  }
 }

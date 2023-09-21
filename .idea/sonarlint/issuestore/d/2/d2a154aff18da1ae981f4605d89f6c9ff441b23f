@@ -1,0 +1,9 @@
+
+G	java:S106"+Replace this use of System.out by a logger.(ÍÎÉ 8’²‹Š«1
+G	java:S106"+Replace this use of System.out by a logger.(ÍÎÉ 8“²‹Š«1
+F
+java:S1128")Remove this unused import 'java.net.URI'.(Ö¦¨°8”²‹Š«1
+Z
+java:S1128"8Remove this unused import 'java.net.URISyntaxException'.(Ä®íÿÿÿÿÿ8”²‹Š«1
+M
+java:S1128"0Remove this unused import 'java.nio.file.Paths'.(áè°¯8”²‹Š«1

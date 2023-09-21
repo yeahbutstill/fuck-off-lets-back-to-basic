@@ -755,8 +755,6 @@ Lsrc/desktop/ifnu/bima/feel/of/java/oop/castingvariabelreference/Example.java,0
 Nsrc/desktop/ifnu/bima/feel/of/java/oop/castingvariabelreference/PersonDao.java,1/0/10ed7e0cd78bc73a8baf94ef32017437c96c9112
 ‚
 Rsrc/desktop/ifnu/bima/feel/of/java/oop/castingvariabelreference/PersonDaoImpl.java,d/c/dc786806fde96b1e19a1a56d5f3ce631460788a2
-~
-Nsrc/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/ToStringTest.java,5/f/5f030574be8e6ba1b7e4de98e63e463706d282e8
 v
 Fsrc/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/README.md,d/a/dabd0636f147a3b042f151f821c675a90deb7c8d
 |
@@ -765,3 +763,13 @@ Lsrc/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/EqualsTest.java,7
 bsrc/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/javacollectionframework/ListTest.java,3/6/363f4e7a86ca9a27a2f8a683fc2600fccf7c822a
 Ž
 ^src/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/javacollectionframework/README.md,a/1/a1a562560e571649855af69eba3954e5a93c2f55
+‡
+Wsrc/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/ToStringDanEqualsTest.java,d/8/d8c65a815861b7830ab3d889de419475819721ec
+x
+Hsrc/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/Kontak.java,a/4/a4675de746cbdc5218bc2b6b4987a675f14968c9
+˜
+hsrc/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/javacollectionframework/LinkedListTest.java,9/6/96486c1aee4c1bd9e3c312fc9198fcf7b4e06c65
+‘
+asrc/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/javacollectionframework/SetTest.java,2/5/2581ea2e3dd72e03010a35706b469be0b160b453
+c
+3src/desktop/ifnu/bima/feel/of/java/io/PathTest.java,d/2/d2a154aff18da1ae981f4605d89f6c9ff441b23f
