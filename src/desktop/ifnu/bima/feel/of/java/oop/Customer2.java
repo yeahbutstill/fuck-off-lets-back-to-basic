@@ -1,7 +1,6 @@
 package desktop.ifnu.bima.feel.of.java.oop;
 
-import desktop.ifnu.bima.feel.of.java.oop.collectiondangenerics.javacollectionframework.CustomerComparableGeneric;
-import desktop.ifnu.bima.feel.of.java.oop.collectiondangenerics.javacollectionframework.CustomerComparator;
+import desktop.ifnu.bima.feel.of.java.oop.collectiondangenerics.javacollectionframework.CustomerComparatorGeneric;
 
 /**
  * Apa tujuan dari inheritance dilihat dari sisi kode? Yang pertama adalah mempromosikan code reuse,
@@ -9,7 +8,7 @@ import desktop.ifnu.bima.feel.of.java.oop.collectiondangenerics.javacollectionfr
  * Customer, MemberCustomer akan mempunyai semua sifat-sifat (kode) dari class Customer. Misalnya
  * kita tambahkan property dan method di dalam class Customer :
  */
-public class Customer2 {
+public class Customer2 extends CustomerComparatorGeneric {
 
   private Long id;
   private String nama;
