@@ -106,4 +106,13 @@ public class Customer2 extends CustomerComparatorGeneric {
    * mungkin mengextends class tersebut, ada cara kedua, yaitu dengan membuat class baru yang
    * mengimplementasikan interface Comparator.
    */
+
+  @Override
+  public String toString() {
+    return "Customer2{" +
+            "id=" + id +
+            ", nama='" + nama + '\'' +
+            ", address=" + address +
+            "} ";
+  }
 }

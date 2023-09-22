@@ -7,7 +7,7 @@ package desktop.ifnu.bima.feel.of.java.oop;
  * kita tambahkan property dan method di dalam class Customer :
  */
 public class Customer
-    implements Comparable<Customer> { // interface ini digunakan untuk melakukan perbandingan antara dua buah
+    implements Comparable { // interface ini digunakan untuk melakukan perbandingan antara dua buah
   // object, mana yang lebih besar atau lebih kecil ataukah sama persis.
 
   private Long id;
@@ -118,8 +118,9 @@ public class Customer
    perbandinganya tinggal dibalik seperti di bawah ini :
   */
   @Override
-  public int compareTo(Customer c) {
+  public int compareTo(Object o) {
     // besar ke kecil
+    Customer c = (Customer) o;
     return c.getId().compareTo(getId());
   }
 

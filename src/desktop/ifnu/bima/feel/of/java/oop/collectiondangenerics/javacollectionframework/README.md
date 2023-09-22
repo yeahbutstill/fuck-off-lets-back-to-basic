@@ -119,3 +119,16 @@ mendapatkan Set dari key ini kalau ingin mengambil nilai dalam Map satu per satu
 Mari kita lihat contoh kode penggunaan Map. Kita akan membuat sebuah map dimana key
 adalah kota dan value adalah kumpulan Customer yang tinggal di kota tersebut. Tipe data key
 adalah String dan tipe data valuenya adalah List of Customer:
+
+
+Class Collections dan Class Arrays
+
+Class Collections berisi method-method utility yang digunakan antara lain untuk: melakukan
+sorting, melakukan pencarian, mengacak isi List, membalik susunan List, mengcopy potongan
+List, mengisi list dengan pola tertentu dan seterusnya. Kita akan membahas satu per satu method
+di atas.
+
+Method sort digunakan untuk mengurutkan List berdasarkan logika yang ada dalam method
+Comparable. Item di dalam List harus mengimplementasikan interface Comparable, kalau tidak
+maka gunakan method sort dengan dua parameter: List dan Object dari class yang
+mengimplementasikan interface Comparator
