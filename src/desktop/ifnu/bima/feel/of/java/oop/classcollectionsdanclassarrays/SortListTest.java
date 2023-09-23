@@ -1,6 +1,7 @@
 package desktop.ifnu.bima.feel.of.java.oop.classcollectionsdanclassarrays;
 
 import desktop.ifnu.bima.feel.of.java.oop.Binatang;
+import desktop.ifnu.bima.feel.of.java.oop.BinatangComperator;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -21,7 +22,7 @@ public class SortListTest {
 
     Binatang binatang2 = new Binatang();
     binatang2.setId(99L);
-    binatang2.setName("Kodong");
+    binatang2.setName("Kodok");
     binatangs.add(binatang2);
 
     Binatang binatang3 = new Binatang();
@@ -44,8 +45,17 @@ public class SortListTest {
       System.out.println("index ke-" + i + " : " + binatangs.get(i));
     }
 
-    Collections.sort(binatangs, binatang1); // using comparator
     // Collections.sort(binatangs); // using comparable
+
+    /*
+    Kalau misalnya Customer tidak mengimplementasikan interface Comparable, maka kita bisa
+    membuat class CustomerComparator yang mengimplementasikan interface Comparator
+    sebagai pembanding antara dua buah Binatang mana yang lebih besar, kode di atas bisa diedit
+    sebagian dengan memanggil method sort yang mempunyai dua buah parameter: List of
+    Customer dan instance dari CustomerComparator.
+    */
+    Collections.sort(binatangs, new BinatangComperator()); // using comparator
+
     System.out.println();
     System.out.println("isi dari list " + binatangs.size() + " sesudah disorting");
     for (int i = 0; i < binatangs.size(); i++) {
@@ -53,3 +63,9 @@ public class SortListTest {
     }
   }
 }
+
+/**
+ * Kode di atas memperlihatkan bahwa kita membuat List of Binatang dengan id yang tidak terurut,
+ * karena Binatang mengimplementasikan interface Comparator dari class BinatangComperator maka isi
+ * dari List of Binatang tersebut bisa disorting menggunakan method sort dari class Collections.
+ */

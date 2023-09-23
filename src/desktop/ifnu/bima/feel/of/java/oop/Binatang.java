@@ -1,6 +1,6 @@
 package desktop.ifnu.bima.feel.of.java.oop;
 
-public class Binatang extends BinatangComperator {
+public class Binatang extends BinatangComperator implements Comparable<Binatang> {
   private Long id;
   private String name;
 
@@ -40,5 +40,10 @@ public class Binatang extends BinatangComperator {
   @Override
   public String toString() {
     return "Binatang{" + "id=" + id + ", name='" + name + '\'' + '}';
+  }
+
+  @Override
+  public int compareTo(Binatang o) {
+    return getId().compareTo(o.getId());
   }
 }
