@@ -255,3 +255,15 @@ lsrc/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/javacollectionfram
 ssrc/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/javacollectionframework/CustomerComparableGeneric.java,b/d/bddd21fd2fd5ce6d7147b0ccf7f46730351ea9e9
 
 msrc/desktop/ifnu/bima/feel/of/java/oop/collectiondangenerics/javacollectionframework/CustomerTreeSetTest.java,9/9/99b88e176470204aafae44611a3ca14f2d524068
+k
+;src/desktop/ifnu/bima/feel/of/java/oop/HobiTreeSetTest.java,9/8/982db951ba9f60e23111c79c8622a4c9eb066b81
+`
+0src/desktop/ifnu/bima/feel/of/java/oop/Hobi.java,a/4/a4efd5086e8537f4a3a05708df742dd03b44d40b
+j
+:src/desktop/ifnu/bima/feel/of/java/oop/HobiComparator.java,f/d/fdb0a3885f18f09c29369ccb3a2333a29b8cef77
+m
+=src/desktop/ifnu/bima/feel/of/java/oop/MakananComparable.java,8/5/8593b593165fc945ef51427109553c8436c91516
+n
+>src/desktop/ifnu/bima/feel/of/java/oop/MakananTreeSetTest.java,9/0/903482c34519593046f4566e8243cc5e86db4aee
+c
+3src/desktop/ifnu/bima/feel/of/java/oop/Makanan.java,2/b/2b6298e215a238c9e6d0a89cc91eb7f5fe5dddf3
