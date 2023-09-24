@@ -16,7 +16,7 @@ public class CopyArrayManualTest {
     ArrayList<String> namaBinatangList = new ArrayList<>(); // membuat instance dari List
     for (int i = 0; i < namaBinatang.length; i++) {
       namaBinatangList.add(namaBinatang[i]); // mengcopy isi array ke dalam List dengan iterasi
-      System.out.println("name: " + namaBinatang[i]);
+      System.out.println("index ke-" + namaBinatangList.indexOf(namaBinatang[i]) + " name: " + namaBinatang[i]);
     }
   }
 }

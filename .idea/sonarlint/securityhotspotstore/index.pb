@@ -267,3 +267,11 @@ m
 =src/desktop/ifnu/bima/feel/of/java/oop/MakananComparable.java,8/5/8593b593165fc945ef51427109553c8436c91516
 n
 >src/desktop/ifnu/bima/feel/of/java/oop/MakananTreeSetTest.java,9/0/903482c34519593046f4566e8243cc5e86db4aee
+é
+^src/desktop/ifnu/bima/feel/of/java/oop/classcollectionsdanclassarrays/CopyArrayManualTest.java,d/1/d1a88bef440a7364f5c64d6390ce2cf76c5dde14
+à
+Xsrc/desktop/ifnu/bima/feel/of/java/oop/classcollectionsdanclassarrays/CopyArrayTest.java,2/4/24e0b95b991a919e63dca398025d392292816a8f
+
+Osrc/desktop/ifnu/bima/feel/of/java/oop/classcollectionsdanclassarrays/README.md,f/d/fd146ad00eed140c1ebda109ea986bb836972004
+è
+_src/desktop/ifnu/bima/feel/of/java/oop/classcollectionsdanclassarrays/CopyPartialArrayTest.java,2/a/2ad41a826665749fa52c604f2b646df4b25da51c
