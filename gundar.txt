@@ -1,0 +1,274 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+
+    <meta charset="UTF-8">
+<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+<title>Universitas Gunadarma - StudentSite :: UG SS</title>
+<meta name="description" content="Universitas Gunadarma UG Student Site UG-SS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- Favicons -->
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets-minified/images/icons/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets-minified/images/icons/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets-minified/images/icons/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="/assets-minified/images/icons/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="/assets-minified/images/icons/favicon.png">
+
+
+
+    <!-- JS Core -->
+
+    <script type="text/javascript" src="/assets-minified/js-core.js"></script>
+
+
+
+<script type="text/javascript">
+    $(window).load(function(){
+        setTimeout(function() {
+            $('#loading').fadeOut( 400, "linear" );
+        }, 300);
+    });
+</script>
+<style>
+    #loading {position: fixed;width: 100%;height: 100%;left: 0;top: 0;right: 0;bottom: 0;display: block;background: #fff;z-index: 10000;}
+    #loading img {position: absolute;top: 50%;left: 50%;margin: -23px 0 0 -23px;}
+</style>
+
+
+
+        
+
+        <link rel="stylesheet" type="text/css" href="/assets-minified/all-demo.css">
+
+    <!-- Frontend Theme -->
+
+    <link rel="stylesheet" type="text/css" href="/assets-minified/themes/bratilius/default/framework-color.css">
+    <link rel="stylesheet" type="text/css" href="/assets-minified/themes/bratilius/border-radius.css">
+
+    <link rel="stylesheet" type="text/css" href="/assets-minified/themes/bratilius/frontend/color.css">
+
+    <!-- Color Helpers CSS -->
+
+    <link rel="stylesheet" type="text/css" href="/assets-minified/helpers/colors.css">
+
+</head> 
+<body class="frontend-layout"> 
+        <div class="featured-area featured-box dummy-dark-bg title-box fixed-bg" data-0="background-position: 50% 0px;" data-350="background-position: 50% -200px;">
+            <div class="main-header bg-black-opacity header-fixed wow fadeInDown" data-0="padding: 23px 0;" data-250="padding: 8px 0;">
+    <div class="container clearfix">
+        <a href="#" class="hidden-desktop" id="responsive-menu" title="">
+	<i class="glyph-icon icon-align-justify"></i>
+</a>
+<br>
+<a href="?" class="logo" title="Bratilius">
+           <img src="/images/logoug.png" width="25"> UG Student Site <font size="-2">v3</font> 
+        </a>
+        <ul class="main-nav nav-alt">
+            <li>
+                <a href="/index.php/site/index" title="Headers">
+                   	Home 
+                </a>
+            </li>
+            <li>
+                <a href="/index.php/site/news" title="Headers">
+                   	Berita	
+                </a>
+            </li>
+            <li>
+                <a href="/index.php/aktivasi/index" title="Headers">
+                   	Aktivasi	
+                </a>
+            </li>
+            <li>
+                <a href="/index.php/site/login" title="Headers">
+                   Login	
+                </a>
+            </li>
+            <li>
+                <a href="/index.php/site/kontak" title="Headers">
+                  Kontak 
+                </a>
+            </li>
+        </ul>
+    </div>
+	<br>
+</div><!-- .main-header -->
+</div>
+<div id="content">
+	<section class="breadcrumb">
+
+        <div class="container">
+
+                <div class="row">
+
+                        <div class="col-sm-12">
+
+                                                                        <div class="breadcrumbs">
+<a href="/index.php">Home</a> &raquo; <span>Berita</span></div><!-- breadcrumbs -->
+                                                        </div>
+
+                </div>
+
+        </div>
+
+</section>
+<div class="container">
+<div class="row">
+ <div class="col-sm-12">
+                                <div class="content-box">
+                                        <h3 class="content-box-header  bg-default">
+                                               <span class="icon-separator">
+                                                        <i class="glyph-icon icon-bullhorn"></i>
+                                                </span>
+                                                <b><font color=blue> Pengambilan Undangan Wisuda 14 Oktober 2023</font> </b> 
+                                        </h3>
+                                        <div class="content-box-wrapper">
+                                                Pengumuman Pengambilan Undangan Wisuda 14 Oktober 2023<br />
+Diberikan informasi kepada calon Wisudawan Universitas Gunadarma sebagai berikut :<br />
+1. Undangan wisuda dapat diambil di Loket kampus D pada tanggal 19, 21 dan 23 September 2023 sesuai jadwal terlampir, Silakan unduh <a href="https://bit.ly/undwis141023 "target="_blank"> <b><font color=blue> file JADWAL PENGAMBILAN UNDANGAN</font color></b></a><br />
+2. Undangan hanya berlaku untuk 2 orang Pendamping Wisudawan<br />
+3. Harap undangan disimpan, apabila hilang, TIDAK ADA PENGGANTIAN Undangan<br />
+4. Panitia tidak melayani pertukaran sesi wisuda<br />
+5. Syarat pengambilan undangan : membawa voucher bukti pengambilan undangan dan menunjukkan identitas diri<br />
+6. Apabila pengambilan hendak diwakilkan, diharap membawa syarat pengambilan undangan seperti yang tertera pada point 5 ditambah identitas diri yang mewakili<br />
+7. Brieffing Wisuda akan dilaksanakan pada tanggal 30 September 2023 secara Daring. Link Zoom akan diberitahukan kemudian.<br />
+Info : wisuda@gunadarma.ac.id<BR>
+                                        <br>
+                                        </div>
+                                </div>
+
+                        </div>
+</div>
+</div>
+<BR><BR>
+</div><!-- content -->
+    <div class="main-footer inverse clearfix bg-black">
+        <div class="container clearfix">
+            <div class="col-md-4">
+                <div class="footer-desc">
+                    <a class="logo" href="#" title="">UG-SS</a>
+                    <p>
+                   Universitas Gunadarma Student Site (UG-SS) adalah aplikasi yang hanya diperuntukkan bagi mahasiswa Universitas Gunadarma, segala pelanggaran terhadap penyalahgunaan 
+		akses terhadap aplikasi ini akan ditindak sesuai dengan hukum dan peraturan yang berlaku. Apabila mempunyai kendala dalam mengakses alamat ini silahkan hubungi BAPSI Universitas Gunadarma. 
+		   </p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <h3 class="footer-header">Link</h3>
+                <ul>
+                    <li>
+                        <a href="http://www.gunadarma.ac.id" title="">UG Website</a>
+                    </li>
+                    <li>
+                        <a href="http://baak.gunadarma.ac.id" title="">UG BAAK</a>
+                    </li>
+                    <li>
+                        <a href="http://library.gunadarma.ac.id" title="">UG Library</a>
+                    </li>
+                    <li>
+                        <a href="http://bapsi.gunadarma.ac.id" title="">UG BAPSI</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h3 class="footer-header">Services</h3>
+                <ul>
+                    <li>
+                        <a href="http://vclass.gunadarma.ac.id" title="">Virtual Class</a>
+                    </li>
+                    <li>
+                        <a href="http://elearning.gunadarma.ac.id" title="">E-Learning</a>
+                    </li>
+                    <li>
+                        <a href="http://student.gunadarma.ac.id" title="">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="http://helpdesk.gunadarma.ac.id" title="">Help Desk</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h3 class="footer-header">Blog</h3>
+                <ul>
+                    <li>
+                        <a href="http://wartawarga.gunadarma.ac.id" title="">Warta Warga</a>
+                    </li>
+                    <li>
+                        <a href="http://robotika.blog.gunadarma.ac.id" title="">Robotika</a>
+                    </li>
+                    <li>
+                        <a href="http://fotografi.blog.gunadarma.ac.id" title="">Fotografi</a>
+                    </li>
+                    <li>
+                        <a href="http://arsitektur.blog.gunadarma.ac.id" title="">Arsitektur</a>
+                    </li>
+                </ul>
+            </div>
+	<div class="col-md-2">
+                <h3 class="footer-header">Blog</h3>
+                <ul>
+                    <li>
+                        <a href="http://banking.gunadarma.ac.id" title="">Banking</a>
+                    </li>
+                    <li>
+                        <a href="http://pasarmodal.blog.gunadarma.ac.id" title="">Pasar Modal</a>
+                    </li>
+                    <li>
+                        <a href="http://ekonomisyariah.blog.gunadarma.ac.id" title="">Ekonomi Syariah</a>
+                    </li>
+                    <li>
+                        <a href="http://tax.blog.gunadarma.ac.id" title="">Pajak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-pane">
+            <div class="container clearfix">
+                <div class="logo">&copy; 2014 UG SS. All Rights Reserved.</div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+    <script type="text/javascript" src="/assets-minified/all-demo.js"></script>
+
+
+
+
+    <!-- FRONTEND ELEMENTS -->
+
+<link rel="stylesheet" type="text/css" href="/assets-minified/frontend-elements/frontend-elements-all.css">
+<link rel="stylesheet" type="text/css" href="/assets-minified/frontend-elements/frontend-responsive.css">
+
+<!-- Skrollr -->
+
+<script type="text/javascript" src="/assets-minified/widgets/skrollr/skrollr.js"></script>
+
+<!-- Owl carousel -->
+
+<link rel="stylesheet" type="text/css" href="/assets-minified/widgets/owlcarousel/owlcarousel.css">
+<script type="text/javascript" src="/assets-minified/widgets/owlcarousel/owlcarousel.js"></script>
+<script type="text/javascript" src="/assets-minified/widgets/owlcarousel/owlcarousel-demo.js"></script>
+
+<!-- HG sticky -->
+
+<script type="text/javascript" src="/assets-minified/widgets/sticky/sticky.js"></script>
+
+<!-- WOW -->
+
+<script type="text/javascript" src="/assets-minified/widgets/wow/wow.js"></script>
+
+<!-- Theme layout -->
+
+<script type="text/javascript" src="/assets-minified/themes/bratilius/frontend/js/frontend-init.js"></script>
+
+    </body>
+</html>
+ÿ
