@@ -121,3 +121,5 @@ Client akan melakukan beberapa langkah berikut ini ketika berkomunikasi dengan s
 - Dalam sebuah loop, kirim data ke server 
 - Dalam loop yang sama berusaha terima data dari server 
 - Dalam loop tersebut lakukan 1 detik pause agar output bisa terlihat bagus
+
+![img.png](img.png)
