@@ -141,3 +141,99 @@ menjadi lebih sederhana, seperti di bawah ini:
 ```java
 Double result = pow(cos(180),3) /2;
 ```
+
+
+Varargs
+
+Fungsi Dengan Jumlah Parameter Tidak Tetap
+Acap kali kita membutuhkan jumlah parameter yang tidak tetap untuk sebuah method
+tertentu. Cara yang paling lazim dilakukan adalah dengan membuat parameter bertipe array
+atau collection. Cara ini tidak terlalu rumit, hanya saja kita terkadang harus membuat array
+atau collection padahal nilai parameternya hanya satu. Contohnya seperti ini :
+```java
+public void printAll(String[] array){
+    for(String curr : array){
+        System.out.println(curr);
+    }
+}
+```
+Kode untuk memanggil fungsi di atas :
+```java
+String[] arr = new String[1];
+arr[0] = "a";
+printAll(arr);
+```
+Varargs mengijinkan method Java mempunyai jumlah argumen tidak tetap, artinya kita bisa
+memasukkan jumlah parameter semau kita pada kode pemanggilan method.
+Mari kita implementasikan kembali method printAll di atas menggunakan fasilitas varargs:
+```java
+public void printAll(String... arr) {
+    for (String curr : arr) {
+        System.out.println(curr);
+    }
+}
+```
+Sekarang kode untuk memanggil fungsi di atas menjadi lebih sederhana :
+```java
+printAll("a");
+printAll("a","b","c");
+```
+
+TypeSafe Enum
+
+Tipe Data Enum
+Java tidak mengenal tipe data enum seperti halnya pada C/C++, biasanya tipe data enum
+didefnisikan sebagai variabel konstant seperti di bawah ini :
+```java
+public static final JENIS_KELAMIN_LAKI_LAKI = 0;
+public static final JENIS_KELAMIN_PEREMPUAN = 1;
+```
+
+Pola ini mempunyai banyak kelemahan karena beberapa alasan, antara lain:
+
+- Tidak TypeSafe – karena tipenya hanya berupa int, kita bisa saja memasukkan nilai int apapun
+ketika kita memerlukan data jenis kelamin, atau menambahkan dua jenis kelamin, suatu
+operasi yang nyaris tidak logis. 
+- Tidak mempunyai namespace – Kita harus secara manual memberikan awalan terhadap
+variabel enum agar tidak tertukar dengan variabel yang lainya. 
+- Mudah Rusak – Misalnya suatu saat tanpa sengaja ada yang merubah nilai int dari variabel
+tersebut, maka integritas data dengan data yang ada di dalam database dengan sendirinya
+akan ikut berubah. 
+- Nilai yang divetak tidak informatif – Setelah nilai Jenis kelamin dimasukkan ke dalam
+database, nilai yang dimasukkan hanyalah 0 atau 1. Informasi tentang Jenis kelaminya tidak
+ada.
+
+Java 5 mendukung TypeSafe enum langsung di sisi sintaksnya. Defnisi enum di atas bisa dengan
+mudah diganti menjadi :
+```java
+public enum JenisKelamin{LAKI_LAKI,PEREMPUAN};
+```
+
+Walaupun tampilan enum di atas mirip-mirip dengan enum di C/C++, enum di Java 5 mempunyai
+lebih banyak feature. Enum di atas adalah class java, yang bisa mempunyai method dan property.
+Enum juga merupakan implementasi dari class Object, yang Comparable dan Serializable.
+
+Aplikasi berbasis database biasanya mengimplentasikan enum Jenis kelamin dengan mempunyai
+dua jenis data, data pertama adalah simbol jenis kelamin, biasanya L dan P. Data kedua adalah
+nama lengkap dari jenis kelamin tersebut, biasanya digunakan sebagai pilihan dalam combo box.
+
+Enum juga bisa digunakan dalam clausa switch seperti di bawah ini :
+```java
+switch(jk){
+    case JenisKelamin.LAKI_LAKI:
+        return "suaranya soprano";
+    case JenisKelamin.PEREMPUAN:
+        return "suaranya tenor";
+}
+```
+Setiap Enum mempunyai nilai ordinal, nilai tersebut adalah nilai urut enum, urutan pertama
+mempunyai nilai 0 dan seterusnya.
+
+Kita bisa mendapatkan semua nilai Enum secara programatik tanpa harus menyebutkan satu-
+satu, contohnya:
+```java
+JenisKelamin[] jks = JenisKelamin.values();
+for(JenisKelain jk : jks){
+    System.out.println(jk);
+}
+```
