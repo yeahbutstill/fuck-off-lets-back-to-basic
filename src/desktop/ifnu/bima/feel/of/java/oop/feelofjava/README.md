@@ -237,3 +237,52 @@ for(JenisKelain jk : jks){
     System.out.println(jk);
 }
 ```
+
+Generics
+
+Tipe Data di Dalam Collection
+Ketika kita akan mengambil elemen dari dalam Collection, kita memerlukan proses casting ke
+tipe data sebenarnya. Proses casting ini diperlukan karena kita tidak bisa mendefniskan tipe
+data apa yang ada di dalam collection, sehingga semua yang masuk ke dalam collection
+dianggap bertipe Object.
+
+Masalah muncul kalau kita tidak tahu-menahu tentang apa isi dari collection tersebut, jika
+ternyata isi dalam collection tersebut beraneka ragam tipe data, kode kita akan mengalami
+error ClassCastException.
+
+Compiler java tidak dapat mendeteksi potensi kesalahan ini pada saat compile. Berikut ini
+contohnya :
+```java
+Collection lists = new ArraList();
+        lists.add("a");
+        lists.add(100);
+        Iterator iterator = lists.iterator();
+        for(;iterator.hasNext();){
+        String current = (String) iterator.next();
+        }
+```
+
+
+Kode di atas akan menyebabkan error ClassCastException, karena dalam collection lists, kita
+memasukkan “a” yang bertipe String dan 100 yang bertipe Integer. Pada saat kita mengambil
+data dari lists dan melakukan cast ke tipe String terhadap niai 100, error ClassCastException
+akan terjadi.
+
+Generics dapat digunakan untuk mendefniskan tipe data apa yang ada di dalam collection,
+kode di atas dapat dimodifkasi menjadi seperti di bawah ini:
+```java
+Collection<String> lists = new ArraList<String>();
+lists.add("a");
+lists.add(100);
+for(String s: lists){
+String current = iterator.next();
+}
+```
+
+pada baris lists.add(100);, compiler akan memberikan keterangan error bahwa nilai yang
+dmasukkan ke dalam collection lists mempunyai tipe data selain String.
+Pengecekan tipe data apa yang ada di dalam Collection sekarang terjadi pada saat kompilasi,
+bukan pada saat jalanya aplikasi, dengan begitu kesalahan bisa ditemukan lebih cepat.
+Generics bisa digunakan untuk melakukan banyak hal, namun sebagai programmer kita tidak
+harus memikirkan secara detail tentang penggunaan generics, kita bertindaks sebagai pemakai
+library, bukan library designer.
