@@ -72,3 +72,42 @@ aktif akan disalin nilainya ke variabel current.
 
 Bentuk for loop untuk Collection sama persis dengan Array di atas. Tidak lagi diperlukan
 Iterator untuk mengambil satu per satu elemen dari collection
+
+
+Autoboxing/Unboxing
+
+Primitif dan Wrapper
+Java dibuat pada pertengahan dekade 90-an, pada waktu itu memory RAM masih mahal. Arsitek
+Java memutuskan untuk tetap memasukkan tipe data primitif dengan alasan menghemat memory.
+Tipe data primitif hanya mempunyai nilai tunggal tanpa mempunyai method, sehingga
+membutuhkan kapasitas memory yang lebih kecil dibanding dengan object.
+Tipe data Primitif mempunyai class padananya yang disebut dengan Wrapper class yang
+menyediakan method utility untuk melakukan convert dari satu tipe ke tipe yang lain, misalnya
+mengkonvert data dari tipe int menjadi double. Berikut ini adalah tabel tipe data primitif dan
+wrappernya:
+![img.png](img.png)
+
+
+Autoboxing/Unboxing memberikan kemudahan dengan menghilangkan kewajiban kita untuk
+menulis kode convert dari primitif ke wrapper atau sebaliknya, dengan inboxing/outoboxing kode
+di atas akan menjadi :
+```java
+int a = 10;
+Integer b = a;
+Integer c = a;
+int d = c;
+```
+Seperti halnya enhaced for loop, inboxing/outoboxing dilaksanakan pada level compiler, sebelum
+kode dirubah menjadi .class, compiler akan merubah kode tersebut ke bentuk lamanya. Hal ini
+akan memberikan beberapa konsekuensi, perhatikan kode di bawah ini:
+```java
+Integer a = null;
+int b = a;
+```
+
+kode di baris kedua, ada proses perubahan dari wrapper ke primitif, sebenarnya kode tersebut
+akan diubah ke bentuk lama sebelum dicompile. Nilai dari variabel a adalah null, ketika akan
+dirubah ke bentuk primitif, a akan memanggi method intValue() dari class Integer,
+pemanggilan ini menyebabkan error NullPointerException ketika kode di atas dijalankan.
+
+Kita harus hati-hati menggunakan fasilitas ini untuk menghindari error NullPointerException.

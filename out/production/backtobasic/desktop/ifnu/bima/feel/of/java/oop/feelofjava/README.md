@@ -72,3 +72,18 @@ aktif akan disalin nilainya ke variabel current.
 
 Bentuk for loop untuk Collection sama persis dengan Array di atas. Tidak lagi diperlukan
 Iterator untuk mengambil satu per satu elemen dari collection
+
+
+Autoboxing/Unboxing
+
+Primitif dan Wrapper
+Java dibuat pada pertengahan dekade 90-an, pada waktu itu memory RAM masih mahal. Arsitek
+Java memutuskan untuk tetap memasukkan tipe data primitif dengan alasan menghemat memory.
+Tipe data primitif hanya mempunyai nilai tunggal tanpa mempunyai method, sehingga
+membutuhkan kapasitas memory yang lebih kecil dibanding dengan object.
+Tipe data Primitif mempunyai class padananya yang disebut dengan Wrapper class yang
+menyediakan method utility untuk melakukan convert dari satu tipe ke tipe yang lain, misalnya
+mengkonvert data dari tipe int menjadi double. Berikut ini adalah tabel tipe data primitif dan
+wrappernya:
+![img.png](img.png)
+
