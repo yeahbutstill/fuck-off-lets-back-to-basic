@@ -1,5 +1,7 @@
 
-L	java:S106"+Replace this use of System.out by a logger.(ÛÓå°øÿÿÿÿ8àËşƒ­1
-G	java:S106"+Replace this use of System.out by a logger.(Ç°¹ï8åËşƒ­1
-L	java:S106"+Replace this use of System.out by a logger.(Ø®Íıùÿÿÿÿ8æËşƒ­1
-G	java:S106"+Replace this use of System.out by a logger.(öìãû8õ¤ÿƒ­1
+l
+java:S2095"JUse try-with-resources or close this "ServerSocket" in a "finally" clause.(¡¡’Éıÿÿÿÿ8£‹Ó„­1
+G	java:S106"+Replace this use of System.out by a logger.(†çìØ8§‹Ó„­1
+G	java:S106"+Replace this use of System.out by a logger.(Í»¹³8¨‹Ó„­1
+G	java:S106"+Replace this use of System.out by a logger.(€èÕ8ª‹Ó„­1
+F	java:S106"+Replace this use of System.out by a logger.(èüî98«‹Ó„­1
