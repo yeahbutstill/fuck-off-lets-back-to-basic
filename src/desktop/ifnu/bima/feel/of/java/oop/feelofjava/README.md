@@ -111,3 +111,33 @@ dirubah ke bentuk primitif, a akan memanggi method intValue() dari class Integer
 pemanggilan ini menyebabkan error NullPointerException ketika kode di atas dijalankan.
 
 Kita harus hati-hati menggunakan fasilitas ini untuk menghindari error NullPointerException.
+
+
+Static Import
+
+Utility Class
+
+Sering kita menjumpai jenis class yang disebut Utility Class, class ini hanya berisi static
+method, contohnya adalah class Math dan Assert. Setiap kali kita akan memanggil method dari
+class utility ini, kita harus menuliskan nama classnya berulang-ulang. Jika kita bekerja
+intensive dengan method dalam class Math, kode program kita terlihat tidak rapi, berikut ini
+contohnya:
+```java
+Double result = Math.pow(Math.cos(180),3) /2;
+```
+Dengan menggunakan static import, kita tidak harus menuliskan nama classnya jika akan
+mengunakan method atau variabel static. Sintaks penulisan static import :
+```java
+static import java.lang.Math.pow;
+static import java.lang.Math.cos;
+```
+kita juga bisa menggunakan wildcard (*) untuk mengimport semua static member dalam class
+tersebut.
+```java
+static import java.lang.Math.*;
+```
+Setelah static import didefnisikan, kode untuk memanggil method pow dan cos dari class Math
+menjadi lebih sederhana, seperti di bawah ini:
+```java
+Double result = pow(cos(180),3) /2;
+```

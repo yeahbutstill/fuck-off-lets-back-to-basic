@@ -87,3 +87,57 @@ mengkonvert data dari tipe int menjadi double. Berikut ini adalah tabel tipe dat
 wrappernya:
 ![img.png](img.png)
 
+
+Autoboxing/Unboxing memberikan kemudahan dengan menghilangkan kewajiban kita untuk
+menulis kode convert dari primitif ke wrapper atau sebaliknya, dengan inboxing/outoboxing kode
+di atas akan menjadi :
+```java
+int a = 10;
+Integer b = a;
+Integer c = a;
+int d = c;
+```
+Seperti halnya enhaced for loop, inboxing/outoboxing dilaksanakan pada level compiler, sebelum
+kode dirubah menjadi .class, compiler akan merubah kode tersebut ke bentuk lamanya. Hal ini
+akan memberikan beberapa konsekuensi, perhatikan kode di bawah ini:
+```java
+Integer a = null;
+int b = a;
+```
+
+kode di baris kedua, ada proses perubahan dari wrapper ke primitif, sebenarnya kode tersebut
+akan diubah ke bentuk lama sebelum dicompile. Nilai dari variabel a adalah null, ketika akan
+dirubah ke bentuk primitif, a akan memanggi method intValue() dari class Integer,
+pemanggilan ini menyebabkan error NullPointerException ketika kode di atas dijalankan.
+
+Kita harus hati-hati menggunakan fasilitas ini untuk menghindari error NullPointerException.
+
+
+Static Import
+
+Utility Class
+
+Sering kita menjumpai jenis class yang disebut Utility Class, class ini hanya berisi static
+method, contohnya adalah class Math dan Assert. Setiap kali kita akan memanggil method dari
+class utility ini, kita harus menuliskan nama classnya berulang-ulang. Jika kita bekerja
+intensive dengan method dalam class Math, kode program kita terlihat tidak rapi, berikut ini
+contohnya:
+```java
+Double result = Math.pow(Math.cos(180),3) /2;
+```
+Dengan menggunakan static import, kita tidak harus menuliskan nama classnya jika akan
+mengunakan method atau variabel static. Sintaks penulisan static import :
+```java
+static import java.lang.Math.pow;
+static import java.lang.Math.cos;
+```
+kita juga bisa menggunakan wildcard (*) untuk mengimport semua static member dalam class
+tersebut.
+```java
+static import java.lang.Math.*;
+```
+Setelah static import didefnisikan, kode untuk memanggil method pow dan cos dari class Math
+menjadi lebih sederhana, seperti di bawah ini:
+```java
+Double result = pow(cos(180),3) /2;
+```
