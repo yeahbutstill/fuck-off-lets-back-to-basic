@@ -283,6 +283,23 @@ pada baris lists.add(100);, compiler akan memberikan keterangan error bahwa nila
 dmasukkan ke dalam collection lists mempunyai tipe data selain String.
 Pengecekan tipe data apa yang ada di dalam Collection sekarang terjadi pada saat kompilasi,
 bukan pada saat jalanya aplikasi, dengan begitu kesalahan bisa ditemukan lebih cepat.
+
 Generics bisa digunakan untuk melakukan banyak hal, namun sebagai programmer kita tidak
 harus memikirkan secara detail tentang penggunaan generics, kita bertindaks sebagai pemakai
 library, bukan library designer.
+
+Annotations
+Metadata
+Banyak sekali API dalam java yang memerlukan konfgurasi yang terkadang diletakkan dalam fle
+terpisah. Pola ini sangat memberatkan programmer karena ada tambahan fle lagi yang harus
+dimantain. API lainnya mengharuskan kita meng-extend class tertentu atau membuat nama
+method dengan pola tertentu.
+
+Annotation memberikan alternatif cara menambahkan informasi terhadap fle java. Informasi
+tambahan ini disebut dengan metadata. Metadata digunakan oleh API atau IDE sebagai informasi
+tambahan yang digunakan sebagai patokan untuk memperlakukan fle java tersebut dengan
+tindakan tertentu.
+
+Junit 3.x mengharuskan fle yang akan ditest memenuhi beberapa aturan, pertama harus meng-
+extend class TestCase, kemudian setiap method yang akan ditest harus diawali dengan kata test,
+berikut ini contohnya:
