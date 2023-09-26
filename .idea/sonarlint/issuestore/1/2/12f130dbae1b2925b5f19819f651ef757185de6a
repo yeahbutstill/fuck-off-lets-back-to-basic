@@ -1,6 +1,0 @@
-
-M
-java:S1874"+Remove this use of "URL"; it is deprecated.(ŸÃê§ùÿÿÿÿ8·ıÑ­1
-L	java:S106"+Replace this use of System.out by a logger.(õô½¤ıÿÿÿÿ8‰ÒÔ­1
-X
-java:S1128";Remove this unused import 'java.net.MalformedURLException'.(ªËŞˆ8ª‚Ü­1

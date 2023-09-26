@@ -1,24 +1,0 @@
-
-U	java:S106"9Replace this use of System.out or System.err by a logger.(—…ÇØ8«Îã¿ 1
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ÿ¹™äþÿÿÿÿ8«Îã¿ 1
-U	java:S106	"9Replace this use of System.out or System.err by a logger.(ŽŽ½ž8¬Îã¿ 1
-T	java:S106
-"9Replace this use of System.out or System.err by a logger.(Æ±ÙH8¬Îã¿ 1
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ8¬Îã¿ 1
-U	java:S106"9Replace this use of System.out or System.err by a logger.(½É‹Ö8­Îã¿ 1
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(¬„Šàúÿÿÿÿ8­Îã¿ 1
-U	java:S106"9Replace this use of System.out or System.err by a logger.(»¹°Ž8­Îã¿ 1
-U	java:S106"9Replace this use of System.out or System.err by a logger.( ô“Ÿ8¯Îã¿ 1
-U	java:S106"9Replace this use of System.out or System.err by a logger.(£²…Ÿ8¯Îã¿ 1
-T	java:S106"9Replace this use of System.out or System.err by a logger.(Žòý8³Îã¿ 1
-G
-java:S3457)"%String contains no format specifiers.(å©¿¥ÿÿÿÿÿ8¯Îã¿ 1
-Z	java:S106)"9Replace this use of System.out or System.err by a logger.(å©¿¥ÿÿÿÿÿ8´Îã¿ 1
-n
-java:S3457+"Q%n should be used in place of \n to produce the platform-specific line separator.(ï«¨°8¯Îã¿ 1
-B
-java:S3457+"%String contains no format specifiers.(ï«¨°8¯Îã¿ 1
-U	java:S106+"9Replace this use of System.out or System.err by a logger.(ï«¨°8´Îã¿ 1
-U	java:S106N"9Replace this use of System.out or System.err by a logger.(¼²Ïü8¯Çç¿ 1
-U	java:S106P"9Replace this use of System.out or System.err by a logger.(¼²Ïü8ûÕñ¿ 1
-U	java:S106R"9Replace this use of System.out or System.err by a logger.(¼²Ïü8¢Áõ¿ 1
