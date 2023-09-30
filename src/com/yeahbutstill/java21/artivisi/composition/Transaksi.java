@@ -1,7 +1,6 @@
 package com.yeahbutstill.java21.artivisi.composition;
 
 import com.yeahbutstill.java21.artivisi.Product;
-
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;

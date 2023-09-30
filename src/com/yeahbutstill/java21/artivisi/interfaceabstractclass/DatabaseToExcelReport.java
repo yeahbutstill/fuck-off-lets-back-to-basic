@@ -1,7 +1,6 @@
 package com.yeahbutstill.java21.artivisi.interfaceabstractclass;
 
 import com.yeahbutstill.java21.artivisi.Product;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;

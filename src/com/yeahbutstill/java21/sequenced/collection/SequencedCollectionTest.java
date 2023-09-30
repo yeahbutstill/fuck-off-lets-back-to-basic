@@ -1,11 +1,10 @@
 package com.yeahbutstill.java21.sequenced.collection;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.SequencedCollection;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class SequencedCollectionTest {
     @Test
