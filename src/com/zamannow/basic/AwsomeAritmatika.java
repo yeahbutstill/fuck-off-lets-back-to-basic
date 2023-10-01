@@ -2,7 +2,6 @@ package com.zamannow.basic;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class AwsomeAritmatika {
@@ -92,6 +91,6 @@ public class AwsomeAritmatika {
     boolean benar = true;
     System.out.println(c);
     System.out.println(d);
-    System.out.println(benar);
+    System.out.println(!benar);
   }
 }
