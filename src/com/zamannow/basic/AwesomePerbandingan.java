@@ -27,5 +27,28 @@ public class AwesomePerbandingan {
     System.out.println(a <= b);
     System.out.println(a == b);
     System.out.println(a != b);
+
+    System.out.println("==========================================");
+    boolean nil1 = true;
+    boolean nil2 = false;
+    boolean nil3 = true;
+    boolean nil4 = false;
+    // DAN akan menghasilkan TRUE jika ke 2 nilainya true
+    System.out.println(nil1 && nil3);
+    System.out.println(nil1 && nil2);
+    System.out.println(nil2 && nil1);
+    System.out.println(nil2 && nil4);
+    System.out.println("=====================================");
+
+    // ATAU akan menghasilkan FALSE jika ke 2 nilainya
+    System.out.println(nil1 || nil3);
+    System.out.println(nil1 || nil2);
+    System.out.println(nil2 || nil1);
+    System.out.println(nil2 || nil4);
+    System.out.println("========================================");
+
+    // you know this is kebalikan dari yang benar like hukum di indonesia
+    System.out.println(!nil1);
+    System.out.println(!nil2);
   }
 }
