@@ -2,9 +2,9 @@ package com.zamannow.basic;
 
 public class AwesomeSwitchStatement {
   public static void main(String[] args) {
-    int ulangan = 50;
-    int absen = 50;
-    String nilai;
+    int ulangan = 90;
+    int absen = 70;
+    String nilai = " ";
 
     if (ulangan >= 90 && absen >= 70) {
       nilai = "A";
@@ -26,7 +26,8 @@ public class AwesomeSwitchStatement {
     */
     String ucupan;
     switch (nilai) {
-      case "A" -> ucupan = "Wow anda lulus dengan Baik";
+      // dengan lambda
+      case "A" -> ucupan = "Wow anda lulus dengan Baik😇";
       case "B", "C" -> ucupan = "Anda lulus";
       case "D" -> ucupan = "Maaf anda tidak lulus";
       default -> ucupan = "Maaf mungkin anda salah jurusan 🤣";

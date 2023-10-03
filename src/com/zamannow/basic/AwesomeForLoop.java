@@ -8,13 +8,13 @@ public class AwesomeForLoop {
     sintak perulangan for:
 
     for(init statement; kondisi; poststement) {
-      // block perulangan
+      // block perulangan;
     }
 
-    - init statement, akan dieksekusi hanya sekali diawal, sebelum perulangan kondisi akan dilakukan
-    pengecekan dalam setiap perulangan. Jika true perulangan tersebut akan dilakukan, jika false perulangan akan berhenti.
-    - post statement, akan dieksekusi setiap kali diakhir perulangan
-    - init statement, Kondisi dan Post Statement tidak wajib diisi, jika kondisi tidak diisi, berarti kondisi
+    - Init statement, akan dieksekusi hanya sekali diawal, sebelum perulangan
+    - Kondisi, akan dilakukan pengecekan dalam setiap perulangan, jika true perulangan akan dilakukan, jika false maka perulangan akan berhenti
+    - Post statement, akan dieksekusi setiap kali diakhir perulangan
+    - Init Statement, Kondisi dan Post Statement tidak wajib diisi, jika kondisi tidak diisi, berarti kondisi
     selalu bernilai true
     */
 
@@ -40,8 +40,32 @@ public class AwesomeForLoop {
     System.out.println("=============================================");
 
     // perulangan dengan post statement
-    for (int ma = 1; ma < 10; ma+=3) {
+    for (int ma = 1; ma < 10; ma += 3) {
       System.out.println("ma-" + ma);
+    }
+
+    System.out.println();
+    System.out.println();
+    System.out.println("xxxxxxxxxxxxxxxxxxxxx");
+    System.out.println("Bintang biasa");
+
+    for (int a = 1; a <= 5; a++) {
+      for (int b = 1; b <= a; b++) {
+        System.out.print("*");
+      }
+      System.out.println();
+    }
+
+    System.out.println();
+    System.out.println();
+    System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+    System.out.println("Bintang kebalik");
+
+    for (int c = 1; c <= 5; c++) {
+      for (int d = 5; d >= c; d--) {
+        System.out.print("*");
+      }
+      System.out.println(" ");
     }
   }
 }
