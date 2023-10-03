@@ -34,4 +34,35 @@ public class AwesomeSwitchStatement {
 
     System.out.println(ucupan);
   }
+
+  // AWSOME! motherfucker the new fucking switch statement
+  String getRomanNumber(int value) {
+    String romanValue = "";
+    switch (value) {
+      case 0 -> romanValue = "nulla"; // bye break
+      case 1 -> romanValue = "I";
+      case 2 -> romanValue = "II";
+      case 3 -> romanValue = "III";
+      case 4 -> romanValue = "IV";
+      case 5 -> romanValue = "V";
+      default -> {
+        System.out.printf("Out of fucking range value 5d %n", value);
+        romanValue = "N/A";
+      }
+    }
+    return romanValue;
+  }
+
+  // hmmmm in expression
+  String getShitRoman(int value) {
+    return switch (value) {
+      case 0 -> "nulla💩";
+      case 1 -> "I💩";
+      case 2 -> "II💩";
+      case 3 -> "III💩";
+      default -> throw new IllegalStateException("Out of shit 💩 range value: " + value);
+    };
+  }
+
+
 }

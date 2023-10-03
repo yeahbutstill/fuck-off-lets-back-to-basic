@@ -5,7 +5,7 @@ public class AwesomeForLoop {
     /*
     For adalah kata kunci yang bisa digunakan untuk melakukan perulangan
     Blok kode yang terdapat di dalam for akan selalu diulang selama kondisi for terpenuhi
-    sintak perulangan for
+    sintak perulangan for:
 
     for(init statement; kondisi; poststement) {
       // block perulangan
@@ -43,6 +43,5 @@ public class AwesomeForLoop {
     for (int ma = 1; ma < 10; ma+=3) {
       System.out.println("ma-" + ma);
     }
-
   }
 }
