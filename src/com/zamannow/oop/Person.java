@@ -35,7 +35,7 @@ public class Person {
     this.lastName = lastName; // sama aja kaya person.name = name yang ada di parameter
   }
 
-  // constructor overloading dengan syarat tipe data parameter herus berbeda dan jumlah parameter
+  // constructor overloading, overloading itu mendeklarasikan method yang namanya sama dan di class yang sama. dengan syarat tipe data parameter herus berbeda dan jumlah parameter
   // harus berbeda
   public Person(String name) {
     this.firstName = name;
