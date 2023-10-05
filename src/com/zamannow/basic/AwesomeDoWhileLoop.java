@@ -11,7 +11,7 @@ public class AwesomeDoWhileLoop {
     Walaupun kondisi tidak bernilai true
      */
     var counter = 100;
-    do{
+    do {
       System.out.println("Perulangan ke - " + counter);
       counter++;
     } while (counter <= 10);

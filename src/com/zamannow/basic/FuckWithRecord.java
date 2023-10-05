@@ -3,6 +3,17 @@ package com.zamannow.basic;
 import java.util.Iterator;
 
 public class FuckWithRecord {
+  public static void main(String[] args) {
+    var range = new Range(0, 5);
+    System.out.println("range = " + range);
+    System.out.println("awal = " + range.awal());
+    System.out.println("akhir = " + range.akhir());
+
+    for (Integer value : range) {
+      System.out.println("value = " + value);
+    }
+  }
+
   /*
   - engga ada setter
   - ini final class A.K.A broken home... engga bisa di extends
@@ -40,17 +51,6 @@ public class FuckWithRecord {
           return indx++;
         }
       };
-    }
-  }
-
-  public static void main(String[] args) {
-    var range = new Range(0, 5);
-    System.out.println("range = " + range);
-    System.out.println("awal = " + range.awal());
-    System.out.println("akhir = " + range.akhir());
-
-    for (Integer value : range) {
-      System.out.println("value = " + value);
     }
   }
 }

@@ -38,6 +38,7 @@ public class AwesomeScope {
 
   /**
    * Menghitung jumlah a + b
+   *
    * @param a nilai a
    * @param b nilai b
    * @return a + b

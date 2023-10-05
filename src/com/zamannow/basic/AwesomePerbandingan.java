@@ -35,9 +35,9 @@ public class AwesomePerbandingan {
     System.out.println(a != b);
 
     /*
-      Statement bisa dibilang adalah kalimat lengkap dalam bahasa.
-      Sebuah statement berisikan execution komplit, biasanya diakhiri dengan titik koma
-     */
+     Statement bisa dibilang adalah kalimat lengkap dalam bahasa.
+     Sebuah statement berisikan execution komplit, biasanya diakhiri dengan titik koma
+    */
     // assigment statement
     double aValue = 39.99;
     // increment statement
@@ -48,10 +48,9 @@ public class AwesomePerbandingan {
     Date date = new Date();
 
     /**
-     * Block adalah kumpulan statement yang terdiri dari nol atau lebih statement
-     * Block diawali dengan { dan diakhiri dengan }
+     * Block adalah kumpulan statement yang terdiri dari nol atau lebih statement Block diawali
+     * dengan { dan diakhiri dengan }
      */
-
     System.out.println("==========================================");
     boolean nil1 = true;
     boolean nil2 = false;

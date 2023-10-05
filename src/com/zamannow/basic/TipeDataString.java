@@ -15,6 +15,31 @@ public class TipeDataString {
     this.alamat = alamat;
   }
 
+  public static void main(String[] args) {
+    TipeDataString tipeDataString = new TipeDataString();
+    tipeDataString.setNamaDepan("Naruto");
+    tipeDataString.setNamaBelakang("Uzumaki");
+    tipeDataString.setNamaLengkap(
+        tipeDataString.getNamaDepan() + " " + tipeDataString.getNamaBelakang());
+    tipeDataString.setAlamat("Depag");
+
+    System.out.println(tipeDataString.getAlamat());
+    System.out.println(tipeDataString.getNamaDepan());
+    System.out.println(tipeDataString.getNamaLengkap());
+    System.out.println();
+    System.out.println();
+
+    String name;
+    name = "Sasuke";
+    System.out.println(name);
+
+    name = "Sakura";
+    System.out.println(name);
+    System.out.println(name.equals(name));
+    System.out.println(name == "Sasuke");
+    System.out.println(name.equals("Sasuke"));
+  }
+
   public String getNamaDepan() {
     return namaDepan;
   }
@@ -45,30 +70,5 @@ public class TipeDataString {
 
   public void setAlamat(String alamat) {
     this.alamat = alamat;
-  }
-
-  public static void main(String[] args) {
-    TipeDataString tipeDataString = new TipeDataString();
-    tipeDataString.setNamaDepan("Naruto");
-    tipeDataString.setNamaBelakang("Uzumaki");
-    tipeDataString.setNamaLengkap(
-        tipeDataString.getNamaDepan() + " " + tipeDataString.getNamaBelakang());
-    tipeDataString.setAlamat("Depag");
-
-    System.out.println(tipeDataString.getAlamat());
-    System.out.println(tipeDataString.getNamaDepan());
-    System.out.println(tipeDataString.getNamaLengkap());
-    System.out.println();
-    System.out.println();
-
-    String name;
-    name = "Sasuke";
-    System.out.println(name);
-
-    name = "Sakura";
-    System.out.println(name);
-    System.out.println(name.equals(name));
-    System.out.println(name == "Sasuke");
-    System.out.println(name.equals("Sasuke"));
   }
 }

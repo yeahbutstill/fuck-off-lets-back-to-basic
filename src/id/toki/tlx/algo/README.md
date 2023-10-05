@@ -9,18 +9,17 @@ Sort menggunakan pendekatan devide and conquer. Algoritma searching
 dengan pendekatan brute force yaitu sequential search dan algoritma
 searching dengan pendekatan devide and conquer yaitu binary search.
 
-
-
 - Correctness – Kebenaran Implementasi struktur data harus mengimplementasikan antarmukanya
-dengan benar.
+  dengan benar.
 - Time Complexity – Kompleksitas Waktu Waktu berjalan atau waktu eksekusi operasi struktur data harus
-sekecil mungkin.
+  sekecil mungkin.
 - Space Complexity – Kompleksitas Ruang Penggunaan memori dari operasi struktur data harus sesedikit
-mungkin.
+  mungkin.
 
 Kebutuhan akan Struktur Data, dikarenakan adanya 3 masalah umum dalam aplikasi :
-- Data Search – Pencarian akan menjadi lebih lambat, seiring bertambahnya data 
+
+- Data Search – Pencarian akan menjadi lebih lambat, seiring bertambahnya data
 - Processor speed – Kecepatan prosesor meskipun sangat tinggi, akan turun terbatas jika data bertambah
-hingga miliaran catatan. 
+  hingga miliaran catatan.
 - Multiple requests – Banyak permintaan, karena ribuan pengguna dapat mencari data secara bersamaan di
-server web, bahkan server cepat pun dapat gagal saat mencari data.
+  server web, bahkan server cepat pun dapat gagal saat mencari data.

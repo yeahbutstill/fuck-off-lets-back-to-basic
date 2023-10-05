@@ -1,9 +1,9 @@
 package com.zamannow.oop;
 
 public class Binatang {
+  static final String BERADA = "Indonesia";
   String nama;
   String hidupDimana;
-  static final String BERADA = "Indonesia";
 
   // constructor overloading
   public Binatang(String paramNama, String paramHidupDimana) {
@@ -29,7 +29,14 @@ public class Binatang {
 
   void sayHello(String paramNama) {
     System.out.println(
-        "Hello " + paramNama + ", My name is " + this.nama + ". Saya hidup di " + this.hidupDimana + " dan saya ada di " + BERADA);
+        "Hello "
+            + paramNama
+            + ", My name is "
+            + this.nama
+            + ". Saya hidup di "
+            + this.hidupDimana
+            + " dan saya ada di "
+            + BERADA);
   }
 
   void sayHello() {

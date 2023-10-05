@@ -1,8 +1,9 @@
 package com.yeahbutstill.java21.multiline;
 
 public class MultiLineStringTest {
-    public static void main(String[] args) {
-        String shakespeare = """
+  public static void main(String[] args) {
+    String shakespeare =
+        """
                 🥶🥶🥶🥶🥶🥶🥶👽
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -14,11 +15,11 @@ public class MultiLineStringTest {
                 like Aldus PageMaker including versions of Lorem Ipsum.
                 """;
 
-        char x = shakespeare.charAt(0);
-        System.out.println(x != 'L');
+    char x = shakespeare.charAt(0);
+    System.out.println(x != 'L');
 
-        String s = shakespeare.stripLeading();
-        char c = s.charAt(0);
-        System.out.println(c == 'L');
-    }
+    String s = shakespeare.stripLeading();
+    char c = s.charAt(0);
+    System.out.println(c == 'L');
+  }
 }

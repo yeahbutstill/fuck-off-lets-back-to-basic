@@ -1,4 +1,3 @@
 package id.toki.tlx.algo;
 
-public class Deklar {
-}
+public class Deklar {}

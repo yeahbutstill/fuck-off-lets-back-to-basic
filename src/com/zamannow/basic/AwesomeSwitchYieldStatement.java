@@ -27,12 +27,17 @@ public class AwesomeSwitchYieldStatement {
     Di Java 14. ada kata kunci yield, dimana kita bisa mengembalikan nilai pada switch statement.
     ini sangat mempermudah kita ketika butuh membuat data berdasarkan kondisi switch statement.
     */
-    String ucapan = switch (nilai) {
-      case "A" : yield "Wow anda lulus dengan Baik";
-      case "B", "C" : yield  "Anda lulus";
-      case "D" : yield  "Maaf anda tidak lulus";
-      default : yield "Maaf mungkin anda salah jurusan 🤣";
-    };
+    String ucapan =
+        switch (nilai) {
+          case "A":
+            yield "Wow anda lulus dengan Baik";
+          case "B", "C":
+            yield "Anda lulus";
+          case "D":
+            yield "Maaf anda tidak lulus";
+          default:
+            yield "Maaf mungkin anda salah jurusan 🤣";
+        };
 
     System.out.println(ucapan);
   }

@@ -14,8 +14,8 @@ public class AwsomeArray2D {
     System.out.println();
 
     String[][] namaPenjahat = {
-            new String[]{"Heo", "Test", "Test", "Dont"},
-            new String[]{"GH", "A", "B", "C"}
+      new String[] {"Heo", "Test", "Test", "Dont"},
+      new String[] {"GH", "A", "B", "C"}
     };
     System.out.println(Arrays.deepToString(namaPenjahat));
 

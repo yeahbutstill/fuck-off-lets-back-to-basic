@@ -26,7 +26,7 @@ public class AwesomeSwitchStatement {
     */
     String ucupan;
     switch (nilai) {
-      // dengan lambda
+        // dengan lambda
       case "A" -> ucupan = "Wow anda lulus dengan Baik😇";
       case "B", "C" -> ucupan = "Anda lulus";
       case "D" -> ucupan = "Maaf anda tidak lulus";
@@ -64,6 +64,4 @@ public class AwesomeSwitchStatement {
       default -> throw new IllegalStateException("Out of shit 💩 range value: " + value);
     };
   }
-
-
 }

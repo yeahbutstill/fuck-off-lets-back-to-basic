@@ -7,27 +7,27 @@ import java.util.List;
 
 public class DatabaseToExcelReport extends ReportGenerator {
 
-    private File output = new File("hasil.xls");
+  private File output = new File("hasil.xls");
 
-    @Override
-    void isiDataProduct() {
-        String sql = "select * from t_product";
-        daftarProduk.addAll(executeSqlConvertToListProduct(sql));
-    }
+  @Override
+  void isiDataProduct() {
+    String sql = "select * from t_product";
+    daftarProduk.addAll(executeSqlConvertToListProduct(sql));
+  }
 
-    private List<Product> executeSqlConvertToListProduct(String sql) {
-        // connect to db
-        // execute sql
-        // loop ResultSet
-        // convert rs to product
-        // add product to list
+  private List<Product> executeSqlConvertToListProduct(String sql) {
+    // connect to db
+    // execute sql
+    // loop ResultSet
+    // convert rs to product
+    // add product to list
 
-        System.out.println("Menjalankan query: " + sql);
-        return new ArrayList<>();
-    }
+    System.out.println("Menjalankan query: " + sql);
+    return new ArrayList<>();
+  }
 
-    @Override
-    void generateReportFile() {
-        System.out.println("Menulis list product ke file: " + output.getName());
-    }
+  @Override
+  void generateReportFile() {
+    System.out.println("Menulis list product ke file: " + output.getName());
+  }
 }

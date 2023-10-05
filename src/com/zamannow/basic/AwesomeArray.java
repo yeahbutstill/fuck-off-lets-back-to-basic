@@ -11,19 +11,6 @@ public class AwesomeArray {
     this.namaBuah = namaBuah;
   }
 
-  public String[] getNamaBuah() {
-    return namaBuah;
-  }
-
-  public void setNamaBuah(String[] namaBuah) {
-    this.namaBuah = namaBuah;
-  }
-
-  @Override
-  public String toString() {
-    return "AwesomeArray{" + "namaBuah=" + Arrays.toString(namaBuah) + '}';
-  }
-
   public static void main(String[] args) {
     // Membuat Array
     String[] arrayString;
@@ -44,11 +31,23 @@ public class AwesomeArray {
     awesomeArray.namaBuah[1] = "Yeah"; // mengubah atau mengisi data
     awesomeArray.namaBuah[2] = "Hmmmmmm";
 
-
     System.out.println(Arrays.toString(awesomeArray.getNamaBuah()));
     System.out.println(Arrays.equals(awesomeArray.getNamaBuah(), awesomeArray.namaBuah));
     System.out.println((awesomeArray.namaBuah[0] == ("[mangga, " + "appel]")));
     System.out.println(awesomeArray.namaBuah[2]); // mengambil data
     System.out.println(awesomeArray.namaBuah.length); // mengambil panjang array
+  }
+
+  public String[] getNamaBuah() {
+    return namaBuah;
+  }
+
+  public void setNamaBuah(String[] namaBuah) {
+    this.namaBuah = namaBuah;
+  }
+
+  @Override
+  public String toString() {
+    return "AwesomeArray{" + "namaBuah=" + Arrays.toString(namaBuah) + '}';
   }
 }

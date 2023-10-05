@@ -1,15 +1,14 @@
 package com.zamannow.oop;
 
 public class Person {
-  // membuat properties sama seperti membuar variable, namum di tempatkan di block class
-  String firstName; // properties adalah data yang bisa kita masukan di dalam Object
-  String lastName; // Namun untuk sebelum kita bisa memasukan data di properties,
-  // kita harus mendeklarasikan data apa saja yang dimiliki object tersebut di dalam deklarasi
-  // classnya
-
   // properties yang ada di object bisa kita manipulasi. tergantung final atau bukan
   final String country =
       "Indonesia"; // jika final, berarti kita tidak bisa mengubah data proeperties tersebut
+  // membuat properties sama seperti membuar variable, namum di tempatkan di block class
+  String firstName; // properties adalah data yang bisa kita masukan di dalam Object
+  // kita harus mendeklarasikan data apa saja yang dimiliki object tersebut di dalam deklarasi
+  // classnya
+  String lastName; // Namun untuk sebelum kita bisa memasukan data di properties,
 
   // default constructor
   public Person() {
@@ -35,7 +34,8 @@ public class Person {
     this.lastName = lastName; // sama aja kaya person.name = name yang ada di parameter
   }
 
-  // constructor overloading, overloading itu mendeklarasikan method yang namanya sama dan di class yang sama. dengan syarat tipe data parameter herus berbeda dan jumlah parameter
+  // constructor overloading, overloading itu mendeklarasikan method yang namanya sama dan di class
+  // yang sama. dengan syarat tipe data parameter herus berbeda dan jumlah parameter
   // harus berbeda
   public Person(String name) {
     this.firstName = name;

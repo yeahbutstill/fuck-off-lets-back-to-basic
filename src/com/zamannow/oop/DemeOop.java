@@ -1,7 +1,5 @@
 package com.zamannow.oop;
 
-
-
 public class DemeOop {
   public static void main(String[] args) {
     var person = new Person();
@@ -17,7 +15,8 @@ public class DemeOop {
 
     var car = new Car();
     // untuk manipulasi data properties, sama seperti cara pada variable
-    // untuk mengakses properties, kita butuh kata kunci .(titik) setelah nama object dan diikuti nama propertiesnya
+    // untuk mengakses properties, kita butuh kata kunci .(titik) setelah nama object dan diikuti
+    // nama propertiesnya
     car.name = "Avanza";
     car.brand = "Toyota";
     System.out.println(car.name);

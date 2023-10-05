@@ -17,17 +17,20 @@ public class Manusia {
         this.umur = umur;
     }
 
+    public String getNama(){
+        return nama;
+    }
+
     //definisi method
     public void setNama(String a){
         nama=a;
     }
-    public String getNama(){
-        return nama;
-    }
-    public void setUmur(int a){
-        umur=a;
-    }
+
     public int getUmur(){
         return umur;
+    }
+
+    public void setUmur(int a){
+        umur=a;
     }
 }

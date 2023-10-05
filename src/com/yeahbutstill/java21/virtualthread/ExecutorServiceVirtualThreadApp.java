@@ -8,26 +8,28 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ExecutorServiceVirtualThreadApp {
-    private static final Logger logger = Logger.getLogger(ExecutorServiceVirtualThreadApp.class.getName());
+  private static final Logger logger =
+      Logger.getLogger(ExecutorServiceVirtualThreadApp.class.getName());
 
-    public static void main(String[] args) {
-        try (ExecutorService executorService = Executors.newVirtualThreadPerTaskExecutor()) {
-            for (int i = 0; i < Integer.MAX_VALUE; i++) {
-                executorService.execute(() -> {
-                    try {
-                        Thread.sleep(Duration.ofSeconds(2));
-                        logger.log(Level.INFO, "Boom {0}", Thread.currentThread() + "!");
-                    } catch (InterruptedException e) {
-                        throw new RuntimeException(e);
-                    }
-                });
-            }
-        }
-
-        try {
-            System.in.read();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+  public static void main(String[] args) {
+    try (ExecutorService executorService = Executors.newVirtualThreadPerTaskExecutor()) {
+      for (int i = 0; i < Integer.MAX_VALUE; i++) {
+        executorService.execute(
+            () -> {
+              try {
+                Thread.sleep(Duration.ofSeconds(2));
+                logger.log(Level.INFO, "Boom {0}", Thread.currentThread() + "!");
+              } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+              }
+            });
+      }
     }
+
+    try {
+      System.in.read();
+    } catch (IOException e) {
+      throw new RuntimeException(e);
+    }
+  }
 }

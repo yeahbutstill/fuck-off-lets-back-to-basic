@@ -22,10 +22,6 @@ public class AwesomeMethodOrMotherFuckerFunction {
     terlaluDalam(100);
   }
 
-  public void helloBitch() { // harus diinstansikan object yang ingin memanggilnya
-    System.out.println("Yeah");
-  }
-
   static void staticHello() { // tanpa harus instansikan object
     System.out.println("hoho");
   }
@@ -138,5 +134,9 @@ public class AwesomeMethodOrMotherFuckerFunction {
   static void terlaluDalam(int value) {
     if (value == 0) System.out.println("selesai");
     else System.out.println("Loop - " + value); terlaluDalam(value -1);
+  }
+
+  public void helloBitch() { // harus diinstansikan object yang ingin memanggilnya
+    System.out.println("Yeah");
   }
 }

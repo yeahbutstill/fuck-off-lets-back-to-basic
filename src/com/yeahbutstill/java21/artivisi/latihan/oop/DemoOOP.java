@@ -8,12 +8,9 @@ import java.util.List;
 
 public class DemoOOP {
   public static void main(String[] args) {
-    var p1 = new Produk("P-001", "Laptop Asus",
-            new BigDecimal(10_000_000));
-    var p2 = new Produk("P-002", "Laptop Lenovo",
-            new BigDecimal(7_000_000));
-    var p3 = new Produk("P-003", "Laptop HP",
-            new BigDecimal(7_100_000));
+    var p1 = new Produk("P-001", "Laptop Asus", new BigDecimal(10_000_000));
+    var p2 = new Produk("P-002", "Laptop Lenovo", new BigDecimal(7_000_000));
+    var p3 = new Produk("P-003", "Laptop HP", new BigDecimal(7_100_000));
 
     var c1 = new Customer("Dani", "yeahbut@still.com");
     var pem = new Pembelian(c1);
@@ -29,9 +26,7 @@ public class DemoOOP {
 
     var d2 =
         new DiskonPeriode(
-            new BigDecimal("0.5"),
-                LocalDate.of(2023, 10, 4),
-                LocalDate.of(2023, 10, 9));
+            new BigDecimal("0.5"), LocalDate.of(2023, 10, 4), LocalDate.of(2023, 10, 9));
     pem.daftarDiskon().add(d2);
     pem.cetakStruk();
   }
