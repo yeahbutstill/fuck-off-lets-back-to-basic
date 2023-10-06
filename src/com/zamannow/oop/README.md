@@ -28,3 +28,16 @@
 - Polymorphism berasal dari bahasa Yunani yang berarti banyak bentuk.
 - Dalam OOP, Polymorphism adalah kemampuan sebuah object berubah bentuk menjadi bentuk lain.
 - Polymorphism erat sekali berhubungan dengan Inheritance
+
+# Type Check & Casts
+- Sebelumnya kita sudah tau cara melakukan konversi tipe data(casts) di tipe data primitif
+- Cast juga bisa digunakan untuk tipe data bukan primitif
+- Namun agar aman, sebelum melakukan cast, pastikan kita melakukan type check (pengecekan tipe data), dengan menggunakan kata kunci instanceof
+- Hasil operator instanceof adalah boolean, true jika tipe data sesuai, false jika tidak sesuai
+
+# Variable Hiding
+- Variable hiding merupakan masalah yang terjadi ketika kita membuat nama properties sama di class child dengan nama properties di class parent
+- Tidak ada yang namanya properties overriding, ketika kita buat ulang nama properties di class, class itu berarti variable hiding
+- Untuk mengatasi variable hiding, caranya kita bisa menggunakan super keyword.
+- yang membedakan variable hiding dan method overriding adalah ketika sebuah object di cast
+- Saat object di cast, method akan tetap mengakses method overriding, namun variable akan mengakses variable yang ada di class nya

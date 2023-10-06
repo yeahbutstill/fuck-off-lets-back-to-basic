@@ -28,6 +28,14 @@ public class PolymorphismDemo {
 
   // method polymorphism
   static void sayHello(Employee employee) {
-    System.out.println("Hello " + employee.name);
+    if (employee instanceof VicePresident) { // Type Check before we casts
+      VicePresident vp = (VicePresident) employee; // lego we cast them
+      System.out.println("Hello VP " + vp.name);
+    } else if (employee instanceof Manager) {
+      Manager mn = (Manager) employee;
+      System.out.println("Hello Manager " + mn.name);
+    } else {
+      System.out.println("Hello " + employee.name);
+    }
   }
 }
