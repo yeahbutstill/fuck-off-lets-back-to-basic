@@ -41,3 +41,12 @@
 - Untuk mengatasi variable hiding, caranya kita bisa menggunakan super keyword.
 - yang membedakan variable hiding dan method overriding adalah ketika sebuah object di cast
 - Saat object di cast, method akan tetap mengakses method overriding, namun variable akan mengakses variable yang ada di class nya
+
+# Access Modifier
+- Access modifier adalah kemampuan membuat class, properties, method dan constructor dapat diakses dari mana saja
+- public, private, protected, defualt
+- ![img.png](img.png)
+
+# Public Class
+- Saat kita membuat public class, kita hanya bisa membuat 1 public class di 1 file .java
+- Selain itu nama public class harus sama dengan nama file .java
