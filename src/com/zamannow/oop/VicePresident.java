@@ -1,5 +1,7 @@
 package com.zamannow.oop;
 
+import java.security.PublicKey;
+
 public class VicePresident extends Manager {
 
   /*
@@ -11,9 +13,11 @@ public class VicePresident extends Manager {
   Jika sebuah class parent tidak memiliki constructor yang tidak ada parameternya (tidak memiliki default constructor)
   maka class child nya wajib mengakses constructor class parent tersebut
    */
-  public VicePresident() {
-    super();
+  public VicePresident(String name) {
+    super(name);
   }
+
+  public VicePresident(){}
 
   /**
    * Method override adalah kemampuan mendeklarasikan ulang method yang di punyai dari parent class

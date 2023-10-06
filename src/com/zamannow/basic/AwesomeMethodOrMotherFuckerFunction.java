@@ -133,7 +133,8 @@ public class AwesomeMethodOrMotherFuckerFunction {
   // error StackOverflow
   static void terlaluDalam(int value) {
     if (value == 0) System.out.println("selesai");
-    else System.out.println("Loop - " + value); terlaluDalam(value -1);
+    else System.out.println("Loop - " + value);
+    terlaluDalam(value - 1);
   }
 
   public void helloBitch() { // harus diinstansikan object yang ingin memanggilnya

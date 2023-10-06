@@ -1,7 +1,6 @@
 package com.zamannow.oop;
 
-public class Manager {
-  String name;
+public class Manager extends Employee {
   String company;
 
   public Manager(String name) {
@@ -15,6 +14,7 @@ public class Manager {
 
   public Manager() {}
 
+  @Override
   void sayHello(String name) {
     System.out.println("Hello " + name + ", My name is Manager " + this.name);
   }

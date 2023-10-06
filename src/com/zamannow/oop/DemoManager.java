@@ -9,5 +9,8 @@ public class DemoManager {
     var vicePresident = new VicePresident();
     vicePresident.name = "may";
     vicePresident.sayHello("dnl");
+
+    System.out.println(manager);
+    System.out.println(vicePresident);
   }
 }
