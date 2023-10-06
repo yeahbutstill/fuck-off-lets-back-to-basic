@@ -50,3 +50,15 @@
 # Public Class
 - Saat kita membuat public class, kita hanya bisa membuat 1 public class di 1 file .java
 - Selain itu nama public class harus sama dengan nama file .java
+
+# Abstract Class
+- saat kita membuat class, kita bisa menjadikan sebuah class sebagai abstract class.
+- Abstract class artinya, class yang tidak bisa dibuat sebagai object secara langsung, hanya bisa diturunkan
+- Untuk membuat sebuah class menjadi abstract, kita bisa menggunakan kata kunci abstract sebelum kata kunci class
+- Dengan demikian abstract class bisa kita gunakan sebagai kontrak untuk class child
+
+# Abstract Method
+- Saat kita membuat class yang abstract, kita bisa membuat abstract method juga di dalam class abstract tersebut
+- Saat kita membuat sebuah abstract method, kita tidak boleh membuat block method untuk method tersebut
+- Artinya, abstract method wajib di override di class child
+- Abstract method tidak boleh memiliki access modifier private
