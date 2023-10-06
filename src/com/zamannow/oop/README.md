@@ -62,3 +62,21 @@
 - Saat kita membuat sebuah abstract method, kita tidak boleh membuat block method untuk method tersebut
 - Artinya, abstract method wajib di override di class child
 - Abstract method tidak boleh memiliki access modifier private
+
+# Getter dan Setter
+- Encapsulation artinya memastikan data sensitif sebuah object tersembunyi dari kelas luar
+- hal ini bertujuan agar kita bisa menjaga data sebuah object tetap baik dan valid
+- Untuk mencapai ini, biasanya kita akan membuat semua properties menggunakan access modifier private, sehingga tidak bisa diakses atau diubah dari luar
+- Agar bisa diubah, kita akan menyediakan method untuk mengubah dan mendapatkan properties tersebut
+- Di Java, proses encapsulation sudah dibuat hukumnya, dimana kita bisa menggunakan Getter dan Setter method
+- Getter adalah method yang dibuat untuk mengambil data properties
+- Setter adalah method yang dibuat untuk mengubah data properties
+- ![img_1.png](img_1.png)
+
+# Interface
+- Sebelumnya kita sudah tahu bahwa abstract class itu bisa kita gunakan untuk kontrak class childnya atau inheritance yang dimana wajib mengoveride method yang ada pada parentnya
+- Namun sebenarnya yang lebih tepat untuk kontrak adalah interface
+- Interface mirip seperti abstract class, yang membedakan interface semua method otomatis abstract tidak memiliki block
+- Di interface kita tidak boleh memiliki properties, kita hanya boleh memiliki constant(properties yang tidak bisa diubah)
+- untuk mewariskan interface, kita tidak menggunakan kata kunci extends, melainkan kata kunci implements
+
