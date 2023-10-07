@@ -3,9 +3,9 @@ package com.zamannow.oop.data;
 import java.io.Serializable;
 
 // ingat record class ini class final
-public record LoginReq(
-    String username,
-    String password) implements Serializable { // disini diwajibkan harus membuat constructor karena yang namanya record itu
+public record LoginReq(String username, String password)
+    implements Serializable { // disini diwajibkan harus membuat constructor karena yang namanya
+                              // record itu
   // untuk menampung data
 
   // constructor overloading
@@ -26,5 +26,4 @@ public record LoginReq(
   public void sayHello() {
     System.out.println("Hello " + this.username);
   }
-
 }

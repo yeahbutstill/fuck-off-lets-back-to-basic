@@ -215,4 +215,47 @@
 - Namun jika kita ingin melakukan sesuatu di constructor tersebut, kita bisa membuat compact constructor, yaitu constructor tanpa tanda ()
 - Selain itu, kita juga bisa melakukan constructor overloading, namun ada hukumnya, yaitu constructor overloading nya harus tetep manggil constructor utama yang secara otomatis dibuatkan di record class
 
+# Enum Class
+- Saat kita membuat aplikasi, kadang kita akan bertemu dengan jenis-jenis data yang nilainya terbatas
+- Misal, gender, ada mele dan female, atau tipe customer, ada standard, premium, VIP dan lain-lain
+- Dalam kasus seperti ini, kita bisa menggunakan enum class, yaitu class yang berisikan nilai terbatas yang sudah ditentukan
+- Saat membuat enum class, secara otomatis dia akan meng-extends class java,lang.Enum, oleh karena itu class enum tidak bisa di extends class lain, naum masih bisa tetap di implementasikan interface
+
+# Enum Members
+- Sama seperti class biasanya, di class enum pun kita bisa menambahkan members(properties, method dan constructor)
+- Khusus constructor, kita tidak bisa membuat public constructor, karena memang tujuan enum bukan untuk di instansiasikan secara bebas
+
+# Exception
+- Saat kita membuat aplikasi, kita tidak akan terhindar dengan yang namanya error
+- Di Java, error direpresentasikan dengan istilah exception, dan semua direpresentasikan dalam bentuk class exception
+- Kita bisa menggunakan class exception sendiri, atau menggunakan yang sudah ada disediakan oleh Java
+- Jika kita ingin membuat exception, maka kita harus membuat class yang extends class Throwable atau turunan-turunannya
+
+# Membuat exception
+- Exception biasanya terjadi di method, ketika kita membuat exception di sebuah method, maka method tersebut harus ditandai dengan kata kunci thrown diikuti dengan class exception nya.
+- Jika method tersebut bisa menimbulkan lebih dari satu jenis exception, kita bisa menambahkan lebih dari satu class exception
+- di dalam kode program kita, untuk membuat exception kita cukup menggunakan kata kunci throw, diikuti dengan object exceptionnya
+
+# Try Catch
+- Saat kita memanggil sebuah method yang bisa menyebabkan exception, maka kita wajib menggunakan try-catch expression di Java
+- Ini berguna agar kita bisa menangkap exception yang terjadi, karena jika tidak ditangkap, lalu terjadi exception, maka secara otomatis program kita akan berhenti
+- Cara menggunakan try-catch expression di Java sangat mudah, di block try kita tinggal panggil method yang bisa menyebabkan exception, dan di block catch, kita bisa melakukan sesuatu jika terjadi exception
+
+# Finally Keyword
+- Dalam try-catch, kita bisa menambahkan block finally
+- Block finally ini adalah block dimana akan selalu dieksekusi baik terjadi exception ataupun tidak
+- Ini sangat cocok ketika kita ingin melakukan sesuatu, tidak peduli sukses ataupun gagal, misal di block try kita ingin membaca file, di block catch kita akan tangkap jika terjadi error, dan di block finally error ataupun suskses membaca file, kita wajib menutup koneksi ke file tersebut, biar tidak menggantung di memory 
+
+# Runtime Exception
+- Jenis Exception, secara garis besar, di Java, exception dibagi menjadi 3 jenis
+- Checked Exception, yaitu exception yang wajib di try catch, seperti yang sudah kita bahas sebelumnya
+- Runtime Exception
+- Error 
+
+# Runtime Exception 
+- adalah jenis exception yang tidak wajib di tangkap menggunakan try catch
+- Kompailer Java tidak akan protes walaupun kita tidak menggunakan try catch ketika kita panggil method yang bisa menyebabkan runtime exception
+- Untuk membuat class runtime exception, kita wajib mengextends class RuntimeException
+- Ada banyak sekali di Java yang merupakan runtime exception, seperti NullPointerException, IllegalArgumentException, dan lain-lain
+
 
