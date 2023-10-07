@@ -9,7 +9,7 @@ public record Point(int x, int y) {
   }
 
   // compact constructor
-  /*public Point(int x, int y) {
+  /*public PointOldFinal(int x, int y) {
       if (x == 0 && y == 0) throw new IllegalArgumentException(String.format(("%d, %d"), x, y));
   }*/
 
