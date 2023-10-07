@@ -258,4 +258,14 @@
 - Untuk membuat class runtime exception, kita wajib mengextends class RuntimeException
 - Ada banyak sekali di Java yang merupakan runtime exception, seperti NullPointerException, IllegalArgumentException, dan lain-lain
 
+# Perlu diperhatikan
+- Walaupun runtime exception tidak wajib di try-catch, tapi ada baiknya kita tetap melakukan try-catch
+- Karena jika terjadi runtime exception, yang ditakukan adalah program akan berhenti atau mati
+
+# Error 
+- Error adalah jenis exception yang terakhir
+- Error adalah sebuah class di Java, yang tidak direkomendasikan untuk di try-catch
+- Biasanya error terjadi ketika ada masalah serius, dan sangat tidak direkomendasikan untuk di try-cathc
+- Artinya, direkomendasikan untuk mematikan aplikasi
+- Contoh, misalnya jika diawal aplikasi kita tidak bisa terkoneksi ke database, di rekomendasikan untuk membuat exception jenis Error, dan menghentikan aplikasi
 

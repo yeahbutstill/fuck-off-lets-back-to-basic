@@ -25,4 +25,8 @@ public class ValidationUtil {
     if (loginReq.password().isBlank()) throw new BlankException("password tidak boleh ada spasi");
     if (loginReq.password().isEmpty()) throw new BlankException("password tidak boleh kosong");
   }
+
+  public static void connectedDatabase(String username, String password) {
+    if (username == null || password == null) throw new DatabaseError("Tidak bisa konek ke database");
+  }
 }
