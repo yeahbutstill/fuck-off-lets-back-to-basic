@@ -3,11 +3,11 @@ package com.zamannow.oop.inner;
 public class InnerApp {
   public static void main(String[] args) {
     Company company = new Company();
-    company.setName("dnl");
-    System.out.println(company.getName());
-
+    company.setName("Google");
     Company.Employee employee = company.new Employee();
-    employee.setName("wn");
+    employee.setName("dnl");
+
     System.out.println(employee.getName());
+    System.out.println(employee.getCompany());
   }
 }

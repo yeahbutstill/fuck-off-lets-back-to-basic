@@ -23,7 +23,7 @@ public class Company {
     }
 
     public String getCompany() {
-      return Company.this.getName();
+      return Company.this.name;
     }
   }
 }
