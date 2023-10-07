@@ -203,3 +203,16 @@
 - Block, static block akan otomatis dieksekusi ketika sebuah class di load
 - Inner class, artinya inner class tersebut bisa diakses secara langsung tanpa harus membuat object outer class terlebih dahulu. Static pada inner class menyebabkan kita tidak bisa mengakses lagi object outer class nya
 
+# Record Class
+- Kadang-kadang kita sering membuat class, hanya untuk class yang berisikan data. Hanya berisi getter, equals, hashCode dan toString method
+- Record class digunakan untuk mempermudah pembuatan jenis class tersebut
+- Saat kita membuat record class, secara automatis Java akan membuatkan getter, equals, hashCode, toString method dan juga constructor argument
+- Saat membuat record class, secara automatis kita akan meng-extends class java.lang.Record yang artinya kita tidak bisa extends class lain. namun kita tetap bisa meng-implementasi interface
+- Immutable, yang artinya tidak bisa diubah, saat membuat object baru yang sudah ada isinya, itu tidak bisa lagi diubah value propertiesnya
+
+# Record Class Constructor
+- Secara default, constructor di record class akan dibuat secara otomatis, sesuai dengan definisi record class parameter
+- Namun jika kita ingin melakukan sesuatu di constructor tersebut, kita bisa membuat compact constructor, yaitu constructor tanpa tanda ()
+- Selain itu, kita juga bisa melakukan constructor overloading, namun ada hukumnya, yaitu constructor overloading nya harus tetep manggil constructor utama yang secara otomatis dibuatkan di record class
+
+
