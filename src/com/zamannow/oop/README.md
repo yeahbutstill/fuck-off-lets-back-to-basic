@@ -108,11 +108,14 @@
 
 - Sebelumnya kita tahu bahwa di interface, kita tidak bisa membuat method konkrit yang memiliki block method
 - Namun sejak Java Versi 8, ada fitur default method di interface
-- Fitur ini terjadi karena sulit untuk maintain kontrak interface jika sudah terlalu banyak class yang implementasi interface tersebut
-- Ketika kita menambahkan satu method di interface, secara otomatis semua class yang implement akan rusak karena harus meng-override method tersebut
+- Fitur ini terjadi karena sulit untuk maintain kontrak interface jika sudah terlalu banyak class yang implementasi
+  interface tersebut
+- Ketika kita menambahkan satu method di interface, secara otomatis semua class yang implement akan rusak karena harus
+  meng-override method tersebut
 - Dengan menggunakan default method, kita bisa menambahkan konkrit method di interface.
 
 # ToString Method
+
 - toString() adalah method yang terdapat di class Object
 - Method ini biasanya digunakan untuk merepresentasikan object dalam bentuk String
 - Secara default, toString() ini akan menghasilkan:
@@ -120,44 +123,72 @@
 - Namun kita bisa mengubahnya jika kita mau, agar object yang kita buat lebih mudah dibaca
 
 # Equals Method
+
 - hal yang agak membingungkan di Java adalah, cara membandingkan object
 - Di bahasa pemrograman lain, untuk mengecek apakah sebuah object itu sama, biasanya menggunakan operator ==,
 - di Java operator == hanya untuk mengecek data primitif
 - Untuk non primitif pengecekan nya menggunakan method equals
-- Dan secara defualt, method equals itu akan membandingkan dua buah object secara kesamaan posisi object di memory, artinya jika kita membuat 2 object yang isi field nya sama, tetap dianggap beda oleh method equals
+- Dan secara defualt, method equals itu akan membandingkan dua buah object secara kesamaan posisi object di memory,
+  artinya jika kita membuat 2 object yang isi field nya sama, tetap dianggap beda oleh method equals
 - Oleh karena itu, ada baiknya kita meng-override method equals milik class Object tersebut
 
 # HashCode Method
-- Method hashCode adalah method representasi integer object kita, mirip toString yang merupakan representasi String, hashCode adalah representasi Intger
-- HashCode sangat bermanfaat untuk membuat structur data unique seperti HashMap, Set dan lain-lain, karena cukup menggunakan hashCode method untuk mendapatkan identitas unique object kita
-- Secara default hashCode akan mengembalikan nilai integer sesuai data di memory, namun kita bisa meng-override nya jika kita ingin
+
+- Method hashCode adalah method representasi integer object kita, mirip toString yang merupakan representasi String,
+  hashCode adalah representasi Intger
+- HashCode sangat bermanfaat untuk membuat structur data unique seperti HashMap, Set dan lain-lain, karena cukup
+  menggunakan hashCode method untuk mendapatkan identitas unique object kita
+- Secara default hashCode akan mengembalikan nilai integer sesuai data di memory, namun kita bisa meng-override nya jika
+  kita ingin
 
 # Kontrak HashCode Method
+
 - Tidak mudah meng-override method hashCode, karena ada kontraknya:
 - Sebanyak apapun hashCode dipanggil, untuk object yang sama, harus menghasilkan data integer yang sama
 - Jika ada 2 object yang sama dibandingkan menggunakan method equals, maka nilai hashCode nya juga harus sama
-- Tidak wajib hashCode berbeda jika method equals menghasilkan false, karena memang keterbatasan jumlah integer sekitar 2 milyar
+- Tidak wajib hashCode berbeda jika method equals menghasilkan false, karena memang keterbatasan jumlah integer sekitar
+  2 milyar
 
 # Final Class
+
 - Sebelumnya kita pernah menggunakan kata kunci final di Java
 - Jika digunakan di variable atau properties, maka variable atau properties tersebut tidak bisa berubah lagi datanya
-- Final pun bisa digunakan di class, dimana jika kita menggunakan kata kunci final sebelum kata kunci class, maka kita menandakan bahwa class tersebut tidak bisa diwariskan lagi
+- Final pun bisa digunakan di class, dimana jika kita menggunakan kata kunci final sebelum kata kunci class, maka kita
+  menandakan bahwa class tersebut tidak bisa diwariskan lagi
 - Secara otomatis semua class child nya akan error
 
 # Final Method
+
 - kata kunci final juga bisa digunakan di method
-- jika sebuah method kita tambahkan kata kunci final, maka artinya method tersebut tidak bisa di override lagi di class child nya
-- ini sangat cocok jika kita ingin mengunci implementasi dari sebuah method agar tidak bisa diubah lagi oleh class child nya
+- jika sebuah method kita tambahkan kata kunci final, maka artinya method tersebut tidak bisa di override lagi di class
+  child nya
+- ini sangat cocok jika kita ingin mengunci implementasi dari sebuah method agar tidak bisa diubah lagi oleh class child
+  nya
 
 # Inner Class
+
 - Di Java, kita bisa membuat class di dalam class, atau disebut dengan Inner Class
-- Salah satu kasus kita membuat inner class biasanya ketika kita butuh membuat beberapa class yang saling berhubungan, dimana sebuah class tidak bisa dibuat tanpa class lain
-- Misal kita perlu membuat class Employee, dimana membutuhkan class Company, maka kita bisa membuat class Employee sebagai Inner clas Company
+- Salah satu kasus kita membuat inner class biasanya ketika kita butuh membuat beberapa class yang saling berhubungan,
+  dimana sebuah class tidak bisa dibuat tanpa class lain
+- Misal kita perlu membuat class Employee, dimana membutuhkan class Company, maka kita bisa membuat class Employee
+  sebagai Inner clas Company
 - Cara membuat inner class, cukup membuatnya di dalam blok class outer class nya
 
 # Mengakses Outer Class
-- Keuntungan saat kita membuat inner adalah, kemampuan untuk mengakses outer class nya 
+
+- Keuntungan saat kita membuat inner adalah, kemampuan untuk mengakses outer class nya
 - Inner class bisa membaca semua private member yang ada di outer class nya
-- Untuk mengakses object outer class nya, kita bisa menggunakan nama class outer nya diikuti dengan kata kunci this, misal Company.this
-- Dan untuk mengakses super class outer class nya, kita bisa menggunakan nama class outer nya diikuti dengan kata kunci super, misal Company.super
+- Untuk mengakses object outer class nya, kita bisa menggunakan nama class outer nya diikuti dengan kata kunci this,
+  misal Company.this
+- Dan untuk mengakses super class outer class nya, kita bisa menggunakan nama class outer nya diikuti dengan kata kunci
+  super, misal Company.super
+
+# Anonymous Class
+
+- Anonymous class atau class tanpa nama
+- Adalah kemampuan mendeklarasikan class, sekaligus meng-instansikan object secara langsung
+- Anonymous class sebenarnya termasuk inner class, dimana outer class nya adalah tempat kita membuat anonymous class
+  tersebut
+- Anonymous class sangat cocok ketika kita berhadapan dengan kasus membuat implementasi interface atau abstract class
+  sederhana, tanpa harus membuat implementasi class nya
 

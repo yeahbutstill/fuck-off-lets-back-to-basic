@@ -1,7 +1,5 @@
 package com.zamannow;
 
-import com.zamannow.oop.data.Product;
-import java.math.BigDecimal;
 
 public class ProductApp {
   public static void main(String[] args) {

@@ -17,7 +17,7 @@ public class VicePresident extends Manager {
     super(name);
   }
 
-  public VicePresident(){}
+  public VicePresident() {}
 
   /**
    * Method override adalah kemampuan mendeklarasikan ulang method yang di punyai dari parent class
