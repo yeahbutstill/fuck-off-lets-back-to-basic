@@ -269,3 +269,10 @@
 - Artinya, direkomendasikan untuk mematikan aplikasi
 - Contoh, misalnya jika diawal aplikasi kita tidak bisa terkoneksi ke database, di rekomendasikan untuk membuat exception jenis Error, dan menghentikan aplikasi
 
+# StackTraceElement Class
+- Throwable memiliki method yang bernama getStackTrace(), dimana menghasilkan Array dari StackTraceElement object
+- StackTraceElement berisikan informasi tentang class, file dan bahkan baris lokasi terjadi error
+- Class StackTraceElement ini sangat penting untuk menelusuri lokasi kejadian error yang terjadi
+- Cara yang paling mudah, kita bisa memanggil method printStackTrace() class Throwable, untuk memprint ke console detail error StackTraceElement nya
+
+
