@@ -279,3 +279,23 @@
 - Di Java 7, terdapat fitur baru yang bernama try-with-resource
 - Try with resource adalah sebuah mekanisme agar kita lebih mudah menggunakan resource(yang wajib di close) dalam block try
 - Jika kita ingin menggunakan fitur ini, kita wajib menggunakan interface AutoCloseable
+
+# Annotation
+- Annotation adalah menambahkan metadata ke kode program yang kita buat
+- Tidak semua orang membutuhkan Annotation, biasanya Annotation digunakan saat kita ingin membuat library / framework
+- Annotation sendiri bisa diakses menggunakan Reflection
+- Untuk membuat annotation, kita bisa menggunakan kata kunci @interface
+- Annotation hanya bisa memiliki method dengan tipe data sederhana, dan bisa memiliki default value
+- ![img_2.png](img_2.png)
+
+# Predefined Annotation
+- Java juga sudah memiliki annotation bawaan, seperti:
+- @Override, untuk menandai bahwa method yang meng-override method parent class nya
+- @Deprecated, untuk menandai bahwa method tersebut tidak direkomendasikan lagi untuk digunakan 
+- @FunctionalInterface, untuk menandai bahwa class tersebut bisa dibuat sebagai lambda expression
+- dan lain-lain
+
+# Reflection
+- Reflection adalah kemampuan melihat structur aplikasi kita pada saat berjalan
+- Reflection biasanya sangat berguna saat kita ingin membuat library ataupun faremwork, shingga bisa meng-otomatiskan pekerjaan
+- Untuk mengakses reflection class dari sebuah object, kita bisa menggunakan method getClass() atau NamaClass.class
