@@ -275,4 +275,7 @@
 - Class StackTraceElement ini sangat penting untuk menelusuri lokasi kejadian error yang terjadi
 - Cara yang paling mudah, kita bisa memanggil method printStackTrace() class Throwable, untuk memprint ke console detail error StackTraceElement nya
 
-
+# Try with Resource
+- Di Java 7, terdapat fitur baru yang bernama try-with-resource
+- Try with resource adalah sebuah mekanisme agar kita lebih mudah menggunakan resource(yang wajib di close) dalam block try
+- Jika kita ingin menggunakan fitur ini, kita wajib menggunakan interface AutoCloseable
