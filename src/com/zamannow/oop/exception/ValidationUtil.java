@@ -1,6 +1,8 @@
 package com.zamannow.oop.exception;
 
+import com.zamannow.oop.annotation.NotBlank;
 import com.zamannow.oop.data.LoginReq;
+import java.lang.reflect.Field;
 
 public class ValidationUtil {
   public static void validateChecked(LoginReq loginReq)
@@ -27,6 +29,30 @@ public class ValidationUtil {
   }
 
   public static void connectedDatabase(String username, String password) {
-    if (username == null || password == null) throw new DatabaseError("Tidak bisa konek ke database");
+    if (username == null || password == null)
+      throw new DatabaseError("Tidak bisa konek ke database");
+  }
+
+  public static void validationReflection(Object object) {
+    Class<?> aClass = object.getClass(); // untuk mendapatkan classnya
+    Field[] declaredField = aClass.getDeclaredFields(); // untuk mendapatkan propertiesnya
+    // kalau ada annotation @NotBlank kita akan validasi, propertiesnya engga boleh blank
+    for (Field field : declaredField) {
+      field.setAccessible(true);
+      if (field.getAnnotation(NotBlank.class) != null) {
+        try {
+          String value = (String) field.get(object);
+          if (value == null || value.isBlank()) {
+            try {
+              throw new ValidationException("Field " + field.getName() + " is Blank");
+            } catch (ValidationException e) {
+              System.out.println(e.getMessage());
+            }
+          }
+        } catch (IllegalAccessException e) {
+          System.out.println("tidak bisa mengakses properties " + e.getMessage());
+        }
+      }
+    }
   }
 }

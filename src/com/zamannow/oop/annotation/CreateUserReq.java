@@ -1,9 +1,9 @@
 package com.zamannow.oop.annotation;
 
 public class CreateUserReq {
-  private String username;
+  @NotBlank private String username;
 
-  private String password;
+  @NotBlank private String password;
 
   public String getUsername() {
     return username;
