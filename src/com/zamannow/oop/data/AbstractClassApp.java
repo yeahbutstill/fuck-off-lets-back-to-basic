@@ -1,5 +1,8 @@
 package com.zamannow.oop.data;
 
+import com.zamannow.oop.annotation.Fancy;
+
+@Fancy(name = "AnimalApp", tags = {"application", "java"})
 public class AbstractClassApp {
   public static void main(String[] args) {
     // Location location = new Location(); // error cannot be instantiated. memang begitu abstract

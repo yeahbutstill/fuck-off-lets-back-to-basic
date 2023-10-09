@@ -2,7 +2,6 @@ package com.zamannow.oop;
 
 import com.zamannow.oop.data.Customer;
 import com.zamannow.oop.data.enums.Level;
-
 import java.util.Arrays;
 
 public class DemoEnums {

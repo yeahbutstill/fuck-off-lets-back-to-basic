@@ -1,6 +1,5 @@
 package com.zamannow.oop;
 
-import java.security.PublicKey;
 
 public class VicePresident extends Manager {
 
