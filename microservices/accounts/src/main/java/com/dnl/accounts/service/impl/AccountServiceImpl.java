@@ -9,6 +9,7 @@ import com.dnl.accounts.mapper.CustomerMapper;
 import com.dnl.accounts.repository.AccountRepository;
 import com.dnl.accounts.repository.CustomerRepository;
 import com.dnl.accounts.service.AccountService;
+import java.time.LocalDateTime;
 import java.util.Optional;
 import java.util.random.RandomGenerator;
 import lombok.AllArgsConstructor;
@@ -29,8 +30,10 @@ public class AccountServiceImpl implements AccountService {
     if (byMobileNumber.isPresent())
       throw new CustomerAlreadyExistsException(
           "Customer already register with given mobile number: " + customerDto.mobileNumber());
+    customer.setCreatedAt(LocalDateTime.now());
+    customer.setCreatedBy(customer.getName());
     Customer saveCustomer = customerRepository.save(customer);
-    Account saveAccount = accountRepository.save(createNewAccount(saveCustomer));
+    accountRepository.save(createNewAccount(saveCustomer));
   }
 
   private Account createNewAccount(Customer customer) {
@@ -41,6 +44,8 @@ public class AccountServiceImpl implements AccountService {
     account.setAccountNumber(randomAccNumber);
     account.setAccountType(AccountConstan.SAVINGS);
     account.setBranchAddress(AccountConstan.ADDRESS);
+    customer.setCreatedAt(LocalDateTime.now());
+    customer.setCreatedBy(customer.getName());
     return account;
   }
 }
