@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    restart: always
+    ports:
+      - 5432:5432
+    volumes:
+      - $PWD/account-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=accountsdb
+      - POSTGRES_USER=adminAccount
+      - POSTGRES_PASSWORD=passwordAccount
+      - PGDATA=/var/lib/postgresql/data/pgdata

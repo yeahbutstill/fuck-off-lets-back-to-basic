@@ -27,3 +27,6 @@ replay_pid*
 # IDEA
 .idea/
 out/
+
+# Docker
+/microservices/accounts/account-data/pgdata/
