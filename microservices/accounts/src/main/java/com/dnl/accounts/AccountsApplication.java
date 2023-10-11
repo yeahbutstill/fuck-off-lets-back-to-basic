@@ -25,7 +25,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
             description = "DNL Bank Accounts microservice REST API Documentation",
             url = "https://www.dnl.com/swagger-ui.html"))
 public class AccountsApplication {
-
   public static void main(String[] args) {
     SpringApplication.run(AccountsApplication.class, args);
   }
