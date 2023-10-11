@@ -20,12 +20,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * @author Eazy Bytes
- */
 @Tag(
-    name = "CRUD REST APIs for Accounts in EazyBank",
-    description = "CRUD REST APIs in EazyBank to CREATE, UPDATE, FETCH AND DELETE account details")
+    name = "CRUD REST APIs for Accounts in DNL Bank",
+    description = "CRUD REST APIs in DNL Bank to CREATE, UPDATE, FETCH AND DELETE account details")
 @RestController
 @RequestMapping(
     path = "/api/v1/account",
@@ -38,7 +35,7 @@ public class AccountsController {
 
   @Operation(
       summary = "Create Account REST API",
-      description = "REST API to create new Customer &  Account inside EazyBank")
+      description = "REST API to create new Customer &  Account inside DNL Bank")
   @ApiResponses({
     @ApiResponse(responseCode = "201", description = "HTTP Status CREATED"),
     @ApiResponse(
