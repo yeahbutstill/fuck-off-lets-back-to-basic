@@ -21,6 +21,8 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 public class AccountsServiceImpl implements AccountsService {
 
+  private static final Random RANDOM = new Random();
+  private static final String CUSTOMER = "Customer";
   private AccountsRepository accountsRepository;
   private CustomerRepository customerRepository;
 
@@ -47,7 +49,7 @@ public class AccountsServiceImpl implements AccountsService {
   private Accounts createNewAccount(Customer customer) {
     Accounts newAccount = new Accounts();
     newAccount.setCustomerId(customer.getCustomerId());
-    long randomAccNumber = 1000000000L + new Random().nextInt(900000000);
+    long randomAccNumber = 1000000000L + RANDOM.nextInt(900000000);
 
     newAccount.setAccountNumber(randomAccNumber);
     newAccount.setAccountType(AccountsConstants.SAVINGS);
@@ -65,7 +67,7 @@ public class AccountsServiceImpl implements AccountsService {
         customerRepository
             .findByMobileNumber(mobileNumber)
             .orElseThrow(
-                () -> new ResourceNotFoundException("Customer", "mobileNumber", mobileNumber));
+                () -> new ResourceNotFoundException(CUSTOMER, "mobileNumber", mobileNumber));
     Accounts accounts =
         accountsRepository
             .findByCustomerId(customer.getCustomerId())
@@ -103,8 +105,7 @@ public class AccountsServiceImpl implements AccountsService {
               .findById(customerId)
               .orElseThrow(
                   () ->
-                      new ResourceNotFoundException(
-                          "Customer", "CustomerID", customerId.toString()));
+                      new ResourceNotFoundException(CUSTOMER, "CustomerID", customerId.toString()));
       CustomerMapper.mapToCustomer(customerDto, customer);
       customerRepository.save(customer);
       isUpdated = true;
@@ -122,7 +123,7 @@ public class AccountsServiceImpl implements AccountsService {
         customerRepository
             .findByMobileNumber(mobileNumber)
             .orElseThrow(
-                () -> new ResourceNotFoundException("Customer", "mobileNumber", mobileNumber));
+                () -> new ResourceNotFoundException(CUSTOMER, "mobileNumber", mobileNumber));
     accountsRepository.deleteByCustomerId(customer.getCustomerId());
     customerRepository.deleteById(customer.getCustomerId());
     return true;
