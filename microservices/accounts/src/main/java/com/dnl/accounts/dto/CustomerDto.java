@@ -1,20 +1,34 @@
 package com.dnl.accounts.dto;
 
-import com.dnl.accounts.entity.Customer;
+import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.*;
+import lombok.Data;
 
-public record CustomerDto(String name, String email, String mobileNumber) {
-  public void name(String name) {
-    Customer customer = new Customer();
-    customer.setName(name);
-  }
+@Data
+@Schema(name = "Customer", description = "Schema to hold Customer and Account information")
+public class CustomerDto {
 
-  public void email(String email) {
-    Customer customer = new Customer();
-    customer.setEmail(email);
-  }
+  @Schema(description = "Name of the customer", example = "Eazy Bytes")
+  @NotEmpty(message = "Name can not be a null or empty")
+  @NotBlank
+  @Size(min = 5, max = 30, message = "The length of the customer name should be between 5 and 30")
+  private String name;
 
-  public void mobileNumber(String mobileNumber) {
-    Customer customer = new Customer();
-    customer.setMobileNumber(mobileNumber);
-  }
+  @Schema(description = "Email address of the customer", example = "tutor@eazybytes.com")
+  @NotEmpty(message = "Email address can not be a null or empty")
+  @NotBlank
+  @Email(message = "Email address should be a valid value")
+  private String email;
+
+  @Schema(description = "Mobile Number of the customer", example = "9345432123")
+  @Pattern(
+      regexp = "(^$|[0-9]\\+?([ -]?\\d+)+|\\(\\d+\\)([ -]\\d+))",
+      message = "Mobile number must be 12 or 14 max digits")
+  @NotEmpty
+  @NotBlank
+  @Size(min = 12, max = 14)
+  private String mobileNumber;
+
+  @Schema(description = "Account details of the Customer")
+  private AccountsDto accountsDto;
 }
