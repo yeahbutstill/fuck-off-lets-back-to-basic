@@ -7,6 +7,7 @@ import org.hibernate.annotations.GenericGenerator;
 @Entity
 @Getter
 @Setter
+@EqualsAndHashCode
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor

@@ -23,6 +23,7 @@ public class AccountsServiceImpl implements AccountsService {
 
   private static final Random RANDOM = new Random();
   private static final String CUSTOMER = "Customer";
+
   private AccountsRepository accountsRepository;
   private CustomerRepository customerRepository;
 
