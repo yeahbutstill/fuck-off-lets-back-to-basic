@@ -7,15 +7,15 @@ import org.hibernate.annotations.GenericGenerator;
 @Entity
 @Getter
 @Setter
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = true)
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
 public class Customer extends BaseEntity {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
-  @GenericGenerator(name = "native", strategy = "native")
+  @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "native")
+  @GenericGenerator(name = "native")
   @Column(name = "customer_id")
   private Long customerId;
 

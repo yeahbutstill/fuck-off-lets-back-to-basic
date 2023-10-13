@@ -2,7 +2,7 @@ package com.dnl.accounts.service;
 
 import com.dnl.accounts.dto.CustomerDto;
 
-public interface AccountsService {
+public interface IAccountsService {
 
   /**
    * @param customerDto - CustomerDto Object
