@@ -48,5 +48,18 @@ public class PrimitifDataType {
     System.out.println(c1 || c); // or
     System.out.println(!c1); // not
     System.out.println(c ^ c); // xor
+    System.out.println(d3);
+
+
+    int h = 10;
+    int j = 11;
+    System.out.println(h++); // naik setelah dipanggil lagi variablenya
+    System.out.println(h);
+    System.out.println(++j); // naik sebelum variable dipanggil lagi
+    System.out.println(d3);
+
+    h /= 2; // ini setara dengan h=h/2;
+    h += 1; // kalau plus dan minus mempunyai efek yang sama dengan i++ atau i--
+    System.out.println(h);
   }
 }

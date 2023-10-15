@@ -80,3 +80,42 @@ while (/*boolean expresion*/) {/*block statement*/}
 
 Pernyataan while mempunyai bentuk yang sama dengan pernyataan if (satu-satunya perbedaan adalah penggunaan kata kunci while dan bukan if), namun maknanya cukup berbeda. Ini adalah instruksi kepada komputer untuk berperilaku sebagai berikut: jika ekspresi boolean salah, jangan lakukan apa pun; jika ekspresi boolean benar, jalankan rangkaian pernyataan di
 blok (sama seperti if) tetapi kemudian periksa kembali ekspresi boolean, jalankan kembali urutan pernyataan di blok jika ekspresi boolean benar, dan lanjutkan selama ekspresi boolean benar. Kami merujuk pada pernyataan di blok dalam satu perulangan sebagai badan perulangan.
+
+Break and continue. Beberapa situasi memerlukan aliran kendali yang sedikit lebih rumit
+daripada yang disediakan oleh pernyataan dasar if dan while. Oleh karena itu, Java mendukung dua pernyataan tambahan untuk digunakan dalam perulangan while:
+- Pernyataan break, yang segera keluar dari perulangan 
+- Pernyataan continue, yang segera memulai iterasi perulangan berikutnya
+
+Kami jarang menggunakan pernyataan-pernyataan ini dalam kode di buku ini (dan banyak programmer tidak pernah menggunakannya), namun pernyataan-pernyataan ini sangat menyederhanakan kode dalam kasus-kasus tertentu.
+
+Shortcut notations
+berikut beberapa cara untuk menyatakan perhitungan tertentu; kami mencari kode yang jelas, elegan, dan efisien. Kode tersebut sering kali memanfaatkan pintasan yang banyak digunakan berikut ini (yang ditemukan dalam banyak bahasa, tidak hanya Java).
+
+
+Initializing declarations, Kita dapat menggabungkan deklarasi dengan tugas untuk menginisialisasi variabel pada saat yang sama saat variabel tersebut dideklarasikan (dibuat). Misalnya kode int i = 1; membuat variabel int bernama i dan memberinya nilai awal 1. Praktik terbaiknya adalah menggunakan mekanisme ini dekat dengan penggunaan pertama variabel tersebut (untuk membatasi cakupan).
+
+
+Implicit assignments. Pintasan berikut tersedia jika tujuan kita adalah melakukannya
+memodifikasi nilai variabel relatif terhadap nilainya saat ini:
+- Operator kenaikan/penurunan: i++ sama dengan i = i + 1 dan mempunyai nilai i dalam sebuah ekspresi. Demikian pula, i-- sama dengan i = i - 1. Kode ++i dan --i sama, hanya saja nilai ekspresi diambil setelah kenaikan/penurunan, bukan sebelumnya. 
+- Operasi gabungan lainnya: Menambahkan operator biner ke = dalam tugas sama dengan menggunakan variabel di sebelah kiri sebagai operan pertama. Misalnya kode i/=2; setara dengan kode i = i/2; Perhatikan bahwa saya += 1; mempunyai efek yang sama dengan i = i+1; (dan saya++).
+
+Single-statement blocks Jika suatu blok pernyataan dalam kondisi atau perulangan hanya mempunyai satu pernyataan, kurung kurawal dapat dihilangkan.
+
+For notation, Banyak perulangan mengikuti skema ini: menginisialisasi variabel indeks ke suatu nilai dan kemudian menggunakan perulangan while untuk menguji kondisi kelanjutan perulangan yang melibatkan variabel indeks, di mana pernyataan terakhir dalam perulangan while akan menambah variabel indeks. Anda dapat mengekspresikan loop tersebut secara kompak dengan notasi for Java:
+```java
+for (<initialize>; <boolean expression>; <increment>) {
+    <block statements>
+}
+```
+Kode ini, dengan hanya beberapa pengecualian, setara dengan
+```java
+<initialize>;
+while (<boolean expression>) {
+    <block statements>
+    <increment>;
+}
+```
+Kami menggunakan loop for untuk mendukung idiom pemrograman inisialisasi dan kenaikan ini.
+![img_4.png](img_4.png)
+![img_5.png](img_5.png)
