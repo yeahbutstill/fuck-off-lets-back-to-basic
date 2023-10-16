@@ -182,3 +182,132 @@ adalah contoh yang pertama; main() adalah contoh yang kedua. Setiap metode stati
 ## Invoking a static method.
 Panggilan pada metode statis adalah namanya diikuti dengan ekspresi yang menentukan nilai argumen dalam tanda kurung, dipisahkan dengan koma. Ketika pemanggilan metode merupakan bagian dari ekspresi, metode akan menghitung nilai dan nilai tersebut digunakan sebagai pengganti pemanggilan ekspresi. Misalnya panggilan pada rank() di BinarySearch() mengembalikan nilai int. Pemanggilan metode yang diikuti dengan titik koma adalah pernyataan yang umumnya menimbulkan efek samping. Misalnya, panggilan Arrays.sort() di main() di BinarySearch adalah panggilan pada metode sistem Arrays.sort() yang memiliki efek samping menempatkan entri dalam array dalam urutan yang diurutkan. Saat suatu metode dipanggil, variabel argumennya diinisialisasi dengan nilai ekspresi terkait dalam pemanggilan tersebut. Pernyataan return mengakhiri metode statis, mengembalikan kontrol ke pemanggil. Jika metode statis ingin menghitung suatu nilai, nilai tersebut harus ditentukan dalam pernyataan return (jika metode statis tersebut dapat mencapai akhir rangkaian pernyataannya tanpa pengembalian, kompilator akan melaporkan kesalahannya).
 ![img_9.png](img_9.png)
+
+## Properties of methods.
+Penjelasan rinci lengkap tentang sifat-sifat metode
+berada di luar jangkauan kami, namun hal-hal berikut perlu diperhatikan:
+- Argumen disampaikan berdasarkan nilai. Anda dapat menggunakan variabel argumen di mana saja dalam kode di badan metode dengan cara yang sama seperti Anda menggunakan variabel lokal. Satu-satunya perbedaan antara variabel argumen dan variabel lokal adalah bahwa variabel argumen diinisialisasi dengan nilai argumen yang diberikan oleh kode pemanggil. Metode ini bekerja berdasarkan nilai argumennya, bukan argumen itu sendiri. Salah satu konsekuensi dari pendekatan ini adalah mengubah nilai variabel argumen dalam metode statis tidak berpengaruh pada kode pemanggil. Secara umum, kami tidak mengubah variabel argumen dalam kode di buku ini. Konvensi pass by value menyiratkan bahwa argumen array diberi alias (lihat halaman 19)—metode ini menggunakan variabel argumen untuk merujuk ke array pemanggil dan dapat mengubah konten array (meskipun tidak dapat mengubah array itu sendiri). Misalnya, Arrays.sort() tentu saja mengubah konten array yang diteruskan sebagai argumen: ia menempatkan entri secara berurutan.
+- Nama metode bisa kelebihan beban. Misalnya, perpustakaan Java Math menggunakan pendekatan ini untuk menyediakan implementasi Math.abs(), Math.min(), dan Math.max() untuk semua tipe numerik primitif. Kegunaan umum lainnya dari kelebihan beban adalah untuk mendefinisikan dua versi fungsi yang berbeda, versi yang menggunakan argumen dan versi lainnya yang menggunakan nilai default argumen tersebut.
+- Suatu metode mempunyai nilai kembalian tunggal tetapi mungkin mempunyai beberapa pernyataan pengembalian. Metode Java hanya dapat memberikan satu nilai kembalian, dari tipe yang dideklarasikan dalam tanda tangan metode. Kontrol kembali ke program pemanggil segera setelah pernyataan return pertama dalam metode statis tercapai. Anda dapat meletakkan pernyataan pengembalian di mana pun Anda membutuhkannya. Meskipun mungkin ada beberapa pernyataan pengembalian, metode statis apa pun akan mengembalikan satu nilai setiap kali dipanggil: nilai setelah pernyataan pengembalian pertama yang ditemui.
+- Suatu metode dapat mempunyai efek samping. Suatu metode dapat menggunakan kata kunci void sebagai tipe kembaliannya, untuk menunjukkan bahwa metode tersebut tidak memiliki nilai kembalian. Pengembalian eksplisit tidak diperlukan dalam metode statis void: kontrol kembali ke pemanggil setelah pernyataan terakhir. Metode void static dikatakan menghasilkan efek samping (mengkonsumsi input, menghasilkan output, mengubah entri dalam array, atau mengubah keadaan sistem). Misalnya, metode statis main() dalam program kita memiliki tipe pengembalian void karena tujuannya adalah untuk menghasilkan keluaran. Secara teknis, metode void tidak mengimplementasikan fungsi matematika (begitu juga dengan Math.random(), yang tidak memerlukan argumen namun menghasilkan nilai kembalian).
+
+Metode contoh yang dibahas dalam Bagian 2.1 memiliki sifat yang sama, meskipun ada perbedaan besar dalam masalah efek samping.
+
+## Recursion
+Suatu metode dapat memanggil dirinya sendiri (jika Anda tidak nyaman dengan gagasan ini, yang dikenal sebagai rekursi, Anda dianjurkan untuk mengerjakan Latihan 1.1.16 hingga 1.1.22). Misalnya, kode di bagian bawah halaman ini memberikan implementasi alternatif metode rank() di BinarySearch. Kita sering menggunakan implementasi metode rekursif karena dapat menghasilkan kode yang ringkas dan elegan yang lebih mudah dipahami dibandingkan implementasi terkait yang tidak menggunakan rekursi. Misalnya, komentar dalam implementasi di bawah ini memberikan deskripsi singkat tentang apa yang seharusnya dilakukan kode tersebut. Kita dapat menggunakan komentar ini untuk meyakinkan diri kita sendiri bahwa ini berfungsi dengan benar,
+dengan induksi matematika. Kami akan memperluas topik ini dan memberikan bukti pencarian biner di Bagian 3.1. Ada tiga aturan penting dalam mengembangkan program rekursif:
+- Rekursi memiliki kasus dasar, kami selalu menyertakan pernyataan kondisional sebagai pernyataan pertama dalam program yang memiliki return
+- Panggilan rekursif harus mengatasi submasalah yang lebih kecil, sehingga panggilan rekursif menyatu dengan kasus dasar. Pada kode di bawah ini, selisih nilai argumen keempat dan ketiga selalu mengecil.
+- Panggilan rekursif tidak boleh mengatasi submasalah yang tumpang tindih. Pada kode di bawah, bagian larik yang direferensikan oleh kedua submasalah tersebut saling lepas.
+
+Pelanggaran terhadap pedoman ini kemungkinan besar akan menghasilkan hasil yang salah atau program yang sangat tidak efisien (lihat Latihan 1.1.19 dan 1.1.27). Mematuhi pedoman ini kemungkinan besar akan menghasilkan program yang jelas dan benar, serta kinerjanya mudah dipahami. Alasan lain untuk menggunakan metode rekursif adalah karena metode tersebut mengarah pada model matematika yang dapat kita gunakan untuk memahami kinerja. Kami membahas masalah ini untuk pencarian biner di Bagian 3.2 dan beberapa contoh lainnya di seluruh buku ini.
+![img_10.png](img_10.png)
+
+## Basic programming model
+Pustaka metode statis adalah sekumpulan metode statis yang didefinisikan dalam kelas Java, dengan membuat file dengan kata kunci public class diikuti
+dengan nama kelas, diikuti dengan metode statis, diapit kurung kurawal, disimpan dalam file dengan nama yang sama dengan kelas dan ekstensi .java. Model dasar pemrograman Java adalah mengembangkan program yang menangani tugas komputasi tertentu dengan membuat pustaka metode statis, salah satunya diberi nama main(). Mengetik java diikuti dengan nama kelas diikuti dengan urutan string akan memanggil main() di kelas tersebut, dengan array yang berisi string tersebut sebagai argumen. Setelah pernyataan terakhir di main() dijalankan, program berakhir. Dalam buku ini, ketika kita berbicara tentang program Java untuk menyelesaikan suatu tugas, kita berbicara tentang kode yang dikembangkan sesuai dengan hal tersebut (mungkin juga termasuk definisi tipe data, seperti yang dijelaskan dalam Bagian 1.2). Misalnya, BinarySearch adalah program Java yang terdiri dari dua metode statis, rank() dan main(), yang menyelesaikan tugas mencetak angka pada aliran input yang tidak ditemukan dalam file daftar putih yang diberikan sebagai argumen baris perintah.
+
+## Modular programming.
+Yang sangat penting dalam model ini adalah pustaka metode statis mengaktifkan pemrograman modular di mana kita membangun pustaka metode statis (modul) dan metode statis di satu pustaka dapat memanggil metode statis yang ditentukan di pustaka lain. Pendekatan ini memiliki banyak keuntungan penting. Itu memungkinkan kita untuk melakukannya
+- Bekerja dengan modul berukuran wajar, bahkan dalam program yang melibatkan banyak kode
+- Bagikan dan gunakan kembali kode tanpa harus menerapkannya kembali
+- Gantikan implementasi yang ditingkatkan dengan mudah
+- Kembangkan model abstrak yang sesuai untuk mengatasi masalah pemrograman
+- Lokalkan debugging (lihat paragraf di bawah tentang pengujian unit)
+
+Misalnya, BinarySearch memanfaatkan tiga perpustakaan lain yang dikembangkan secara independen, perpustakaan StdIn dan In kami serta perpustakaan Array Java. Masing-masing perpustakaan ini, pada gilirannya, memanfaatkan beberapa perpustakaan lainnya
+
+
+## Unit testing.
+Praktik terbaik dalam pemrograman Java adalah menyertakan main() di setiap pustaka metode statis yang menguji metode di pustaka (beberapa bahasa pemrograman lain melarang beberapa metode main() sehingga tidak mendukung pendekatan ini). Pengujian unit yang tepat dapat menjadi tantangan pemrograman yang signifikan. Minimal, setiap modul harus berisi metode main() yang menjalankan kode dalam modul dan memberikan jaminan bahwa kode tersebut berfungsi. Seiring dengan semakin matangnya sebuah modul, kami sering menyempurnakan metode main() menjadi klien pengembangan yang membantu kami melakukan pengujian yang lebih mendetail saat kami mengembangkan kode, atau klien pengujian yang menguji semua kode secara ekstensif. Ketika klien menjadi lebih rumit, kita mungkin memasukkannya ke dalam modul independen. Dalam buku ini, kami menggunakan main() untuk membantu mengilustrasikan tujuan setiap modul dan meninggalkan klien uji untuk latihan.
+
+## External libraries.
+Kami menggunakan metode statis dari empat jenis perpustakaan yang berbeda, masing-masing memerlukan prosedur (sedikit) berbeda untuk penggunaan kembali kode. Sebagian besar merupakan pustaka metode statis, namun ada juga yang merupakan definisi tipe data yang juga menyertakan beberapa metode statis.
+- Pustaka sistem standar java.lang.*. Ini termasuk Matematika, yang berisi metode untuk fungsi matematika yang umum digunakan; Integer dan Double, yang kita gunakan untuk mengkonversi antara string karakter dan nilai int dan double; String dan StringBuilder, yang akan kita bahas secara rinci nanti di bagian ini dan di Bab 5; dan puluhan perpustakaan lain yang tidak kami gunakan.
+- Pustaka sistem yang diimpor seperti Java.util.Arrays. Ada ribuan perpustakaan seperti itu dalam rilis standar Java, namun kami jarang menggunakannya dalam buku ini. Pernyataan import di awal program diperlukan untuk menggunakan perpustakaan tersebut (dan menandakan bahwa kita sedang melakukannya).
+- Perpustakaan lain dalam buku ini. Misalnya program lain bisa
+  gunakan peringkat() di BinarySearch. Untuk menggunakan program seperti itu, unduh sumbernya dari situs buku ke direktori kerja Anda.
+- Perpustakaan standar Std* yang telah kami kembangkan untuk digunakan dalam buku ini (dan buku pengantar kami Pengantar Pemrograman di Java: Pendekatan Interdisipliner). Pustaka-pustaka tersebut dirangkum dalam beberapa halaman berikut. Kode sumber dan instruksi untuk mendownloadnya tersedia di situs buku.
+![img_11.png](img_11.png)
+
+Untuk memanggil metode dari perpustakaan lain (satu di direktori yang sama
+atau direktori tertentu, perpustakaan sistem standar, atau perpustakaan sistem
+yang disebutkan dalam pernyataan import sebelum definisi kelas), we
+tambahkan nama perpustakaan ke nama metode untuk setiap panggilan. Misalnya, metode main() di BinarySearch memanggil metode sort()
+di perpustakaan sistem java.util.Arrays, metode readInts() di
+perpustakaan kami Di, dan metode println() di perpustakaan kami StdOut.
+
+
+Pustaka metode yang diterapkan oleh kami dan orang lain dalam lingkungan pemrograman modular dapat memperluas cakupan model pemrograman kami. Di luar semua perpustakaan yang tersedia dalam rilis Java standar, ribuan perpustakaan lainnya tersedia di web untuk segala jenis aplikasi. Untuk membatasi cakupan model pemrograman kami ke ukuran yang dapat dikelola sehingga kami dapat berkonsentrasi pada algoritme, kami hanya menggunakan pustaka yang tercantum dalam tabel di kanan halaman ini, dengan subset metodenya tercantum dalam API, seperti yang dijelaskan selanjutnya.
+
+API Komponen penting dari pemrograman modular adalah dokumentasi yang menjelaskan pengoperasian metode perpustakaan yang dimaksudkan untuk digunakan oleh orang lain. Kami akan secara konsisten menjelaskan metode perpustakaan yang kami gunakan dalam buku ini dalam antarmuka pemrograman aplikasi (API) yang mencantumkan nama perpustakaan dan tanda tangan serta deskripsi singkat dari setiap metode yang kami gunakan. Kami menggunakan istilah klien untuk merujuk pada program yang memanggil metode di perpustakaan lain dan istilah implementasi untuk menggambarkan kode Java yang mengimplementasikan metode dalam API.
+
+Contoh. Contoh berikut, API untuk metode statis yang umum digunakan dari pustaka Matematika standar di java.lang, mengilustrasikan konvensi kami untuk API:
+
+![img_12.png](img_12.png)
+
+Metode ini mengimplementasikan fungsi matematika—metode ini menggunakan argumennya untuk menghitung nilai dengan tipe tertentu (kecuali random(), yang tidak mengimplementasikan fungsi matematika karena tidak memerlukan argumen). Karena semuanya beroperasi pada nilai ganda dan menghitung hasil ganda, Anda dapat menganggapnya sebagai perluasan tipe data ganda. Ekstensibilitas seperti ini adalah salah satu fitur karakteristik bahasa pemrograman modern. Setiap metode dijelaskan oleh sebuah baris di API yang menentukan informasi yang perlu Anda ketahui untuk menggunakan metode tersebut. Pustaka Matematika juga mendefinisikan nilai konstanta yang tepat PI (untuk ) dan E (untuk e), sehingga Anda bisa
+gunakan nama tersebut untuk merujuk pada konstanta tersebut dalam program Anda. Misalnya, nilai Math.sin(Math.PI/2) adalah 1,0 dan nilai Math.log(Math.E) adalah 1,0 (karena Math.sin() mengambil argumennya dalam radian dan Math.log() mengimplementasikan fungsi logaritma natural).
+
+perpustakaan Java. Deskripsi online yang ekstensif dari ribuan perpustakaan merupakan bagian dari setiap rilis Java, namun kami hanya mengutip beberapa metode yang kami gunakan dalam buku ini, untuk menggambarkan dengan jelas model pemrograman kami. Misalnya, BinarySearch menggunakan metode sort() dari pustaka Array Java, yang kami dokumentasikan sebagai berikut
+![img_13.png](img_13.png)
+Pustaka Array tidak ada di java.lang, jadi diperlukan pernyataan import untuk menggunakannya, seperti di BinarySearch. Sebenarnya, Bab 2 buku ini dikhususkan untuk implementasi sort() untuk array, termasuk algoritma mergesort dan quicksort yang diimplementasikan dalam Arrays.sort(). Banyak algoritma dasar yang kita bahas dalam buku ini diimplementasikan di Java dan banyak lingkungan pemrograman lainnya. Misalnya, Array juga menyertakan implementasi pencarian biner. Untuk menghindari kebingungan, kami biasanya menggunakan implementasi kami sendiri, meskipun tidak ada salahnya menggunakan implementasi perpustakaan yang telah disesuaikan dengan algoritma yang Anda pahami.
+
+Perpustakaan standar kami. Kami telah mengembangkan sejumlah perpustakaan yang menyediakan fungsionalitas berguna untuk pengenalan pemrograman Java, untuk aplikasi ilmiah, dan untuk pengembangan, studi, dan penerapan algoritma. Sebagian besar perpustakaan ini ditujukan untuk input dan output; kami juga menggunakan dua perpustakaan berikut untuk menguji dan menganalisis implementasi kami. Yang pertama memperluas Math.random() untuk memungkinkan kita mengambil nilai acak dari berbagai distribusi; yang kedua mendukung perhitungan statistik:
+![img_14.png](img_14.png)
+
+![img_15.png](img_15.png)
+
+Metode inisialisasi() di StdRandom memungkinkan kita menyemai penghasil bilangan acak sehingga kita dapat mereproduksi eksperimen yang melibatkan bilangan acak. Sebagai referensi, penerapan sebagian besar metode ini diberikan di halaman 32. Beberapa metode ini sangat mudah diterapkan; mengapa kita repot-repot memasukkannya ke perpustakaan? Jawaban atas pertanyaan ini adalah standar untuk perpustakaan yang dirancang dengan baik:
+- Mereka menerapkan tingkat abstraksi yang memungkinkan kita fokus pada penerapan dan pengujian algoritme dalam buku, bukan menghasilkan objek acak atau menghitung statistik. Kode klien yang menggunakan metode seperti itu lebih jelas dan mudah dipahami dibandingkan kode buatan sendiri yang melakukan perhitungan yang sama.
+- Implementasi perpustakaan diuji untuk kondisi luar biasa, mencakup situasi yang jarang ditemui, dan tunduk pada pengujian ekstensif, sehingga kami dapat mengandalkannya untuk beroperasi sesuai harapan. Implementasi seperti itu mungkin melibatkan sejumlah besar kode. Misalnya, kita sering menginginkan implementasi untuk berbagai tipe data. Misalnya, pustaka Array Java menyertakan beberapa implementasi sort() yang kelebihan beban, satu implementasi untuk setiap tipe data yang mungkin perlu Anda urutkan.
+
+Ini adalah pertimbangan dasar untuk pemrograman modular di Java, tapi mungkin agak berlebihan dalam kasus ini. Meskipun metode di kedua perpustakaan ini pada dasarnya mendokumentasikan diri sendiri dan banyak di antaranya tidak sulit untuk diterapkan, beberapa di antaranya mewakili latihan algoritmik yang menarik. Oleh karena itu, Anda disarankan untuk mempelajari kode di StdRandom.java dan StdStats.java di situs buku dan memanfaatkan implementasi yang telah terbukti benar ini. Cara termudah untuk menggunakan perpustakaan ini (dan memeriksa kodenya) adalah dengan mengunduh kode sumber dari situs buku dan meletakkannya di direktori kerja Anda; berbagai mekanisme yang bergantung pada sistem untuk menggunakannya tanpa membuat banyak salinan juga dijelaskan di situs buku
+
+## Your own libraries
+Penting untuk mempertimbangkan setiap program yang Anda tulis sebagai implementasi perpustakaan, untuk kemungkinan digunakan kembali di masa mendatang.
+- Menulis kode untuk klien, implementasi tingkat atas yang memecah komputasi menjadi beberapa bagian yang dapat dikelola.
+- Mengartikulasikan API untuk perpustakaan (atau beberapa API untuk beberapa perpustakaan) metode statis yang dapat menangani setiap bagian.
+- Kembangkan implementasi API, dengan main() yang menguji metode independen dari klien
+
+Pendekatan ini tidak hanya memberi Anda perangkat lunak berharga yang nantinya dapat Anda gunakan kembali, namun juga memanfaatkan pemrograman modular dengan cara ini adalah kunci untuk berhasil mengatasi tugas pemrograman yang kompleks.
+
+![img_16.png](img_16.png)
+
+Tujuan API adalah untuk memisahkan klien dari implementasi: klien tidak boleh mengetahui apa pun tentang implementasi selain informasi yang diberikan dalam API, dan implementasi tidak boleh mengambil properti klien tertentu ke dalamnya.
+akun. API memungkinkan kami mengembangkan kode secara terpisah untuk berbagai tujuan, lalu menggunakannya kembali secara luas. Tidak ada perpustakaan Java yang dapat memuat semua metode yang mungkin kita perlukan untuk komputasi tertentu, jadi kemampuan ini merupakan langkah penting dalam menangani aplikasi pemrograman yang kompleks. Oleh karena itu, pemrogram biasanya menganggap API sebagai kontrak antara klien dan implementasi yang merupakan spesifikasi jelas tentang apa yang harus dilakukan setiap metode. Tujuan kami saat mengembangkan implementasi adalah untuk menghormati ketentuan kontrak. Seringkali, ada banyak cara untuk melakukannya, dan memisahkan kode klien dari implementasi
+kode memberi kita kebebasan untuk mengganti implementasi yang baru dan lebih baik. Dalam studi algoritma, kemampuan ini merupakan unsur penting dalam kemampuan kita memahami dampak perbaikan algoritma yang kita kembangkan.
+
+## Strings
+String adalah urutan karakter (nilai char). String literal adalah a
+urutan karakter dalam tanda kutip ganda, seperti "Halo, Dunia". Tipe data String adalah tipe data Java tetapi bukan tipe primitif. Kami mempertimbangkan String sekarang karena ini adalah tipe data mendasar yang digunakan hampir setiap program Java.
+
+## Concatenation.
+Java memiliki operator penggabungan bawaan (+) untuk String seperti
+operator bawaan yang dimilikinya untuk tipe primitif, membenarkan penambahan baris pada tabel di bawah ke tabel tipe primitif di halaman 12. Hasil penggabungan dua nilai String adalah nilai String tunggal, string pertama diikuti oleh nilai String Kedua.
+![img_17.png](img_17.png)
+
+## Conversion
+Dua kegunaan utama string adalah untuk mengkonversi nilai yang bisa kita masukkan pada keyboard menjadi nilai tipe data dan untuk mengkonversi nilai tipe data menjadi nilai yang bisa kita baca di layar. Java memiliki operasi bawaan untuk String untuk memfasilitasi operasi ini.
+Secara khusus, bahasa ini mencakup perpustakaan Integer dan Double yang berisi metode statis untuk mengkonversi antara nilai String dan nilai int dan antara nilai String dan nilai double, masing-masing.
+![img_18.png](img_18.png)
+
+## Automatic conversion. 
+Kita jarang secara eksplisit menggunakan metode statis toString() yang baru saja dijelaskan karena Java memiliki mekanisme bawaan yang memungkinkan kita mengonversi nilai tipe data apa pun ke nilai String dengan menggunakan penggabungan: jika salah satu argumen + adalah String, Java secara otomatis mengubah argumen lain menjadi sebuah String (jika argumen tersebut belum menjadi sebuah String). Di luar penggunaan seperti "Akar kuadrat dari 2.0 adalah " + Math.sqrt(2.0) mekanisme ini memungkinkan konversi nilai tipe data apa pun menjadi sebuah String, dengan menggabungkannya dengan string kosong "".
+
+## Command-line arguments.
+Salah satu kegunaan penting string dalam pemrograman Java adalah untuk mengaktifkan mekanisme penyampaian informasi dari baris perintah ke program.
+Mekanismenya sederhana. Saat Anda mengetikkan perintah java diikuti dengan nama perpustakaan diikuti dengan urutan string, sistem Java akan memanggil metode main() di perpustakaan tersebut dengan array string sebagai argumen: string yang diketik setelah nama perpustakaan. Misalnya, metode main() di BinarySearch mengambil satu argumen baris perintah,
+jadi sistem membuat array berukuran satu. Program ini menggunakan nilai tersebut, args[0], untuk memberi nama file yang berisi daftar putih, untuk digunakan sebagai argumen ke In.readInts(). Paradigma khas lainnya yang sering kita gunakan dalam kode kita adalah ketika argumen baris perintah dimaksudkan untuk mewakili angka, jadi kita menggunakan parseInt() untuk mengonversi ke nilai int atau parseDouble() untuk mengonversi ke nilai ganda.
+
+
+Komputasi dengan string merupakan komponen penting dari komputasi modern. Untuk saat ini, kami menggunakan String hanya untuk mengkonversi antara representasi eksternal angka sebagai rangkaian karakter dan representasi internal nilai tipe data numerik. Di Bagian 1.2, kita akan melihat bahwa Java mendukung lebih banyak lagi operasi pada nilai String yang kita gunakan di seluruh buku ini; di Bagian 1.4, kita akan memeriksa representasi internal nilai String; dan di Bab 5, kami membahas secara mendalam algoritma yang memproses data String. Algoritme ini adalah salah satu metode paling menarik, rumit, dan berdampak yang kami bahas dalam buku ini.
+
+## Input and output 
+Tujuan utama perpustakaan standar kami untuk input, output, dan gambar adalah untuk mendukung model sederhana program Java untuk berinteraksi dengan dunia luar. Pustaka ini dibangun berdasarkan kemampuan ekstensif yang tersedia di pustaka Java, namun umumnya jauh lebih rumit dan lebih sulit dipelajari dan digunakan. Kita mulai dengan meninjau secara singkat model tersebut. Dalam model kami, program Java mengambil nilai masukan dari argumen baris perintah atau dari aliran karakter abstrak yang dikenal sebagai aliran masukan standar dan menulis ke aliran karakter abstrak lain yang dikenal sebagai aliran keluaran standar.
+
+![img_19.png](img_19.png)
+
+
+Kita perlu mempertimbangkan antarmuka antara Java dan sistem operasi, jadi kita perlu membahas secara singkat mekanisme dasar yang disediakan oleh sebagian besar sistem operasi modern dan lingkungan pengembangan program. Anda dapat menemukan rincian lebih lanjut tentang sistem khusus Anda di situs buku. Secara default, argumen baris perintah, masukan standar, dan keluaran standar dikaitkan
+dengan aplikasi yang didukung oleh sistem operasi atau lingkungan pengembangan program yang mengambil perintah. Kami menggunakan istilah umum jendela terminal untuk merujuk pada jendela yang dikelola oleh aplikasi ini, tempat kami mengetik dan membaca teks. Sejak awal sistem Unix pada tahun 1970an, model ini telah terbukti menjadi cara yang nyaman dan langsung bagi kita untuk berinteraksi dengan program dan data. Kami menambahkan gambar standar ke model klasik yang memungkinkan kami membuat representasi visual untuk analisis data.
