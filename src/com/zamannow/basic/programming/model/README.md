@@ -119,3 +119,54 @@ while (<boolean expression>) {
 Kami menggunakan loop for untuk mendukung idiom pemrograman inisialisasi dan kenaikan ini.
 ![img_4.png](img_4.png)
 ![img_5.png](img_5.png)
+
+## Array
+Array, Array menyimpan serangkaian nilai yang semuanya bertipe sama. Kami ingin tidak hanya menyimpan nilai tetapi juga mengakses setiap nilai individual. Metode yang kita gunakan untuk merujuk pada nilai individual dalam array adalah dengan memberi nomor dan kemudian mengindeksnya. Jika kita mempunyai nilai N, kita anggap nilai tersebut diberi nomor dari 0 hingga N-1. Kemudian, kita dapat dengan jelas menentukan salah satunya dalam kode Java dengan menggunakan notasi a[i] untuk merujuk pada nilai ke-i untuk setiap nilai i dari 0 hingga N-1. Konstruksi Java ini dikenal sebagai array satu dimensi.
+
+## Creating and initializing an array.
+Making an array in a Java program involves three distinct steps:
+- Declare the array name and type.
+- Create the array.
+- Initialize the array values.
+
+Untuk mendeklarasikan array, Anda perlu menentukan nama dan tipe data yang dikandungnya. Untuk membuatnya, Anda perlu menentukan panjangnya (jumlah nilai). Misalnya, kode “bentuk panjang” yang ditunjukkan di sebelah kanan membuat
+array N angka bertipe double, semuanya diinisialisasi ke 0,0. Pernyataan pertama adalah deklarasi array. Ini seperti deklarasi variabel dengan tipe primitif yang sesuai kecuali persegi
+tanda kurung mengikuti nama tipe, yang menentukan bahwa kita mendeklarasikan sebuah array. Kata kunci baru di status kedua-
+ment adalah arahan Java untuk membuat array. Alasan kita perlu membuat array secara eksplisit pada saat run time adalah karena Java
+kompiler tidak dapat mengetahui berapa banyak ruang yang harus dicadangkan untuk array pada waktu kompilasi (seperti halnya untuk nilai tipe primitif). Pernyataan for menginisialisasi nilai array N. Kode ini menyetel semua entri array ke nilai 0,0. Saat Anda mulai menulis kode yang menggunakan array, Anda harus yakin bahwa kode Anda mendeklarasikan, membuat, dan menginisialisasinya. Mengabaikan salah satu langkah ini adalah kesalahan pemrograman yang umum.
+![img_6.png](img_6.png)
+
+Short form, Untuk penghematan dalam kode, kita sering memanfaatkan konvensi inisialisasi array default Java dan menggabungkan ketiga langkah ke dalam satu pernyataan, seperti dalam kode “bentuk pendek” dalam contoh kita. Kode di sebelah kiri tanda sama dengan merupakan pernyataan; kode di sebelah kanan merupakan ciptaan. Perulangan for tidak diperlukan dalam kasus ini karena nilai awal default variabel bertipe double dalam array Java adalah 0,0, tetapi akan diperlukan jika nilai yang diinginkan bukan nol. Nilai awal default adalah nol untuk tipe numerik dan false untuk tipe boolean. Opsi ketiga yang ditampilkan pada contoh kita adalah menentukan nilai inisialisasi pada waktu kompilasi, dengan mencantumkan nilai literal di antara kurung kurawal, dipisahkan dengan koma.
+## Using an array
+Kode pemrosesan array yang umum ditampilkan di halaman 21. Setelah dideklarasikan
+dan membuat array, Anda bisa merujuk ke nilai individual apa pun di mana pun Anda akan menggunakan nama variabel dalam program dengan mengapit indeks bilangan bulat dalam tanda kurung siku setelah nama array. Setelah kita membuat array, ukurannya tetap. Suatu program dapat merujuk pada panjang array a[] dengan kode a.length. Elemen terakhir dari array a[] selalu a[a.length-1]. Java melakukan pemeriksaan batas otomatis—jika Anda telah membuat array berukuran N dan menggunakan indeks yang nilainya kurang dari 0 atau lebih besar dari N-1, program Anda akan diakhiri dengan pengecualian runtime ArrayOutOfBoundsException.
+## Aliasing
+Perhatikan baik-baik bahwa nama array mengacu pada keseluruhan array. Jika kita menugaskan satu nama array ke nama array lainnya, maka keduanya merujuk ke array yang sama, seperti yang diilustrasikan dalam potongan kode berikut
+```java
+int[] a = new int[10] // [N]
+a[1] = 1234;
+int[] b = a;
+b[1] = 5678; // a[1] is now 5678
+```
+Situasi ini dikenal sebagai aliasing dan dapat menyebabkan bug yang tidak kentara. Jika tujuan Anda adalah membuat salinan array, maka Anda perlu mendeklarasikan, membuat, dan menginisialisasi array baru, lalu menyalin semua entri dalam array asli ke array baru, seperti pada contoh ketiga di halaman 21.
+
+## Two-dimensional arrays.
+Array dua dimensi di Java adalah array dari array satu dimensi. Array dua dimensi mungkin acak-acakan (arraynya mungkin memiliki panjang yang berbeda-beda), namun kita paling sering bekerja dengan (untuk parameter yang sesuai M dan N) array dua dimensi M-kali-N yang merupakan array dengan M baris, masing-masing merupakan array dengan panjang N (jadi masuk akal juga untuk menyebut array memiliki N kolom). Memperluas konstruksi array Java untuk menangani array dua dimensi sangatlah mudah. Untuk merujuk pada entri pada baris i dan kolom j dari array dua dimensi a[][], kita menggunakan notasi a[i][j]; untuk mendeklarasikan array dua dimensi, kita menambahkan sepasang tanda kurung siku; dan untuk membuat array, kita menentukan jumlah baris diikuti dengan jumlah kolom setelah nama tipe (keduanya di dalam tanda kurung siku), sebagai berikut:
+```java
+double[][] a = new double[M][N];
+```
+
+Kami menyebut array seperti itu sebagai array M-by-N. Berdasarkan konvensi, dimensi pertama adalah jumlah baris dan dimensi kedua adalah jumlah kolom. Seperti halnya array satu dimensi, Java menginisialisasi semua entri dalam array bertipe numerik ke nol dan array dengan nilai boolean ke false. Inisialisasi default array dua dimensi berguna karena menutupi lebih banyak kode dibandingkan array satu dimensi. Kode berikut setara dengan idiom buat-dan-inisialisasi satu baris yang baru saja kita pertimbangkan:
+```java
+double[][] a;
+a = new double[M][N];
+for (int i = 0; i < M; i++) {
+    for (int j = 0; j < N; j++) {
+        a[i][j] = 0.0;
+    }
+}
+```
+
+Kode ini tidak berguna ketika menginisialisasi ke nol, tetapi loop for yang disarangkan diperlukan untuk menginisialisasi ke nilai lain.
+![img_7.png](img_7.png)
+
