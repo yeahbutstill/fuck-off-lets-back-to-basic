@@ -1,4 +1,4 @@
-package com.zamannow.basic.programming.model.primitif.data.type.test.task;
+package com.zamannow.basic.programming.model.primitif.data.type.task.array;
 
 public class ComputeTheAverageOfTheArrayValues {
   public static void main(String[] args) {

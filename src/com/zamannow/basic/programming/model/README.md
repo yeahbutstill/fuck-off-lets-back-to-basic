@@ -170,3 +170,15 @@ for (int i = 0; i < M; i++) {
 Kode ini tidak berguna ketika menginisialisasi ke nol, tetapi loop for yang disarangkan diperlukan untuk menginisialisasi ke nilai lain.
 ![img_7.png](img_7.png)
 
+## Static methods
+Setiap program Java dalam buku ini merupakan definisi tipe data (yang kami jelaskan secara rinci di Bagian 1.2) atau perpustakaan metode statis (yang kami jelaskan di sini). Metode statis disebut fungsi dalam banyak bahasa pemrograman, karena metode tersebut dapat berperilaku seperti fungsi matematika, seperti yang dijelaskan selanjutnya. Setiap metode statis adalah rangkaian pernyataan yang dieksekusi, satu demi satu, ketika metode statis dipanggil, dengan cara yang dijelaskan di bawah ini. Pengubah static membedakan metode ini dari metode instan, yang kita bahas di Bagian 1.2. Kita menggunakan kata metode tanpa pengubah ketika mendeskripsikan karakteristik yang dimiliki oleh kedua jenis metode tersebut.
+
+## Defining a static method
+Suatu metode merangkum komputasi yang didefinisikan sebagai rangkaian pernyataan. Suatu metode mengambil argumen (nilai dari tipe data tertentu) dan menghitung nilai kembalian dari beberapa tipe data yang bergantung pada argumen (seperti nilai yang ditentukan oleh fungsi matematika) atau menyebabkan efek samping yang bergantung pada argumen (seperti mencetak sebuah nilai). Metode statis rank() di BinarySearch
+![img_8.png](img_8.png)
+
+adalah contoh yang pertama; main() adalah contoh yang kedua. Setiap metode statis terdiri dari tanda tangan (kata kunci public static diikuti dengan tipe kembalian, nama metode, dan rangkaian argumen, masing-masing dengan tipe yang dideklarasikan) dan badan (blok pernyataan: rangkaian pernyataan, diapit dalam kurung kurawal). Contoh metode statis ditunjukkan pada tabel di halaman depan.
+
+## Invoking a static method.
+Panggilan pada metode statis adalah namanya diikuti dengan ekspresi yang menentukan nilai argumen dalam tanda kurung, dipisahkan dengan koma. Ketika pemanggilan metode merupakan bagian dari ekspresi, metode akan menghitung nilai dan nilai tersebut digunakan sebagai pengganti pemanggilan ekspresi. Misalnya panggilan pada rank() di BinarySearch() mengembalikan nilai int. Pemanggilan metode yang diikuti dengan titik koma adalah pernyataan yang umumnya menimbulkan efek samping. Misalnya, panggilan Arrays.sort() di main() di BinarySearch adalah panggilan pada metode sistem Arrays.sort() yang memiliki efek samping menempatkan entri dalam array dalam urutan yang diurutkan. Saat suatu metode dipanggil, variabel argumennya diinisialisasi dengan nilai ekspresi terkait dalam pemanggilan tersebut. Pernyataan return mengakhiri metode statis, mengembalikan kontrol ke pemanggil. Jika metode statis ingin menghitung suatu nilai, nilai tersebut harus ditentukan dalam pernyataan return (jika metode statis tersebut dapat mencapai akhir rangkaian pernyataannya tanpa pengembalian, kompilator akan melaporkan kesalahannya).
+![img_9.png](img_9.png)
