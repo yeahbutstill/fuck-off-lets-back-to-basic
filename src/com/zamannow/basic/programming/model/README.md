@@ -361,3 +361,48 @@ Fitur aliran input standar adalah program Anda menggunakan nilai saat membacanya
 ![img_26.png](img_26.png)
 ![img_27.png](img_27.png)
 
+## Redirection and piping. 
+Input dan output standar memungkinkan kami memanfaatkan ekstensi baris perintah yang didukung oleh banyak sistem operasi. Dengan menambahkan arahan sederhana ke perintah yang memanggil suatu program, kita dapat mengarahkan output standarnya ke sebuah file, baik untuk penyimpanan permanen atau untuk input ke program lain di lain waktu:
+```java
+java RandomSeq 1000 100.0 200.0 > data.txt
+```
+Perintah ini menetapkan bahwa aliran keluaran standar tidak untuk dicetak di jendela terminal, melainkan untuk ditulis ke file teks bernama data.txt. Setiap panggilan ke StdOut.print() atau StdOut.println()
+menambahkan teks di akhir file itu. Dalam contoh ini, hasil akhirnya adalah file yang berisi 1.000 nilai acak. Tidak ada output yang muncul di jendela terminal: output langsung masuk ke file yang diberi nama
+simbol >. Dengan demikian, kita dapat menyimpan informasi untuk diambil nanti. Bukan berarti kita tidak perlu mengubah RandomSeq
+bagaimanapun ia menggunakan abstraksi keluaran standar dan tidak terpengaruh oleh penggunaan implementasi abstraksi yang berbeda. Demikian pula, kita dapat mengarahkan input standar sehingga StdIn membaca data dari file, bukan dari aplikasi terminal
+```java
+java Average < data.txt
+```
+
+Perintah ini membaca urutan angka dari file data.txt dan
+menghitung nilai rata-ratanya. Secara khusus, simbol < adalah arahan yang memberitahu sistem operasi untuk mengimplementasikan aliran input standar dengan membaca dari file teks data.txt alih-alih menunggu pengguna mengetikkan sesuatu ke jendela terminal. Saat program memanggil StdIn.readDouble(), sistem operasi membaca nilai dari file. Menggabungkan hal-hal ini untuk mengarahkan output dari satu program ke input program lain dikenal sebagai piping:
+```java
+java RandomSeq 1000 100.0 200.0 | java Average
+```
+![img_28.png](img_28.png)
+
+Perintah ini menetapkan bahwa keluaran standar untuk RandomSeq dan masukan standar untuk Rata-rata adalah aliran yang sama. Efeknya seolah-olah RandomSeq sedang mengetikkan angka-angka yang dihasilkannya ke jendela terminal saat Rata-rata sedang berjalan. Perbedaan ini sangat besar, karena menghilangkan batasan ukuran aliran masukan dan keluaran yang dapat kita proses. Misalnya, kita dapat mengganti 1000 dalam contoh kita dengan 1000000000, meskipun kita mungkin tidak memiliki ruang untuk menyimpan satu miliar angka di komputer kita (kita memerlukan waktu untuk memprosesnya). Saat RandomSeq memanggil StdOut.println(), sebuah string ditambahkan ke akhir aliran; ketika Rata-rata memanggil StdIn.readInt(), sebuah string dihapus dari awal aliran. Waktu yang tepat untuk melakukan apa yang akan terjadi bergantung pada sistem operasi: sistem operasi dapat menjalankan RandomSeq hingga menghasilkan beberapa keluaran, lalu menjalankan Rata-rata untuk menggunakan keluaran tersebut, atau dapat menjalankan Rata-rata hingga memerlukan keluaran, lalu menjalankan RandomSeq hingga menghasilkan keluaran yang dibutuhkan. Hasil akhirnya sama, tetapi program kami bebas dari kekhawatiran tentang detail tersebut karena program tersebut hanya bekerja dengan abstraksi masukan standar dan keluaran standar.
+
+## Input and output from a file.
+Perpustakaan Masuk dan Keluar kami menyediakan metode statis itu
+mengimplementasikan abstraksi membaca dari dan menulis ke file isi array nilai tipe primitif (atau String). Kami menggunakan readInts(), readDoubles(), dan readStrings() di perpustakaan In dan writeInts(), writeDoubles(), dan writeStrings() di perpustakaan Out. Argumen bernama dapat berupa file atau halaman web. Misalnya, kemampuan ini memungkinkan kita menggunakan file dan input standar untuk dua tujuan berbeda dalam program yang sama, seperti di BinarySearch. Pustaka Masuk dan Keluar juga mengimplementasikan tipe data dengan metode instan yang memungkinkan kita memiliki kemampuan yang lebih umum untuk memperlakukan banyak file sebagai aliran masukan dan keluaran, dan halaman web sebagai aliran masukan, jadi kita akan meninjaunya kembali di Bagian 1.2.
+![img_29.png](img_29.png)
+
+## Standard drawing (basic methods).
+Hingga saat ini, abstraksi input/output kami terfokus secara eksklusif
+pada string teks. Sekarang kami memperkenalkan abstraksi untuk menghasilkan gambar sebagai keluaran. Perpustakaan ini mudah digunakan dan memungkinkan kita memanfaatkan media visual untuk menampung lebih banyak informasi dibandingkan hanya dengan teks. Seperti halnya input/output standar, abstraksi gambar standar kami diimplementasikan di perpustakaan StdDraw yang dapat Anda akses dengan mengunduh file StdDraw.java dari situs buku ke direktori kerja Anda. Pengundian standar sangat sederhana: kita bayangkan sebuah
+alat menggambar abstrak yang mampu menggambar garis dan titik pada kanvas dua dimensi. Perangkat ini mampu merespons perintah untuk menggambar bentuk geometris dasar yang dikeluarkan program kami dalam bentuk panggilan ke metode statis di StdDraw, termasuk metode untuk menggambar garis, titik, string teks, lingkaran, persegi panjang, dan poligon. Seperti metode untuk input standar dan output standar, metode ini hampir terdokumentasi sendiri: StdDraw.line() menggambar garis lurus
+ruas garis yang menghubungkan titik (x0 , y0) dengan titik (x1 , y1 ) yang koordinatnya diberikan sebagai argumen. StdDraw.point() menggambar titik yang berpusat pada titik (x, y) yang koordinatnya diberikan sebagai argumen, dan seterusnya, seperti yang diilustrasikan dalam diagram di sebelah kanan. Bentuk geometris dapat diisi (secara default berwarna hitam). Standarnya
+skala adalah satuan persegi (semua koordinat antara 0 dan 1). Implementasi standarnya menampilkan kanvas di jendela di layar komputer Anda, dengan garis dan titik hitam di latar belakang putih.
+
+![img_30.png](img_30.png)
+
+![img_31.png](img_31.png)
+
+## Standard drawing (control methods). 
+Pustaka ini juga menyertakan metode untuk mengubah skala dan ukuran kanvas, warna dan lebar garis, font teks, dan waktu menggambar (untuk digunakan dalam animasi). Sebagai argumen untuk setPenColor() Anda dapat menggunakan salah satu warna yang telah ditentukan sebelumnya BLACK, BLUE, CYAN, DARK_GRAY, GRAY, GREEN, LIGHT_GRAY, MAGENTA, ORANGE, PINK, RED, BOOK_RED, WHITE, dan YELLOW yang didefinisikan sebagai konstanta di StdDraw ( jadi kita merujuk salah satunya dengan kode seperti StdDraw.RED). Jendela ini juga menyertakan opsi menu untuk menyimpan gambar Anda ke file, dalam format yang sesuai untuk dipublikasikan di web.
+![img_32.png](img_32.png)
+Dalam buku ini, kami menggunakan StdDraw untuk analisis data dan untuk membuat representasi visual dari algoritma yang sedang beroperasi. Tabel di halaman berikutnya menunjukkan beberapa kemungkinan; kita akan membahas lebih banyak contoh dalam teks dan latihan di seluruh buku ini. Perpustakaan juga mendukung animasi, tentu saja topik ini dibahas terutama
+situs buku.
+
+![img_33.png](img_33.png)
