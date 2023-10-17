@@ -311,3 +311,53 @@ Tujuan utama perpustakaan standar kami untuk input, output, dan gambar adalah un
 
 Kita perlu mempertimbangkan antarmuka antara Java dan sistem operasi, jadi kita perlu membahas secara singkat mekanisme dasar yang disediakan oleh sebagian besar sistem operasi modern dan lingkungan pengembangan program. Anda dapat menemukan rincian lebih lanjut tentang sistem khusus Anda di situs buku. Secara default, argumen baris perintah, masukan standar, dan keluaran standar dikaitkan
 dengan aplikasi yang didukung oleh sistem operasi atau lingkungan pengembangan program yang mengambil perintah. Kami menggunakan istilah umum jendela terminal untuk merujuk pada jendela yang dikelola oleh aplikasi ini, tempat kami mengetik dan membaca teks. Sejak awal sistem Unix pada tahun 1970an, model ini telah terbukti menjadi cara yang nyaman dan langsung bagi kita untuk berinteraksi dengan program dan data. Kami menambahkan gambar standar ke model klasik yang memungkinkan kami membuat representasi visual untuk analisis data.
+
+## Commands and arguments. 
+Di jendela terminal, kita melihat prompt, di mana kita mengetikkan perintah ke sistem operasi yang mungkin memerlukan argumen. Kami hanya menggunakan beberapa perintah dalam buku ini, yang ditunjukkan pada tabel di bawah. Paling sering, kita menggunakan perintah .java, untuk menjalankan program kita. Seperti disebutkan di halaman 35, kelas Java memiliki metode statis main() yang menggunakan array String args[] sebagai argumennya. Array tersebut adalah urutan argumen baris perintah yang kita ketik, disediakan untuk Java oleh sistem operasi.
+Berdasarkan konvensi, baik Java maupun proses sistem operasi
+argumen sebagai string. Jika kita bermaksud untuk berdebat
+menjadi angka, kita menggunakan metode seperti Integer.parseInt()
+untuk mengubahnya dari String ke tipe yang sesuai.
+
+![img_20.png](img_20.png)
+![img_21.png](img_21.png)
+
+Keluaran standar. Pustaka StdOut kami menyediakan dukungan untuk keluaran standar. Secara default, sistem menghubungkan output standar ke jendela terminal. Metode print() menempatkan argumennya pada keluaran standar; metode println() menambahkan baris baru; dan metode printf() mendukung keluaran yang diformat, seperti dijelaskan selanjutnya. Java menyediakan metode serupa di perpustakaan System.out-nya; kami menggunakan StdOut untuk menangani standar
+input dan output standar dengan cara yang seragam (dan untuk memberikan beberapa perbaikan teknis).
+![img_22.png](img_22.png)
+
+Untuk menggunakan metode ini, unduh ke direktori kerja Anda StdOut.java dari situs buku dan gunakan kode seperti StdOut.println("Hello, World"); untuk memanggil mereka. Contoh klien ditampilkan di sebelah kanan.
+![img_23.png](img_23.png)
+
+Keluaran yang diformat. Dalam bentuknya yang paling sederhana, printf() membutuhkan dua argumen.
+Argumen pertama adalah format string yang menjelaskan bagaimana argumen kedua dikonversi menjadi string untuk keluaran. Jenis format string yang paling sederhana dimulai dengan % dan diakhiri dengan kode konversi satu huruf. Kode konversi yang paling sering kami gunakan adalah d (untuk nilai desimal dari tipe integer Java), f (untuk nilai floating-point), dan s (untuk nilai String). Antara % dan kode konversi
+adalah nilai integer yang menentukan lebar bidang dari nilai yang dikonversi (jumlah karakter dalam string keluaran yang dikonversi). Secara default,
+spasi kosong ditambahkan di sebelah kiri untuk membuat panjang keluaran yang dikonversi sama dengan lebar bidang; jika kita ingin spasi disebelah kanan, kita bisa menyisipkan tanda minus sebelum lebar field. (Jika string keluaran yang dikonversi lebih besar dari lebar bidang, lebar bidang akan diabaikan.) Mengikuti lebarnya, kita memiliki opsi untuk menyertakan titik diikuti dengan jumlah digit yang ditempatkan setelah koma desimal (presisi) untuk a nilai ganda atau jumlah karakter yang diambil dari awal string untuk nilai String. Hal terpenting yang perlu diingat tentang penggunaan printf() adalah kode konversi dalam format dan tipe argumen terkait harus cocok. Artinya, Java harus dapat mengkonversi dari tipe argumen ke tipe yang dibutuhkan oleh kode konversi. Argumen pertama printf() adalah String yang mungkin berisi karakter selain format string. Setiap bagian dari argumen yang bukan bagian dari format string diteruskan ke output, dengan format string diganti dengan nilai argumen (dikonversi menjadi String seperti yang ditentukan). Misalnya pernyataan
+
+```java
+StdOut.printf("PI is approximately %.2f\n", Math.PI);
+```
+
+prints the line
+```shell
+PI is approximately 3.14
+```
+
+Perhatikan bahwa kita perlu secara eksplisit menyertakan karakter baris baru \n dalam argumen untuk mencetak baris baru dengan printf(). Fungsi printf() dapat memerlukan lebih dari dua argumen. Dalam hal ini, string format akan memiliki penentu format untuk setiap argumen tambahan, mungkin dipisahkan oleh karakter lain untuk diteruskan ke output. Anda juga dapat menggunakan metode statis String.format() dengan argumen persis seperti itu
+baru saja dijelaskan untuk printf() untuk mendapatkan string yang diformat tanpa mencetaknya. Pencetakan terformat adalah mekanisme mudah yang memungkinkan kami mengembangkan kode ringkas yang dapat menghasilkan data eksperimen yang ditabulasikan (penggunaan utama kami dalam buku ini).
+
+![img_24.png](img_24.png)
+
+## Standard input. 
+Perpustakaan StdIn kami mengambil data dari input standar
+aliran yang mungkin kosong atau mungkin berisi urutan nilai yang dipisahkan
+diberi peringkat berdasarkan spasi (spasi, tab, karakter baris baru, dan sejenisnya). Oleh
+default, sistem menghubungkan output standar ke jendela terminal yang Anda ketik adalah aliran input (diakhiri dengan <ctrl-d> atau
+<ctrl-z>, tergantung pada aplikasi jendela terminal Anda). Setiap nilai
+adalah sebuah String atau nilai dari salah satu tipe primitif Java. Salah satu kuncinya
+Fitur aliran input standar adalah program Anda menggunakan nilai saat membacanya. Setelah program Anda membaca suatu nilai, program tersebut tidak dapat mencadangkan dan membacanya lagi. Asumsi ini bersifat membatasi, namun mencerminkan karakteristik fisik beberapa perangkat masukan dan menyederhanakan penerapan abstraksi. Dalam model aliran masukan, metode statis di perpustakaan ini sebagian besar terdokumentasi sendiri (dijelaskan dengan tanda tangannya).
+
+![img_25.png](img_25.png)
+![img_26.png](img_26.png)
+![img_27.png](img_27.png)
+
