@@ -406,3 +406,54 @@ Dalam buku ini, kami menggunakan StdDraw untuk analisis data dan untuk membuat r
 situs buku.
 
 ![img_33.png](img_33.png)
+
+## Binary search
+Contoh program Java yang kita mulai, ditunjukkan pada bagian depan
+halaman, didasarkan pada algoritma pencarian biner yang terkenal, efektif, dan banyak digunakan. Contoh ini adalah prototipe cara kita memeriksa algoritma baru di seluruh buku ini. Seperti semua program yang kami pertimbangkan, ini adalah definisi metode yang tepat dan implementasi Java lengkap yang dapat Anda unduh dari situs buku.
+### Binary search.
+Kita akan mempelajari algoritma pencarian biner secara rinci di Bagian 3.2,
+tetapi penjelasan singkatnya sesuai di sini. Algoritme ini diimplementasikan dalam metode statis rank(), yang mengambil kunci integer dan array nilai int yang diurutkan sebagai argumen dan mengembalikan indeks kunci jika ada dalam array, -1 jika tidak. Ia menyelesaikan tugas ini dengan mempertahankan variabel lo dan hi sedemikian rupa sehingga kuncinya ada di a[lo..hi] jika berada dalam array, kemudian masuk ke dalam loop yang menguji entri tengah dalam interval (di indeks tengah). Jika kuncinya sama dengan a[mid], nilai yang dikembalikan adalah mid; jika tidak, metode ini akan memotong ukuran interval menjadi setengahnya, dengan melihat separuh kiri jika kuncinya kurang dari a[pertengahan] dan separuh kanan jika kuncinya lebih besar dari a[pertengahan]. Proses berakhir ketika kunci ditemukan atau intervalnya kosong. Pencarian biner efektif karena hanya perlu memeriksa beberapa entri array (relatif terhadap ukuran array) untuk menemukan kuncinya (atau menentukan bahwa kunci tersebut tidak ada).
+![img_34.png](img_34.png)
+
+Klien pengembangan. Untuk setiap implementasi algoritma, kami menyertakan klien pengembangan main() yang dapat Anda gunakan dengan contoh file input yang disediakan dalam buku dan di situs buku untuk mempelajari tentang algoritma dan menguji kinerjanya. Dalam contoh ini, klien membaca bilangan bulat dari file yang disebutkan pada baris perintah, lalu mencetak bilangan bulat apa pun pada input standar yang tidak muncul dalam file. Kami menggunakan file pengujian kecil seperti yang ditunjukkan di sebelah kanan untuk mendemonstrasikan perilaku ini, dan sebagai
+dasar untuk jejak dan contoh seperti yang ada di kiri atas. Kami menggunakan file pengujian berukuran besar untuk memodelkan aplikasi dunia nyata dan menguji kinerja (lihat halaman 48).
+![img_35.png](img_35.png)
+
+Program ini mengambil nama file daftar putih (urutan bilangan bulat) sebagai argumen dan memfilter entri apa pun yang ada dalam daftar putih dari masukan standar, hanya menyisakan bilangan bulat yang tidak ada dalam daftar putih pada keluaran standar. Ia menggunakan algoritma pencarian biner, yang diimplementasikan dalam metode statis rank(), untuk menyelesaikan tugas secara efisien. Lihat Bagian-
+tion 3.1 untuk pembahasan lengkap tentang algoritma pencarian biner, kebenarannya, analisis kinerjanya, dan penerapannya.
+
+## Whitelisting
+Jika memungkinkan, klien pengembangan kami dimaksudkan untuk mencerminkan praktik
+situasi dan menunjukkan perlunya algoritma yang ada. Dalam hal ini, prosesnya dikenal sebagai daftar putih. Secara khusus, bayangkan sebuah perusahaan kartu kredit yang perlu memeriksa apakah transaksi pelanggan adalah akun yang valid. Untuk melakukannya, bisa
+- Simpan nomor rekening pelanggan dalam file, yang kami sebut sebagai daftar putih.
+- Menghasilkan nomor akun yang terkait dengan setiap transaksi dalam aliran input standar.
+- Gunakan klien uji untuk memasukkan angka-angka keluaran standar yang tidak terkait dengan pelanggan mana pun. Agaknya perusahaan akan menolak transaksi tersebut. Bukan hal yang aneh jika perusahaan besar dengan jutaan pelanggan harus memproses jutaan transaksi atau lebih. Untuk memodelkan situasi ini, kami menyediakan di situs buku file largeW.txt (1 juta bilangan bulat) dan largeT.txt (10 juta bilangan bulat)
+
+## Performance.
+Program kerja seringkali tidak cukup. Misalnya saja yang lebih sederhana
+implementasi rank(), yang bahkan tidak memerlukan pengurutan array, adalah dengan memeriksa setiap entri, sebagai berikut:
+```java
+public static int rank(int key, int[] a)
+        {
+        for (int i = 0; i < a.length; i++)
+        if (a[i] == key) return i;
+        return -1;
+        }
+```
+Mengingat solusi sederhana dan mudah dipahami ini, mengapa kita menggunakan mergesort dan pencarian biner? Jika Anda mengerjakan Latihan 1.1.38, Anda akan melihat bahwa komputer Anda terlalu lambat untuk menjalankan implementasi brute force rank() untuk input dalam jumlah besar (misalnya, 1 juta entri daftar putih dan 10 juta transaksi). Memecahkan masalah daftar putih untuk sejumlah besar input tidak mungkin dilakukan tanpa algoritma yang efisien seperti pencarian biner dan mergesort. Kinerja yang baik sering kali sangat penting, jadi kami meletakkan landasan-
+bekerja untuk mempelajari kinerja di Bagian 1.4 dan menganalisis karakteristik kinerja semua algoritma kami (termasuk pencarian biner, di Bagian 3.1 dan mergesort,
+di Bagian 2.2).
+
+Dalam konteks saat ini, tujuan kami menguraikan model pemrograman kami secara menyeluruh adalah untuk memastikan bahwa Anda dapat menjalankan kode seperti BinarySearch di komputer Anda, menggunakannya pada data pengujian seperti milik kami, dan memodifikasinya untuk beradaptasi dengan berbagai situasi (seperti yang dijelaskan dalam latihan di akhir bagian ini), untuk memahami penerapannya dengan baik. Model pemrograman yang telah kami buat sketsanya dirancang untuk memfasilitasi aktivitas-aktivitas tersebut, yang sangat penting bagi pendekatan kami dalam mempelajari algoritma.
+
+![img_36.png](img_36.png)
+
+## Perspective
+Pada bagian ini, kami telah menjelaskan model pemrograman yang bagus dan lengkap yang melayani (dan masih melayani) banyak programmer selama beberapa dekade. Namun, pemrograman modern melangkah lebih jauh. Tingkat selanjutnya ini disebut abstraksi data, kadang-kadang dikenal sebagai pemrograman berorientasi objek, dan merupakan pokok bahasan pada bagian selanjutnya. Sederhananya, ide di balik abstraksi data adalah untuk memungkinkan program mendefinisikan tipe data (kumpulan nilai dan kumpulan operasi pada nilai tersebut), bukan hanya metode statis yang beroperasi pada tipe data yang telah ditentukan sebelumnya.
+
+Pemrograman berorientasi objek telah digunakan secara luas dalam beberapa dekade terakhir, dan abstraksi data merupakan hal penting dalam pengembangan program modern. Kami menerapkan abstraksi data dalam buku ini karena tiga alasan utama:
+- Hal ini memungkinkan kami memperluas kemampuan kami untuk menggunakan kembali kode melalui pemrograman modular. Misalnya, pengurutan kita di Bab 2 dan pencarian biner serta algoritme lain di Bab 3 memungkinkan klien menggunakan kode yang sama untuk semua jenis data (bukan hanya bilangan bulat), termasuk yang ditentukan oleh klien.
+- Ini menyediakan mekanisme yang mudah untuk membangun apa yang disebut struktur data tertaut yang memberikan lebih banyak fleksibilitas daripada array dan merupakan dasar dari algoritma yang efisien dalam banyak pengaturan.
+- Hal ini memungkinkan kami untuk secara tepat mendefinisikan tantangan algoritmik yang kami hadapi. Misalnya, algoritme pencarian gabungan di Bagian 1.5, algoritme antrian prioritas di Bagian 2.4, dan algoritme tabel simbol di Bab 3 semuanya berorientasi pada pendefinisian struktur data yang memungkinkan implementasi serangkaian operasi yang efisien. Tantangan ini selaras dengan abstraksi data.
+
+Terlepas dari semua pertimbangan ini, fokus kami tetap pada studi algoritma. Dalam konteks ini, kami melanjutkan untuk mempertimbangkan fitur-fitur penting dari pemrograman berorientasi objek yang relevan dengan misi kami.
