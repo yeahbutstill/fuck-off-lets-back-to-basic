@@ -4,7 +4,7 @@ import edu.princeton.cs.algs4.StdOut;
 
 public class Exercise3 {
   public static void main(String[] args) {
-    // Parameter example 4, 7, 4
+    // Parameter example 4 7 4
     int i0 = Integer.parseInt(args[0]);
     int i1 = Integer.parseInt(args[1]);
     int i2 = Integer.parseInt(args[2]);
@@ -16,3 +16,7 @@ public class Exercise3 {
     else StdOut.println("Not Equal");
   }
 }
+/**
+ * Write a program that takes three integer command-line arguments and prints
+ * equal if all three are equal, and not equal otherwise.
+ */

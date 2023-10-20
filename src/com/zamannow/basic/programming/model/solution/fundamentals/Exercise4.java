@@ -13,3 +13,10 @@ public class Exercise4 {
   }
 
 }
+/**
+ * 1.1.4
+ * a) No such keyword as "then" in Java language
+ * b) Missing Parentheses on if conditional
+ * c) Nothing wrong
+ * d) Missing semicolon after the "then" clause
+ */

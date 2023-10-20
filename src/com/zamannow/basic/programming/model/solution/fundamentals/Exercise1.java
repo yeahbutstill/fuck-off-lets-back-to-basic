@@ -10,3 +10,9 @@ public class Exercise1 {
     System.out.println(c);
   }
 }
+/**
+ * 1.1.1
+ * a) 7
+ * b) 200.0000002
+ * c) true
+ */
