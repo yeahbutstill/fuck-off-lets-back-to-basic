@@ -6,7 +6,8 @@ services:
       - "POSTGRES_PASSWORD=PNSJkxXvVNDAhePMuExTBuRR"
       - "POSTGRES_USER=demotimezone"
       - "PGDATA=/var/lib/postgresql/data/pgdata"
+      - "TZ=UTC"
     volumes:
-      - "$PWD/demotimezone-data:/var/lib/postgresql/data"
+      - "./demotimezone-data:/var/lib/postgresql/data"
     ports:
       - "5432:5432"
