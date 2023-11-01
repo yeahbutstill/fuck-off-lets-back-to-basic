@@ -23,6 +23,7 @@ public class EqualTest {
 
     Product p4 = p3;
 
+    // == jangan dipake untuk membandingkan object, karena == ini dia menadingkan lokasi memory 
     System.out.println(" == ? " + (p1 == p2)); // false karena ada new, sudah di object yang berbeda
     System.out.println(
         "Equals ? " + (p1.equals(p2))); // true di object yang berbeda namun isi propertinya sama
