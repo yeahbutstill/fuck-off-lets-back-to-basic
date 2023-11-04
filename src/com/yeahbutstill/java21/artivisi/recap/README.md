@@ -1,1 +1,6 @@
-kalau di maven folder resource itu outomatis didaftarkan ke class Path
+- Kalau di maven folder resource itu outomatis didaftarkan ke class Path
+- Checked Exception: ini harus ditretment, artinya exception ini harus dihandle mau di trhow lagi ke method lain yang memanggilnya atau di catch di method tersebut
+- Unchecked Exception: ini tidak perlu di try catch atau throw
+- Guideline kalau error user pake Checked Exception, karena kita bisa trhow sampai ke UI, di UI keluarkan pesan error "Opps nama file tidak sesuai" nah dari sini user bisa memperbaiki
+- Tapi kalau ArrayIndexOutOfBoundException ini Error untuk devloper, maka kita yang memperbaiki
+- Istilah Low Level adalah semua yang kita kerjakan manual
