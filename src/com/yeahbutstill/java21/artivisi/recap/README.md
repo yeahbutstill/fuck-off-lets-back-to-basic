@@ -4,3 +4,9 @@
 - Guideline kalau error user pake Checked Exception, karena kita bisa trhow sampai ke UI, di UI keluarkan pesan error "Opps nama file tidak sesuai" nah dari sini user bisa memperbaiki
 - Tapi kalau ArrayIndexOutOfBoundException ini Error untuk devloper, maka kita yang memperbaiki
 - Istilah Low Level adalah semua yang kita kerjakan manual
+- ServerSocker - Server
+- Socket - Client
+- InputStream adalah aliran data yang masuk ke applikasi kita
+- OutputStream adalah untuk mengirim data
+- Try with resource itu yang penting harus implement java.lang.AutoCloseable. maka saat try catch kita tidak perlu lagi membuat block finally lalu memanggil method close. karena try with resource itu dia akan automatis close resource yang sudah tidak dipakai.
+
