@@ -9,4 +9,10 @@
 - InputStream adalah aliran data yang masuk ke applikasi kita
 - OutputStream adalah untuk mengirim data
 - Try with resource itu yang penting harus implement java.lang.AutoCloseable. maka saat try catch kita tidak perlu lagi membuat block finally lalu memanggil method close. karena try with resource itu dia akan automatis close resource yang sudah tidak dipakai.
-
+- Thread itu adalah proses, jadi kita pengen server ini bisa bekerja paralel artinya yang satu lagi menghandle clinet pertama, yang satu lagi menghandle client yang lainnya
+- Untuk menjalankan multi thread maka kita akan menginstankan class yang extend thread atau implement runnable. kalau di java caranya seperti ini.
+- Concurrency artinya berjalan secara berbarengan, untuk mengimplementasikan ini si Java ini menyediakan class Thread.
+- Processes adalah apikasi java kita, nah komputer kita itu menjalankan banyak proses.
+- Nah didalam proses itu ada Thread yang kita bikin
+- Kalau kita menggunakan atau mengextends Thread, berarti class kita sendiri ini sudah Thread sehingga mempunyai method start, jadi bisa kita langsung instantkan.
+- Kalau kita menggunakan atau mengextends Runnable, ini harus dibungkus dulu ke dalam Thread.
