@@ -15,4 +15,5 @@
 - Processes adalah apikasi java kita, nah komputer kita itu menjalankan banyak proses.
 - Nah didalam proses itu ada Thread yang kita bikin
 - Kalau kita menggunakan atau mengextends Thread, berarti class kita sendiri ini sudah Thread sehingga mempunyai method start, jadi bisa kita langsung instantkan.
-- Kalau kita menggunakan atau mengextends Runnable, ini harus dibungkus dulu ke dalam Thread.
+- Kalau kita menggunakan atau implement Runnable, ini harus dibungkus dulu ke dalam Thread.
+- Thread join menunggu semua thread selesai di eksekusi baru dia akan melanjutkan ke stamenet berikutnya atau baris kode berikutnya.
