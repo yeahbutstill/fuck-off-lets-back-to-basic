@@ -16,4 +16,6 @@
 - Nah didalam proses itu ada Thread yang kita bikin
 - Kalau kita menggunakan atau mengextends Thread, berarti class kita sendiri ini sudah Thread sehingga mempunyai method start, jadi bisa kita langsung instantkan.
 - Kalau kita menggunakan atau implement Runnable, ini harus dibungkus dulu ke dalam Thread.
-- Thread join menunggu semua thread selesai di eksekusi baru dia akan melanjutkan ke stamenet berikutnya atau baris kode berikutnya.
+- Thread join menunggu semua thread selesai di eksekusi baru dia akan melanjutkan ke stamenet berikutnya.
+- Jadi kalau koding yang biasa bukan multithread, dia jalannya berurut dari atas sampai kebawah
+- Tapi kalau koding yang multithread dia tidak akan menunggu masing-masing thread selesai, jadi begitu dia start maka dia akan lanjut lagi walaupun proses sebeulumnya belum selesai
