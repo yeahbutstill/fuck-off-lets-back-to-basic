@@ -19,3 +19,6 @@
 - Thread join menunggu semua thread selesai di eksekusi baru dia akan melanjutkan ke stamenet berikutnya.
 - Jadi kalau koding yang biasa bukan multithread, dia jalannya berurut dari atas sampai kebawah
 - Tapi kalau koding yang multithread dia tidak akan menunggu masing-masing thread selesai, jadi begitu dia start maka dia akan lanjut lagi walaupun proses sebeulumnya belum selesai
+- Harap berhati-hati kalau kita bikin aplikasi yang jalan di thread banyak sekaligus, kita harus hati-hati dengan sharing data. Karena data tersebut bisa saja diganti-ganti oleh masing-masing thread. Sehingga hasilnya bisa berbeda dengan yang diharapkan.
+- Intermitend AKA kadang error, kadang engga, makanya untuk urusan multithread di debug nya susah dan biasanya yang ngurusin ini yang sudah senior. nah Kapan dia muncul. Semakin banyak Threadnya, maka dia akan potensi terjadi errornya semakin besar. misal Jumlah Thread 100
+- 
