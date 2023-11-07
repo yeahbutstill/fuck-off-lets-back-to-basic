@@ -27,3 +27,5 @@
 - Synchronization itu dia sebetulnya membuat lock atau mengunci object tersebut. sehingga kalau orang lain sedang menjalankan method tersebut maka yang lain jika ingin mengaksesnya juga maka dia disuruh nunggu sampai thread pertama yang mengakses itu selesai.
 - Liveness ini adalah problem yang terjadi karena si thread tersebut melocking object jadi dia rebutan lock. ada 3 permasalahan, deadlock, starvation dan livelock
 - Thread pool itu adalah kita bisa membatasi maksiman dan minimum threadnya berapa.
+- Flow Layout, itu mengalirnya dari kiri ke kanan, kalau udah engga muat pindah ke bawah.
+- Grid Layout, ada panjang kali lebar, jadi row kali column
