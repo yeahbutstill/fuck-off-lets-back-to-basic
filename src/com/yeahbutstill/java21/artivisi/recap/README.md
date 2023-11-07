@@ -21,4 +21,9 @@
 - Tapi kalau koding yang multithread dia tidak akan menunggu masing-masing thread selesai, jadi begitu dia start maka dia akan lanjut lagi walaupun proses sebeulumnya belum selesai
 - Harap berhati-hati kalau kita bikin aplikasi yang jalan di thread banyak sekaligus, kita harus hati-hati dengan sharing data. Karena data tersebut bisa saja diganti-ganti oleh masing-masing thread. Sehingga hasilnya bisa berbeda dengan yang diharapkan.
 - Intermitend AKA kadang error, kadang engga, makanya untuk urusan multithread di debug nya susah dan biasanya yang ngurusin ini yang sudah senior. nah Kapan dia muncul. Semakin banyak Threadnya, maka dia akan potensi terjadi errornya semakin besar. misal Jumlah Thread 100
-- 
+- Tidak Threadsafe itu maksudnya tidak aman untuk digunakan dalam multithreading
+- Solusi untuk membuat aplikasi yang threadsafe, field atau variable yang digunakan berbarengan itu kita harus batasi, supaya tidak diakses berbarengan.
+- Keyword synchronized pada method, digunakan untuk thread-thread yang mengakses ke object ini akan disuruh gantian, contoh misalnya yang 1 lagi menjalankan proses tambah, yang satu engga boleh jalanin pengurangan atau thread lain juga engga boleh jalanin perhitungan tambah. jadi harus antri dulu.
+- Synchronization itu dia sebetulnya membuat lock atau mengunci object tersebut. sehingga kalau orang lain sedang menjalankan method tersebut maka yang lain jika ingin mengaksesnya juga maka dia disuruh nunggu sampai thread pertama yang mengakses itu selesai.
+- Liveness ini adalah problem yang terjadi karena si thread tersebut melocking object jadi dia rebutan lock. ada 3 permasalahan, deadlock, starvation dan livelock
+- Thread pool itu adalah kita bisa membatasi maksiman dan minimum threadnya berapa.
