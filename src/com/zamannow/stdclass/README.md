@@ -1,8 +1,67 @@
+Dalam bahasa Java, variabel dapat dikelompokkan menjadi dua tipe utama: mutabel (mutable) dan tidak mutabel (immutable).
+Kategori-kategori ini menggambarkan apakah status dari sebuah objek dapat diubah setelah objek tersebut dibuat. Berikut
+penjelasan keduanya:
+
+- Immutable (Tidak Mutabel): Objek yang tidak mutabel adalah objek yang statusnya tidak dapat diubah setelah objek tersebut dibuat.
+Setelah objek tidak mutabel dibuat, statusnya tetap sama sepanjang masa hidupnya.
+Contoh umum dari kelas-kelas yang tidak mutabel dalam Java adalah String, Integer, dan BigDecimal.
+Untuk "mengubah" objek yang tidak mutabel, Anda biasanya membuat instansi baru dengan perubahan yang diinginkan.
+
+Contoh menggunakan kelas String:
+```java
+String original = "Hello";
+String modified = original.concat(", World"); // Membuat String baru
+System.out.println(original); // Output: Hello
+System.println(modified); // Output: Hello, World
+```
+
+- Mutable (Mutabel): Objek yang mutabel adalah objek yang statusnya dapat diubah setelah objek tersebut dibuat. 
+Dengan objek yang mutabel, Anda dapat mengubah status internal dan properti-propertinya.
+Contoh kelas-kelas mutabel dalam Java mencakup ArrayList, HashMap, dan kelas-kelas kustom dengan bidang-bidang mutabel.
+
+Contoh menggunakan ArrayList:
+```java
+ArrayList<Integer> numbers = new ArrayList<>();
+numbers.add(1);
+numbers.add(2);
+numbers.add(3);
+numbers.remove(0); // Mengubah ArrayList yang ada dengan menghapus elemen pertama
+System.out.println(numbers); // Output: [2, 3]
+```
+
+Pemilihan antara objek mutabel dan tidak mutabel tergantung pada persyaratan khusus dari program Anda. Objek yang tidak
+mutabel seringkali lebih disukai ketika Anda ingin memastikan bahwa status sebuah objek tetap konsisten dan menghindari
+perubahan yang tidak disengaja. Objek yang mutabel, di sisi lain, memberikan fleksibilitas dan dapat diubah sesuai
+kebutuhan, tetapi mungkin memerlukan penanganan yang lebih hati-hati untuk menghindari efek samping yang tidak
+diinginkan dalam kode Anda.
+
+Penting untuk dicatat bahwa bahkan ketika berurusan dengan objek yang tidak mutabel, jika objek tersebut mengandung
+referensi ke objek yang mutabel (misalnya, objek mutabel dalam objek yang tidak mutabel), Anda perlu berhati-hati untuk
+memastikan bahwa objek yang mutabel yang dirujuk tersebut tidak diubah, karena itu masih dapat menyebabkan perilaku yang
+tidak diinginkan.
+
 # String class
+
 - String adalah object, artinya dia memiliki representasi class nya
 - Ada banyak sekali method yang bisa digunakan di String, bisa di lihat di javadocnya
 - String itu di Java tidak bisa berubah, sekali kita membuat String data yang ada dalam string itu tidak bisa diubah.
-- Jadi Ketika kita memanggil method dari String tersebut, data String yang aslinya tidak berubah. Tapi method toLowerCase akan membuat String baru dari object String tersebut
+- Jadi Ketika kita memanggil method dari String tersebut, data String yang aslinya tidak berubah. Tapi method
+  toLowerCase akan membuat String baru dari object String tersebut
 - Perlu diingat space pun dihitung sebagai character
 - isBlank itu space kosong itu dianggap blank
 - isEmpty itu apakah String itu kosong atau bukan
+
+# StringBuffer dan StringBuilder
+
+## Immutable
+
+- String itu kalau di Java dia adalah tipe data yang Immutable, artinya tidak bisa berubah isinya, saat kita mengubah
+  string, sebenarnya yang dilakukan di Java adalah membuat String baru.
+- Jika kita manimupalis String dalam jumlah banyak, sangat tidak disarankan menggunakan String, karena akan memakan
+  memory yang cukup besar, untuk kasus seperti ini, disarankan menggunakan StringBuffer atau StringBuilder
+
+## StringBuffer VS StringBuilder
+- Kemampuan dari dua tersebeut sebetulnya cukup sama, bisa digunakan untuk manipulasi String
+- Yang membedakan adalah, StringBuffer itu thread safe, sedangkan StringBuilder tidak thread safe
+- Jika kita ingin memanipulasi String secara paralel atau bersamaan, disarankan menggunakan StringBuffer, namun jika tidak butuh paralel, cukup gunakan StringBuilder
+- Karena StringBuffer dibuat agar thread safe, maka secara otomatis performanya lebih lambat dibandingkan StringBuilder yang tidak thread safe
