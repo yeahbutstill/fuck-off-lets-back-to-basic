@@ -106,3 +106,12 @@ tidak diinginkan.
 - Class Date adalah class yang representasikan tanggal sampai presisi milisecond
 - Namun di class Date sudah banyak method yang deprecated, sehingga untuk manipulasi data tanggal, kita sekarang harus melakukan kombinasi antara class Date dan Calendar
 - Sebenarnya Date untuk representasi tanggal, dan Calendar untuk memanipulasi tanggal
+
+# System Class
+- Class System adalah class yang berisikan banyak utility static method di Java
+- String getenv(key) untuk mendapatkan environtment variable sistem operasi
+- void exit(status) untuk menghentikan program Java
+- long currentTimeMilis() untuk mendapatkan waktu saat ini dala milisecond
+- long nanoTime() untuk mendapatkan waktu saat ini dalam nanosecond
+- void gc() untuk menjalankan Java garbage collection
+
