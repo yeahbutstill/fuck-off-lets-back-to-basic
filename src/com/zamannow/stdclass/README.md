@@ -86,3 +86,11 @@ tidak diinginkan.
 - valueOf(String) digunakan untuk melakukan konversi dari string ke tipe data number non primitive
 - Method ini akan Throw NumberFormatException jika ternyata gagal melakukan konversi String ke number
 
+# Math Class
+- Class Math ini merupakan class utilitis yang berisikan banyak sekali static method untuk operasi numerik, seperti trigonometric, logarithm, akar pangkat, dan lain-lain
+
+# Big Number Class
+- Jika kita ada kebutuhan untuk menggunakan angka yang besar sehingga melebihi kapasitas Long dan Double, di Java sudah disediakan class untuk handle data besar tersebut
+- BigInteger adalah class untuk handle tipe data Integer
+- BigDecimal adalah class untuk handle tipe data Floating Point
+
