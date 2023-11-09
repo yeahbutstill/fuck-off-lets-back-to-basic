@@ -99,3 +99,10 @@ tidak diinginkan.
 - Class Scanner hadir sejak Java 5
 - Class Scanner adalah class yang bisa digunakan untuk membuat input, entah dari file, console dan lain-lain
 - Class Scanner cocok untuk digunakan membaca input user dari console/terminal
+
+# Date dan Calender
+- Tiap bahasa pemrograman biasanya memiliki representasi tanggal, di Java juga sama, ada class Date dan Calendar yang bisa kita gunakan sebagai representasi tanggal
+- Sebenarnya di Java 8 suda ada cara manipulasi tanggal yang baru menggunakan Java Date Time API
+- Class Date adalah class yang representasikan tanggal sampai presisi milisecond
+- Namun di class Date sudah banyak method yang deprecated, sehingga untuk manipulasi data tanggal, kita sekarang harus melakukan kombinasi antara class Date dan Calendar
+- Sebenarnya Date untuk representasi tanggal, dan Calendar untuk memanipulasi tanggal
