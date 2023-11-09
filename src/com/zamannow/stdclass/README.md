@@ -94,3 +94,8 @@ tidak diinginkan.
 - BigInteger adalah class untuk handle tipe data Integer
 - BigDecimal adalah class untuk handle tipe data Floating Point
 
+# Scanner Class
+- Scanner sebenarnya bagian dari Java IO (input Output)
+- Class Scanner hadir sejak Java 5
+- Class Scanner adalah class yang bisa digunakan untuk membuat input, entah dari file, console dan lain-lain
+- Class Scanner cocok untuk digunakan membaca input user dari console/terminal
