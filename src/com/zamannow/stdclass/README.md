@@ -115,3 +115,14 @@ tidak diinginkan.
 - long nanoTime() untuk mendapatkan waktu saat ini dalam nanosecond
 - void gc() untuk menjalankan Java garbage collection
 
+# Runtime Class
+- Ketika applikasi Java kita berjalan, kita bisa melihat informasi environtment tempat aplikasi Java itu berjalan
+- Informasi itu terdapat di class Runtime
+- Class Runtime ini tida bisa dibuat, secara otomatis Java akan membuat single object. Kita bisa mengakses object tersebut menggunakan static method getRuntime() milik class Runtime
+- int availableProcessors() mendapatkan jumlah core CPU
+- long freeMemory() mendapatkan jumlah memory bebas di JVM
+- long totalMemory() mendapatkan jumlah total memory di JVM
+- long maxMemory() mendapatkan jumlah maksimum memory di JVM
+- void gc() Menjalankan gerbage collector untuk menghilangkan data di memory yang sudah tidak terpakai
+
+
