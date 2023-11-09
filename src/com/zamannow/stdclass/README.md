@@ -130,3 +130,7 @@ tidak diinginkan.
 - Java menyediakan sebuah class UUID atau singkatan dari Universally Unique Identifier
 - UUID adalah format standard untuk membuat unique value yang telah terjamin
 
+# Base64 Class
+- Sejak Java 8, Java sudah menyediakan class untuk melakukan encoding base64
+- Base64 adalah encoding yang bisa digunakan untuk mengubah binary data ke text yang aman
+- Aman maksudnya bukan dari sisi security, tapi aman dari kesalahan parsing
