@@ -65,3 +65,10 @@ tidak diinginkan.
 - Yang membedakan adalah, StringBuffer itu thread safe, sedangkan StringBuilder tidak thread safe
 - Jika kita ingin memanipulasi String secara paralel atau bersamaan, disarankan menggunakan StringBuffer, namun jika tidak butuh paralel, cukup gunakan StringBuilder
 - Karena StringBuffer dibuat agar thread safe, maka secara otomatis performanya lebih lambat dibandingkan StringBuilder yang tidak thread safe
+
+# StringJoin Class
+- StringJoiner adalah class yang bisa digunakan untuk membuat String sequence yang dipisahkan dengan delimiter
+- StringJoiner juga mendukung prefix dan suffix jika kita ingin menambahkannya
+- Ini sangat bagus ketika kita ada kasus ingin mengeprint Array dengan format yang kita mau
+
+# StringTokenizer Class
