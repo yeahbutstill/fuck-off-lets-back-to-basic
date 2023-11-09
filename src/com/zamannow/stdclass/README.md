@@ -74,3 +74,15 @@ tidak diinginkan.
 # StringTokenizer Class
 - StringTokenizer ini adalah class yang bisa digunakan untuk memotong String menjadi token atau string yang lebih kecil
 - Kita bisa memotong String dengan delimiter yang kita mau
+
+# Number Class
+- Semua number class yang bukan primitive memiliki parent class yang sama, yaitu class Number
+- Class Number memiliki banyak method yang bisa digunakan untuk mengkonversi ke tipe number lain
+- Hal ini memudahkan kita untuk mengkonversi object number dari satu tipe ke tipe number lain
+
+# Konversi String ke Number
+- Long, Integer, Short dan Byte memiliki static method untuk melakukan konversi dari String ke number
+- parseXxx(String) digunakan untuk mengkonversi dari String ke tipe data number primitive
+- valueOf(String) digunakan untuk melakukan konversi dari string ke tipe data number non primitive
+- Method ini akan Throw NumberFormatException jika ternyata gagal melakukan konversi String ke number
+
