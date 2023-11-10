@@ -134,3 +134,37 @@ tidak diinginkan.
 - Sejak Java 8, Java sudah menyediakan class untuk melakukan encoding base64
 - Base64 adalah encoding yang bisa digunakan untuk mengubah binary data ke text yang aman
 - Aman maksudnya bukan dari sisi security, tapi aman dari kesalahan parsing
+
+# Objects Class
+- Awas jangan tertukar, ini class Objects bukan object
+- Objects class adalah class utilty yang berisikan banyak static method yang bisa kita gunakan untuk operasi object atau melakukan pengecekan sebelum operasi nya dilakukan
+
+# Random Class
+- Random class adalah class yang bisa kita gunakan untuk men-generate random number
+
+# Properties Class
+- Kebanyakan applikasi Java akan menyimpan konfigurasi file dalam bentuk properties file
+- Properties file adalah file yang berisi key dan value, dia dipisahkan dengan tanda sama dengan (=) 
+- Properties file bisa kita gunakan untuk menyimpan konfigurasi aplikasi kita
+- Properties class adalah class yang bisa kita gunakan untuk mengambil atau menyimpan informasi ke file properties
+
+# Arrays Class
+- Arrays class adalah class yang berisi static method yang bisa kita gunakan untuk memanipulasi data array, seperti pencarian dan pengurutan
+- binarySearch() ini digunakan untuk mecari value di array
+- copyOf() ini digunakan untuk menyalin data array
+- equals(array1, array2) ini digunakan untuk membandingkan array1 dengan array2
+- sort(array) ini digunakan untuk mengurutkan array
+- toString(array) ini digunakan untuk mengembalikan representasi String
+
+# Regular Expression
+- atau disingkat Regex adalah cara untuk melakukan pola pencarian
+- Biasanya dilakukan untuk pencarian data dalam string
+- Secara sederhana, kita mungkin sudah sering melakukan pencarian text baik dari text editor atau di aplikasi word
+- Regex adalah pencarian yang lebih advanced dibandingkan text biasa, misal kita ingin mencari semua kata yang mengandung diawali huruf a dan diakhiri huruf a, dan lain-lain
+- Java sudah menyediakan package java.util.regex yang berisikan utilitas untuk melakukan proses regular expression
+- Secara garis besar terdapat 2 class yang dapat kita gunakan, yaitu Pattern class dan Matcher class
+- Pattern class adalah representasi hasil kompilasi dari pola regular expressoin yang kita buat
+- Matcher class adalah engine untuk melakukan pencarian dari pattern yang sudah kita buat
+- Aturan regular expression sangat kaya
+- Kita bisa lihat detail aturan-aturannya di halaman javadoc class Pattern
+
