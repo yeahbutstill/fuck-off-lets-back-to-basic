@@ -7,6 +7,7 @@ public class TipeDataBoolean {
 
     System.out.println(salah);
     System.out.println(benar);
+    // kebalikannya
     System.out.println(!salah);
     System.out.println(!benar);
   }
