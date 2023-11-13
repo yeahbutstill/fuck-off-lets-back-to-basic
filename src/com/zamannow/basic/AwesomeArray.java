@@ -24,6 +24,7 @@ public class AwesomeArray {
         }
         System.out.println("========================");
 
+        arrayString[2] = "HAHAHA";
         for (int i = 0; i < arrayString.length; i++) {
             System.out.println("index ke - " + i + " valuenya: " + arrayString[i]);
         }
@@ -32,8 +33,12 @@ public class AwesomeArray {
         // Array Initializer
         Integer[] arrIntegers = new Integer[]{10, 20, 3, 30, 1, 200};
         Long[] arrLongs = new Long[]{1L, 2L, 3L, 4L, 5L};
+        String[] arrString = {"DNL", "MY", "WD"};
         System.out.println(Arrays.toString(arrIntegers));
         System.out.println(Arrays.toString(arrLongs));
+        System.out.println(Arrays.toString(arrString));
+        System.out.println(arrIntegers.length);
+        System.out.println("===================");
 
         AwesomeArray awesomeArray = new AwesomeArray();
         awesomeArray.namaBuah = new String[3];

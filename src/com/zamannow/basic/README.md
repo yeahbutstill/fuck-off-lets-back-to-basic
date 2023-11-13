@@ -50,5 +50,6 @@
 - Saat kita membuat panjang Array 10, nanti si array itu akan menyiapkan kotak-kotak (Element) 10, dimana tiap kotak(Element) itu bisa kita masukan datanya, tapi ingat tipe datanya harus sama
 - Untuk identitas tiap kotak itu dimulau dari angka 0 (indexnya) jadi misalnya panjang datanya 10, maka 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 (Panjang data - 1)
 - Unutk mengakses atau mengubah data yang ada di element, kita bisa mengaksesnya dengan nomor indexnya. jadi jika kita ingin menubah data pertmama maka kita harus memasukan index 0, kalau ingin mengabil data yang terakhir harus memasukan index 9
-
-# 
+- array[index], untuk mengambil data di Array
+- array[index] = value, untuk menubah data di Array
+- array.length, untuk mengambil panjang Array
