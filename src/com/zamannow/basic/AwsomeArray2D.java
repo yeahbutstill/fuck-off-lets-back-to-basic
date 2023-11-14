@@ -36,17 +36,22 @@ public class AwsomeArray2D {
 
         String[][][] newMembers = {
                 {
-                    new String[]{"Jadi"}, new String[]{"Siap"}
+                        new String[]{"Jadi"}, new String[]{"Siap"}
                 },
                 {
-                    {"DNL", "Oke", "Siap"}, {"Iya", "No", "Tidak", "Jangan"}, {"Begitu", "Ajah"}
+                        {"DNL", "Oke", "Siap"}, {"Iya", "No", "Tidak", "Jangan"}, {"Begitu", "Ajah"}
+                },
+                {
+                        {"OKE", "KO"}
                 }
         };
         System.out.println(Arrays.deepToString(newMembers));
+        System.out.println("=================================");
         System.out.println(Arrays.deepToString(newMembers[0]));
-        System.out.println(Arrays.deepToString(newMembers[0][1]));
         System.out.println(Arrays.deepToString(newMembers[0][0]));
+        System.out.println(Arrays.deepToString(newMembers[0][1]));
         System.out.println(Arrays.deepToString(newMembers[1]));
         System.out.println(Arrays.deepToString(newMembers[1][0]));
+        System.out.println(newMembers[0][1][0]);
     }
 }
