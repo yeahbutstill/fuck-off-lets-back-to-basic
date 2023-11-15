@@ -53,3 +53,42 @@
 - array[index], untuk mengambil data di Array
 - array[index] = value, untuk menubah data di Array
 - array.length, untuk mengambil panjang Array
+
+# Operasi Perbandingan
+- Operasi perbandingan adalah operasi untuk membandingkan dua buah data
+- Operasi perbandingan adalah operasi yang menghasilkan nilai boolean (benar atau salah)
+- Jika hasil operasinya adalah benar, maka nilainya adalah true
+- Jika hasil operasinya adalah salah, maka nilainya adalah false
+- > lebih dari
+- < kurang dari
+- >= lebih dari sama dengan
+- <= kurang dari sama dengan
+- == sama dengan
+- != tidak sama dengand
+- Semua operasi ini bisa digunakan disemua tipe data number namun nanti balikan dari nilai resultnya adalah tipe boolean true/false
+
+# Operasi Boolean
+- Operasi ini sederhana, yang digunakan untuk membandingakn dua data boolean
+- && dan
+- || atau
+- ! kebalikan
+
+# Expression
+- Expression adalah konstruksi dari variable, operator dan pemanggilan method yang mengevaluasi menjadi sebuah single value
+- Expression adalah core component dari statement
+
+# Statement
+- Statement adalah bisa dibilang kalimat lengkap dalam bahasa.
+- Sebuah Statement berisikan execution komplit, biasanya diakhiri dengan titik koma
+- Ada beberapa jenis statement
+- Assigment expression
+- Penggunaan ++ dan --
+- Method invocation
+- Object creation expression
+
+# Block 
+- Block adalah kumpulan statement yang terdiri dari nol atau lebih statement
+- Jadi kalau kumpulan expression adalah statement
+- Kalau kumpulan statement adalah block
+- Block itu diawali dan diakhiri dengan kurung kurawal { }
+

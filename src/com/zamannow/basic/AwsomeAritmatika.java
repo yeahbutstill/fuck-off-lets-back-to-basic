@@ -44,7 +44,7 @@ public class AwsomeAritmatika {
     System.out.println(a / b);
     System.out.println(a % b); // modulo hasil sisa bagi
 
-    // Augmented Assignments
+    // Augmented Assignments operasi ke variable dia sendiri
     System.out.println("====================================");
     a += a; // sama aja kaya a = a + 10;
     System.out.println(a);
@@ -54,9 +54,10 @@ public class AwsomeAritmatika {
     a++; // sama aja kaya a = a+1;
     a--;
     System.out.println(a++); // bertambah tapi setelah dijalankan eksekusi berikutnya
-    System.out.println(a--);
     System.out.println(++a); // bertambah sebelum dieksekusi
+    System.out.println(a--);
     System.out.println(--a);
+    System.out.println("----------------------------------------");
 
     int c = +10;
     int d = -10;

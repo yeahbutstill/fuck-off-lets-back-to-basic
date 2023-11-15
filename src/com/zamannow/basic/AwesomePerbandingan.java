@@ -63,7 +63,7 @@ public class AwesomePerbandingan {
     System.out.println(nil2 && nil4);
     System.out.println("=====================================");
 
-    // ATAU akan menghasilkan FALSE jika ke 2 nilainya
+    // ATAU akan menghasilkan FALSE jika ke 2 nilainya false
     System.out.println(nil1 || nil3);
     System.out.println(nil1 || nil2);
     System.out.println(nil2 || nil1);
