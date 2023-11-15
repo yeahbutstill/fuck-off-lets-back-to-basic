@@ -92,3 +92,32 @@
 - Kalau kumpulan statement adalah block
 - Block itu diawali dan diakhiri dengan kurung kurawal { }
 
+# If Statement
+- Dalam bahasa Java, if adalah salah satu kata kunci yang digunakan untuk percabangan
+- Percabangan itu artinya kita bisa mengeksekusi kode program tertentu ketika suatu kondisi terpenuhi
+- Hampir di semua bahasa pemrograman mendukung if expression
+- didalam if terdapat parameter expression dari nilai boolean 
+
+# Else Statement
+- Block if akan dieksekusi ketika kondisi if bernilai true
+- Kadang kita ingin melakukan eksekusi program tertentu jika kondisi if bernilai false
+- Hal ini bisa dilakukan menggunakan else expression
+
+# Else if Statement
+- Kadang dalam if, kita butuh membuat beberapa kondisi
+- Kasus seperti ini, di Java kita bisa menggunakan Else if Expression
+- Else if di Java bisa lebih dari satu
+
+# Switch Statement
+- Kadang kita hanya butuh menggunakan kondisi sederhana di if statement, seperti hanya menggunakan perbandingan ==
+- Switch adalah statement percabangan yang sama dengan if, namum lebih sederhana cara pembuatannya
+- Kondisi di switch statement hanya untuk perbandingan ==
+
+# Switch Lambda
+- Di Java versi 14, diperkenalkan switch expression dengan lambda
+- ini lebih mempermudah saat penggunaan switch expression karena kita tidak perlu lagi menggunakan kata kunci break
+- -> {} block seperti ini yang disebut lambda
+
+# Kata kunci yield
+- Di Java versi 14, ada kata kunci baru yaitu yield, dimana kita menggunakan kata kunci yield untuk mengembalikan nilai pada switch statement
+- Ini sangat mempermudah kita ketika butuh membuat data berdasarkan kondisi switch statement
