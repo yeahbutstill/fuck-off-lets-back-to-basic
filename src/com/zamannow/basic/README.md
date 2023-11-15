@@ -121,3 +121,21 @@
 # Kata kunci yield
 - Di Java versi 14, ada kata kunci baru yaitu yield, dimana kita menggunakan kata kunci yield untuk mengembalikan nilai pada switch statement
 - Ini sangat mempermudah kita ketika butuh membuat data berdasarkan kondisi switch statement
+
+# Ternary Operator
+- Ternary operator adalah operator sederhana dari if statement
+- Ternary operator terdiri dari kondisi yang dievaluasi, jika menghasilkan true maka nilai pertama diambil, jika false maka nilai kedua diambil
+
+# For Loop 
+- for adalah salah satu kata kunci yang biasa digunakan untuk melakukan perulangan
+- Block kode yang terdapat didalam for akan selalau diulangi selama kondisi for terpenuhi
+- sintak perulangan for
+- ```java
+  for(init statement; kondisi; post statement) {
+    // block perulangan
+  }
+  ```
+- init statement akan dieksekusi hanya sekali diawal sebelum perulangan
+- kondisi akan dilakukan pengecekan dalam setiap perulangan, jika true perulangan akan dilakukan, jika false perulangan akan berhenti 
+- post statement akan dieksekusi setiap kali diakhiri perulangan
+- init statement, kondisi dan post statement tidak wajib diisi, jika kondisi tidak diisi, berarti kondisi selalu bernilai true
