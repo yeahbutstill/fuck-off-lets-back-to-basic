@@ -139,3 +139,19 @@
 - kondisi akan dilakukan pengecekan dalam setiap perulangan, jika true perulangan akan dilakukan, jika false perulangan akan berhenti 
 - post statement akan dieksekusi setiap kali diakhiri perulangan
 - init statement, kondisi dan post statement tidak wajib diisi, jika kondisi tidak diisi, berarti kondisi selalu bernilai true
+
+# While Loop
+- While loop adalah versi perulangan yang lebih sederhana dibanding for loop
+- di While Loop, hanya terdapat kondisi perulangan, tanpa ada init statement dan post statement
+
+# Do While Loop
+- perulangan ini mirip dengan perulangan while
+- Perbedaannya hanya pada pengecekan kondisi
+- Pengecekan kondisi di while loop dilakukan di awal sebelum perulangan dilakukan, sedangkan di do while loop dilakukan setelah perulangan dilakukan
+- Oleh karena itu dalam do while loop, minimal pasti sekali perulangan dilakukan walaupun kondisi tidak bernilai true
+
+# Break & Continue
+- Pada switch statement, kita sudah mengenal kata kunci break, yaitu untuk menghentikan case dalam switch
+- Sama dengan pada perulangan, break juga digunakan untuk menghentikan seluruh perulangan.
+- Namun berbeda dengan continue, continue digunakan untuk menghentikan perulangan saat ini, lalu melanjutkan ke perulangan selanjutnya
+
