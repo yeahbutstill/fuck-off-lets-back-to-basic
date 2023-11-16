@@ -160,5 +160,30 @@
 - Mengakses data array menggunakan perulangan sangat bertele-tele, kita harus membuat counter, lalu mengakses array menggunakan counter yang kita buat
 - Namun untungnya, di Java terdapat perulangan for each, yang bisa digunakan untuk mengakses seluruh data di Array secara otomatis
 
+# Method 
+- Method adalah block kode program yang akan berjalan saat kita panggil
+- Untuk membuat method di Java, kita bisa menggunakan kata kunci void, lalu diikuti dengan nama method, kurung () dan diakhiri dengan block 
+- Kita bisa memanggil method dengan menggunakan nama method lalau diikuti dengan kurung ()
+- DI bahasa pemrograman lain, Method juga disebut dengan function
+
+# Method Parameter
+- Kita bisa mengirim informasi ke method yang ingin kita panggil
+- Untuk melakukan hal tersebut, kita perlu menambahkan parameter atau argument di method yang sudah kita buat
+- Cara membuat parameter sama seperti cara membuat variable
+- Parameter ditempatkan didalam kurung () di deklarasikan method
+- Parameter bisa lebih dari satu, jika lebih dari satu, harus dipisahkan menggunakan tanda koma
+- Jadi kalau butuh argument yang dikirim dari luar methodnya saat dipanggil, kita bisa menggunakan method dengan parameter
+
+# Method Return Value
+- Secara default, method itu tidak menghasilkan value apapun, namun jika kita ingin menghasilkan retun value. Kita bisa memnbuat sebuah method yang mengembalikan nilai
+- Agar method bisa menghasilkan value, kita harus mengubah kata kunci void dengan tipe data yang ingin dihasilkan
+- Dan di dalam block method, untuk menghasilkan nilai tersebut, kita harus menggunakan kata kunci return, lalu diikuti dengan data yang sesuai dengan tipe data yang sudah kita deklarasikan di method
+- Di Java, kita hanya bisa menghasilkan 1 data di sebuah method, tidak bisa lebih dari satu
+
+# Method Variable Argument
+- Kadang kala kita butuh mengirim data ke method dengan jumlah data yang tidak pasti
+- Biasanya, agar bisa seperti ini, kita akan menggunakan Array sebagai parameter di method tersebut
+- Namun di Java, kita bisa menggunakan variable argument, untuk mengirim data yang berisi jumlah datanya tidak tentu, bisa nol atau lebih
+- Parameter dengan tipe variable argument, hanya bisa ditempatkan di posisi akhir parameter
 
 
