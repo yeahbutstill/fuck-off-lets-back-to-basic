@@ -186,4 +186,29 @@
 - Namun di Java, kita bisa menggunakan variable argument, untuk mengirim data yang berisi jumlah datanya tidak tentu, bisa nol atau lebih
 - Parameter dengan tipe variable argument, hanya bisa ditempatkan di posisi akhir parameter
 
+# Method Overloading
+- Method overloading adalah kemampuan membuat method dengan nama yang sama lebih dari sekali.
+- Namun ada ketentuan yang harus diikuti, yaitu data parameter di method tersebut harus berbeda-beda, entah jumlah atau tipe data parameternya
+- Jika ada yang sama, maka program Java kita akan error
 
+# Recursive Method 
+- Recursive method adalah kemampuan method memanggil method dirinya sendiri
+- Kadang memang ada banyak problem, yang lebih mudah diselesaikan menggunakan recursive method, seperti contohnya kasus factorial
+
+# Problem Dengan Recursive
+- Walaupun recursive method itu sangat menarik, namun kita perlu berhat-hati
+- Jika recursive terlalu dalam, maka akan ada kemungkinan terjadi error StackOverflow, yaitu error dimana stack method terlalu banyak di Java
+- kenapa problem ini bisa terjadi? Karena ketika kita memanggil method, Java akan menyiapkannya dalam stack, jika method tersebut memanggil method lain, maka stack akan menumpuk terus, dan jika terlalu dalam, maka stack akan terlalu besar dan biasanya menyebabkan error StackOverflow
+
+# Scope
+- Di Java, variable hanya bisa diakses di dalam area dimana mereka dibuat
+- Hal ini disebut scope
+- Contoh, jika sebuah varible dibuat di method, maka hanya bisa diakses di method tersebut atau jika dibuat didalam block, maka hanya bisa diakses didalam block tersebut
+
+# Java OOPs Interview Questions and Answers
+### Question 1: What is Object-Oriented Programming (OOP) and what are its core principles?
+- Jawaban: Pemrograman Berorientasi Objek adalah paradigma pemrograman yang mengatur kode menjadi objek-objek yang saling berinteraksi. Prinsip inti OOP adalah:
+- Encapsulation: Menggabungkan data dan metode bersama-sama dalam satu kelas untuk menyembunyikan detail internal dan menyediakan interface yang terkontrol.
+- Inheritance: Mengizinkan kelas mewarisi properti dan perilaku dari kelas induk, memfasilitasi penggunaan kembali kode, dan menciptakan hubungan “is-a”.
+- Polymorphism: Kemampuan objek untuk mengambil berbagai bentuk, memungkinkan kelas yang berbeda untuk mengimplementasikan metode yang sama dengan cara yang berbeda.
+- Abstraction: Menyederhanakan sistem yang kompleks dengan merepresentasikan fitur-fitur penting dan menyembunyikan detail yang tidak perlu.

@@ -29,6 +29,10 @@ public class TestMehtod {
 
         testMehtod.sayCongrats("DNL", new int[]{80, 80, 80, 80, 80, 80});
         testMehtod.sayCongratsVarArgs("MYT", 80, 90, 90, 100, 90, 100);
+        System.out.println();
+
+        System.out.println(testMehtod.factorialLoop(5));
+        System.out.println(1 * 2 * 3 * 4 * 5);
     }
 
     // static method
@@ -41,9 +45,13 @@ public class TestMehtod {
         System.out.println("Hello Method");
     }
 
-    // method dengan parameter
+    // method dengan parameter dan Method Overloading, karena nama method sama tapi isi parameternya berbeda
     public void sayHello(String username, String password) {
         System.out.println(username + " : " + password);
+    }
+
+    public void sayHello(String username) {
+        System.out.println(username);
     }
 
     // method return value
@@ -100,6 +108,25 @@ public class TestMehtod {
             System.out.println("Selamat " + name + ", Anda Lulus");
         } else {
             System.out.println("Maaf " + name + ", Silakan coba lagi tahun depan");
+        }
+    }
+
+    // factorial loop
+    public int factorialLoop(int value) {
+        int result = 1;
+        for (int i = 1; i <= value; i++) {
+            result *= i;
+        }
+
+        return result;
+    }
+
+    // method recursive
+    public int factorial(int value) {
+        if (value == 1) {
+            return 1;
+        } else {
+            return value * factorialLoop(value - 1);
         }
     }
 }
