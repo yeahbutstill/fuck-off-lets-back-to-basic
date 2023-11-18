@@ -1,10 +1,12 @@
 package com.zamannow.oop;
 
 public class Person {
+
     // properties yang ada di object bisa kita manipulasi. tergantung final atau bukan
     final String country =
-            "Indonesia"; // jika final, berarti kita tidak bisa mengubah data proeperties tersebut
-    // membuat properties sama seperti membuar variable, namum di tempatkan di block class
+            "Indonesia"; // jika ada kata kunci 'final', berarti kita tidak bisa mengubah data proeperties tersebut
+
+    // membuat properties sama seperti membuat variable, namum di tempatkan di block class
     String firstName; // properties adalah data yang bisa kita masukan di dalam Object
     // kita harus mendeklarasikan data apa saja yang dimiliki object tersebut di dalam deklarasi
     // classnya
@@ -65,4 +67,5 @@ public class Person {
     public String sayGoodBye(String firstName) {
         return "Bye, " + firstName + "~";
     }
+
 }
