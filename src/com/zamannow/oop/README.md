@@ -193,94 +193,135 @@
   sederhana, tanpa harus membuat implementasi class nya
 
 # Static Keyword
+
 - Sebelumnya kita sudah sering melihat kata kunci static, namun belum pernah kita bahas
-- Dengan menggunakan kata kunci static, kita bisa membuat properties, method atau class yang bisa diakses langsung tanpa melalui object nya
+- Dengan menggunakan kata kunci static, kita bisa membuat properties, method atau class yang bisa diakses langsung tanpa
+  melalui object nya
 - Perlu diingat, static hanya bisa mengakses static lainnya.
 
 # Static Dapat digunakan di
+
 - Properties, atau disebut class variable. artinya properties bisa diakses langsung tanpa membuat object terlebih dahulu
 - Method, atau disebut class method, artinya method tersebut bisa diakses langsung tanpa membuat object terlebih dahulu
 - Block, static block akan otomatis dieksekusi ketika sebuah class di load
-- Inner class, artinya inner class tersebut bisa diakses secara langsung tanpa harus membuat object outer class terlebih dahulu. Static pada inner class menyebabkan kita tidak bisa mengakses lagi object outer class nya
+- Inner class, artinya inner class tersebut bisa diakses secara langsung tanpa harus membuat object outer class terlebih
+  dahulu. Static pada inner class menyebabkan kita tidak bisa mengakses lagi object outer class nya
 
 # Record Class
-- Kadang-kadang kita sering membuat class, hanya untuk class yang berisikan data. Hanya berisi getter, equals, hashCode dan toString method
+
+- Kadang-kadang kita sering membuat class, hanya untuk class yang berisikan data. Hanya berisi getter, equals, hashCode
+  dan toString method
 - Record class digunakan untuk mempermudah pembuatan jenis class tersebut
-- Saat kita membuat record class, secara automatis Java akan membuatkan getter, equals, hashCode, toString method dan juga constructor argument
-- Saat membuat record class, secara automatis kita akan meng-extends class java.lang.Record yang artinya kita tidak bisa extends class lain. namun kita tetap bisa meng-implementasi interface
-- Immutable, yang artinya tidak bisa diubah, saat membuat object baru yang sudah ada isinya, itu tidak bisa lagi diubah value propertiesnya
+- Saat kita membuat record class, secara automatis Java akan membuatkan getter, equals, hashCode, toString method dan
+  juga constructor argument
+- Saat membuat record class, secara automatis kita akan meng-extends class java.lang.Record yang artinya kita tidak bisa
+  extends class lain. namun kita tetap bisa meng-implementasi interface
+- Immutable, yang artinya tidak bisa diubah, saat membuat object baru yang sudah ada isinya, itu tidak bisa lagi diubah
+  value propertiesnya
 
 # Record Class Constructor
+
 - Secara default, constructor di record class akan dibuat secara otomatis, sesuai dengan definisi record class parameter
-- Namun jika kita ingin melakukan sesuatu di constructor tersebut, kita bisa membuat compact constructor, yaitu constructor tanpa tanda ()
-- Selain itu, kita juga bisa melakukan constructor overloading, namun ada hukumnya, yaitu constructor overloading nya harus tetep manggil constructor utama yang secara otomatis dibuatkan di record class
+- Namun jika kita ingin melakukan sesuatu di constructor tersebut, kita bisa membuat compact constructor, yaitu
+  constructor tanpa tanda ()
+- Selain itu, kita juga bisa melakukan constructor overloading, namun ada hukumnya, yaitu constructor overloading nya
+  harus tetep manggil constructor utama yang secara otomatis dibuatkan di record class
 
 # Enum Class
+
 - Saat kita membuat aplikasi, kadang kita akan bertemu dengan jenis-jenis data yang nilainya terbatas
 - Misal, gender, ada mele dan female, atau tipe customer, ada standard, premium, VIP dan lain-lain
-- Dalam kasus seperti ini, kita bisa menggunakan enum class, yaitu class yang berisikan nilai terbatas yang sudah ditentukan
-- Saat membuat enum class, secara otomatis dia akan meng-extends class java,lang.Enum, oleh karena itu class enum tidak bisa di extends class lain, naum masih bisa tetap di implementasikan interface
+- Dalam kasus seperti ini, kita bisa menggunakan enum class, yaitu class yang berisikan nilai terbatas yang sudah
+  ditentukan
+- Saat membuat enum class, secara otomatis dia akan meng-extends class java,lang.Enum, oleh karena itu class enum tidak
+  bisa di extends class lain, naum masih bisa tetap di implementasikan interface
 
 # Enum Members
+
 - Sama seperti class biasanya, di class enum pun kita bisa menambahkan members(properties, method dan constructor)
-- Khusus constructor, kita tidak bisa membuat public constructor, karena memang tujuan enum bukan untuk di instansiasikan secara bebas
+- Khusus constructor, kita tidak bisa membuat public constructor, karena memang tujuan enum bukan untuk di
+  instansiasikan secara bebas
 
 # Exception
+
 - Saat kita membuat aplikasi, kita tidak akan terhindar dengan yang namanya error
 - Di Java, error direpresentasikan dengan istilah exception, dan semua direpresentasikan dalam bentuk class exception
 - Kita bisa menggunakan class exception sendiri, atau menggunakan yang sudah ada disediakan oleh Java
 - Jika kita ingin membuat exception, maka kita harus membuat class yang extends class Throwable atau turunan-turunannya
 
 # Membuat exception
-- Exception biasanya terjadi di method, ketika kita membuat exception di sebuah method, maka method tersebut harus ditandai dengan kata kunci thrown diikuti dengan class exception nya.
-- Jika method tersebut bisa menimbulkan lebih dari satu jenis exception, kita bisa menambahkan lebih dari satu class exception
-- di dalam kode program kita, untuk membuat exception kita cukup menggunakan kata kunci throw, diikuti dengan object exceptionnya
+
+- Exception biasanya terjadi di method, ketika kita membuat exception di sebuah method, maka method tersebut harus
+  ditandai dengan kata kunci thrown diikuti dengan class exception nya.
+- Jika method tersebut bisa menimbulkan lebih dari satu jenis exception, kita bisa menambahkan lebih dari satu class
+  exception
+- di dalam kode program kita, untuk membuat exception kita cukup menggunakan kata kunci throw, diikuti dengan object
+  exceptionnya
 
 # Try Catch
-- Saat kita memanggil sebuah method yang bisa menyebabkan exception, maka kita wajib menggunakan try-catch expression di Java
-- Ini berguna agar kita bisa menangkap exception yang terjadi, karena jika tidak ditangkap, lalu terjadi exception, maka secara otomatis program kita akan berhenti
-- Cara menggunakan try-catch expression di Java sangat mudah, di block try kita tinggal panggil method yang bisa menyebabkan exception, dan di block catch, kita bisa melakukan sesuatu jika terjadi exception
+
+- Saat kita memanggil sebuah method yang bisa menyebabkan exception, maka kita wajib menggunakan try-catch expression di
+  Java
+- Ini berguna agar kita bisa menangkap exception yang terjadi, karena jika tidak ditangkap, lalu terjadi exception, maka
+  secara otomatis program kita akan berhenti
+- Cara menggunakan try-catch expression di Java sangat mudah, di block try kita tinggal panggil method yang bisa
+  menyebabkan exception, dan di block catch, kita bisa melakukan sesuatu jika terjadi exception
 
 # Finally Keyword
+
 - Dalam try-catch, kita bisa menambahkan block finally
 - Block finally ini adalah block dimana akan selalu dieksekusi baik terjadi exception ataupun tidak
-- Ini sangat cocok ketika kita ingin melakukan sesuatu, tidak peduli sukses ataupun gagal, misal di block try kita ingin membaca file, di block catch kita akan tangkap jika terjadi error, dan di block finally error ataupun suskses membaca file, kita wajib menutup koneksi ke file tersebut, biar tidak menggantung di memory 
+- Ini sangat cocok ketika kita ingin melakukan sesuatu, tidak peduli sukses ataupun gagal, misal di block try kita ingin
+  membaca file, di block catch kita akan tangkap jika terjadi error, dan di block finally error ataupun suskses membaca
+  file, kita wajib menutup koneksi ke file tersebut, biar tidak menggantung di memory
 
 # Runtime Exception
+
 - Jenis Exception, secara garis besar, di Java, exception dibagi menjadi 3 jenis
 - Checked Exception, yaitu exception yang wajib di try catch, seperti yang sudah kita bahas sebelumnya
 - Runtime Exception
-- Error 
+- Error
 
-# Runtime Exception 
+# Runtime Exception
+
 - adalah jenis exception yang tidak wajib di tangkap menggunakan try catch
-- Kompailer Java tidak akan protes walaupun kita tidak menggunakan try catch ketika kita panggil method yang bisa menyebabkan runtime exception
+- Kompailer Java tidak akan protes walaupun kita tidak menggunakan try catch ketika kita panggil method yang bisa
+  menyebabkan runtime exception
 - Untuk membuat class runtime exception, kita wajib mengextends class RuntimeException
-- Ada banyak sekali di Java yang merupakan runtime exception, seperti NullPointerException, IllegalArgumentException, dan lain-lain
+- Ada banyak sekali di Java yang merupakan runtime exception, seperti NullPointerException, IllegalArgumentException,
+  dan lain-lain
 
 # Perlu diperhatikan
+
 - Walaupun runtime exception tidak wajib di try-catch, tapi ada baiknya kita tetap melakukan try-catch
 - Karena jika terjadi runtime exception, yang ditakukan adalah program akan berhenti atau mati
 
-# Error 
+# Error
+
 - Error adalah jenis exception yang terakhir
 - Error adalah sebuah class di Java, yang tidak direkomendasikan untuk di try-catch
 - Biasanya error terjadi ketika ada masalah serius, dan sangat tidak direkomendasikan untuk di try-cathc
 - Artinya, direkomendasikan untuk mematikan aplikasi
-- Contoh, misalnya jika diawal aplikasi kita tidak bisa terkoneksi ke database, di rekomendasikan untuk membuat exception jenis Error, dan menghentikan aplikasi
+- Contoh, misalnya jika diawal aplikasi kita tidak bisa terkoneksi ke database, di rekomendasikan untuk membuat
+  exception jenis Error, dan menghentikan aplikasi
 
 # StackTraceElement Class
+
 - Throwable memiliki method yang bernama getStackTrace(), dimana menghasilkan Array dari StackTraceElement object
 - StackTraceElement berisikan informasi tentang class, file dan bahkan baris lokasi terjadi error
 - Class StackTraceElement ini sangat penting untuk menelusuri lokasi kejadian error yang terjadi
-- Cara yang paling mudah, kita bisa memanggil method printStackTrace() class Throwable, untuk memprint ke console detail error StackTraceElement nya
+- Cara yang paling mudah, kita bisa memanggil method printStackTrace() class Throwable, untuk memprint ke console detail
+  error StackTraceElement nya
 
 # Try with Resource
+
 - Di Java 7, terdapat fitur baru yang bernama try-with-resource
-- Try with resource adalah sebuah mekanisme agar kita lebih mudah menggunakan resource(yang wajib di close) dalam block try
+- Try with resource adalah sebuah mekanisme agar kita lebih mudah menggunakan resource(yang wajib di close) dalam block
+  try
 - Jika kita ingin menggunakan fitur ini, kita wajib menggunakan interface AutoCloseable
 
 # Annotation
+
 - Annotation adalah menambahkan metadata ke kode program yang kita buat
 - Tidak semua orang membutuhkan Annotation, biasanya Annotation digunakan saat kita ingin membuat library / framework
 - Annotation sendiri bisa diakses menggunakan Reflection
@@ -289,13 +330,16 @@
 - ![img_2.png](img_2.png)
 
 # Predefined Annotation
+
 - Java juga sudah memiliki annotation bawaan, seperti:
 - @Override, untuk menandai bahwa method yang meng-override method parent class nya
-- @Deprecated, untuk menandai bahwa method tersebut tidak direkomendasikan lagi untuk digunakan 
+- @Deprecated, untuk menandai bahwa method tersebut tidak direkomendasikan lagi untuk digunakan
 - @FunctionalInterface, untuk menandai bahwa class tersebut bisa dibuat sebagai lambda expression
 - dan lain-lain
 
 # Reflection
+
 - Reflection adalah kemampuan melihat structur aplikasi kita pada saat berjalan
-- Reflection biasanya sangat berguna saat kita ingin membuat library ataupun faremwork, shingga bisa meng-otomatiskan pekerjaan
+- Reflection biasanya sangat berguna saat kita ingin membuat library ataupun faremwork, shingga bisa meng-otomatiskan
+  pekerjaan
 - Untuk mengakses reflection class dari sebuah object, kita bisa menggunakan method getClass() atau NamaClass.class

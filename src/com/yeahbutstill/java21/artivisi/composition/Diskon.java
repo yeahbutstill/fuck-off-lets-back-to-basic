@@ -3,7 +3,7 @@ package com.yeahbutstill.java21.artivisi.composition;
 import java.math.BigDecimal;
 
 public interface Diskon {
-  String getNama();
+    String getNama();
 
-  BigDecimal hitungDiskon(Transaksi t);
+    BigDecimal hitungDiskon(Transaksi t);
 }

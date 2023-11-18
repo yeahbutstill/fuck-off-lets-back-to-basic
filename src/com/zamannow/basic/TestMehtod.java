@@ -32,7 +32,7 @@ public class TestMehtod {
         System.out.println();
 
         System.out.println(testMehtod.factorialLoop(5));
-        System.out.println(1 * 2 * 3 * 4 * 5);
+        System.out.println(2 * 3 * 4 * 5);
     }
 
     // static method

@@ -5,11 +5,11 @@ package com.leetcode.problems.string;
 // You are given a 0-indexed string s, and you type each character of s using your faulty keyboard.
 // Return the final string that will be present on your laptop screen.
 public class FaultyKeyboard {
-  public static void main(String[] args) {
-    String s = "string";
-    Solution2810 solution = new Solution2810();
-    System.out.println(solution.finalString(s));
-  }
+    public static void main(String[] args) {
+        String s = "string";
+        Solution2810 solution = new Solution2810();
+        System.out.println(solution.finalString(s));
+    }
 }
 
 /**
@@ -20,12 +20,12 @@ public class FaultyKeyboard {
  * Therefore, we return "rtsng".
  */
 class Solution2810 {
-  public String finalString(String s) {
-    StringBuilder sb = new StringBuilder();
-    for (char c : s.toCharArray()) {
-      if (c == 'i') sb.reverse();
-      else sb.append(c);
+    public String finalString(String s) {
+        StringBuilder sb = new StringBuilder();
+        for (char c : s.toCharArray()) {
+            if (c == 'i') sb.reverse();
+            else sb.append(c);
+        }
+        return sb.toString();
     }
-    return sb.toString();
-  }
 }

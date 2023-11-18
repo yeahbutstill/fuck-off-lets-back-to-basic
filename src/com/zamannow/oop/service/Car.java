@@ -1,11 +1,11 @@
 package com.zamannow.oop.service;
 
 public interface Car extends HasBrand, Maintenance {
-  void drive();
+    void drive();
 
-  Integer getTire();
+    Integer getTire();
 
-  default Boolean isBig() {
-    return false;
-  }
+    default Boolean isBig() {
+        return false;
+    }
 }

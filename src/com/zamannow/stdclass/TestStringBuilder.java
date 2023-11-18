@@ -18,15 +18,12 @@ public class TestStringBuilder {
         System.out.println(name);
 
 
-
-        StringBuilder builder = new StringBuilder();
         // method append digunakan untuk concat string atau menambahkan string
-        builder.append("D");
-        builder.append("N");
-        builder.append("L");
-        builder.append(" ");
-        builder.append("Yeahbutstill");
-        String fullName = builder.toString(); // konversi ke String
+        String fullName = "D" +
+                "N" +
+                "L" +
+                " " +
+                "Yeahbutstill"; // konversi ke String
         System.out.println(fullName.toLowerCase());
         System.out.println(fullName.toUpperCase());
     }

@@ -1,15 +1,16 @@
 package com.zamannow.oop;
 
 public class Employee {
-  String name;
+    String name;
 
-  Employee(String name) {
-    this.name = name;
-  }
+    Employee(String name) {
+        this.name = name;
+    }
 
-  Employee() {}
+    Employee() {
+    }
 
-  void sayHello(String name) {
-    System.out.println("Hello " + name + ", My name is Employee " + this.name);
-  }
+    void sayHello(String name) {
+        System.out.println("Hello " + name + ", My name is Employee " + this.name);
+    }
 }

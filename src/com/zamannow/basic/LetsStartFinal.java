@@ -1,18 +1,18 @@
 package com.zamannow.basic;
 
 public class LetsStartFinal {
-  private static final String alamat = "Depag";
-  private final String name = "Saya";
-  private String nohp = "08080808";
+    private static final String alamat = "Depag";
+    private final String name = "Saya";
+    private final String nohp = "08080808";
 
-  public static void main(String[] args) {
-    var letsStartFinal = new LetsStartFinal();
-    System.out.println(letsStartFinal.name);
-    System.out.println(alamat);
-    System.out.println(letsStartFinal.nohp);
+    public static void main(String[] args) {
+        var letsStartFinal = new LetsStartFinal();
+        System.out.println(letsStartFinal.name);
+        System.out.println(alamat);
+        System.out.println(letsStartFinal.nohp);
 
-    final String namaOrangtua = "Sae";
-    // namaOrangtua = "Yun"; // errpr karena nama sudah di set final
-    System.out.println(namaOrangtua);
-  }
+        final String namaOrangtua = "Sae";
+        // namaOrangtua = "Yun"; // errpr karena nama sudah di set final
+        System.out.println(namaOrangtua);
+    }
 }

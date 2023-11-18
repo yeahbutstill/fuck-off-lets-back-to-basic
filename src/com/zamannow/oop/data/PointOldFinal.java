@@ -18,7 +18,6 @@ public class PointOldFinal {
     }
 
 
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -38,8 +37,8 @@ public class PointOldFinal {
     @Override
     public String toString() {
         return "PointOldFinal{" +
-               "x=" + x +
-               ", y=" + y +
-               '}';
+                "x=" + x +
+                ", y=" + y +
+                '}';
     }
 }

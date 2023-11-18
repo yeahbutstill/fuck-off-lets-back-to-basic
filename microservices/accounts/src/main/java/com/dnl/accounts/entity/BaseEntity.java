@@ -3,7 +3,9 @@ package com.dnl.accounts.entity;
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;
 import jakarta.persistence.MappedSuperclass;
+
 import java.time.LocalDateTime;
+
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -22,19 +24,19 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 @ToString
 public class BaseEntity {
 
-  @CreatedDate
-  @Column(updatable = false)
-  private LocalDateTime createdAt;
+    @CreatedDate
+    @Column(updatable = false)
+    private LocalDateTime createdAt;
 
-  @CreatedBy
-  @Column(updatable = false)
-  private String createdBy;
+    @CreatedBy
+    @Column(updatable = false)
+    private String createdBy;
 
-  @LastModifiedDate
-  @Column(insertable = false)
-  private LocalDateTime updatedAt;
+    @LastModifiedDate
+    @Column(insertable = false)
+    private LocalDateTime updatedAt;
 
-  @LastModifiedBy
-  @Column(insertable = false)
-  private String updatedBy;
+    @LastModifiedBy
+    @Column(insertable = false)
+    private String updatedBy;
 }

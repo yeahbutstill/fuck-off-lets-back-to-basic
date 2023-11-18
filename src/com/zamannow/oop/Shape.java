@@ -1,7 +1,7 @@
 package com.zamannow.oop;
 
 public class Shape {
-  int getCorner() {
-    return 0;
-  }
+    int getCorner() {
+        return 0;
+    }
 }

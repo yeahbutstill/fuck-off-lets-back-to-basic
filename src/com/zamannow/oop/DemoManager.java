@@ -1,16 +1,16 @@
 package com.zamannow.oop;
 
 public class DemoManager {
-  public static void main(String[] args) {
-    var manager = new Manager();
-    manager.name = "dnl";
-    manager.sayHello("may");
+    public static void main(String[] args) {
+        var manager = new Manager();
+        manager.name = "dnl";
+        manager.sayHello("may");
 
-    var vicePresident = new VicePresident();
-    vicePresident.name = "may";
-    vicePresident.sayHello("dnl");
+        var vicePresident = new VicePresident();
+        vicePresident.name = "may";
+        vicePresident.sayHello("dnl");
 
-    System.out.println(manager);
-    System.out.println(vicePresident);
-  }
+        System.out.println(manager);
+        System.out.println(vicePresident);
+    }
 }

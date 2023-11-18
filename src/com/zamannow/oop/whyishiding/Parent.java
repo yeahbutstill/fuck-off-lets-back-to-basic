@@ -1,9 +1,9 @@
 package com.zamannow.oop.whyishiding;
 
 public class Parent {
-  String name;
+    String name;
 
-  void doIt() {
-    System.out.println("Do it from Parent");
-  }
+    void doIt() {
+        System.out.println("Do it from Parent");
+    }
 }

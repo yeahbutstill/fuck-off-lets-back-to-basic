@@ -11,11 +11,11 @@ class Main {
         int i;
         for (i = 1; i < 100; i++) {
             if (((i % 3) == 0) && ((i % 5) == 0)) {
-                System.out.printf("FizzBuzz\n");
+                System.out.print("FizzBuzz\n");
             } else if (i % 5 == 0) {
-                System.out.printf("Buzz\n");
+                System.out.print("Buzz\n");
             } else if (i % 3 == 0) {
-                System.out.printf("Fizz\n");
+                System.out.print("Fizz\n");
             } else {
                 System.out.printf("%d\n", i);
             }
@@ -67,7 +67,7 @@ class Main2 {
             for (char c : running) {
                 s.append(c);
             }
-            System.out.printf("%s\n", s.toString());
+            System.out.printf("%s\n", s);
         } else {
             for (i = 0; i < characters.size(); i++) {
                 if (((bitmask >> i) & 1) == 0) {

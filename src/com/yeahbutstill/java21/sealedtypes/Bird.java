@@ -1,7 +1,7 @@
 package com.yeahbutstill.java21.sealedtypes;
 
 public final class Bird implements Animal {
-  public String chirp() {
-    return "chirp";
-  }
+    public String chirp() {
+        return "chirp";
+    }
 }

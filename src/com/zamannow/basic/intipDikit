@@ -4,25 +4,26 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.nio.file.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 import static java.lang.System.out;
 
 public class DirLister {
-  public static void main(String[] fuck) throws Exception {
-    var dirName = ".";
-    if (fuck == null || fuck.length < 1) System.err.println("Listing the current DIR");
-    else dirName = fuck[0];
-    Files.walk(Paths.get(dirName)).forEach(out::println);
+    public static void main(String[] fuck) throws Exception {
+        var dirName = ".";
+        if (fuck == null || fuck.length < 1) System.err.println("Listing the current DIR");
+        else dirName = fuck[0];
+        Files.walk(Paths.get(dirName)).forEach(out::println);
 
-    var client = HttpClient.newHttpClient();
-    var request = HttpRequest.newBuilder()
-            .uri(URI.create("https://studentsite.gunadarma.ac.id/"))
-            .build();
+        var client = HttpClient.newHttpClient();
+        var request = HttpRequest.newBuilder()
+                .uri(URI.create("https://studentsite.gunadarma.ac.id/"))
+                .build();
 
-    client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
-            .thenApply(HttpResponse::body)
-            .thenAccept(out::println)
-            .join();
-  }
+        client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
+                .thenApply(HttpResponse::body)
+                .thenAccept(out::println)
+                .join();
+    }
 }

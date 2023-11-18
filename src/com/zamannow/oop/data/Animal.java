@@ -1,7 +1,7 @@
 package com.zamannow.oop.data;
 
 public abstract class Animal {
-  String name;
+    String name;
 
-  abstract void run();
+    abstract void run();
 }

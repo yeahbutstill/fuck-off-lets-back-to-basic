@@ -1,24 +1,24 @@
 package id.toki.tlx.algo;
 
 public class Kotak {
-  double panjang;
-  double lebar;
-  double tinggi;
+    double panjang;
+    double lebar;
+    double tinggi;
 
-  // mendefinisikan constructor untuk kelas kotak
-  public Kotak() {
-    panjang = 4;
-    tinggi = 3;
-    lebar = 2;
-  }
+    // mendefinisikan constructor untuk kelas kotak
+    public Kotak() {
+        panjang = 4;
+        tinggi = 3;
+        lebar = 2;
+    }
 
-  public Kotak(double panjang, double lebar, double tinggi) {
-    this.panjang = panjang;
-    this.lebar = lebar;
-    this.tinggi = tinggi;
-  }
+    public Kotak(double panjang, double lebar, double tinggi) {
+        this.panjang = panjang;
+        this.lebar = lebar;
+        this.tinggi = tinggi;
+    }
 
-  double hitungVolume() {
-    return (panjang * lebar * tinggi);
-  }
+    double hitungVolume() {
+        return (panjang * lebar * tinggi);
+    }
 }

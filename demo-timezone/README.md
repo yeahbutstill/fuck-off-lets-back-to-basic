@@ -1,9 +1,11 @@
 # Selalu nongkrong di artivisi
-Terimakasih banyak Pak Endy 
+
+Terimakasih banyak Pak Endy
 ![img.png](img.png)
 https://youtu.be/1JdNcPA7p0U?si=z5sXrdOpWLbtmby9
 
 ### Login with psql
+
 ```shell
 psql -h 127.0.0.1 -U demotimezone demotimezonedb
 
@@ -15,6 +17,7 @@ psql -h 127.0.0.1 -U demotimezone demotimezonedb
 ```
 
 ### Run App
+
 ```shell
 mvn clean install spring-boot:run
 ```

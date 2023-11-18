@@ -1,11 +1,11 @@
 package id.toki.tlx.interfaces;
 
 public interface Light {
-  Boolean on();
+    Boolean on();
 
-  Boolean off();
+    Boolean off();
 
-  Integer brighten(Integer i);
+    Integer brighten(Integer i);
 
-  Integer dim(Integer i);
+    Integer dim(Integer i);
 }
