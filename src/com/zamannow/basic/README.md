@@ -263,3 +263,20 @@
 ### Question 15: What is the role of the equals() and hashCode() methods in Java?
 - Jawaban: Metode equal() digunakan untuk membandingkan persamaan dua objek. Biasanya ditimpa di kelas untuk menentukan perbandingan kesetaraan khusus berdasarkan atribut tertentu. Metode hashCode() mengembalikan nilai integer yang mewakili pengidentifikasi unik objek. Ini digunakan dalam struktur data berbasis hash seperti HashMap untuk menemukan dan membandingkan objek dengan cepat.
 
+### Question 16: What is the difference between method overriding and method overloading in Java?
+- Jawaban: Penggantian metode terjadi ketika subkelas menyediakan implementasinya sendiri atas metode yang sudah ditentukan dalam superkelasnya. Tanda tangan metode (nama, tipe kembalian, dan parameter) harus sama. Metode overriding digunakan untuk mencapai perilaku polimorfik.
+- Sebaliknya, kelebihan metode mengacu pada memiliki beberapa metode di kelas yang sama dengan nama yang sama tetapi parameternya berbeda. Metode dapat memiliki jumlah parameter yang berbeda atau jenis parameter yang berbeda. Kelebihan metode digunakan untuk menyediakan berbagai cara untuk memanggil metode yang sama dengan kombinasi argumen yang berbeda.
+
+### Question 17: What are abstract classes in Java, and when would you use them?
+- Jawaban: Kelas abstrak di Java adalah kelas yang tidak dapat dipakai dan dimaksudkan untuk dijadikan subkelas. Ia dapat memiliki metode abstrak (metode tanpa implementasi) maupun metode konkrit. Kelas abstrak berfungsi sebagai cetak biru untuk subkelas dan dapat menentukan perilaku dan properti umum. Mereka digunakan ketika Anda ingin menyediakan antarmuka umum dan implementasi parsial ke sekelompok kelas terkait.
+
+### Question 18: What is the difference between composition and aggregation in Java?
+- Jawaban: Komposisi dan agregasi keduanya merupakan bentuk asosiasi antar kelas di Java.
+- Komposisi mewakili hubungan “keseluruhan-bagian” yang kuat, di mana masa hidup objek yang terkandung bergantung pada masa hidup objek kontainer. Objek kontainer memiliki dan mengelola siklus hidup objek yang ada di dalamnya.
+- Agregasi, di sisi lain, mewakili hubungan “keseluruhan-bagian” yang lemah, di mana objek-objek yang terkandung dapat ada secara independen dari objek kontainer. Objek container menyimpan referensi ke objek yang ada di dalamnya, namun objek tersebut bisa berada di luar cakupan container.
+
+### Question 19: How do you achieve multiple inheritance in Java?
+- Java tidak mendukung pewarisan banyak kelas, di mana suatu kelas dapat mewarisi dari beberapa kelas. Namun, Java mendukung banyak pewarisan antarmuka. Sebuah kelas dapat mengimplementasikan banyak antarmuka, memungkinkannya mewarisi dan mengimplementasikan perilaku yang ditentukan dalam antarmuka tersebut.
+
+### Question 20: What is the super() keyword used for in Java constructors?
+- Jawaban: Kata kunci super() digunakan untuk memanggil konstruktor superclass (kelas induk) dari subkelas (kelas anak). Biasanya digunakan ketika subkelas perlu melakukan inisialisasi tambahan atau ketika konstruktor superkelas memerlukan argumen. Panggilan super() harus menjadi pernyataan pertama dalam konstruktor subkelas.
