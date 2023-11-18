@@ -212,3 +212,54 @@
 - Inheritance: Mengizinkan kelas mewarisi properti dan perilaku dari kelas induk, memfasilitasi penggunaan kembali kode, dan menciptakan hubungan “is-a”.
 - Polymorphism: Kemampuan objek untuk mengambil berbagai bentuk, memungkinkan kelas yang berbeda untuk mengimplementasikan metode yang sama dengan cara yang berbeda.
 - Abstraction: Menyederhanakan sistem yang kompleks dengan merepresentasikan fitur-fitur penting dan menyembunyikan detail yang tidak perlu.
+
+### Question 2: What is the difference between a class and an object in Java?
+- Jawaban: Di Java, kelas adalah cetak biru atau templat yang mendefinisikan struktur, perilaku, dan properti objek. Ini berfungsi sebagai cetak biru untuk membuat instance objek. Sebuah objek, di sisi lain, adalah turunan dari sebuah kelas. Ini mewakili entitas tertentu yang memiliki status dan perilakunya sendiri berdasarkan kelas tempat instance tersebut dibuat.
+
+### Question 3: What is the difference between composition and inheritance in Java?
+- Jawaban: Komposisi dan pewarisan adalah dua cara untuk mencapai penggunaan kembali kode di Java. Komposisi adalah hubungan dimana suatu kelas berisi satu atau lebih instance dari kelas lain sebagai variabel anggota. Ini mempromosikan fleksibilitas dan desain yang digabungkan secara longgar. Warisan, di sisi lain, adalah hubungan “is-a” di mana suatu kelas memperoleh properti dan perilaku dari kelas induk. Ini mempromosikan penggunaan kembali kode tetapi dapat mengarah pada penggabungan yang lebih erat dan hierarki kelas yang lebih kaku.
+
+### Question 4: Explain the concept of method overloading and method overriding.
+- Jawaban: Kelebihan metode mengacu pada memiliki beberapa metode di kelas yang sama dengan nama yang sama tetapi parameternya berbeda. Kompiler membedakan metode-metode ini berdasarkan jumlah, jenis, dan urutan parameter. Kelebihan metode memungkinkan nama metode yang sama digunakan untuk perilaku yang berbeda.
+- Penggantian metode terjadi ketika subkelas menyediakan implementasinya sendiri atas metode yang sudah ditentukan di kelas induknya. Metode dalam subkelas harus memiliki nama, tipe pengembalian, dan parameter yang sama (atau tipe pengembalian kovarian), dan harus ditandai dengan anotasi @Override. Penggantian metode memungkinkan perilaku polimorfik dan mengaktifkan pemanggilan metode yang paling sesuai berdasarkan jenis objek saat runtime.
+
+### Question 5: What is the purpose of the final keyword in Java?
+- Jawaban: Di Java, kata kunci final digunakan untuk membuat variabel, metode, atau kelas tidak dapat diubah atau diubah. Ketika diterapkan pada suatu variabel, ini mencegah nilainya diubah. Ketika diterapkan pada suatu metode, ini mencegah metode tersebut ditimpa di subkelas mana pun. Ketika diterapkan ke suatu kelas, ini mencegah kelas tersebut dijadikan subkelas.
+
+### Question 6: What is the difference between an abstract class and an interface in Java?
+- Jawaban: Di Java, kelas abstrak adalah kelas yang tidak dapat dipakai dan dimaksudkan untuk dijadikan subkelas. Itu bisa berisi metode abstrak dan non-abstrak, dan bisa memiliki variabel anggota. Kelas abstrak menyediakan interface umum dan perilaku bersama untuk subkelasnya.
+- Di sisi lain, interface di Java adalah kumpulan metode abstrak yang menentukan kontrak untuk kelas yang mengimplementasikannya. Itu tidak boleh memiliki variabel anggota atau implementasi metode. interface memungkinkan kelas memiliki banyak warisan dengan mengimplementasikan banyak interface.
+- Singkatnya, meskipun kelas abstrak menyediakan perilaku umum dan dapat memiliki variabel anggota, interface menentukan kontrak bagi kelas untuk diimplementasikan dan mengaktifkan pewarisan berganda.
+
+### Question 7: What is method overloading and method overriding in Java?
+- Jawaban: Kelebihan metode mengacu pada praktik memiliki beberapa metode di kelas yang sama dengan nama yang sama tetapi parameternya berbeda. Kompiler menentukan metode mana yang akan dipanggil berdasarkan jumlah, jenis, dan urutan parameter. Kelebihan metode memungkinkan metode dengan fungsi serupa tetapi parameter masukan berbeda dikelompokkan bersama di bawah nama yang sama.
+- Sebaliknya, penggantian metode terjadi ketika subkelas menyediakan implementasinya sendiri atas metode yang telah ditentukan di kelas induknya. Metode dalam subkelas harus memiliki nama, tipe pengembalian, dan parameter yang sama (atau tipe pengembalian kovarian), dan harus ditandai dengan anotasi @Override. Penggantian metode memungkinkan perilaku polimorfik, di mana subkelas dapat memiliki implementasi sendiri atas metode yang ditentukan di kelas induknya.
+
+### Question 8: What is the purpose of the super keyword in Java?
+- Jawaban: Kata kunci super di Java digunakan untuk merujuk pada superclass (kelas induk) dari kelas saat ini. Hal ini sering digunakan untuk memanggil konstruktor atau metode superkelas, mengakses variabel superkelas, atau membedakan antara metode atau variabel superkelas dan subkelas dengan nama yang sama. Kata kunci super biasanya digunakan dalam skenario di mana subkelas ingin memperluas fungsionalitas kelas induknya sambil tetap memanfaatkan fitur kelas induk.
+
+### Question 9: Explain the concept of encapsulation in Java.
+- Jawaban: Enkapsulasi adalah salah satu prinsip dasar pemrograman berorientasi objek. Ini melibatkan penggabungan data (variabel) dan metode (fungsi) menjadi satu unit yang disebut kelas. Kelas menyediakan antarmuka terkontrol untuk berinteraksi dengan keadaan internalnya, menyembunyikan detail implementasi dari akses luar. Enkapsulasi melindungi integritas data dengan mencegah akses dan manipulasi langsung, memastikan bahwa data diakses dan dimodifikasi hanya melalui metode yang ditentukan. Hal ini membantu menjaga konsistensi data, merangkum logika kompleks, dan memfasilitasi pemeliharaan dan fleksibilitas kode.
+
+### Question 10: What is the role of the this keyword in Java?
+- Jawaban: Kata kunci this di Java adalah referensi ke instance objek saat ini dalam suatu kelas. Hal ini terutama digunakan untuk membedakan antara variabel instan dan parameter atau variabel lokal yang memiliki nama yang sama. Kata kunci this memungkinkan Anda mengakses dan memanipulasi anggota objek saat ini (variabel dan metode). Ini biasanya digunakan dalam konstruktor, metode instan, dan setter untuk merujuk pada keadaan dan perilaku objek saat ini.
+
+### Question 11: What is the difference between a static method and an instance method in Java?
+- Jawaban: Di Java, metode statis adalah milik kelas itu sendiri, bukan milik instance spesifik kelas tersebut. Itu bisa dipanggil langsung di kelas itu sendiri tanpa perlu membuat instance objek. Metode statis hanya dapat mengakses variabel statis dan metode statis lainnya. Di sisi lain, metode instan dikaitkan dengan turunan kelas dan dapat mengakses variabel instan dan variabel statis.
+
+### Question 12: What is the purpose of the final keyword when used with classes and methods?
+- Jawaban: Ketika kata kunci final digunakan dengan suatu kelas, itu berarti kelas tersebut tidak dapat disubklasifikasikan atau diperluas. Ini mencegah kelas lain untuk mewarisinya. Ketika final digunakan dengan suatu metode, itu berarti bahwa metode tersebut tidak dapat ditimpa oleh subkelas mana pun. Ini memastikan bahwa perilaku metode yang didefinisikan dalam superclass tetap tidak berubah.
+
+### Question 13: What is the difference between shallow copying and deep copying?
+- Jawaban: Penyalinan dangkal dan penyalinan dalam adalah konsep yang berkaitan dengan kloning objek. Penyalinan dangkal membuat objek baru dengan lokasi memori terpisah tetapi berbagi referensi objek internal dengan objek asli. Sebaliknya, penyalinan dalam membuat objek baru dengan lokasi memori terpisah dan juga membuat salinan baru dari objek internal, menyalin referensinya secara rekursif.
+
+### Question 14: What are access modifiers in Java, and what are their different levels?
+- Jawaban: Pengubah akses menentukan visibilitas dan aksesibilitas kelas, variabel, dan metode di Java. Ada empat pengubah akses:
+- publik: Pengubah akses publik mengizinkan akses tidak terbatas ke kelas, variabel, atau metode dari kelas atau paket lain mana pun.
+- protected: Pengubah akses yang dilindungi memungkinkan akses dalam paket yang sama atau berdasarkan subkelas bahkan dalam paket lain.
+- privat: Pengubah akses privat membatasi akses ke kelas yang sama saja dan menyembunyikan anggota dari kelas lain.
+- Default (tanpa pengubah): Ketika tidak ada pengubah akses yang ditentukan, pengubah akses default mengizinkan akses dalam paket yang sama tetapi tidak dari paket lain.
+
+### Question 15: What is the role of the equals() and hashCode() methods in Java?
+- Jawaban: Metode equal() digunakan untuk membandingkan persamaan dua objek. Biasanya ditimpa di kelas untuk menentukan perbandingan kesetaraan khusus berdasarkan atribut tertentu. Metode hashCode() mengembalikan nilai integer yang mewakili pengidentifikasi unik objek. Ini digunakan dalam struktur data berbasis hash seperti HashMap untuk menemukan dan membandingkan objek dengan cepat.
+
