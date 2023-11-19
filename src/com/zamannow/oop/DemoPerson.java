@@ -6,6 +6,7 @@ public class DemoPerson {
         Person eko = new Person();
         eko.firstName = "Eko";
         eko.lastName = "Eko";
+        System.out.println(eko.sayHello("Dani"));
         System.out.println(eko.firstName);
         System.out.println(eko.lastName);
 
