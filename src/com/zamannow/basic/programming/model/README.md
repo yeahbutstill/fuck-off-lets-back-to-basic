@@ -535,8 +535,9 @@ dari berbagai distribusi; yang kedua mendukung perhitungan statistik:
 
 Metode inisialisasi() di StdRandom memungkinkan kita menyemai penghasil bilangan acak sehingga kita dapat mereproduksi
 eksperimen yang melibatkan bilangan acak. Sebagai referensi, penerapan sebagian besar metode ini diberikan di halaman
+
 32. Beberapa metode ini sangat mudah diterapkan; mengapa kita repot-repot memasukkannya ke perpustakaan? Jawaban atas
-pertanyaan ini adalah standar untuk perpustakaan yang dirancang dengan baik:
+    pertanyaan ini adalah standar untuk perpustakaan yang dirancang dengan baik:
 
 - Mereka menerapkan tingkat abstraksi yang memungkinkan kita fokus pada penerapan dan pengujian algoritme dalam buku,
   bukan menghasilkan objek acak atau menghitung statistik. Kode klien yang menggunakan metode seperti itu lebih jelas

@@ -1,12 +1,12 @@
 package com.leetcode.ch1;
 
 public class CreditCard {
-    protected double balance; // Curent balance
     // Instance variable
     private final String customer; // Name of the customer
     private final String bank; // Name of the bank
     private final String account; // Account identifier
     private final Integer limit; // Credit limit
+    protected double balance; // Curent balance
 
     // Constructor
     public CreditCard(String customer, String bank, String account, Integer limit, double balance) {
