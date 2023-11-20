@@ -3,6 +3,7 @@ package com.zamannow.oop;
 public class Rectangle extends Shape {
     /**
      * mengambil nilai corner
+     *
      * @return int
      */
     @Override

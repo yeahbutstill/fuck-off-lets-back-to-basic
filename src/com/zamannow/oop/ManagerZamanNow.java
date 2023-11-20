@@ -1,15 +1,14 @@
 package com.zamannow.oop;
 
-class ManagerZamanNow {
-    String name;
+class ManagerZamanNow extends EmployeeZamanNow {
     String company;
 
     ManagerZamanNow(String name) {
-        this.name = name;
+        super(name);
     }
 
     ManagerZamanNow(String name, String company) {
-        this.name = name;
+        super(name);
         this.company = company;
     }
 
