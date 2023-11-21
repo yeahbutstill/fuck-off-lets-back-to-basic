@@ -5,7 +5,9 @@ import java.math.BigDecimal;
 public class ProductDalamApp {
     public static void main(String[] args) {
         Product product1 = new Product("Mac Book Pro", new BigDecimal(25_000_000));
-        System.out.println(product1);
+        // karena field name dan price itu protected, dia bisa diakses di package yang sama
+        System.out.println(product1.name);
+        System.out.println(product1.price);
 
         Product product2 = new Product("Asus Tuf Gaming", new BigDecimal(12_000_000));
         System.out.println(product2);
