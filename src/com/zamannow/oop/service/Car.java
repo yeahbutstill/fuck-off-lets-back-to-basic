@@ -5,6 +5,7 @@ public interface Car extends HasBrand, Maintenance {
 
     Integer getTire();
 
+    // tidak wajib di override, aman jika interface ini sudah banyak yang implement di tiap class
     default Boolean isBig() {
         return false;
     }
