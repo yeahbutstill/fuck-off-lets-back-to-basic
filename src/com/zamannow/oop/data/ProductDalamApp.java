@@ -10,8 +10,14 @@ public class ProductDalamApp {
         System.out.println(product1.price);
         System.out.println();
 
-        Product product2 = new Product("Asus Tuf Gaming", new BigDecimal(12_000_000));
-        System.out.println(product2);
+        Product product2 = new Product("Mac Book Pro", new BigDecimal(25_000_000));
+        System.out.println(product2.name);
+        System.out.println(product2.price);
+        System.out.println(product1.equals(product2));
+        System.out.println();
+
+        Product product3 = new Product("Asus Tuf Gaming", new BigDecimal(12_000_000));
+        System.out.println(product3);
         System.out.println();
 
         Category ct001 = new Category("CT001", false);
