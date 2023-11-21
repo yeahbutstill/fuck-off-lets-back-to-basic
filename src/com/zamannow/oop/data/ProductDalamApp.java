@@ -8,9 +8,11 @@ public class ProductDalamApp {
         // karena field name dan price itu protected, dia bisa diakses di package yang sama
         System.out.println(product1.name);
         System.out.println(product1.price);
+        System.out.println();
 
         Product product2 = new Product("Asus Tuf Gaming", new BigDecimal(12_000_000));
         System.out.println(product2);
+        System.out.println();
 
         Category ct001 = new Category("CT001", false);
         ct001.setId(null);
