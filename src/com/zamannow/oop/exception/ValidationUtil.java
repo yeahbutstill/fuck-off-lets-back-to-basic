@@ -5,6 +5,13 @@ import com.zamannow.oop.data.LoginReq;
 
 import java.lang.reflect.Field;
 
+/**
+ * Membuat Exception
+ * Exception biasanya terjadi di method, ketika kita membuat exception di sebuah method, maka method tersebut harus ditandai
+ * dengan kata kunci throws diikuti dengan class exception nya. (buat ngasih tau ke orang yang akan menggunakan method tersbut, kalau method tersebut bisa menyebabkan error)
+ * Jika method tersebut bisa menimbulkan lebih dari satu jenis exception, kita bisa menambahkan lebih dari satu class exception
+ * Di dalam kode program kita, untuk membuat exception kita cukup menggunakan kata kunci throw, diikuti dengan object exception nya
+ */
 public class ValidationUtil {
     public static void validateChecked(LoginReq loginReq)
             throws ValidationException, NullPointerException {
