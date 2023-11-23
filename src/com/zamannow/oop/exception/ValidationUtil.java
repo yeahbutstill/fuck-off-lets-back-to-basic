@@ -41,6 +41,12 @@ public class ValidationUtil {
             throw new DatabaseError("Tidak bisa konek ke database");
     }
 
+    /**
+     * Reflection adalah kemampuan melihat struktur aplikasi kita dapat saat berjalan
+     * Reflection biasanya sangat berguna saat kita ingin membuat library ataupun framework, sehingga bisa meng-otomatiskan pekerjaan
+     * Untuk mengakses reflection class dari sebuah object, kita bisa menggunakan method getClass() ini bawaan dari Class object atau NamaClass.class
+     * @param object
+     */
     public static void validationReflection(Object object) {
         Class<?> aClass = object.getClass(); // untuk mendapatkan classnya
         Field[] declaredField = aClass.getDeclaredFields(); // untuk mendapatkan propertiesnya
