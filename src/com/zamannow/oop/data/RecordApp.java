@@ -10,20 +10,18 @@ public class RecordApp {
         System.out.println(loginReq.password());
         System.out.println(loginReq);
         loginReq.sayHello();
-        System.out.println();
+        System.out.println("==========================================");
 
         LoginReq loginReq1 = new LoginReq(null, null);
         System.out.println(loginReq1);
         loginReq1.sayHello();
-        System.out.println();
+        System.out.println("===========================================");
 
         LoginReq loginReq2 = new LoginReq("lnd");
         System.out.println(loginReq2.username());
         System.out.println(loginReq2.password());
         loginReq2.sayHello();
         System.out.println(loginReq2);
-        System.out.println();
-        System.out.println();
         System.out.println("====================================");
 
         /**
@@ -58,11 +56,18 @@ public class RecordApp {
             System.out.println("Error engga error, tetap di panggil");
         }
 
-        System.out.println();
-        System.out.println();
-        System.out.println();
+        System.out.println("========================================");
 
-        LoginReq loginReq4 = new LoginReq();
+
+
+        LoginReq loginReq4 = new LoginReq(null, null);
+        // walaupun tidak wajib menambahkan try catch, tapi kalau terjadi error, applikasi kita tetap mati dan block dan statement selanjutnya tidak akan dijalankan
+        /**
+         * bisa ini akan di try catch nya, di error handler
+         * jadi walaupun runtime exception tidak wajib di try-catch, tapi ada baiknya kita tetap melakukan try-catch
+         * Karena jika terjadi runtime exception, yang ditakutkan adalah program kita berhenti
+         */
         ValidationUtil.validateRuntime(loginReq4);
+        System.out.println("tidak dijalankan karena di atas tertangkap error dengan runtime exception");
     }
 }

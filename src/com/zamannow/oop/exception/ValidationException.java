@@ -15,7 +15,7 @@ package com.zamannow.oop.exception;
  * Jika method tersebut bisa menimbulkan lebih dari satu jenis exception, kita bisa menambahkan lebih dari satu class exception
  * Di dalam kode program kita, untuk membuat exception kita cukup menggunakan kata kunci throw, diikuti dengan object exception nya
  */
-public class ValidationException extends Throwable {
+public class ValidationException extends Throwable { // btw kalau yang extends throwable artinya dia checked exception ya, exception yang wajib di try catch
     public ValidationException() {
         super();
     }
