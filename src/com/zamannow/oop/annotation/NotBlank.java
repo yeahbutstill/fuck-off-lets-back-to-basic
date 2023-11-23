@@ -12,9 +12,10 @@ import java.lang.annotation.Target;
  * Annotation sediri bisa diakses menggunakan Reflection.
  * Untuk membuat annotation, kita bisa menggunakan kata kunci @interface
  * Annotation hanya bisa memiliki method dengan tipe data sederhana, dan bisa memiliki default value
- *
- *
+ * <p>
+ * <p>
  * Attribute Annotation
+ *
  * @Target memberitahu annotation bisa digunakan di mana? Class, method, field dan lain-lain
  * @Retention memberitahu annotation apakah disimpan di hasil kompilasi, dan apakah bisa dibaca oleh reflection?
  */

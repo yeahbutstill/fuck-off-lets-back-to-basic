@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @ResponseStatus(value = HttpStatus.BAD_REQUEST)
 public class CardAlreadyExistsException extends RuntimeException {
 
-    public CardAlreadyExistsException(String message){
+    public CardAlreadyExistsException(String message) {
         super(message);
     }
 

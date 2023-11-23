@@ -12,9 +12,10 @@ import java.lang.annotation.Target;
  * Annotation sediri bisa diakses menggunakan Reflection.
  * Untuk membuat annotation, kita bisa menggunakan kata kunci @interface
  * Annotation hanya bisa memiliki method dengan tipe data sederhana, dan bisa memiliki default value
- *
- *
+ * <p>
+ * <p>
  * Attribute Annotation
+ *
  * @Target memberitahu annotation bisa digunakan di mana? Class, method, field dan lain-lain
  * @Retention memberitahu annotation apakah disimpan di hasil kompilasi, dan apakah bisa dibaca oleh reflection?
  */
@@ -29,6 +30,7 @@ public @interface Fancy {
 /**
  * Predefined Annotation
  * Java juga sudah memiliki annotation bawaan, seperti:
+ *
  * @Override untuk menandai bahwa method yang meng-override method parent class nya
  * @Deprecated untuk menandai bahwa method tersebut tidak direkomendasikan lagi untuk digunakan
  * @FunctionalInterface untuk menandai bahawa class tersebut bisa dibuat sebagai lambda expression

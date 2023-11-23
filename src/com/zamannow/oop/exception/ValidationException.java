@@ -7,8 +7,8 @@ package com.zamannow.oop.exception;
  * Kita bisa menggunakan class exception sendiri, atau menggunakan yang sudah disediakan oleh Java
  * Jika kita ingin membuat exception, maka kita harus membuat class yang extends class Throwable atau turunan-turunannya
  * Jadi semua exception parent class nya adalah class Throwable.
- *
- *
+ * <p>
+ * <p>
  * Membuat Exception
  * Exception biasanya terjadi di method, ketika kita membuat exception di sebuah method, maka method tersebut harus ditandai
  * dengan kata kunci throws diikuti dengan class exception nya. (buat ngasih tau ke orang yang akan menggunakan method tersbut, kalau method tersebut bisa menyebabkan error)

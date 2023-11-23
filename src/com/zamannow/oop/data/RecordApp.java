@@ -51,13 +51,11 @@ public class RecordApp {
          * Ini sangat cocok ketika kita ingin melakukan sesuatu, tidak peduli sukses ataupun gagal, misal di block try kita
          * ingin membaca file, di block catch kita akan tangkap jika terjadi error, dan di block finally error ataupun sukses membaca file
          * Kita wajib menutup koneksi ke file tersebut, biar tidak menggantung di memory
-         */
-        finally { // nah kalau block ini error engga error tetep eksekusi
+         */ finally { // nah kalau block ini error engga error tetep eksekusi
             System.out.println("Error engga error, tetap di panggil");
         }
 
         System.out.println("========================================");
-
 
 
         LoginReq loginReq4 = new LoginReq(null, null);

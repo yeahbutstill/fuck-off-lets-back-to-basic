@@ -7,7 +7,7 @@ import java.io.Serializable;
  * Record class digunakan untuk mempermudah pembuatan jenil class tersebut
  * Saat kita membuat record class, secara otomatis java akan membuatkan getter, equals, hashCode dan toString method secara otomatis, dan juga constructor secara otomatis
  * Saat membuat record class, secara otomatis kita akan meng-extends class java.lang.Record, yang artinya kita tidak bisa extends class lain. Namun kita tetap bisa meng-implement interface
- *
+ * <p>
  * Record Class itu Immutable, artinya tidak bisa diubah. jadi saat bikin object kita tidak bisa ubah valuenya atau nilainya
  *
  * @param username

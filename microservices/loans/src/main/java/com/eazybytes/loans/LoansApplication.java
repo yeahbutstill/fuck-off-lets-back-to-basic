@@ -15,28 +15,28 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @EntityScan("com.eazybytes.loans.model")*/
 @EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
 @OpenAPIDefinition(
-		info = @Info(
-				title = "Loans microservice REST API Documentation",
-				description = "EazyBank Loans microservice REST API Documentation",
-				version = "v1",
-				contact = @Contact(
-						name = "Madan Reddy",
-						email = "tutor@eazybytes.com",
-						url = "https://www.eazybytes.com"
-				),
-				license = @License(
-						name = "Apache 2.0",
-						url = "https://www.eazybytes.com"
-				)
-		),
-		externalDocs = @ExternalDocumentation(
-				description = "EazyBank Loans microservice REST API Documentation",
-				url = "https://www.eazybytes.com/swagger-ui.html"
-		)
+        info = @Info(
+                title = "Loans microservice REST API Documentation",
+                description = "EazyBank Loans microservice REST API Documentation",
+                version = "v1",
+                contact = @Contact(
+                        name = "Madan Reddy",
+                        email = "tutor@eazybytes.com",
+                        url = "https://www.eazybytes.com"
+                ),
+                license = @License(
+                        name = "Apache 2.0",
+                        url = "https://www.eazybytes.com"
+                )
+        ),
+        externalDocs = @ExternalDocumentation(
+                description = "EazyBank Loans microservice REST API Documentation",
+                url = "https://www.eazybytes.com/swagger-ui.html"
+        )
 )
 public class LoansApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(LoansApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(LoansApplication.class, args);
+    }
 }
