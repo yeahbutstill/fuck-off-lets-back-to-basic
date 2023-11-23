@@ -28,3 +28,15 @@
 - Kita juga bisa menggunakan generic parameter type di method 
 - Generic parameter type yang kita deklarasikan di method, hanya bisa diakses di method tersebut, tidak bisa digunakan di luar method 
 - Ini cocok jika kita ingin membuat generic method, tanpa harus mengubah deklarasi class 
+
+# Invariant
+- Secara default, saat kita membuat generic parameter type, sifat parameter tersebut adalah invariant
+- Invariant artinya tidak boleh di subtitusikan dengan subtype (child) atau supertype (parent)
+- Artinya saat kita membuat object Contoh<String>, maka tidak sama dengan Contoh<Object>, begitupun sebaliknya, saat membuat object Contoh<Object>, maka tidak sama dengan Contoh<String>
+- Walaupun kalau dipikir-pikir kalau di Polymorphism itu kita boleh mengsubtitut dari si parent ke childnya. Tapi kalau di Generic itu tidak bisa 
+
+# Covariant
+- Artinya adalah kita bisa melakukan subtitusi subtype (child) dengan supertype (parent)
+- Cara agar generic object kita menjadi covariant adalah dengan menggunakan kata kunci (? extends ParentClass)
+- Artinya saat kita membuat object Contoh<String>, maka bisa disubtitusi menjadi Contoh<? extends Object>
+- Covariant adalah read-only, jadi kita tidak bisa mengubah data generic nya
