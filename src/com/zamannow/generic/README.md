@@ -71,3 +71,9 @@
 - Kadang kita ingin membatasi tipe data dengan beberapa jenis tipe data di generic parameter type
 - Kita bisa menambahkan beberapa bounded type parameter dengan karakter & setelah bounded type pertama
 - Jika ingin menambahkan lagi, cukup gunakan karakter & diikuti bounded type nya lagi
+
+# Wildcard
+- Kadang ada kasus kita tidak peduli dengan generic parameter type pada object
+- Misal kita hanya ingin mem-print data T, tidak peduli tipe apapun
+- Jika kita mengalami kasus seperti ini, kita bisa menggunakan wildcard
+- Wildcard bisa dibuat dengan mengganti generic parameter type dengan karakter ?
