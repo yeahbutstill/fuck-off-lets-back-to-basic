@@ -13,3 +13,13 @@
 # Java Collection Interface
 - ada 2 group
 - ![Screenshot from 2023-11-24 10-19-14.png](Screenshot%20from%202023-11-24%2010-19-14.png)
+
+# Iterable Interface
+- Iterable adalah parent untuk semua collection di Java, Kecuali Map class
+- Iterable sediri sangat sederhana, hanya digunakan agar mendukung for-each-loop
+- Karena semua collection pasti implement iterable, secara otomatis maka semua collection di Java mendukung perulangan for-each, jadi bukan cuman Array
+
+# Iterator Interface
+- Tidak ada magic di Java, sebenernya for-each di iterable bisa terjadi karena ada method iterator() yang mengembalikan object Iterator
+- Iterator adalah interface yang mendefinisikan cara kita melakukan megakses element di collection secara sequential
+- For-each sendiri muncul sejak Java 5, sebelum Java 5 untuk melakukan iterasi collection, biasanya dilakukan manual menggunakan Iterator object
