@@ -93,3 +93,7 @@
 - Operator perbandingan tersebut bisa kita lakukan, jika object kita mewariskan interface generic Comparable
 - Ini banyak sekali digunakan seperti untuk proses pengurutan data misalnya
 
+# Comparator Interface
+- Jika kita ingin mengurutkan class yang kita gunakan, cukup mudah tinggal implement interface Comparable
+- Namun bagaimana jika class tersebut milik orang lain? Tidak bisa kita ubah?
+- Maka kita bisa menggunakan interface generic yang bernama Comparator
