@@ -77,3 +77,12 @@
 - Misal kita hanya ingin mem-print data T, tidak peduli tipe apapun
 - Jika kita mengalami kasus seperti ini, kita bisa menggunakan wildcard
 - Wildcard bisa dibuat dengan mengganti generic parameter type dengan karakter ?
+
+# Type Erasure
+- Ini adalah proses pengecekan generic pada saat compile time dan menghiraukan pengecekan pada saat runtime
+- Type Erasure menjadikan informasi generic yang kita buat akan hilang ketika kode program kita telah di compile menjadi binary file
+- Compailer akan mengubah generic parameter type menjadi tipe Object di Java
+
+# Problem Type Erasure
+- Karena informasi generic itu hilang, ketika sudah menjadi binary file
+- Oleh karena itu, konversi tipe data generic akan berbahaya jika dilakukan secara tidak bijak
