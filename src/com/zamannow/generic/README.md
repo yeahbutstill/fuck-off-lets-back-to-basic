@@ -86,3 +86,10 @@
 # Problem Type Erasure
 - Karena informasi generic itu hilang, ketika sudah menjadi binary file
 - Oleh karena itu, konversi tipe data generic akan berbahaya jika dilakukan secara tidak bijak
+
+# Comparable
+- Sebelumnya kita sudah tahu, bahawa operator perbandingan object menggunakan method equals
+- Bagaimana dengan operator perbandingan lainnya? seperti kurang dari atau lebih dari?
+- Operator perbandingan tersebut bisa kita lakukan, jika object kita mewariskan interface generic Comparable
+- Ini banyak sekali digunakan seperti untuk proses pengurutan data misalnya
+
