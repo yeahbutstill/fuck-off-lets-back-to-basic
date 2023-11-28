@@ -9,17 +9,14 @@
 - ![img_1.png](img_1.png)
 
 # Konversi Tipe Data Number
-
 - Widening Casting (otomatis) byte -> short -> int -> long -> float -> double
 - Narrowing Casting (manual) double -> float -> long -> int -> char -> short -> byte
 
 # Tipe Data Character
-
 - Data Character(huruf) di Java direpresentasikan oleh tipe char.
 - Untuk membuat data char di Java, kita bisa menggunakan tanda ''(kurung buka kurung tutup petik satu)
 
 # Tipe Data Boolean
-
 - Tipe data boolean adalah tipe data yang memiliki 2 nilai, yaitu benar dan salah
 - Tipe data boolean di Java direpresentasikan dengan kata kunci boolean
 - Nilai benar direpresentasikan dengan kata kunci true
@@ -40,6 +37,11 @@
   tidak bisa berubah-ubah tipe data seperti dibahas pemrograman PHP atau JavaScript
 - Untuk membuat variable di Java kita bisa menggunakan nama tipe data lalu diikuti dengan nama variable nya
 - Nama variable tidak boleh mengandung whitespace(spasi, enter atau tab) dan tidak boleh seluruhnya number
+
+# Kata kunci var
+- Sejak Java 10, java mendukung pembuatan variable dengan kata kunci var, sehingga kita tidak perlu menyebutkan tipe datanya
+- Namun perlu diingat, saat kita menggunakan kata kunci var untuk membuat variable, kita harus menginisiasi value / nilai dari variable tesebut secara langsung
+
 
 # Kata Kunci Final
 
