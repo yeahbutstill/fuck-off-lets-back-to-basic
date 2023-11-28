@@ -23,3 +23,10 @@
 - Tidak ada magic di Java, sebenernya for-each di iterable bisa terjadi karena ada method iterator() yang mengembalikan object Iterator
 - Iterator adalah interface yang mendefinisikan cara kita melakukan megakses element di collection secara sequential
 - For-each sendiri muncul sejak Java 5, sebelum Java 5 untuk melakukan iterasi collection, biasanya dilakukan manual menggunakan Iterator object
+
+# Collection Interface
+- Selain ada Iterable interface, parent class semua collection di Java adalah Collection
+- Kalau Iterable interface digunakan sebagai kontrak untuk meng-iterasi data secara sequential
+- Collection merupakan kontrak untuk manipulasi data collection, seperti menambah, menghapus dan mengecek isi data collection
+- Tidak ada direct implementasi untuk Collection, karena collection nanti akan dibagi lagi menjadi List, Set, dan Queue
+

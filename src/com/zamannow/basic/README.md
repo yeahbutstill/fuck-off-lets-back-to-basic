@@ -1,3 +1,13 @@
+# Tipe Data Number
+- Integer Number (Bilangan Bulat)
+- Floating Point Number (Bilangan pecahan)
+
+# Integer Number
+- ![img.png](img.png)
+
+# Floating Point Number
+- ![img_1.png](img_1.png)
+
 # Konversi Tipe Data Number
 
 - Widening Casting (otomatis) byte -> short -> int -> long -> float -> double
