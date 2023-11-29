@@ -59,6 +59,10 @@
 - Tipe data bukan primitif bisa memiliki method/function
 - Di Java, semua tipe data primitif memiliki representasi tipe data bukan primitifnya
 
+# Representasi Tipe Data Primitif
+- ![img_2.png](img_2.png)
+- ![img_3.png](img_3.png)
+
 # Tipe Data Array
 
 - Array adalah tipe data yang berisikan kumpulan data dengan tipe yang sama
