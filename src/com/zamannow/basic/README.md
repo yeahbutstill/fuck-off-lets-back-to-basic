@@ -125,21 +125,22 @@
 - Expression adalah konstruksi dari variable, operator dan pemanggilan method yang mengevaluasi menjadi sebuah single
   value
 - Expression adalah core component dari statement
+- ![img_11.png](img_11.png)
 
 # Statement
 
 - Statement adalah bisa dibilang kalimat lengkap dalam bahasa.
 - Sebuah Statement berisikan execution komplit, biasanya diakhiri dengan titik koma
 - Ada beberapa jenis statement
-- Assigment expression
-- Penggunaan ++ dan --
-- Method invocation
-- Object creation expression
+- Assigment expression, ini adalah statement yang mengubah value
+- Penggunaan ++ dan --, ini adalah statement yang manbahkan nilainya ke diri sendiri
+- Method invocation, ini adalah manggil method 
+- Object creation expression, ini adalah pembuatan object baru
+- Jadi kalau kumpulan expression adalah statement
 
 # Block
 
 - Block adalah kumpulan statement yang terdiri dari nol atau lebih statement
-- Jadi kalau kumpulan expression adalah statement
 - Kalau kumpulan statement adalah block
 - Block itu diawali dan diakhiri dengan kurung kurawal { }
 
