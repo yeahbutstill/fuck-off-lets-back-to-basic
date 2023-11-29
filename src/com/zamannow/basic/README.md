@@ -173,6 +173,7 @@
 
 - Di Java versi 14, diperkenalkan switch expression dengan lambda
 - ini lebih mempermudah saat penggunaan switch expression karena kita tidak perlu lagi menggunakan kata kunci break
+- kalau teman-teman pengen tidak ada penggabungan antara nilai a dan nilai b, maka gunakan ini
 - -> {} block seperti ini yang disebut lambda
 
 # Kata kunci yield
