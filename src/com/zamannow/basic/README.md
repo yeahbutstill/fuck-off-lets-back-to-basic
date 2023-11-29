@@ -203,7 +203,7 @@
 - init statement akan dieksekusi hanya sekali diawal sebelum perulangan
 - kondisi akan dilakukan pengecekan dalam setiap perulangan, jika true perulangan akan dilakukan, jika false perulangan
   akan berhenti
-- post statement akan dieksekusi setiap kali diakhiri perulangan
+- post statement akan dieksekusi setiap kali diakhiri perulangan dan setiap perulangan akan dieksekusi
 - init statement, kondisi dan post statement tidak wajib diisi, jika kondisi tidak diisi, berarti kondisi selalu
   bernilai true
 
