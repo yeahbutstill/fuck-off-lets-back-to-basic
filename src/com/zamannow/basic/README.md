@@ -77,8 +77,14 @@
   ingin menubah data pertmama maka kita harus memasukan index 0, kalau ingin mengabil data yang terakhir harus memasukan
   index 9
 - array[index], untuk mengambil data di Array
-- array[index] = value, untuk menubah data di Array
+- array[index] = value, untuk mengubah data di Array
 - array.length, untuk mengambil panjang Array
+- Kalau di Java tidak ada istilah menghapus data array, karena kalau menghapus yang tadinya panjang array nya 10, jadi 9 itu engga bisa di Java
+- yang ada kita mungkin memasukan data kosong ke dalam array nya
+- Jadi di Java panjang Array sudah fix
+
+# Array di dalam Array
+- 
 
 # Operasi Perbandingan
 
