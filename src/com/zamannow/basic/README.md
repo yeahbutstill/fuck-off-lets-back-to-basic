@@ -84,7 +84,16 @@
 - Jadi di Java panjang Array sudah fix
 
 # Array di dalam Array
-- 
+- ![img_4.png](img_4.png)
+
+# Operasi Matematika
+- ![img_5.png](img_5.png)
+
+# Augmented Assignments
+- ![img_6.png](img_6.png)
+
+# Unary Operator
+- ![img_7.png](img_7.png)
 
 # Operasi Perbandingan
 
