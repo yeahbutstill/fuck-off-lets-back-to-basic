@@ -16,7 +16,7 @@ public class ValuesOfIJK {
 
         int max;
         int min = 10;
-        max = 17 - 4 / 10;
+        max = 17;
         max = max + 6;
         min = max - min;
         System.out.println(max * 2);

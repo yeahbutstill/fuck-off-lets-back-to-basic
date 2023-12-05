@@ -8,9 +8,9 @@ public class BJP3SelfCheck116withoutPrintStatements {
         System.out.print("  slithy toves did");
         System.out.print(" ");
         System.out.println("gyre and");
-        System.out.println(  "gimble");
+        System.out.println("gimble");
         System.out.println();
-        System.out.println(  "in the wabe." );
+        System.out.println("in the wabe.");
 
         System.out.println("===============================");
 

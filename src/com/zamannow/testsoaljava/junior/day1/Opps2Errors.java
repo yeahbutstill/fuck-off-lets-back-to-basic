@@ -1,7 +1,7 @@
 package com.zamannow.testsoaljava.junior.day1;
 
 public class Opps2Errors {
-    public static void main(String[]args) {
+    public static void main(String[] args) {
         int x = 0;
         System.out.println("x is " + x);
 
