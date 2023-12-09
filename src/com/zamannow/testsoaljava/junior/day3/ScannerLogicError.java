@@ -14,7 +14,5 @@ public class ScannerLogicError {
         } else {
             System.out.println("Odd.");
         }
-
-
     }
 }
