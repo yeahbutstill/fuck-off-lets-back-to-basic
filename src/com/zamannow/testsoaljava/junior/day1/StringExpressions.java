@@ -1,7 +1,5 @@
 package com.zamannow.testsoaljava.junior.day1;
 
-import java.util.Locale;
-
 public class StringExpressions {
     public static void main(String[] args) {
         // index       0123456789012345

@@ -1,7 +1,5 @@
 package com.zamannow.generic.boundedtypeparameter.constraint;
 
-import com.zamannow.generic.boundedtypeparameter.constraint.inheritance.Employee;
-import com.zamannow.generic.boundedtypeparameter.constraint.inheritance.Manager;
 import com.zamannow.generic.boundedtypeparameter.constraint.inheritance.MultipleBoundedTypeParameter;
 import com.zamannow.generic.boundedtypeparameter.constraint.inheritance.VicePresident;
 

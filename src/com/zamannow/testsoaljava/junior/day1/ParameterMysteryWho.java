@@ -1,7 +1,5 @@
 package com.zamannow.testsoaljava.junior.day1;
 
-import com.sun.nio.sctp.SendFailedNotification;
-
 public class ParameterMysteryWho {
     public static void main(String[] args) {
         String whom = "her";
