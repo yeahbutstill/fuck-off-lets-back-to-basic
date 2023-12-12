@@ -138,7 +138,6 @@ public class BJP3Exercise44daysInMonth {
         };
     }
 
-
     private static int daysInMonthSwitchLambda(int m) {
         int days = 0;
         switch (m) {
