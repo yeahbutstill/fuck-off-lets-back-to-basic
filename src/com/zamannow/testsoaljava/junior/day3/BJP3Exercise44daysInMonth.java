@@ -4,7 +4,7 @@ import java.io.*;
 
 public class BJP3Exercise44daysInMonth {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         // JEP 378: Text Blocks
         var html = """
                 <html>
@@ -35,6 +35,9 @@ public class BJP3Exercise44daysInMonth {
         System.out.println("--------------------------------");
         writeToFile();
         readFromFile();
+        System.out.println("-------------------------------------");
+        System.out.println(respMessage(200));
+        sequenceOfTypeChecks();
     }
 
     private static int daysInMonth(int m) {
@@ -49,8 +52,7 @@ public class BJP3Exercise44daysInMonth {
     // JEP 400 UTF-8 by default
     // write this on linux
     private static void writeToFile() {
-        try (FileWriter fileWriter = new FileWriter("Jep400-example.txt");
-             BufferedWriter buffWriter = new BufferedWriter(fileWriter)) {
+        try (FileWriter fileWriter = new FileWriter("Jep400-example.txt"); BufferedWriter buffWriter = new BufferedWriter(fileWriter)) {
             buffWriter.write("こんにちは");
         } catch (IOException e) {
             System.err.println(e);
@@ -59,8 +61,7 @@ public class BJP3Exercise44daysInMonth {
 
     // this problem when you read it on windows os
     private static void readFromFile() {
-        try (FileReader fileReader = new FileReader("Jep400-example.txt");
-             BufferedReader bufferedReader = new BufferedReader(fileReader)) {
+        try (FileReader fileReader = new FileReader("Jep400-example.txt"); BufferedReader bufferedReader = new BufferedReader(fileReader)) {
             String line = bufferedReader.readLine();
             System.out.println(line);
         } catch (IOException e) {
@@ -151,4 +152,23 @@ public class BJP3Exercise44daysInMonth {
         return days;
     }
 
+    public static String respMessage(int code) {
+        String message = "";
+        if (code == 200) message = "OK";
+        else if (code == 301) message = "Moved permanently";
+        else if (code == 404) message = "Not found";
+        return message;
+    }
+
+    public static void sequenceOfTypeChecks() throws IOException {
+        OutputStream out = System.err;
+        String str = "DNL";
+        switch (out) {
+            case ByteArrayOutputStream bout -> bout.writeBytes(str.getBytes());
+            case DataOutputStream dout -> dout.writeUTF(str);
+            case ObjectOutputStream oout -> oout.writeObject(str);
+            case OutputStream __ -> out.write(str.getBytes());
+//            default -> out.write(str.getBytes());
+        }
+    }
 }
