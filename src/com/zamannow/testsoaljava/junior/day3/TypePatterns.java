@@ -1,6 +1,5 @@
 package com.zamannow.testsoaljava.junior.day3;
 
-import com.zamannow.basic.programming.model.primitif.data.type.Array;
 
 import java.io.*;
 import java.util.Arrays;
