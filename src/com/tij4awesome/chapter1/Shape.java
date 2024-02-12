@@ -22,4 +22,9 @@ public class Shape {
     public void setColor(String color) {
         this.color = color;
     }
+
+    void doSomething(Shape shape) {
+        shape.erase();
+        shape.draw();
+    }
 }

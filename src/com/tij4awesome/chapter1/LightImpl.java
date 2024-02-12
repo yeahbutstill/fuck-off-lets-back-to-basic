@@ -10,11 +10,21 @@ public class LightImpl implements Light {
     }
 
     @Override
+    public void on() {
+        System.out.println("nyala");
+    }
+
+    @Override
     public Boolean off(int num) {
         if (num == 0) {
             System.out.println("Lampu mati");
         }
         return true;
+    }
+
+    @Override
+    public void off() {
+        System.out.println("mati");
     }
 
     @Override
@@ -30,7 +40,13 @@ public class LightImpl implements Light {
     }
 
     @Override
-    public Boolean dim() {
-        return false;
+    public void brighten() {
+        System.out.println("terangkan");
     }
+
+    @Override
+    public void dim() {
+        System.out.println("dimdimdim");
+    }
+
 }

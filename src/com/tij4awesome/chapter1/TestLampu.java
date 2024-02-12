@@ -2,10 +2,12 @@ package com.tij4awesome.chapter1;
 
 public class TestLampu {
     public static void main(String[] args) {
-        LightImpl light = new LightImpl();
-        light.on(1);
-//        light.off(0);
-        light.brighten(50);
-        System.out.println(light.dim());
+        LightImpl lightImpl = new LightImpl();
+        lightImpl.on(1);
+        lightImpl.on();
+        lightImpl.off(0);
+        lightImpl.off();
+        lightImpl.brighten(50);
+        lightImpl.dim();
     }
 }
