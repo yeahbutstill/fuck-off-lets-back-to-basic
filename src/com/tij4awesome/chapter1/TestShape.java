@@ -1,5 +1,9 @@
 package com.tij4awesome.chapter1;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 public class TestShape {
     public static void main(String[] args) {
         Square square = new Square();
@@ -28,5 +32,30 @@ public class TestShape {
         shape.doSomething(triangle1);
         System.out.println();
         shape.doSomething(line);
+        System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+
+        List<Integer> integerArrayListlist = new ArrayList<>(List.of(4, 1, 2, 3));
+        integerArrayListlist.add(20);
+        integerArrayListlist.add(3, 10);
+        integerArrayListlist.remove(0);
+        System.out.println(integerArrayListlist.get(0));
+        System.out.println(integerArrayListlist);
+        System.out.println();
+
+        List<Integer> integerLinkedList = new LinkedList<>(List.of(5,4,3,2,1,0));
+        integerLinkedList.add(19);
+        integerLinkedList.add(-19);
+        integerLinkedList.remove(0);
+        System.out.println(integerLinkedList);
+        System.out.println(integerLinkedList.get(0));
+        System.out.println();
+
+        ArrayList<Object> objects = new ArrayList<>(List.of(-1,-2,-3));
+        objects.set(0, 1);
+        objects.set(1, 2);
+        objects.set(2, 3);
+        objects.add(3, 4);
+        System.out.println(objects.getFirst());
+        System.out.println(objects);
     }
 }
