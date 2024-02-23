@@ -1,4 +1,4 @@
-package com.tij4awesome.chapter1.exercise.ch3;
+package com.tij4awesome.chapter1.exercise.everythingisanobject.ch3;
 
 public class CH3 {
     public static void main(String[] args) {

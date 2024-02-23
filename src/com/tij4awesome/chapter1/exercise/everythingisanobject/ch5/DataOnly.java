@@ -1,4 +1,4 @@
-package com.tij4awesome.chapter1.exercise.ch5;
+package com.tij4awesome.chapter1.exercise.everythingisanobject.ch5;
 
 public class DataOnly {
     String s;
