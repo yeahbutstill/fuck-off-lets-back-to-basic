@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.tij4awesome.chapter1.exercise.everythingisanobject.ch1.ch14","c":"E14DocTest","l":"E14DocTest()","u":"%3Cinit%3E()"},{"p":"com.tij4awesome.chapter1.exercise.everythingisanobject.ch1.ch14","c":"E14DocTest","l":"f()"},{"p":"com.tij4awesome.chapter1.exercise.everythingisanobject.ch1.ch14","c":"E14DocTest","l":"i"}];updateSearchResults();

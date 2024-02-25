@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.tij4awesome.chapter1.exercise.everythingisanobject.ch16","c":"E16OverloadingDoc","l":"E16OverloadingDoc()","u":"%3Cinit%3E()"},{"p":"com.tij4awesome.chapter1.exercise.everythingisanobject.ch16","c":"E16OverloadingDoc","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();

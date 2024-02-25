@@ -1,6 +1,7 @@
 package com.tij4awesome.chapter1.exercise.everythingisanobject.ch1;
 
-/****************** Exercise 1 *****************
+/******************
+ * Exercise 1 *****************
  * Create a class containing an int and a char
  * that are not initialized. Print their values
  * to verify that Java performs default
@@ -20,6 +21,7 @@ public class E01DefaultInitialization {
     }
 }
 /***
- * Saat Anda menjalankan program, Anda akan melihat bahwa kedua variabel diberi nilai default: 0
+ * Saat Anda menjalankan program, Anda akan melihat bahwa kedua variabel diberi
+ * nilai default: 0
  * untuk int, dan “spasi” untuk char.
  */

@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.tij4awesome.chapter1.exercise.everythingisanobject.ch1.ch12"}];updateSearchResults();

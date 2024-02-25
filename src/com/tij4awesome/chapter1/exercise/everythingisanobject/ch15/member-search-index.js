@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.tij4awesome.chapter1.exercise.everythingisanobject.ch15","c":"E15HelloWorldDoc","l":"E15HelloWorldDoc()","u":"%3Cinit%3E()"},{"p":"com.tij4awesome.chapter1.exercise.everythingisanobject.ch15","c":"E15HelloWorldDoc","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();

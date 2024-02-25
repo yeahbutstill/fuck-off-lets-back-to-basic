@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.tij4awesome.chapter1.exercise.everythingisanobject.ch1.ch12","l":"E12LeftToReader"}];updateSearchResults();

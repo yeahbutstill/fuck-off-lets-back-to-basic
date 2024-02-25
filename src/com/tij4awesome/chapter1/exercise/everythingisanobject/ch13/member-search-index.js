@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.tij4awesome.chapter1.exercise.everythingisanobject.ch1.ch13","c":"E13LeftToReader","l":"E13LeftToReader()","u":"%3Cinit%3E()"},{"p":"com.tij4awesome.chapter1.exercise.everythingisanobject.ch1.ch13","c":"E13LeftToReader","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();
