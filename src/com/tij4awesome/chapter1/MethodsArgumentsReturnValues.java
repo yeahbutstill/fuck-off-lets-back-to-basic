@@ -1,9 +1,6 @@
 package com.tij4awesome.chapter1;
 
 // mengimport secara eksplisit
-import java.util.ArrayList;
-// mengimport secara keseluruhan dengan wild card
-import java.util.*;
 
 public class MethodsArgumentsReturnValues {
     String methodName(String name) {

@@ -6,8 +6,7 @@ import org.w3c.dom.Text;
 import org.xml.sax.InputSource;
 
 import javax.xml.parsers.DocumentBuilderFactory;
-import java.io.*;
-import java.util.Arrays;
+import java.io.StringReader;
 
 public class TypePatterns1 {
     public static StringBuilder print(Node node, int indent) {
