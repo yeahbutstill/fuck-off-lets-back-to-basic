@@ -4,8 +4,8 @@ import static com.tij4awesome.net.mindview.util.Print.print;
 
 public class Aliasing {
     public static void main(String[] args) {
-        Tank1 t11 = new Tank();
-        Tank1 t22 = new Tank();
+        Tank1 t11 = new Tank1();
+        Tank1 t22 = new Tank1();
         t11.level = 9;
         t22.level = 47;
 
