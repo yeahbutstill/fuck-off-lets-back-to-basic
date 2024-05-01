@@ -1508,7 +1508,7 @@ public final class DrawingPanel extends FileFilter
             southPanel2.add(box);
             southPanel2.add(colorButton);
             
-            Container southPanel = javax.swing.Box.createVerticalBox();
+            Container southPanel = Box.createVerticalBox();
             southPanel.add(southPanel1);
             southPanel.add(southPanel2);
             

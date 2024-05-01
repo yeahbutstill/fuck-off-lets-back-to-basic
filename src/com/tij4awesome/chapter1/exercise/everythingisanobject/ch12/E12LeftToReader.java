@@ -1,4 +1,4 @@
-package com.tij4awesome.chapter1.exercise.everythingisanobject.ch1.ch12;
+package com.tij4awesome.chapter1.exercise.everythingisanobject.ch12;
 
 public class E12LeftToReader {
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package id.toki.tlx.problem;
+
 import java.util.Scanner;
 
 public class CekBilanganPrima {

@@ -1,4 +1,4 @@
-package com.tij4awesome.chapter1.exercise.everythingisanobject;
+package com.tij4awesome.chapter1.exercise.everythingisanobject.ch11;
 
 /******************
  * Exercise 11 *****************

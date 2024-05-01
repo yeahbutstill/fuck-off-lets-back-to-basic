@@ -1,5 +1,7 @@
 package com.tij4awesome.operator.operators;
 
+import com.tij4awesome.operator.operators.Integral;
+
 // Create a class containing a float and use it
 // to demonstrate aliasing during method call
 class E03Aliasing2 {

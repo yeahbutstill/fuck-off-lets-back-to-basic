@@ -22,6 +22,6 @@ public class E01DefaultInitialization {
 }
 /***
  * Saat Anda menjalankan program, Anda akan melihat bahwa kedua variabel diberi
- * nilai default: 0
- * untuk int, dan “spasi” untuk char.
+ * nilai default: 0 untuk int,
+ * dan “spasi” untuk char.
  */

@@ -9,7 +9,7 @@ public class Generated {
   // Create a new array:
   @SuppressWarnings("unchecked")
   public static <T> T[] array(Class<T> type,
-      Generator<T> gen, int size) {
+                              Generator<T> gen, int size) {
     T[] a =
       (T[])java.lang.reflect.Array.newInstance(type, size);
     return new CollectionData<T>(gen, size).toArray(a);

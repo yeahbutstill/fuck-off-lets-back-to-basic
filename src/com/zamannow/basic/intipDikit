@@ -1,4 +1,4 @@
-#!/home/yeahbutstill/.sdkman/candidates/java/21-librca/bin/java --source 21
+package main.com.zamannow.basic; #!/home/yeahbutstill/.sdkman/candidates/java/21-librca/bin/java --source 21
 
 import java.net.URI;
 import java.net.http.HttpClient;

@@ -7,8 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-  </component>
-  <component name="SonarLintModuleSettings">
-    <option name="uniqueId" value="6467fca0-6bca-4d24-afc9-da8685cc8758" />
+    <orderEntry type="library" name="junit.platform.launcher" level="project" />
+    <orderEntry type="library" name="junit.jupiter.engine" level="project" />
+    <orderEntry type="library" name="junit.vintage.engine" level="project" />
   </component>
 </module>

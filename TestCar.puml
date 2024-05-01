@@ -1,0 +1,23 @@
+@startuml
+class com.tij4awesome.chapter1.EngineSatu {
+- String bahanBakar
++ String getBahanBakar()
++ void setBahanBakar(String)
+}
+
+
+class com.tij4awesome.chapter1.CarSatu {
+- String name
+- BigDecimal price
++ String getName()
++ void setName(String)
++ BigDecimal getPrice()
++ void setPrice(BigDecimal)
++ String toString()
+}
+
+
+
+
+com.tij4awesome.chapter1.EngineSatu <|-- com.tij4awesome.chapter1.CarSatu
+@enduml

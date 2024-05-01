@@ -1,5 +1,7 @@
 package com.tij4awesome.operator.operators;
 
+import com.tij4awesome.operator.operators.Dog;
+
 /**
  * E06DogComparison
  * Following excercise 5 assing, a new Dog

@@ -1,5 +1,7 @@
 package com.tij4awesome.chapter1;
 
+import com.tij4awesome.chapter1.Shape;
+
 public class Triangle extends Shape {
     String name;
 

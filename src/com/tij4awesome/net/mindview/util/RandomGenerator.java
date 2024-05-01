@@ -53,7 +53,7 @@ public class RandomGenerator {
     public Long() {}
     public Long(int modulo) { mod = modulo; }
     public java.lang.Long next() {
-      return new java.lang.Long(r.nextInt(mod));
+      return (long) r.nextInt(mod);
     }
   }
   public static class

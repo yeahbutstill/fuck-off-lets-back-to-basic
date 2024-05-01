@@ -1,6 +1,6 @@
 //: net/mindview/atunit/TestObjectCreate.java
 // The @Unit @TestObjectCreate tag.
-package  com.tij4awesome.net.mindview.atunit;
+package com.tij4awesome.net.mindview.atunit;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -1,4 +1,4 @@
-package src.com.zamannow.testsoaljava.junior.day4;
+package com.zamannow.testsoaljava.junior.day4;
 
 public class BJP3Exercise59printFactors {
     public static void main(String[] args) {

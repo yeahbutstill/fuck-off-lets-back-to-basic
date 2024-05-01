@@ -43,7 +43,7 @@ public class ProcessFiles {
   }
   // Demonstration of how to use it:
   public static void main(String[] args) {
-    new ProcessFiles(new ProcessFiles.Strategy() {
+    new ProcessFiles(new Strategy() {
       public void process(File file) {
         System.out.println(file);
       }

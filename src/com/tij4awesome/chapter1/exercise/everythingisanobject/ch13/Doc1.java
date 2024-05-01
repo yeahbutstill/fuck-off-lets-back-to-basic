@@ -1,4 +1,4 @@
-package com.tij4awesome.chapter1.exercise.everythingisanobject.ch1.ch13;
+package com.tij4awesome.chapter1.exercise.everythingisanobject.ch13;
 
 /***
  * A class comment

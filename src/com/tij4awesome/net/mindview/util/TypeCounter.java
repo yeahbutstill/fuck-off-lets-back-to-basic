@@ -3,7 +3,6 @@
 package com.tij4awesome.net.mindview.util;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class TypeCounter extends HashMap<Class<?>,Integer>{
   private Class<?> baseType;
@@ -28,7 +27,7 @@ public class TypeCounter extends HashMap<Class<?>,Integer>{
   }
   public String toString() {
     StringBuilder result = new StringBuilder("{");
-    for(Map.Entry<Class<?>,Integer> pair : entrySet()) {
+    for(Entry<Class<?>,Integer> pair : entrySet()) {
       result.append(pair.getKey().getSimpleName());
       result.append("=");
       result.append(pair.getValue());
