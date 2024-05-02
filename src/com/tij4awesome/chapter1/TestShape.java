@@ -1,11 +1,5 @@
 package com.tij4awesome.chapter1;
 
-import com.tij4awesome.chapter1.Circle;
-import com.tij4awesome.chapter1.Line;
-import com.tij4awesome.chapter1.Shape;
-import com.tij4awesome.chapter1.Square;
-import com.tij4awesome.chapter1.Triangle;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;

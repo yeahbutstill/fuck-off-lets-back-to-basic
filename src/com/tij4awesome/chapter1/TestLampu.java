@@ -1,7 +1,5 @@
 package com.tij4awesome.chapter1;
 
-import com.tij4awesome.chapter1.BolaLampu;
-
 public class TestLampu {
     public static void main(String[] args) {
         BolaLampu bolaLampu = new BolaLampu();

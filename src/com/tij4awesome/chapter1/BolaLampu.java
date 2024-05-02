@@ -1,7 +1,5 @@
 package com.tij4awesome.chapter1;
 
-import com.tij4awesome.chapter1.Light;
-
 public class BolaLampu implements Light {
     @Override
     public Boolean on(int num) {

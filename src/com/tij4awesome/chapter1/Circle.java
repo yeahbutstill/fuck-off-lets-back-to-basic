@@ -1,7 +1,5 @@
 package com.tij4awesome.chapter1;
 
-import com.tij4awesome.chapter1.Shape;
-
 public class Circle extends Shape {
     @Override
     public void draw() {

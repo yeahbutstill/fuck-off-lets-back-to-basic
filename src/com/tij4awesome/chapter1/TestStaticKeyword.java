@@ -1,7 +1,5 @@
 package com.tij4awesome.chapter1;
 
-import com.tij4awesome.chapter1.StaticTest;
-
 public class TestStaticKeyword {
     public static void main(String[] args) {
         StaticTest st1 = new StaticTest();

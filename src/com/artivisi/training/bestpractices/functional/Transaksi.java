@@ -1,6 +1,6 @@
 package com.artivisi.training.bestpractices.functional;
 
-import com.artivisi.training.bestpractices.Product;
+import com.artivisi.training.bestpractices.serializable.Product;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

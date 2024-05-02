@@ -1,9 +1,5 @@
 package com.tij4awesome.chapter1;
 
-import com.tij4awesome.chapter1.Car;
-import com.tij4awesome.chapter1.CarSatu;
-import com.tij4awesome.chapter1.Engine;
-
 import java.math.BigDecimal;
 
 public class TestCar {

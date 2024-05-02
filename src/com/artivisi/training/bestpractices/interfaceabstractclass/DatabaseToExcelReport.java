@@ -1,6 +1,6 @@
 package com.artivisi.training.bestpractices.interfaceabstractclass;
 
-import com.artivisi.training.bestpractices.Product;
+import com.artivisi.training.bestpractices.serializable.Product;
 
 import java.io.File;
 import java.util.ArrayList;
