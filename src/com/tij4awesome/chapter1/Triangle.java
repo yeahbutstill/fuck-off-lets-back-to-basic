@@ -1,7 +1,7 @@
 package com.tij4awesome.chapter1;
 
 public class Triangle extends Shape {
-    String name;
+    private String name;
 
     public String getName() {
         return name;

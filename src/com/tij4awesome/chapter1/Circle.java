@@ -3,13 +3,17 @@ package com.tij4awesome.chapter1;
 public class Circle extends Shape {
     @Override
     public void draw() {
-//        super.draw();
+        // Untuk mengganti method, anda cukup membuat definisi baru untuk metode di kelas turunan
+        // lalu ini seperti berkata "Saya menggunakan metode interface yang sama di sini, tetapi saya
+        // ingin method ini melakukan sesuatu yang berbeda untuk tipe baru saya"
         System.out.println("gambar lingkaran");
     }
 
     @Override
     public void erase() {
-//        super.erase();
+        // Untuk mengganti method, anda cukup membuat definisi baru untuk metode di kelas turunan
+        // lalu ini seperti berkata "Saya menggunakan metode interface yang sama di sini, tetapi saya
+        // ingin method ini melakukan sesuatu yang berbeda untuk tipe baru saya"
         System.out.println("hapus lingkaran");
     }
 

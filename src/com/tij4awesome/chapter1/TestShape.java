@@ -22,15 +22,23 @@ public class TestShape {
         System.out.println();
         System.out.println();
         System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+        System.out.println("--------------------------------------");
 
         Circle circle1 = new Circle();
         Triangle triangle1 = new Triangle();
         Line line = new Line();
         Shape shape = new Shape();
+        // apa yang terjadi di sini adalah bahwa Circle sedang diteruskan ke method yang
+        // mengharapkan Shape. Karena Circle adalah Turunan dari Shape, ia dapat diperlakukan sebagai
+        // satu denga doSomething(). Artinya setiap pesan yang dapat dikirim oleh doSomething() ke Shape
+        // dapat diterima oleh Circle.
         shape.doSomething(circle1);
+        System.out.println("------------");
         System.out.println();
+        System.out.println("-----Segitiga-----");
         shape.doSomething(triangle1);
         System.out.println();
+        System.out.println("-----Garis-------");
         shape.doSomething(line);
         System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
 
