@@ -58,6 +58,6 @@ public class PlayingMTK {
 
         System.out.println(!(f == e));
         System.out.println(!true);
-        
+
     }
 }

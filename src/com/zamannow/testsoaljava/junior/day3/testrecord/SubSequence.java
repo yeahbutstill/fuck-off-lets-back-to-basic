@@ -8,8 +8,13 @@ import java.util.Objects;
 public sealed interface SubSequence extends CharSequence permits Initial, Final, Middle {
     CharSequence seq();
 
-    default int start() { return 0; }
-    default int end() { return seq().length(); }
+    default int start() {
+        return 0;
+    }
+
+    default int end() {
+        return seq().length();
+    }
 
     default char charAt(int index) {
         Objects.checkIndex(index, length());

@@ -9,7 +9,7 @@ public class Oops4errors {
     }
 
     private static void minimum(int a, int b) {
-        if (a < b ) {
+        if (a < b) {
             int smaller = a;
             if (smaller == a) {
                 System.out.println("a is the smallest!");

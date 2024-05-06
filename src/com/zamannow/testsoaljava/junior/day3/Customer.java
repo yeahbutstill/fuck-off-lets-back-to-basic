@@ -5,27 +5,27 @@ public class Customer {
     private String userCd;
     private String firstNm;
 
-    public void setUserId(int userId) {
-        this.userId = userId;
-    }
-
     public int getUserId() {
         return userId;
     }
 
-    public void setUserCd(String userCd) {
-        this.userCd = userCd;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public String getUserCd() {
         return userCd;
     }
 
-    public void setFirstNm(String firstNm) {
-        this.firstNm = firstNm;
+    public void setUserCd(String userCd) {
+        this.userCd = userCd;
     }
 
     public String getFirstNm() {
         return firstNm;
+    }
+
+    public void setFirstNm(String firstNm) {
+        this.firstNm = firstNm;
     }
 }

@@ -6,9 +6,9 @@ import java.math.BigDecimal;
 @FunctionalInterface
 public interface Diskon {
 
-     default String getNama(){
-          return this.getClass().getName();
-     }
+    default String getNama() {
+        return this.getClass().getName();
+    }
 
-     BigDecimal hitungDiskon(Transaksi t);
+    BigDecimal hitungDiskon(Transaksi t);
 }

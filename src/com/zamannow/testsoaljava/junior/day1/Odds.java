@@ -3,7 +3,7 @@ package com.zamannow.testsoaljava.junior.day1;
 public class Odds {
     public static void main(String[] args) {
         printOdds(3);
-        printOdds(17/2);
+        printOdds(17 / 2);
 
         int x = 25;
         printOdds(37 - x + 1);

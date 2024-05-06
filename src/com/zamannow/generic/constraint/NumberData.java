@@ -9,6 +9,7 @@ import java.util.Objects;
  * Defualtnya itu ada Object
  * Untuknya saat menggunakan constraint adalah, semua method yang diset extends constraintnya bisa kita access
  * Makannya cocok untuk generic type yang spesifik
+ *
  * @param <T> jadi method yang ada di Number bisa digunakan di generic parameter type
  */
 public class NumberData<T extends Number> {

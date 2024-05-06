@@ -16,9 +16,9 @@ public class BJP3SelfCheck514logicExpressions2 {
         System.out.println(b && !b);
         System.out.println(b || !b);
         System.out.println((x < y) == b);
-        System.out.println(x/2);
-        System.out.println(z*3);
-        System.out.println(!(x/2 == 13) || b || (z * 3 == 96));
+        System.out.println(x / 2);
+        System.out.println(z * 3);
+        System.out.println(!(x / 2 == 13) || b || (z * 3 == 96));
         System.out.println((z < x) == false);
         System.out.println(!((x > 0) && (y < 0)));
     }

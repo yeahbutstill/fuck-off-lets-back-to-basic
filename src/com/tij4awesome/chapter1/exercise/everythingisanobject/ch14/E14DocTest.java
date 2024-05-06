@@ -2,13 +2,15 @@ package com.tij4awesome.chapter1.exercise.everythingisanobject.ch14;
 
 /***
  * A class comment
- * 
+ *
  * <pre>
  * System.out.println(new Date());
  * </pre>
  */
 public class E14DocTest {
-    /** A variable comment */
+    /**
+     * A variable comment
+     */
     public int i;
 
     /**

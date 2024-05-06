@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 
 public class DemoComposition {
     public static void main(String[] args) {
-        Transaksi t = new Transaksi();
+        TransaksiDenganComposition t = new TransaksiDenganComposition();
         Product p = new Product();
         p.setCode("P001");
 

@@ -10,7 +10,7 @@ public class DiskonTotal implements Diskon {
     }
 
     @Override
-    public BigDecimal hitungDiskon(Transaksi t) {
+    public BigDecimal hitungDiskon(TransaksiDenganComposition t) {
         if (t.hitungTotalNilai().compareTo(new BigDecimal("1000000")) > 0) {
             return t.hitungTotalNilai().multiply(new BigDecimal("0.05"));
         }

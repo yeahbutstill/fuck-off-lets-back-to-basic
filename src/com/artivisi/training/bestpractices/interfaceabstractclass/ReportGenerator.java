@@ -15,16 +15,17 @@ public abstract class ReportGenerator {
     }
 
     public abstract void isiDataProduk();
+
     public abstract void generateReportFile();
 
-    public final void buatReport(){
+    public final void buatReport() {
         isiDataProduk();
         filterProduk();
         generateReportFile();
     }
 
     private void filterProduk() {
-        System.out.println("Membuang produk yang dibawah harga minimum : "+hargaMinimum);
+        System.out.println("Membuang produk yang dibawah harga minimum : " + hargaMinimum);
         for (Product p : daftarProduk) {
             if (p.getPrice().compareTo(hargaMinimum) < 0) {
                 daftarProduk.remove(p);

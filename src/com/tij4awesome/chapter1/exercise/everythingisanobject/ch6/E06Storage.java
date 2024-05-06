@@ -8,18 +8,18 @@ package com.tij4awesome.chapter1.exercise.everythingisanobject.ch6;
 public class E06Storage {
     String str = "Hello, World";
 
+    public static void main(String[] args) {
+        E06Storage st = new E06Storage();
+        System.out.println(st.str);
+        System.out.println("panjang string * 2 = " + st.storage(st.str));
+        st.print();
+    }
+
     int storage(String s) {
         return s.length() * 2;
     }
 
     void print() {
         System.out.println("storage(s) = " + storage(str));
-    }
-
-    public static void main(String[] args) {
-        E06Storage st = new E06Storage();
-        System.out.println(st.str);
-        System.out.println("panjang string * 2 = " + st.storage(st.str));
-        st.print();
     }
 }

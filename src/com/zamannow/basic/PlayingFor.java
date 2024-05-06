@@ -9,7 +9,7 @@ public class PlayingFor {
 
         // perulangan dengan kondisi
         Integer counter = 0;
-        for (; counter <= 10;) {
+        for (; counter <= 10; ) {
             System.out.println("Yang ke " + counter);
             counter++;
         }
@@ -19,7 +19,7 @@ public class PlayingFor {
 
         // perulangan dengan init statement
         int counterLagi;
-        for (counterLagi = 0; counterLagi <= 10;) {
+        for (counterLagi = 0; counterLagi <= 10; ) {
             System.out.println("Perulangan ke - " + counterLagi);
             counterLagi++;
         }
@@ -31,7 +31,6 @@ public class PlayingFor {
             System.out.println(counterLagiLagi);
             System.out.println(counterLagiLagi.equals(99));
         }
-
 
 
     }

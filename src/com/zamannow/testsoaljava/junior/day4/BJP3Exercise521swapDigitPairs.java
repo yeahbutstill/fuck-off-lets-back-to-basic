@@ -18,7 +18,7 @@ public class BJP3Exercise521swapDigitPairs {
             power += 2;
         }
 
-        swapNum += num * Math.pow(10, power -1);
+        swapNum += num * Math.pow(10, power - 1);
         return swapNum;
     }
 }

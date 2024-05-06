@@ -10,12 +10,12 @@ public class DiskonPajakPpn implements Diskon, Pajak {
     }
 
     @Override
-    public BigDecimal hitungDiskon(Transaksi t) {
+    public BigDecimal hitungDiskon(TransaksiDenganComposition t) {
         return null;
     }
 
     @Override
-    public BigDecimal hitungPajak(Transaksi t) {
+    public BigDecimal hitungPajak(TransaksiDenganComposition t) {
         return null;
     }
 }

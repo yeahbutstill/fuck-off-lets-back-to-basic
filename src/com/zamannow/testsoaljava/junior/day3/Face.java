@@ -7,7 +7,7 @@ public class Face {
         DrawingPanel panel = new DrawingPanel(320, 180);
         Graphics g = panel.getGraphics();
         drawingFace(g, 10, 30);
-        drawingFace(g,  150, 50);
+        drawingFace(g, 150, 50);
     }
 
     private static void drawingFace(Graphics g, int x, int y) {

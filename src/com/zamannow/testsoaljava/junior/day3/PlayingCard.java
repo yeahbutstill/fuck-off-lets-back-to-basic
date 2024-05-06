@@ -10,20 +10,34 @@ public class PlayingCard {
         String suit = scanner.next();
 
         String sayRank = switch (rank) {
-            case "2": yield "Two";
-            case "3": yield "Three";
-            case "4": yield "Four";
-            case "5": yield "Five";
-            case "6": yield "Six";
-            case "7": yield "Seven";
-            case "8": yield "Eight";
-            case "9": yield "Nine";
-            case "10": yield "Ten";
-            case "J": yield "Jack";
-            case "Q": yield "Queen";
-            case "K": yield "King";
-            case "A": yield "Ace";
-            default: throw new IllegalStateException("Unexpected value: " + rank);
+            case "2":
+                yield "Two";
+            case "3":
+                yield "Three";
+            case "4":
+                yield "Four";
+            case "5":
+                yield "Five";
+            case "6":
+                yield "Six";
+            case "7":
+                yield "Seven";
+            case "8":
+                yield "Eight";
+            case "9":
+                yield "Nine";
+            case "10":
+                yield "Ten";
+            case "J":
+                yield "Jack";
+            case "Q":
+                yield "Queen";
+            case "K":
+                yield "King";
+            case "A":
+                yield "Ace";
+            default:
+                throw new IllegalStateException("Unexpected value: " + rank);
         };
 
 //        switch (rank) {

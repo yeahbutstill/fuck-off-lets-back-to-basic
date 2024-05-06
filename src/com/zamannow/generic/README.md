@@ -62,38 +62,46 @@
   nya punya banyak child.
 
 # Bounded Type Parameter
+
 - Kadang kita ingin membatasi data yang boleh digunakan di generic parameter type
 - Kita bisa menambahkan constraint di generic parameter type dengan menyebutkan tipe yang diperbolehkan
 - Secara otomatis, type data yang bisa digunakan adalah type yang sudah kita sebutkan, atau class-class turunannya
 - Secara default, constraint type untuk generic parameter type adalah Object, sehingga semua tipe data bisa digunakan
 
 # Multiple Bounded Type Paramter
+
 - Kadang kita ingin membatasi tipe data dengan beberapa jenis tipe data di generic parameter type
 - Kita bisa menambahkan beberapa bounded type parameter dengan karakter & setelah bounded type pertama
 - Jika ingin menambahkan lagi, cukup gunakan karakter & diikuti bounded type nya lagi
 
 # Wildcard
+
 - Kadang ada kasus kita tidak peduli dengan generic parameter type pada object
 - Misal kita hanya ingin mem-print data T, tidak peduli tipe apapun
 - Jika kita mengalami kasus seperti ini, kita bisa menggunakan wildcard
 - Wildcard bisa dibuat dengan mengganti generic parameter type dengan karakter ?
 
 # Type Erasure
+
 - Ini adalah proses pengecekan generic pada saat compile time dan menghiraukan pengecekan pada saat runtime
-- Type Erasure menjadikan informasi generic yang kita buat akan hilang ketika kode program kita telah di compile menjadi binary file
+- Type Erasure menjadikan informasi generic yang kita buat akan hilang ketika kode program kita telah di compile menjadi
+  binary file
 - Compailer akan mengubah generic parameter type menjadi tipe Object di Java
 
 # Problem Type Erasure
+
 - Karena informasi generic itu hilang, ketika sudah menjadi binary file
 - Oleh karena itu, konversi tipe data generic akan berbahaya jika dilakukan secara tidak bijak
 
 # Comparable
+
 - Sebelumnya kita sudah tahu, bahawa operator perbandingan object menggunakan method equals
 - Bagaimana dengan operator perbandingan lainnya? seperti kurang dari atau lebih dari?
 - Operator perbandingan tersebut bisa kita lakukan, jika object kita mewariskan interface generic Comparable
 - Ini banyak sekali digunakan seperti untuk proses pengurutan data misalnya
 
 # Comparator Interface
+
 - Jika kita ingin mengurutkan class yang kita gunakan, cukup mudah tinggal implement interface Comparable
 - Namun bagaimana jika class tersebut milik orang lain? Tidak bisa kita ubah?
 - Maka kita bisa menggunakan interface generic yang bernama Comparator

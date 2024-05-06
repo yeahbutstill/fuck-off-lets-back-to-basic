@@ -1,22 +1,28 @@
 # Tipe Data Number
+
 - Integer Number (Bilangan Bulat)
 - Floating Point Number (Bilangan pecahan)
 
 # Integer Number
+
 - ![img.png](img.png)
 
 # Floating Point Number
+
 - ![img_1.png](img_1.png)
 
 # Konversi Tipe Data Number
+
 - Widening Casting (otomatis) byte -> short -> int -> long -> float -> double
 - Narrowing Casting (manual) double -> float -> long -> int -> char -> short -> byte
 
 # Tipe Data Character
+
 - Data Character(huruf) di Java direpresentasikan oleh tipe char.
 - Untuk membuat data char di Java, kita bisa menggunakan tanda ''(kurung buka kurung tutup petik satu)
 
 # Tipe Data Boolean
+
 - Tipe data boolean adalah tipe data yang memiliki 2 nilai, yaitu benar dan salah
 - Tipe data boolean di Java direpresentasikan dengan kata kunci boolean
 - Nilai benar direpresentasikan dengan kata kunci true
@@ -39,9 +45,11 @@
 - Nama variable tidak boleh mengandung whitespace(spasi, enter atau tab) dan tidak boleh seluruhnya number
 
 # Kata kunci var
-- Sejak Java 10, java mendukung pembuatan variable dengan kata kunci var, sehingga kita tidak perlu menyebutkan tipe datanya
-- Namun perlu diingat, saat kita menggunakan kata kunci var untuk membuat variable, kita harus menginisiasi value / nilai dari variable tesebut secara langsung
 
+- Sejak Java 10, java mendukung pembuatan variable dengan kata kunci var, sehingga kita tidak perlu menyebutkan tipe
+  datanya
+- Namun perlu diingat, saat kita menggunakan kata kunci var untuk membuat variable, kita harus menginisiasi value /
+  nilai dari variable tesebut secara langsung
 
 # Kata Kunci Final
 
@@ -60,6 +68,7 @@
 - Di Java, semua tipe data primitif memiliki representasi tipe data bukan primitifnya
 
 # Representasi Tipe Data Primitif
+
 - ![img_2.png](img_2.png)
 - ![img_3.png](img_3.png)
 
@@ -79,20 +88,25 @@
 - array[index], untuk mengambil data di Array
 - array[index] = value, untuk mengubah data di Array
 - array.length, untuk mengambil panjang Array
-- Kalau di Java tidak ada istilah menghapus data array, karena kalau menghapus yang tadinya panjang array nya 10, jadi 9 itu engga bisa di Java
+- Kalau di Java tidak ada istilah menghapus data array, karena kalau menghapus yang tadinya panjang array nya 10, jadi 9
+  itu engga bisa di Java
 - yang ada kita mungkin memasukan data kosong ke dalam array nya
 - Jadi di Java panjang Array sudah fix
 
 # Array di dalam Array
+
 - ![img_4.png](img_4.png)
 
 # Operasi Matematika
+
 - ![img_5.png](img_5.png)
 
 # Augmented Assignments
+
 - ![img_6.png](img_6.png)
 
 # Unary Operator
+
 - ![img_7.png](img_7.png)
 
 # Operasi Perbandingan
@@ -134,7 +148,7 @@
 - Ada beberapa jenis statement
 - Assigment expression, ini adalah statement yang mengubah value
 - Penggunaan ++ dan --, ini adalah statement yang manbahkan nilainya ke diri sendiri
-- Method invocation, ini adalah manggil method 
+- Method invocation, ini adalah manggil method
 - Object creation expression, ini adalah pembuatan object baru
 - Jadi kalau kumpulan expression adalah statement
 

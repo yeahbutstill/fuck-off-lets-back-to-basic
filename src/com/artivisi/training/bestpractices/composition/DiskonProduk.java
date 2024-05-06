@@ -12,7 +12,7 @@ public class DiskonProduk implements Diskon {
     }
 
     @Override
-    public BigDecimal hitungDiskon(Transaksi t) {
+    public BigDecimal hitungDiskon(TransaksiDenganComposition t) {
         BigDecimal totalDiskon = BigDecimal.ZERO;
         for (Product p : t.getDaftarPembelian()) {
             if ("P001".equalsIgnoreCase(p.getCode())) {

@@ -12,13 +12,6 @@ public class TheStaticKeyword {
     // karena field dan method non-static harus mengetahui object tertentu yang sedang mereka kerjakan
     int i2 = 50;
 
-    @Override
-    public String toString() {
-        return "TheStaticKeyword{" +
-                "i2=" + i2 +
-                '}';
-    }
-
     public static void main(String[] args) {
         TheStaticKeyword nonStatic = new TheStaticKeyword();
         // pada titik ini, st1.i dan st2.i memiliki nilai yang sama yaitu 50, karena keduanya merujuk pada bagian memori yang sama
@@ -44,5 +37,12 @@ public class TheStaticKeyword {
         // operator ++ menambahkan satu ke variable
         TheStaticKeyword.i++;
         System.out.println(TheStaticKeyword.i);
+    }
+
+    @Override
+    public String toString() {
+        return "TheStaticKeyword{" +
+                "i2=" + i2 +
+                '}';
     }
 }

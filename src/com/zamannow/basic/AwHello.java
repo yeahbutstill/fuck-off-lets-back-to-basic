@@ -5,7 +5,7 @@ package com.zamannow.basic;
  * dan tidak boleh mengandung spasi seperti "Aw Hello"
  * standar nama class itu setiap kata awal ditandai dengan
  * huruf Besar atau Camel Case
- *
+ * <p>
  * di program Java harus dan wajib ada 1 main method
  * dan di Java itu case sensitive
  */

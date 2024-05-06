@@ -4,10 +4,14 @@ package com.tij4awesome.chapter1.exercise.everythingisanobject.ch13;
  * A class comment
  */
 public class Doc1 {
-    /** A field comment */
+    /**
+     * A field comment
+     */
     public int i;
 
-    /** A method comment */
+    /**
+     * A method comment
+     */
     public void f() {
     }
 }

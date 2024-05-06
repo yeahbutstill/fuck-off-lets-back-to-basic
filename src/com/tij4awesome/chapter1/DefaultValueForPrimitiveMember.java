@@ -14,20 +14,6 @@ public class DefaultValueForPrimitiveMember {
     float f;
     double d;
 
-    @Override
-    public String toString() {
-        return "DefaultValueForPrimitiveMember{" +
-                "b=" + b +
-                ", c=" + c +
-                ", by=" + by +
-                ", sh=" + sh +
-                ", i=" + i +
-                ", l=" + l +
-                ", f=" + f +
-                ", d=" + d +
-                '}';
-    }
-
     /***
      * nilai defualt hanyalah jaminan Java ketika variable digunakan sebagai anggota class
      * Hal ini memastikan bahwa variable anggota tipe primitif akan selalu diinisialisasi
@@ -46,6 +32,20 @@ public class DefaultValueForPrimitiveMember {
         DefaultValueForPrimitiveMember defaultValueForPrimitiveMember = new DefaultValueForPrimitiveMember();
         System.out.println(defaultValueForPrimitiveMember);
         //System.out.println(x);
+    }
+
+    @Override
+    public String toString() {
+        return "DefaultValueForPrimitiveMember{" +
+                "b=" + b +
+                ", c=" + c +
+                ", by=" + by +
+                ", sh=" + sh +
+                ", i=" + i +
+                ", l=" + l +
+                ", f=" + f +
+                ", d=" + d +
+                '}';
     }
 
 }

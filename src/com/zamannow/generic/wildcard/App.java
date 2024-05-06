@@ -18,6 +18,7 @@ public class App {
      * kalau generic parameternya wildcard, otomatis bisa memasukan data apapun
      * ketika getData dia jatohnya jadi object, jadi tidak akan bisa dikonversi ke mana-mana
      * dan bahkan kalau bisa jangan sekali-kali ngelakuin konversi ataupun ngelakuin setData kalau tipenya adalah wildcard
+     *
      * @param data
      */
     public void printLength(MyData<?> data) {

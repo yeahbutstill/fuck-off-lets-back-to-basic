@@ -1,9 +1,9 @@
 package com.zamannow.basic;
 
 public class AwString {
-    String lastname;
-    final String dogname = "wildan";
     static String hobi;
+    final String dogname = "wildan";
+    String lastname;
 
     public static void main(String[] args) {
         String firstName = "DNL";

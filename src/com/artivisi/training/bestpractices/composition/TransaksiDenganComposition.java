@@ -8,11 +8,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-public class Transaksi {
+public class TransaksiDenganComposition {
     private String referensi = UUID.randomUUID().toString();
-    private LocalDateTime waktuTransaksi = LocalDateTime.now() ;
+    private LocalDateTime waktuTransaksi = LocalDateTime.now();
 
-    private List<Diskon> daftarDiskon = new ArrayList<Diskon>();
+    // ini adalah composition, jadi kita merangkai dengan transaksi dengan diskon
+    private List<Diskon> daftarDiskon = new ArrayList<>();
     private List<Product> daftarPembelian = new ArrayList<>();
 
     public List<Product> getDaftarPembelian() {

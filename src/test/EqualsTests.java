@@ -83,7 +83,7 @@ public class EqualsTests {
         CaseInsensitiveString cs = new CaseInsensitiveString("endy");
         String s = "Endy";
 
-        System.out.println("cs.equals(s) : "+cs.equals(s));
-        System.out.println("s.equals(cs) : "+s.equals(cs));
+        System.out.println("cs.equals(s) : " + cs.equals(s));
+        System.out.println("s.equals(cs) : " + s.equals(cs));
     }
 }

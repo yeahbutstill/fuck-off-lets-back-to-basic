@@ -11,7 +11,7 @@ public class SeleksiOlimpiade {
             int n = input.nextInt();
             int m = input.nextInt();
             input.nextLine();
-            String  nama = input.nextLine();
+            String nama = input.nextLine();
             int[] n1 = new int[100];
             int[] n2 = new int[100];
             int[] n3 = new int[100];

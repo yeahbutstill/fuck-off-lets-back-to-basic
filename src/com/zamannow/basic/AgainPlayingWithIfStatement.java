@@ -10,7 +10,7 @@ public class AgainPlayingWithIfStatement {
         } else {
             System.out.println("Maaf Anda Belum Lulus");
         } //else if (nilai >= 75 || absen >= 75) { // error tidak bisa statement else if dibawah else, harus di bawah if
-            //System.out.println("Selamat");
+        //System.out.println("Selamat");
         //}
 
 

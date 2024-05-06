@@ -7,14 +7,6 @@ import java.util.concurrent.atomic.AtomicLong;
 public class AtomicCounter {
     private AtomicLong count = new AtomicLong(0);
 
-    public void increment() {
-        count.incrementAndGet();
-    }
-
-    public Long getCounter() {
-        return count.get();
-    }
-
     public static void main(String[] args) {
         AtomicCounter atomicCounter = new AtomicCounter();
         ExecutorService fixThreadPool = Executors.newFixedThreadPool(10);
@@ -31,5 +23,13 @@ public class AtomicCounter {
         System.out.println(atomicCounter.getCounter());
         fixThreadPool.shutdown();
         fixThreadPool.close();
+    }
+
+    public void increment() {
+        count.incrementAndGet();
+    }
+
+    public Long getCounter() {
+        return count.get();
     }
 }

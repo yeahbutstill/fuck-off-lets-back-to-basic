@@ -8,7 +8,7 @@ public class BJP3Exercise511threeHeads {
     }
 
     private static void threeHeads() {
-        Random r = new Random();    
+        Random r = new Random();
         int head = 0;
         while (head != 3) {
             Boolean random = r.nextBoolean();

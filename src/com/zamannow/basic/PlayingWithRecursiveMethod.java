@@ -4,7 +4,7 @@ public class PlayingWithRecursiveMethod {
     public static void main(String[] args) {
         PlayingWithRecursiveMethod playingWithRecursiveMethod = new PlayingWithRecursiveMethod();
         System.out.println(playingWithRecursiveMethod.factorialLoop(4));
-        System.out.println(1*2*3*4);
+        System.out.println(1 * 2 * 3 * 4);
         System.out.println(playingWithRecursiveMethod.factorialRecursive(4));
     }
 

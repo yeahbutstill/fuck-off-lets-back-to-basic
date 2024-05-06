@@ -6,16 +6,6 @@ public class DataOnly {
     boolean b;
     LeftTank leftTank;
 
-    @Override
-    public String toString() {
-        return "DataOnly{" +
-                "i=" + i +
-                ", d=" + d +
-                ", b=" + b +
-                ", leftTank=" + leftTank +
-                '}';
-    }
-
     public static void main(String[] args) {
         DataOnly data = new DataOnly();
         // cara merujuk ke anggota suatu objek
@@ -30,5 +20,15 @@ public class DataOnly {
         DataOnly myPlane = new DataOnly();
         myPlane.leftTank.capacity = 100;
         System.out.println(myPlane);
+    }
+
+    @Override
+    public String toString() {
+        return "DataOnly{" +
+                "i=" + i +
+                ", d=" + d +
+                ", b=" + b +
+                ", leftTank=" + leftTank +
+                '}';
     }
 }

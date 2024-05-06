@@ -10,7 +10,7 @@ import java.util.UUID;
 
 public class Transaksi {
     private String referensi = UUID.randomUUID().toString();
-    private LocalDateTime waktuTransaksi = LocalDateTime.now() ;
+    private LocalDateTime waktuTransaksi = LocalDateTime.now();
 
     private List<Diskon> daftarDiskon = new ArrayList<Diskon>();
     private List<Product> daftarPembelian = new ArrayList<>();

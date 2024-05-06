@@ -8,7 +8,7 @@ public class BJP3Exercise41fractionSum {
     private static double fractionSum(int n) {
         double sum = 0;
         for (double a = 0; a < n; a++) {
-            sum += 1/(a+1);
+            sum += 1 / (a + 1);
         }
         return sum;
     }

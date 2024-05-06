@@ -12,10 +12,9 @@ public class TypePatterns1 {
     public static StringBuilder print(Node node, int indent) {
         var result = new StringBuilder();
         switch (node) {
-            case Text t when !t.getData().isBlank() ->
-                    result.append(" ".repeat(indent))
-                            .append(t.getData())
-                            .append("\n");
+            case Text t when !t.getData().isBlank() -> result.append(" ".repeat(indent))
+                    .append(t.getData())
+                    .append("\n");
             case Element e -> {
                 result.append(" ".repeat(indent))
                         .append("<")
@@ -29,7 +28,8 @@ public class TypePatterns1 {
                         .append(e.getTagName())
                         .append(">\n");
             }
-            default -> {}
+            default -> {
+            }
         }
         return result;
     }

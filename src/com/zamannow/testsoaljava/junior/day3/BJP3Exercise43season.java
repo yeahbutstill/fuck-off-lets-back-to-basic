@@ -7,7 +7,7 @@ public class BJP3Exercise43season {
         System.out.println(season(6, 16));
         System.out.println(season(9, 16));
         System.out.println();
-        System.out.println(3<=6);
+        System.out.println(3 <= 6);
     }
 
     /**
@@ -16,7 +16,7 @@ public class BJP3Exercise43season {
      * dan mengembalikan sebuah String yang menunjukkan musim untuk bulan dan hari tersebut.
      * Asumsikan bulan ditentukan sebagai bilangan bulat antara 1 dan 12 (1 untuk bulan Januari, 2 untuk bulan Februari, dan seterusnya)
      * dan hari dalam bulan tersebut adalah angka antara 1 dan 31.
-     *
+     * <p>
      * Jika tanggalnya jatuh antara 16/12 dan 15/3, Anda harus mengembalikan 'Musim Dingin'.
      * Jika tanggalnya jatuh antara 16/3 dan 15/6, Anda harus mengembalikan 'Musim Semi'.
      * Jika tanggalnya jatuh antara 16/6 dan 15/9, Anda harus mengembalikan 'Musim Panas'.

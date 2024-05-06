@@ -1,7 +1,7 @@
 package com.artivisi.training.bestpractices.exception;
 
 public class DemoException {
-    public static void main(String[] args)  {
+    public static void main(String[] args) {
         TransaksiCustomer tc = new TransaksiCustomer();
         try {
             tc.prosesPembayaranCustomer("BCA");

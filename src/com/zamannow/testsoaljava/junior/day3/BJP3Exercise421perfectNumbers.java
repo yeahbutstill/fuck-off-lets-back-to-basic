@@ -22,7 +22,7 @@ public class BJP3Exercise421perfectNumbers {
             int sum = 0;
             // for loop to sum all the proper factor
             for (int b : number) {
-                sum+=b;
+                sum += b;
             }
 
             if (a == sum) {

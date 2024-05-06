@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Transaksi {
+public class TransaksiInheritance {
     private String referensi;
     private LocalDateTime waktuTransaksi;
     private BigDecimal nilai;
@@ -20,5 +20,15 @@ public class Transaksi {
             total = total.add(p.getPrice());
         }
         return total;
+    }
+
+    @Override
+    public String toString() {
+        return "Transaksi{" +
+                "referensi='" + referensi + '\'' +
+                ", waktuTransaksi=" + waktuTransaksi +
+                ", nilai=" + nilai +
+                ", daftarPembelian=" + daftarPembelian +
+                '}';
     }
 }

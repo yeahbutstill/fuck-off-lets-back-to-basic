@@ -18,7 +18,7 @@ public class BJP3Exercise215printDesign {
             for (int c = 0; c < temp; c++) {
                 System.out.print(temp);
             }
-            temp+=2;
+            temp += 2;
 
             // for dashes
             for (int d = 5; d > a; d--) {

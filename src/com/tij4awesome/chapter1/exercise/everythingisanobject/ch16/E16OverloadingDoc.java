@@ -22,6 +22,7 @@ class Tree {
 
     /**
      * transplant an existing tree with a given height
+     *
      * @param initialHeight height
      */
     Tree(int initialHeight) {
@@ -39,6 +40,7 @@ class Tree {
 
     /**
      * produce information with optional message
+     *
      * @param s message
      */
     void info(String s) {
@@ -57,7 +59,7 @@ public class E16OverloadingDoc {
      * @param args command-line arguments
      */
     public static void main(String[] args) {
-        for(int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++) {
             Tree t = new Tree(i);
             t.info();
             t.info("overloaded method");

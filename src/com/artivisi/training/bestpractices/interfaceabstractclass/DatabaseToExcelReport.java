@@ -22,12 +22,12 @@ public class DatabaseToExcelReport extends ReportGenerator {
         // loop ResultSet
         // convert rs to product
         // add product to list
-        System.out.println("Menjalankan query : "+sql);
+        System.out.println("Menjalankan query : " + sql);
         return new ArrayList<>();
     }
 
     @Override
     public void generateReportFile() {
-        System.out.println("menulis list product ke file "+output.getName());
+        System.out.println("menulis list product ke file " + output.getName());
     }
 }

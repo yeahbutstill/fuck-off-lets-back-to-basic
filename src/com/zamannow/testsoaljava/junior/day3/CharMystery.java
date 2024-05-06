@@ -10,9 +10,9 @@ public class CharMystery {
     }
 
     private static void printRange(char startLetter, char endLatter) {
-       for (char letter = startLetter; letter <= endLatter; letter++) {
-           System.out.print(letter);
-       }
+        for (char letter = startLetter; letter <= endLatter; letter++) {
+            System.out.print(letter);
+        }
         System.out.println();
     }
 }
