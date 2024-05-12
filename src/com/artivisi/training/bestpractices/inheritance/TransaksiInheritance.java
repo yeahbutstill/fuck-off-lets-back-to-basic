@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+// super class
 public class TransaksiInheritance {
     private String referensi;
     private LocalDateTime waktuTransaksi;

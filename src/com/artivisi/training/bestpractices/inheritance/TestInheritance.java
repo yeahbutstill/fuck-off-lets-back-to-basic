@@ -16,12 +16,11 @@ public class TestInheritance {
         product.setCode("HPOPOJARE1");
         product.setPrice(new BigDecimal(10000000));
 
-        TransaksiInheritanceDiskon transaksiDiskon = new TransaksiInheritanceDiskon();
-        transaksiDiskon.totalDibayar();
-        transaksiDiskon.hitungTotal();
+        TransaksiInheritance transaksiInheritance = new TransaksiInheritance();
+        transaksiInheritance.hitungTotal();
 
-        System.out.println(transaksiDiskon);
         System.out.println(product);
         System.out.println(category);
+        System.out.println(transaksiInheritance);
     }
 }

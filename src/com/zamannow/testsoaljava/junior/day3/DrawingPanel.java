@@ -72,7 +72,7 @@ public final class DrawingPanel extends FileFilter
     private JFrame frame;                  // overall window frame
     private JPanel panel;                  // overall drawing surface
     private ImagePanel imagePanel;         // real drawing surface
-    
+
     /*
     private static boolean propertyIsFalse(String name) {
         try {
@@ -101,6 +101,7 @@ public final class DrawingPanel extends FileFilter
     private int instanceNumber;
     private int currentZoom = 1;
     private int initialPixel;              // initial value in each pixel, for clear()
+
     // construct a drawing panel of given width and height enclosed in a window
     public DrawingPanel(int width, int height) {
         if (width < 0 || width > MAX_SIZE || height < 0 || height > MAX_SIZE) {
@@ -301,9 +302,10 @@ public final class DrawingPanel extends FileFilter
         }
     }
 
-    /** Write just the low bytes of a String.  (This sucks, but the concept of an
-     *  encoding seems inapplicable to a binary file ID string.  I would think
-     *  flexibility is just what we don't want - but then again, maybe I'm slow.)
+    /**
+     * Write just the low bytes of a String.  (This sucks, but the concept of an
+     * encoding seems inapplicable to a binary file ID string.  I would think
+     * flexibility is just what we don't want - but then again, maybe I'm slow.)
      */
     public static void putAscii(String s, OutputStream os) throws IOException {
         byte[] bytes = new byte[s.length()];
@@ -313,7 +315,8 @@ public final class DrawingPanel extends FileFilter
         os.write(bytes);
     }
 
-    /** Write a 16-bit integer in little endian byte order.
+    /**
+     * Write a 16-bit integer in little endian byte order.
      */
     public static void putShort(int i16, OutputStream os) throws IOException {
         os.write(i16 & 0xff);
@@ -1604,16 +1607,17 @@ public final class DrawingPanel extends FileFilter
         }
     }
 
-    /** Instances of this Gif89Frame subclass are constructed from RGB image info,
-     *  either in the form of an Image object or a pixel array.
-     *  <p>
-     *  There is an important restriction to note.  It is only permissible to add
-     *  DirectGif89Frame objects to a Gif89Encoder constructed without an explicit
-     *  color map.  The GIF color table will be automatically generated from pixel
-     *  information.
+    /**
+     * Instances of this Gif89Frame subclass are constructed from RGB image info,
+     * either in the form of an Image object or a pixel array.
+     * <p>
+     * There is an important restriction to note.  It is only permissible to add
+     * DirectGif89Frame objects to a Gif89Encoder constructed without an explicit
+     * color map.  The GIF color table will be automatically generated from pixel
+     * information.
      *
-     * @version 0.90 beta (15-Jul-2000)
      * @author J. M. G. Elliott (tep@jmge.net)
+     * @version 0.90 beta (15-Jul-2000)
      * @see Gif89Encoder
      * @see Gif89Frame
      * @see IndexGif89Frame
@@ -1624,12 +1628,11 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** Construct an DirectGif89Frame from a Java image.
+        /**
+         * Construct an DirectGif89Frame from a Java image.
          *
-         * @param img
-         *   A java.awt.Image object that supports pixel-grabbing.
-         * @exception IOException
-         *   If the image is unencodable due to failure of pixel-grabbing.
+         * @param img A java.awt.Image object that supports pixel-grabbing.
+         * @throws IOException If the image is unencodable due to failure of pixel-grabbing.
          */
         public DirectGif89Frame(Image img) throws IOException {
             PixelGrabber pg = new PixelGrabber(img, 0, 0, -1, -1, true);
@@ -1656,15 +1659,13 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** Construct an DirectGif89Frame from ARGB pixel data.
+        /**
+         * Construct an DirectGif89Frame from ARGB pixel data.
          *
-         * @param width
-         *   Width of the bitmap.
-         * @param height
-         *   Height of the bitmap.
-         * @param argb_pixels
-         *   Array containing at least width*height pixels in the format returned by
-         *   java.awt.Color.getRGB().
+         * @param width       Width of the bitmap.
+         * @param height      Height of the bitmap.
+         * @param argb_pixels Array containing at least width*height pixels in the format returned by
+         *                    java.awt.Color.getRGB().
          */
         public DirectGif89Frame(int width, int height, int argb_pixels[]) {
             theWidth = width;
@@ -1680,42 +1681,43 @@ public final class DrawingPanel extends FileFilter
         }
     }
 
-    /** This is the central class of a JDK 1.1 compatible GIF encoder that, AFAIK,
-     *  supports more features of the extended GIF spec than any other Java open
-     *  source encoder.  Some sections of the source are lifted or adapted from Jef
-     *  Poskanzer's <cite>Acme GifEncoder</cite> (so please see the
-     *  <a href="../readme.txt">readme</a> containing his notice), but much of it,
-     *  including nearly all of the present class, is original code.  My main
-     *  motivation for writing a new encoder was to support animated GIFs, but the
-     *  package also adds support for embedded textual comments.
-     *  <p>
-     *  There are still some limitations.  For instance, animations are limited to
-     *  a single global color table.  But that is usually what you want anyway, so
-     *  as to avoid irregularities on some displays.  (So this is not really a
-     *  limitation, but a "disciplinary feature" :)  Another rather more serious
-     *  restriction is that the total number of RGB colors in a given input-batch
-     *  mustn't exceed 256.  Obviously, there is an opening here for someone who
-     *  would like to add a color-reducing preprocessor.
-     *  <p>
-     *  The encoder, though very usable in its present form, is at bottom only a
-     *  partial implementation skewed toward my own particular needs.  Hence a
-     *  couple of caveats are in order.  (1) During development it was in the back
-     *  of my mind that an encoder object should be reusable - i.e., you should be
-     *  able to make multiple calls to encode() on the same object, with or without
-     *  intervening frame additions or changes to options.  But I haven't reviewed
-     *  the code with such usage in mind, much less tested it, so it's likely I
-     *  overlooked something.  (2) The encoder classes aren't thread safe, so use
-     *  caution in a context where access is shared by multiple threads.  (Better
-     *  yet, finish the library and re-release it :)
-     *  <p>
-     *  There follow a couple of simple examples illustrating the most common way to
-     *  use the encoder, i.e., to encode AWT Image objects created elsewhere in the
-     *  program.  Use of some of the most popular format options is also shown,
-     *  though you will want to peruse the API for additional features.
+    /**
+     * This is the central class of a JDK 1.1 compatible GIF encoder that, AFAIK,
+     * supports more features of the extended GIF spec than any other Java open
+     * source encoder.  Some sections of the source are lifted or adapted from Jef
+     * Poskanzer's <cite>Acme GifEncoder</cite> (so please see the
+     * <a href="../readme.txt">readme</a> containing his notice), but much of it,
+     * including nearly all of the present class, is original code.  My main
+     * motivation for writing a new encoder was to support animated GIFs, but the
+     * package also adds support for embedded textual comments.
+     * <p>
+     * There are still some limitations.  For instance, animations are limited to
+     * a single global color table.  But that is usually what you want anyway, so
+     * as to avoid irregularities on some displays.  (So this is not really a
+     * limitation, but a "disciplinary feature" :)  Another rather more serious
+     * restriction is that the total number of RGB colors in a given input-batch
+     * mustn't exceed 256.  Obviously, there is an opening here for someone who
+     * would like to add a color-reducing preprocessor.
+     * <p>
+     * The encoder, though very usable in its present form, is at bottom only a
+     * partial implementation skewed toward my own particular needs.  Hence a
+     * couple of caveats are in order.  (1) During development it was in the back
+     * of my mind that an encoder object should be reusable - i.e., you should be
+     * able to make multiple calls to encode() on the same object, with or without
+     * intervening frame additions or changes to options.  But I haven't reviewed
+     * the code with such usage in mind, much less tested it, so it's likely I
+     * overlooked something.  (2) The encoder classes aren't thread safe, so use
+     * caution in a context where access is shared by multiple threads.  (Better
+     * yet, finish the library and re-release it :)
+     * <p>
+     * There follow a couple of simple examples illustrating the most common way to
+     * use the encoder, i.e., to encode AWT Image objects created elsewhere in the
+     * program.  Use of some of the most popular format options is also shown,
+     * though you will want to peruse the API for additional features.
      *
-     *  <p>
-     *  <strong>Animated GIF Example</strong>
-     *  <pre>
+     * <p>
+     * <strong>Animated GIF Example</strong>
+     * <pre>
      *  import net.jmge.gif.Gif89Encoder;
      *  // ...
      *  void writeAnimatedGIF(Image[] still_images,
@@ -1734,8 +1736,8 @@ public final class DrawingPanel extends FileFilter
      *  }
      *  </pre>
      *
-     *  <strong>Static GIF Example</strong>
-     *  <pre>
+     * <strong>Static GIF Example</strong>
+     * <pre>
      *  import net.jmge.gif.Gif89Encoder;
      *  // ...
      *  void writeNormalGIF(Image img,
@@ -1752,8 +1754,8 @@ public final class DrawingPanel extends FileFilter
      *  }
      *  </pre>
      *
-     * @version 0.90 beta (15-Jul-2000)
      * @author J. M. G. Elliott (tep@jmge.net)
+     * @version 0.90 beta (15-Jul-2000)
      * @see Gif89Frame
      * @see DirectGif89Frame
      * @see IndexGif89Frame
@@ -1772,8 +1774,9 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** Use this default constructor if you'll be adding multiple frames
-         *  constructed from RGB data (i.e., AWT Image objects or ARGB-pixel arrays).
+        /**
+         * Use this default constructor if you'll be adding multiple frames
+         * constructed from RGB data (i.e., AWT Image objects or ARGB-pixel arrays).
          */
         public Gif89Encoder() {
             // empty color table puts us into "palette autodetect" mode
@@ -1782,13 +1785,12 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** Like the default except that it also adds a single frame, for conveniently
-         *  encoding a static GIF from an image.
+        /**
+         * Like the default except that it also adds a single frame, for conveniently
+         * encoding a static GIF from an image.
          *
-         * @param static_image
-         *   Any Image object that supports pixel-grabbing.
-         * @exception IOException
-         *   See the addFrame() methods.
+         * @param static_image Any Image object that supports pixel-grabbing.
+         * @throws IOException See the addFrame() methods.
          */
         public Gif89Encoder(Image static_image) throws IOException {
             this();
@@ -1797,16 +1799,16 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** This constructor installs a user color table, overriding the detection of
-         *  of a palette from ARBG pixels.
+        /**
+         * This constructor installs a user color table, overriding the detection of
+         * of a palette from ARBG pixels.
+         * <p>
+         * Use of this constructor imposes a couple of restrictions:
+         * (1) Frame objects can't be of type DirectGif89Frame
+         * (2) Transparency, if desired, must be set explicitly.
          *
-         *  Use of this constructor imposes a couple of restrictions:
-         *  (1) Frame objects can't be of type DirectGif89Frame
-         *  (2) Transparency, if desired, must be set explicitly.
-         *
-         * @param colors
-         *   Array of color values; no more than 256 colors will be read, since that's
-         *   the limit for a GIF.
+         * @param colors Array of color values; no more than 256 colors will be read, since that's
+         *               the limit for a GIF.
          */
         public Gif89Encoder(Color[] colors) {
             colorTable = new GifColorTable(colors);
@@ -1814,20 +1816,16 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** Convenience constructor for encoding a static GIF from index-model data.
-         *  Adds a single frame as specified.
+        /**
+         * Convenience constructor for encoding a static GIF from index-model data.
+         * Adds a single frame as specified.
          *
-         * @param colors
-         *   Array of color values; no more than 256 colors will be read, since
-         *   that's the limit for a GIF.
-         * @param width
-         *   Width of the GIF bitmap.
-         * @param height
-         *   Height of same.
-         * @param ci_pixels
-         *   Array of color-index pixels no less than width * height in length.
-         * @exception IOException
-         *   See the addFrame() methods.
+         * @param colors    Array of color values; no more than 256 colors will be read, since
+         *                  that's the limit for a GIF.
+         * @param width     Width of the GIF bitmap.
+         * @param height    Height of same.
+         * @param ci_pixels Array of color-index pixels no less than width * height in length.
+         * @throws IOException See the addFrame() methods.
          */
         public Gif89Encoder(Color[] colors, int width, int height, byte ci_pixels[])
                 throws IOException {
@@ -1837,10 +1835,10 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** Get the number of frames that have been added so far.
+        /**
+         * Get the number of frames that have been added so far.
          *
-         * @return
-         *  Number of frame items.
+         * @return Number of frame items.
          */
         public int getFrameCount() {
             return vFrames.size();
@@ -1848,12 +1846,11 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** Get a reference back to a Gif89Frame object by position.
+        /**
+         * Get a reference back to a Gif89Frame object by position.
          *
-         * @param index
-         *   Zero-based index of the frame in the sequence.
-         * @return
-         *   Gif89Frame object at the specified position (or null if no such frame).
+         * @param index Zero-based index of the frame in the sequence.
+         * @return Gif89Frame object at the specified position (or null if no such frame).
          */
         public Gif89Frame getFrameAt(int index) {
             return isOk(index) ? vFrames.elementAt(index) : null;
@@ -1861,17 +1858,16 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** Add a Gif89Frame frame to the end of the internal sequence.  Note that
-         *  there are restrictions on the Gif89Frame type: if the encoder object was
-         *  constructed with an explicit color table, an attempt to add a
-         *  DirectGif89Frame will throw an exception.
+        /**
+         * Add a Gif89Frame frame to the end of the internal sequence.  Note that
+         * there are restrictions on the Gif89Frame type: if the encoder object was
+         * constructed with an explicit color table, an attempt to add a
+         * DirectGif89Frame will throw an exception.
          *
-         * @param gf
-         *   An externally constructed Gif89Frame.
-         * @exception IOException
-         *   If Gif89Frame can't be accommodated.  This could happen if either (1) the
-         *   aggregate cross-frame RGB color count exceeds 256, or (2) the Gif89Frame
-         *   subclass is incompatible with the present encoder object.
+         * @param gf An externally constructed Gif89Frame.
+         * @throws IOException If Gif89Frame can't be accommodated.  This could happen if either (1) the
+         *                     aggregate cross-frame RGB color count exceeds 256, or (2) the Gif89Frame
+         *                     subclass is incompatible with the present encoder object.
          */
         public void addFrame(Gif89Frame gf) throws IOException {
             accommodateFrame(gf);
@@ -1880,15 +1876,14 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** Convenience version of addFrame() that takes a Java Image, internally
-         *  constructing the requisite DirectGif89Frame.
+        /**
+         * Convenience version of addFrame() that takes a Java Image, internally
+         * constructing the requisite DirectGif89Frame.
          *
-         * @param image
-         *   Any Image object that supports pixel-grabbing.
-         * @exception IOException
-         *   If either (1) pixel-grabbing fails, (2) the aggregate cross-frame RGB
-         *   color count exceeds 256, or (3) this encoder object was constructed with
-         *   an explicit color table.
+         * @param image Any Image object that supports pixel-grabbing.
+         * @throws IOException If either (1) pixel-grabbing fails, (2) the aggregate cross-frame RGB
+         *                     color count exceeds 256, or (3) this encoder object was constructed with
+         *                     an explicit color table.
          */
         public void addFrame(Image image) throws IOException {
             DirectGif89Frame frame = new DirectGif89Frame(image);
@@ -1897,19 +1892,16 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** The index-model convenience version of addFrame().
+        /**
+         * The index-model convenience version of addFrame().
          *
-         * @param width
-         *   Width of the GIF bitmap.
-         * @param height
-         *   Height of same.
-         * @param ci_pixels
-         *   Array of color-index pixels no less than width * height in length.
-         * @exception IOException
-         *   Actually, in the present implementation, there aren't any unchecked
-         *   exceptions that can be thrown when adding an IndexGif89Frame
-         *   <i>per se</i>.  But I might add some pedantic check later, to justify the
-         *   generality :)
+         * @param width     Width of the GIF bitmap.
+         * @param height    Height of same.
+         * @param ci_pixels Array of color-index pixels no less than width * height in length.
+         * @throws IOException Actually, in the present implementation, there aren't any unchecked
+         *                     exceptions that can be thrown when adding an IndexGif89Frame
+         *                     <i>per se</i>.  But I might add some pedantic check later, to justify the
+         *                     generality :)
          */
         public void addFrame(int width, int height, byte ci_pixels[])
                 throws IOException {
@@ -1918,17 +1910,15 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** Like addFrame() except that the frame is inserted at a specific point in
-         *  the sequence rather than appended.
+        /**
+         * Like addFrame() except that the frame is inserted at a specific point in
+         * the sequence rather than appended.
          *
-         * @param index
-         *   Zero-based index at which to insert frame.
-         * @param gf
-         *   An externally constructed Gif89Frame.
-         * @exception IOException
-         *   If Gif89Frame can't be accommodated.  This could happen if either (1)
-         *   the aggregate cross-frame RGB color count exceeds 256, or (2) the
-         *   Gif89Frame subclass is incompatible with the present encoder object.
+         * @param index Zero-based index at which to insert frame.
+         * @param gf    An externally constructed Gif89Frame.
+         * @throws IOException If Gif89Frame can't be accommodated.  This could happen if either (1)
+         *                     the aggregate cross-frame RGB color count exceeds 256, or (2) the
+         *                     Gif89Frame subclass is incompatible with the present encoder object.
          */
         public void insertFrame(int index, Gif89Frame gf) throws IOException {
             accommodateFrame(gf);
@@ -1937,11 +1927,11 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** Set the color table index for the transparent color, if any.
+        /**
+         * Set the color table index for the transparent color, if any.
          *
-         * @param index
-         *   Index of the color that should be rendered as transparent, if any.
-         *   A value of -1 turns off transparency.  (Default: -1)
+         * @param index Index of the color that should be rendered as transparent, if any.
+         *              A value of -1 turns off transparency.  (Default: -1)
          */
         public void setTransparentIndex(int index) {
             colorTable.setTransparent(index);
@@ -1949,12 +1939,11 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** Sets attributes of the multi-image display area, if applicable.
+        /**
+         * Sets attributes of the multi-image display area, if applicable.
          *
-         * @param dim
-         *   Width/height of display.  (Default: largest detected frame size)
-         * @param background
-         *   Color table index of background color.  (Default: 0)
+         * @param dim        Width/height of display.  (Default: largest detected frame size)
+         * @param background Color table index of background color.  (Default: 0)
          * @see Gif89Frame#setPosition
          */
         public void setLogicalDisplay(Dimension dim, int background) {
@@ -1964,11 +1953,11 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** Set animation looping parameter, if applicable.
+        /**
+         * Set animation looping parameter, if applicable.
          *
-         * @param count
-         *   Number of times to play sequence.  Special value of 0 specifies
-         *   indefinite looping.  (Default: 1)
+         * @param count Number of times to play sequence.  Special value of 0 specifies
+         *              indefinite looping.  (Default: 1)
          */
         public void setLoopCount(int count) {
             loopCount = count;
@@ -1976,10 +1965,10 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** Specify some textual comments to be embedded in GIF.
+        /**
+         * Specify some textual comments to be embedded in GIF.
          *
-         * @param comments
-         *   String containing ASCII comments.
+         * @param comments String containing ASCII comments.
          */
         public void setComments(String comments) {
             theComments = comments;
@@ -1987,29 +1976,28 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** A convenience method for setting the "animation speed".  It simply sets
-         *  the delay parameter for each frame in the sequence to the supplied value.
-         *  Since this is actually frame-level rather than animation-level data, take
-         *  care to add your frames before calling this method.
+        /**
+         * A convenience method for setting the "animation speed".  It simply sets
+         * the delay parameter for each frame in the sequence to the supplied value.
+         * Since this is actually frame-level rather than animation-level data, take
+         * care to add your frames before calling this method.
          *
-         * @param interval
-         *   Interframe interval in centiseconds.
+         * @param interval Interframe interval in centiseconds.
          */
         public void setUniformDelay(int interval) {
             for (int i = 0; i < vFrames.size(); ++i)
                 vFrames.elementAt(i).setDelay(interval);
         }
 
-        /** After adding your frame(s) and setting your options, simply call this
+        /**
+         * After adding your frame(s) and setting your options, simply call this
          * method to write the GIF to the passed stream.  Multiple calls are
          * permissible if for some reason that is useful to your application.  (The
          * method simply encodes the current state of the object with no thought
          * to previous calls.)
          *
-         * @param out
-         *   The stream you want the GIF written to.
-         * @exception IOException
-         *   If a write error is encountered.
+         * @param out The stream you want the GIF written to.
+         * @throws IOException If a write error is encountered.
          */
         public void encode(OutputStream out) throws IOException {
             int nframes = getFrameCount();
@@ -2045,16 +2033,15 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** After adding your frame(s) and setting your options, simply call this
+        /**
+         * After adding your frame(s) and setting your options, simply call this
          * method to write the GIF to the passed stream.  Multiple calls are
          * permissible if for some reason that is useful to your application.  (The
          * method simply encodes the current state of the object with no thought
          * to previous calls.)
          *
-         * @param out
-         *   The stream you want the GIF written to.
-         * @exception IOException
-         *   If a write error is encountered.
+         * @param out The stream you want the GIF written to.
+         * @throws IOException If a write error is encountered.
          */
         public void startEncoding(OutputStream out, Image image, int delay) throws IOException {
             hasStarted = true;
@@ -2425,41 +2412,42 @@ public final class DrawingPanel extends FileFilter
 
     //==============================================================================
 
-    /** First off, just to dispel any doubt, this class and its subclasses have
-     *  nothing to do with GUI "frames" such as java.awt.Frame.  We merely use the
-     *  term in its very common sense of a still picture in an animation sequence.
-     *  It's hoped that the restricted context will prevent any confusion.
-     *  <p>
-     *  An instance of this class is used in conjunction with a Gif89Encoder object
-     *  to represent and encode a single static image and its associated "control"
-     *  data.  A Gif89Frame doesn't know or care whether it is encoding one of the
-     *  many animation frames in a GIF movie, or the single bitmap in a "normal"
-     *  GIF. (FYI, this design mirrors the encoded GIF structure.)
-     *  <p>
-     *  Since Gif89Frame is an abstract class we don't instantiate it directly, but
-     *  instead create instances of its concrete subclasses, IndexGif89Frame and
-     *  DirectGif89Frame.  From the API standpoint, these subclasses differ only
-     *  in the sort of data their instances are constructed from.  Most folks will
-     *  probably work with DirectGif89Frame, since it can be constructed from a
-     *  java.awt.Image object, but the lower-level IndexGif89Frame class offers
-     *  advantages in specialized circumstances.  (Of course, in routine situations
-     *  you might not explicitly instantiate any frames at all, instead letting
-     *  Gif89Encoder's convenience methods do the honors.)
-     *  <p>
-     *  As far as the public API is concerned, objects in the Gif89Frame hierarchy
-     *  interact with a Gif89Encoder only via the latter's methods for adding and
-     *  querying frames.  (As a side note, you should know that while Gif89Encoder
-     *  objects are permanently modified by the addition of Gif89Frames, the reverse
-     *  is NOT true.  That is, even though the ultimate encoding of a Gif89Frame may
-     *  be affected by the context its parent encoder object provides, it retains
-     *  its original condition and can be reused in a different context.)
-     *  <p>
-     *  The core pixel-encoding code in this class was essentially lifted from
-     *  Jef Poskanzer's well-known <cite>Acme GifEncoder</cite>, so please see the
-     *  <a href="../readme.txt">readme</a> containing his notice.
+    /**
+     * First off, just to dispel any doubt, this class and its subclasses have
+     * nothing to do with GUI "frames" such as java.awt.Frame.  We merely use the
+     * term in its very common sense of a still picture in an animation sequence.
+     * It's hoped that the restricted context will prevent any confusion.
+     * <p>
+     * An instance of this class is used in conjunction with a Gif89Encoder object
+     * to represent and encode a single static image and its associated "control"
+     * data.  A Gif89Frame doesn't know or care whether it is encoding one of the
+     * many animation frames in a GIF movie, or the single bitmap in a "normal"
+     * GIF. (FYI, this design mirrors the encoded GIF structure.)
+     * <p>
+     * Since Gif89Frame is an abstract class we don't instantiate it directly, but
+     * instead create instances of its concrete subclasses, IndexGif89Frame and
+     * DirectGif89Frame.  From the API standpoint, these subclasses differ only
+     * in the sort of data their instances are constructed from.  Most folks will
+     * probably work with DirectGif89Frame, since it can be constructed from a
+     * java.awt.Image object, but the lower-level IndexGif89Frame class offers
+     * advantages in specialized circumstances.  (Of course, in routine situations
+     * you might not explicitly instantiate any frames at all, instead letting
+     * Gif89Encoder's convenience methods do the honors.)
+     * <p>
+     * As far as the public API is concerned, objects in the Gif89Frame hierarchy
+     * interact with a Gif89Encoder only via the latter's methods for adding and
+     * querying frames.  (As a side note, you should know that while Gif89Encoder
+     * objects are permanently modified by the addition of Gif89Frames, the reverse
+     * is NOT true.  That is, even though the ultimate encoding of a Gif89Frame may
+     * be affected by the context its parent encoder object provides, it retains
+     * its original condition and can be reused in a different context.)
+     * <p>
+     * The core pixel-encoding code in this class was essentially lifted from
+     * Jef Poskanzer's well-known <cite>Acme GifEncoder</cite>, so please see the
+     * <a href="../readme.txt">readme</a> containing his notice.
      *
-     * @version 0.90 beta (15-Jul-2000)
      * @author J. M. G. Elliott (tep@jmge.net)
+     * @version 0.90 beta (15-Jul-2000)
      * @see Gif89Encoder
      * @see DirectGif89Frame
      * @see IndexGif89Frame
@@ -2468,25 +2456,33 @@ public final class DrawingPanel extends FileFilter
 
         //// Public "Disposal Mode" constants ////
 
-        /** The animated GIF renderer shall decide how to dispose of this Gif89Frame's
-         *  display area.
+        /**
+         * The animated GIF renderer shall decide how to dispose of this Gif89Frame's
+         * display area.
+         *
          * @see Gif89Frame#setDisposalMode
          */
         public static final int DM_UNDEFINED = 0;
 
-        /** The animated GIF renderer shall take no display-disposal action.
+        /**
+         * The animated GIF renderer shall take no display-disposal action.
+         *
          * @see Gif89Frame#setDisposalMode
          */
         public static final int DM_LEAVE = 1;
 
-        /** The animated GIF renderer shall replace this Gif89Frame's area with the
-         *  background color.
+        /**
+         * The animated GIF renderer shall replace this Gif89Frame's area with the
+         * background color.
+         *
          * @see Gif89Frame#setDisposalMode
          */
         public static final int DM_BGCOLOR = 2;
 
-        /** The animated GIF renderer shall replace this Gif89Frame's area with the
-         *  previous frame's bitmap.
+        /**
+         * The animated GIF renderer shall replace this Gif89Frame's area with the
+         * previous frame's bitmap.
+         *
          * @see Gif89Frame#setDisposalMode
          */
         public static final int DM_REVERT = 3;
@@ -2510,11 +2506,11 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** Set the position of this frame within a larger animation display space.
+        /**
+         * Set the position of this frame within a larger animation display space.
          *
-         * @param p
-         *   Coordinates of the frame's upper left corner in the display space.
-         *   (Default: The logical display's origin [0, 0])
+         * @param p Coordinates of the frame's upper left corner in the display space.
+         *          (Default: The logical display's origin [0, 0])
          * @see Gif89Encoder#setLogicalDisplay
          */
         public void setPosition(Point p) {
@@ -2523,10 +2519,10 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** Set or clear the interlace flag.
+        /**
+         * Set or clear the interlace flag.
          *
-         * @param b
-         *   true if you want interlacing.  (Default: false)
+         * @param b true if you want interlacing.  (Default: false)
          */
         public void setInterlaced(boolean b) {
             isInterlaced = b;
@@ -2534,24 +2530,24 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** Set the between-frame interval.
+        /**
+         * Set the between-frame interval.
          *
-         * @param interval
-         *   Centiseconds to wait before displaying the subsequent frame.
-         *   (Default: 0)
+         * @param interval Centiseconds to wait before displaying the subsequent frame.
+         *                 (Default: 0)
          */
         public void setDelay(int interval) {
             csecsDelay = interval;
         }
 
-        /** Setting this option determines (in a cooperative GIF-viewer) what will be
-         *  done with this frame's display area before the subsequent frame is
-         *  displayed.  For instance, a setting of DM_BGCOLOR can be used for erasure
-         *  when redrawing with displacement.
+        /**
+         * Setting this option determines (in a cooperative GIF-viewer) what will be
+         * done with this frame's display area before the subsequent frame is
+         * displayed.  For instance, a setting of DM_BGCOLOR can be used for erasure
+         * when redrawing with displacement.
          *
-         * @param code
-         *   One of the four int constants of the Gif89Frame.DM_* series.
-         *  (Default: DM_LEAVE)
+         * @param code One of the four int constants of the Gif89Frame.DM_* series.
+         *             (Default: DM_LEAVE)
          */
         public void setDisposalMode(int code) {
             disposalCode = code;
@@ -2964,21 +2960,22 @@ public final class DrawingPanel extends FileFilter
 
     //----------------------------------------------------------------------------
 
-    /** Instances of this Gif89Frame subclass are constructed from bitmaps in the
-     *  form of color-index pixels, which accords with a GIF's native palettized
-     *  color model.  The class is useful when complete control over a GIF's color
-     *  palette is desired.  It is also much more efficient when one is using an
-     *  algorithmic frame generator that isn't interested in RGB values (such
-     *  as a cellular automaton).
-     *  <p>
-     *  Objects of this class are normally added to a Gif89Encoder object that has
-     *  been provided with an explicit color table at construction.  While you may
-     *  also add them to "auto-map" encoders without an exception being thrown,
-     *  there obviously must be at least one DirectGif89Frame object in the sequence
-     *  so that a color table may be detected.
+    /**
+     * Instances of this Gif89Frame subclass are constructed from bitmaps in the
+     * form of color-index pixels, which accords with a GIF's native palettized
+     * color model.  The class is useful when complete control over a GIF's color
+     * palette is desired.  It is also much more efficient when one is using an
+     * algorithmic frame generator that isn't interested in RGB values (such
+     * as a cellular automaton).
+     * <p>
+     * Objects of this class are normally added to a Gif89Encoder object that has
+     * been provided with an explicit color table at construction.  While you may
+     * also add them to "auto-map" encoders without an exception being thrown,
+     * there obviously must be at least one DirectGif89Frame object in the sequence
+     * so that a color table may be detected.
      *
-     * @version 0.90 beta (15-Jul-2000)
      * @author J. M. G. Elliott (tep@jmge.net)
+     * @version 0.90 beta (15-Jul-2000)
      * @see Gif89Encoder
      * @see Gif89Frame
      * @see DirectGif89Frame
@@ -2987,14 +2984,12 @@ public final class DrawingPanel extends FileFilter
 
         //----------------------------------------------------------------------------
 
-        /** Construct a IndexGif89Frame from color-index pixel data.
+        /**
+         * Construct a IndexGif89Frame from color-index pixel data.
          *
-         * @param width
-         *   Width of the bitmap.
-         * @param height
-         *   Height of the bitmap.
-         * @param ci_pixels
-         *   Array containing at least width*height color-index pixels.
+         * @param width     Width of the bitmap.
+         * @param height    Height of the bitmap.
+         * @param ci_pixels Array containing at least width*height color-index pixels.
          */
         public IndexGif89Frame(int width, int height, byte ci_pixels[]) {
             theWidth = width;

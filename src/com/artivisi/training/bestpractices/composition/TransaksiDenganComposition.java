@@ -33,8 +33,6 @@ public class TransaksiDenganComposition {
     }
 
     public BigDecimal hitungTotalPembayaran() {
-
-
         BigDecimal totalDiskon = BigDecimal.ZERO;
         for (Diskon d : daftarDiskon) {
             totalDiskon = totalDiskon.add(d.hitungDiskon(this));

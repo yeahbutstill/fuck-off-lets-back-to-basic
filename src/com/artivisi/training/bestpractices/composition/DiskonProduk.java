@@ -4,6 +4,10 @@ import com.artivisi.training.bestpractices.serializable.Product;
 
 import java.math.BigDecimal;
 
+/*
+type inheritance, artinya dia cuma mewarisi yang kita butuhkan untuk diwarisi cuman type data saja,
+tidak ada implementasinya
+ */
 public class DiskonProduk implements Diskon {
 
     @Override

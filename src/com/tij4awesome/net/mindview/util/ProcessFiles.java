@@ -7,6 +7,7 @@ import java.io.IOException;
 public class ProcessFiles {
     private Strategy strategy;
     private String ext;
+
     public ProcessFiles(Strategy strategy, String ext) {
         this.strategy = strategy;
         this.ext = ext;
