@@ -1,5 +1,9 @@
+// kalau di C++ ini namanya "namespace"
 package com.artivisi.training.bestpractices.creatingnewdatatypesclass;
 
+// import memberitahu kompiler untuk membawa sebuah package, yang merupakan perpustakaan class
+// dalam bahasa lain perpustakaan bisa terdiri dari fungsi, data dan class.
+// tapi ingat bahwa semua kode di Java harus ditulis di dalam class
 import java.util.Objects;
 
 public class MethodArgumentReturnValue {
